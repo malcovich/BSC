@@ -1,11 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Pipe, PipeTransform } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 import { CatService } from '../services/cat.service';
 import { ResurseService } from '../services/resurse.service';
 import { ToastComponent } from '../shared/toast/toast.component';
 import { Cat } from '../shared/models/cat.model';
-
 @Component({
   selector: 'app-list-resurses',
   templateUrl: './listResurses.component.html',
@@ -18,6 +17,7 @@ export class ListResursesComponent implements OnInit {
   isLoading = true;
   isEditing = false;
   resurses: any;
+  f: any
 
   addCatForm: FormGroup;
   name = new FormControl('', Validators.required);
@@ -31,6 +31,7 @@ export class ListResursesComponent implements OnInit {
 
   ngOnInit() {
     this.getResurses();
+    this.f = "";
    
   }
 

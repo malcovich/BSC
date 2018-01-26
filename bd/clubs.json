@@ -1,0 +1,8 @@
+{
+	"key" : {
+		"_id" : NumberInt("1")
+	},
+	"name" : "_id_",
+	"ns" : "angularfullstack.resurses",
+	"v" : NumberInt("2")
+},

@@ -34,8 +34,6 @@ export class ResurseComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      console.log(123,params) //log the entire params object
-      console.log(params['id']) //log the value of id
       this.getItem(params['id']);
     });
    
@@ -50,7 +48,7 @@ export class ResurseComponent implements OnInit {
     this.resurseService.getItemResurses(id).subscribe(
       data => {
         this.match = data;
-        this.getSameItems({'team1':  this.match.team1,'team2': this.match.team2})
+        this.getSameItems({'team1':  this.match.team1,'team2': this.match.team2, id : id})
       },
       error => console.log(error),
       () => this.isLoading = false

@@ -12,7 +12,8 @@ const resursesSchema = new mongoose.Schema({
   correctScore: String,
   avarageGoal: String,
   resurse: String,
-  addedDate: Date
+  addedDate: Date,
+  simpleRecords: Number
 });
 
 const Resurses = mongoose.model('Resurses', resursesSchema);

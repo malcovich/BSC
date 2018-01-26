@@ -1,4 +1,5 @@
 import Resurses from '../models/resurses';
+import Club from '../models/clubs';
 import BaseCtrl from './base';
 import * as path from 'path';
 import * as fs from 'fs';
@@ -8,20 +9,46 @@ import * as cheerio from 'cheerio';
 export default class ResursesCtrl extends BaseCtrl {
   model = Resurses;
   getSameItems  = (req, res) => {
-    console.log(req.body)
-    Resurses.find({$and: [{team1 : req.body.team1} ,{team2 : req.body.team2}]}).exec(function (err, result) { 
-      console.log(result)
-    	res.json(result);
-	});
+    var team1 = req.body.team1
+  	team1 = team1.replace(/^\s*/,'').replace(/\s*$/,'');
+    console.log(123, team1);
+    var simpleNamesQuery = { $or : [{'name1': team1},{'name2': team1},{'name3': team1},{'name4': team1},{'name5': team1}]};
+    var simpleNamesQuery2 = { $or : [{'name1': req.body.team2},{'name2': req.body.team2},{'name3': req.body.team2},{'name4': req.body.team2},{'name5': req.body.team2}]};
+    Club.find(simpleNamesQuery).exec(function (err, steam1) { 
+      var sTeam1 = steam1;
+      if (steam1.length == 0){
+        sTeam1 =[{'name1': team1}];
+      }
+      Club.find(simpleNamesQuery2).exec(function (err, steam2) { 
+        var sTeam2 = steam2;
+        if (steam2.length == 0){
+          sTeam2 = [{'name1': req.body.team2}];
+        }
+        console.log(sTeam2, sTeam1)
+        Resurses.find({$and: [ {$or :[{team1 : sTeam1[0].name1},{team1 : sTeam1[0].name2}, {team1 : sTeam1[0].name3},{team1 : sTeam1[0].name4},{team1 : sTeam1[0].name5}]} ,{$or :[{team2 : sTeam2[0].name1},{team2 : sTeam2[0].name2},{team2 : sTeam2[0].name3},{team2 : sTeam2[0].name4}, {team2 : sTeam2[0].name5}]}]}).exec(function (err, result) { 
+          Resurses.findById(req.body.id, function(err, p) {
+              p.simpleRecords = result.length;
+              p.save(function(err) {
+                if (err)
+                  console.log('error')
+                else
+                  console.log('success')
+              });
+          });
+          res.json(result);
+        });
+      });
+    });
+   
   }
   
   getResurse  = (req, res) => {
     let url = 'https://www.forebet.com/en/football-tips-and-predictions-for-today';
-    let url1 = 'http://bettingtips1x2.com/tips/2018-01-25.html';
+    let url1 = 'http://bettingtips1x2.com/tips/2018-01-26.html';
     let url2 = 'https://www.over25tips.com/free-football-betting-tips/';
     let url3 = 'http://www.zulubet.com/';
     let url4 = 'http://www.betstudy.com/predictions/';
-    let url5 = 'http://www.iambettor.com/football-predictions-2018-01-25';
+    let url5 = 'http://www.iambettor.com/football-predictions-2018-01-26';
     request(url, function(error, response, html){
       if(!error){
         var $ = cheerio.load(html);
@@ -93,13 +120,12 @@ export default class ResursesCtrl extends BaseCtrl {
         $('.predictionsTable').filter(function(){
           var data = $(this);
           var trs = data.find('.main-row');
-            
           trs.each(function(i, elem){
             if (trs.eq(i).find('td').length){
               var correctScore = trs.eq(i).find('td').eq(7).text();
               const obj = new Resurses({
-                'team1': trs.eq(i).find('td').eq(2).text(),
-                'team2': trs.eq(i).find('td').eq(4).text(),
+                'team1': trs.eq(i).find('td').eq(2).text().replace(/^\s*/,'').replace(/\s*$/,''),
+                'team2': trs.eq(i).find('td').eq(4).text().replace(/^\s*/,'').replace(/\s*$/,''),
                 'addedDate': new Date(),
                 'prediction': trs.eq(i).find('td').eq(15).text(),
                 'resurse': resurse,
