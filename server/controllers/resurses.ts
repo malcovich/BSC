@@ -5,50 +5,97 @@ import * as path from 'path';
 import * as fs from 'fs';
 import * as request from 'request';
 import * as cheerio from 'cheerio';
+import * as wuzzy from 'wuzzy';
 
 export default class ResursesCtrl extends BaseCtrl {
   model = Resurses;
   getSameItems  = (req, res) => {
     var team1 = req.body.team1
   	team1 = team1.replace(/^\s*/,'').replace(/\s*$/,'');
-    console.log(123, team1);
     var simpleNamesQuery = { $or : [{'name1': team1},{'name2': team1},{'name3': team1},{'name4': team1},{'name5': team1}]};
     var simpleNamesQuery2 = { $or : [{'name1': req.body.team2},{'name2': req.body.team2},{'name3': req.body.team2},{'name4': req.body.team2},{'name5': req.body.team2}]};
-    Club.find(simpleNamesQuery).exec(function (err, steam1) { 
-      var sTeam1 = steam1;
-      if (steam1.length == 0){
-        sTeam1 =[{'name1': team1}];
-      }
-      Club.find(simpleNamesQuery2).exec(function (err, steam2) { 
-        var sTeam2 = steam2;
-        if (steam2.length == 0){
-          sTeam2 = [{'name1': req.body.team2}];
+    var Ro;
+    Resurses.find().exec(function(err,result) {
+      Ro = result;
+      var sim = [];
+      result.forEach(function(item){
+        if (item.team2 !== undefined){
+          let a = wuzzy.tanimoto(
+            team1,
+            item.team1
+          );
+          let b = wuzzy.tanimoto(
+            req.body.team2,
+            item.team2
+          );
+          if (a >= 0.39  && b >= 0.39 ){
+            sim.push(item);
+            console.log(item, a, b)
+          }
         }
-        console.log(sTeam2, sTeam1)
-        Resurses.find({$and: [ {$or :[{team1 : sTeam1[0].name1},{team1 : sTeam1[0].name2}, {team1 : sTeam1[0].name3},{team1 : sTeam1[0].name4},{team1 : sTeam1[0].name5}]} ,{$or :[{team2 : sTeam2[0].name1},{team2 : sTeam2[0].name2},{team2 : sTeam2[0].name3},{team2 : sTeam2[0].name4}, {team2 : sTeam2[0].name5}]}]}).exec(function (err, result) { 
-          Resurses.findById(req.body.id, function(err, p) {
-              p.simpleRecords = result.length;
-              p.save(function(err) {
-                if (err)
-                  console.log('error')
-                else
-                  console.log('success')
-              });
-          });
-          res.json(result);
-        });
-      });
-    });
+      })
+      if (sim.length == 0 ){
+        Ro.forEach(function(item){
+        if (item.team2 !== undefined){
+          let a = wuzzy.tanimoto(
+            team1,
+            item.team1
+          );
+          let b = wuzzy.tanimoto(
+            req.body.team2,
+            item.team2
+          );
+          if (a >= 0.55  || b >= 0.55 ){
+            sim.push(item);
+            console.log(0,item)
+          }
+        }
+       })
+       }
+       res.json(sim);
+    })
+   
+    // Club.find(simpleNamesQuery).exec(function (err, steam1) { 
+    //   var sTeam1 = steam1;
+    //   if (steam1.length == 0){
+    //     sTeam1 =[{'name1': team1}];
+    //   }
+    //   Club.find(simpleNamesQuery2).exec(function (err, steam2) { 
+    //     var sTeam2 = steam2;
+    //     if (steam2.length == 0){
+    //       sTeam2 = [{'name1': req.body.team2}];
+    //     }
+    //     console.log(sTeam2, sTeam1)
+    //     Resurses.find({$and: [ {$or :[{team1 : sTeam1[0].name1},{team1 : sTeam1[0].name2}, {team1 : sTeam1[0].name3},{team1 : sTeam1[0].name4},{team1 : sTeam1[0].name5}]} ,{$or :[{team2 : sTeam2[0].name1},{team2 : sTeam2[0].name2},{team2 : sTeam2[0].name3},{team2 : sTeam2[0].name4}, {team2 : sTeam2[0].name5}]}]}).exec(function (err, result) { 
+    //       Resurses.findById(req.body.id, function(err, p) {
+    //           p.simpleRecords = result.length;
+    //           p.save(function(err) {
+    //             if (err)
+    //               console.log('error')
+    //             else
+    //               console.log('success')
+    //           });
+    //       });
+    //       res.json(result);
+    //     });
+    //   });
+    // });
    
   }
   
   getResurse  = (req, res) => {
     let url = 'https://www.forebet.com/en/football-tips-and-predictions-for-today';
-    let url1 = 'http://bettingtips1x2.com/tips/2018-01-26.html';
+    let url1 = 'http://bettingtips1x2.com/tips/2018-01-28.html';
     let url2 = 'https://www.over25tips.com/free-football-betting-tips/';
     let url3 = 'http://www.zulubet.com/';
     let url4 = 'http://www.betstudy.com/predictions/';
-    let url5 = 'http://www.iambettor.com/football-predictions-2018-01-26';
+    let url5 = 'http://www.iambettor.com/football-predictions-2018-01-28';
+    let url6 = 'http://www.vitibet.com/?clanek=quicktips&sekce=fotbal';
+    let url7 = 'http://www.bet-portal.net/en#axzz55OuMTyKO';
+    let url8 = 'http://www.statarea.com/predictions';
+
+
+    let url9 = 'http://www.statarea.com/predictions/date/2018-01-27/competition';
     request(url, function(error, response, html){
       if(!error){
         var $ = cheerio.load(html);
@@ -240,5 +287,124 @@ export default class ResursesCtrl extends BaseCtrl {
         })
       }
     })
+
+    request(url6, function(error, response, html){
+      if(!error){
+        var $ = cheerio.load(html);
+        let resurse = 'vitibet'
+        $('.tabulkaquick').filter(function(){
+          var data = $(this);
+          var trs = data.find('tr');
+            
+          trs.each(function(i, elem){
+            if (trs.eq(i).find('td').eq(0).hasClass('standardbunka')){
+              var team1 = trs.eq(i).find('td').eq(1).find('a').text();
+              var team2 = trs.eq(i).find('td').eq(2).find('a').text();
+              var propability1 = trs.eq(i).find('td').eq(6).text();
+              var propabilityX = trs.eq(i).find('td').eq(7).text();
+              var propability2 = trs.eq(i).find('td').eq(8).text();
+              var prediction = trs.eq(i).find('td').eq(9).text();
+              var cop = {
+                'team1': team1,
+                'team2': team2,
+                'addedDate': new Date(),
+                'prediction': prediction,
+                'propability1': propability1,
+                'propabilityX': propabilityX,
+                'propability2': propability2,
+                'correctScore':  trs.eq(i).find('td.vetsipismo').eq(0).text()+'-'+ trs.eq(i).find('td.vetsipismo').eq(1).text(),
+                'resurse': resurse,
+              }
+                var obj = new Resurses(cop);
+                obj.save((err, item) => {});
+            }
+          })
+        })
+      }
+    })
+    request(url7, function(error, response, html){
+      if(!error){
+        var $ = cheerio.load(html);
+        let resurse ='bet-portal';
+        $('#predictions-1').filter(function(){
+          var data = $(this);
+           var trs = data.find('tr');
+            trs.each(function(i, elem){
+              if (trs.eq(i).hasClass('match')){
+                var team1 = trs.eq(i).find('td').eq(0).text();
+                var team2 = trs.eq(i).find('td').eq(2).text();
+                var prediction = trs.eq(i).find('td').eq(3).find('div').text();
+                var cop = {
+                  'team1': team1,
+                  'team2': team2,
+                  'addedDate': new Date(),
+                  'prediction': prediction,
+                  'resurse': resurse,
+                }
+                  var obj = new Resurses(cop);
+                  obj.save((err, item) => {});
+              }
+            })
+   
+        })
+      }
+    })
+    request(url8, function(error, response, html){
+      console.log('sdfsdf')
+      if(!error){
+        var $ = cheerio.load(html);
+        let resurse = 'statarea';
+        $('.datacotainer').filter(function(){
+          var data = $(this);
+           var trs = data.find('.match');
+            trs.each(function(i, elem){
+                var team1 = trs.eq(i).find('td').eq(0).text();
+                var team2 = trs.eq(i).find('td').eq(2).text();
+                var prediction = trs.eq(i).find('td').eq(3).find('div').text();
+                var cop = {
+                  'team1': trs.eq(i).find('.teams').find('.hostteam > .name').text(),
+                  'team2': trs.eq(i).find('.teams').find('.guestteam > .name').text(),
+                  'addedDate': new Date(),
+                  'prediction': trs.eq(i).find('.matchrow').find('.tip > .value > div').text(),
+                  'propability1': trs.eq(i).find('.inforow > .coefrow >.coefbox').eq(0).find('.value').text(),
+                  'propabilityX': trs.eq(i).find('.inforow > .coefrow >.coefbox').eq(1).find('.value').text(),
+                  'propability2': trs.eq(i).find('.inforow > .coefrow >.coefbox').eq(2).find('.value').text(),
+                  'propabilityOver': trs.eq(i).find('.inforow > .coefrow >.coefbox').eq(6).find('.value').text(),
+                  'resurse': resurse,
+                }
+                  var obj = new Resurses(cop);
+                  obj.save((err, item) => {});
+            })
+   
+        })
+      }
+    })
+    // request(url9, function(error, response, html){
+    //   if(!error){
+    //     var $ = cheerio.load(html);
+    //     let resurse = 'statarea';
+    //     $('.datacotainer').filter(function(){
+    //       var data = $(this);
+    //        var trs = data.find('.match');
+    //         trs.each(function(i, elem){
+    //             var prediction = trs.eq(i).find('td').eq(3).find('div').text();
+    //             var cop = {
+    //               'team1': trs.eq(i).find('.teams').find('.hostteam > .goals').text(),
+    //               'team2': trs.eq(i).find('.teams').find('.guestteam > .goals').text(),
+    //             }
+    //              Resurses.find({ $and : [{'resurse':'statarea'}, {'team1': trs.eq(i).find('.teams').find('.hostteam > .name').text()}]}).exec(function(err, resut){
+    //                resut[0].resmatch = cop.team1 + '-' + cop.team2;
+    //                console.log(1, resut[0], resut[0].resmatch )
+    //                 resut[0].save(function(err,item) {
+    //                   if (err)
+    //                     console.log('error')
+    //                     // console.log('success', item)
+    //                 });
+    //              })
+    //         })
+    //     })
+    //   }
+    // })
   }
+
 }
