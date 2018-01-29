@@ -82,14 +82,48 @@ export default class ResursesCtrl extends BaseCtrl {
     // });
    
   }
+
+  getAllWithSame = (req, res) => {
+    Resurses.find({}).exec( (err,resurses)=>{
+      var forFront = [];
+      resurses.forEach((item) => {
+        if (!item.isSeted) {
+          if (!item.simpleRecords) {
+            item.simpleRecordsArr = [];
+          };
+           var cop = [];
+          resurses.forEach(function(result){
+            
+            if (result.team2 !== undefined){
+              let a = wuzzy.tanimoto(
+                item.team1,
+                result.team1
+              );
+              let b = wuzzy.tanimoto(
+                item.team2,
+                result.team2
+              );
+              if (a >= 0.39  && b >= 0.39 ){
+                cop.push(result);
+                result.isSeted = true;
+              }
+            };
+
+          });
+          forFront.push({'item': item, 'simples': cop});
+        }
+      })
+      res.json(forFront);
+    })
+  } 
   
   getResurse  = (req, res) => {
     let url = 'https://www.forebet.com/en/football-tips-and-predictions-for-today';
-    let url1 = 'http://bettingtips1x2.com/tips/2018-01-28.html';
+    let url1 = 'http://bettingtips1x2.com/tips/2018-01-29.html';
     let url2 = 'https://www.over25tips.com/free-football-betting-tips/';
     let url3 = 'http://www.zulubet.com/';
     let url4 = 'http://www.betstudy.com/predictions/';
-    let url5 = 'http://www.iambettor.com/football-predictions-2018-01-28';
+    let url5 = 'http://www.iambettor.com/football-predictions-2018-01-29';
     let url6 = 'http://www.vitibet.com/?clanek=quicktips&sekce=fotbal';
     let url7 = 'http://www.bet-portal.net/en#axzz55OuMTyKO';
     let url8 = 'http://www.statarea.com/predictions';

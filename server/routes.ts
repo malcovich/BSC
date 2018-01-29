@@ -34,7 +34,7 @@ export default function setRoutes(app) {
   // Resurses
   router.route('/getresurse').get(resursesCtrl.getResurse);
   router.route('/listresurses/:id').get(resursesCtrl.get);
-  router.route('/listresurses/').get(resursesCtrl.getAll);
+  router.route('/listresurses/').get(resursesCtrl.getAllWithSame);
   router.route('/sameItems/').post(resursesCtrl.getSameItems);
   // Apply the routes to our application with the prefix /api
   app.use('/api', router);

@@ -17,15 +17,15 @@
     <tbody>
       <tr *ngFor="let res of resurses;let i = index" >
         <th scope="row">{{i+1}}</th>
-        <td><a [routerLink]="[res['_id']]">{{res.team1}} - {{res.team2}}</a></td>
-        <td>{{res.resurse}}</td>
-        <td>{{res.propability1}}</td>
-        <td>{{res.propabilityX}}</td>
-        <td>{{res.propability2}}</td>
-        <td>{{res.prediction}}</td>
-        <td>{{res.correctScore}}</td>
-        <td>{{res.avarageGoal}}</td>
-        <td>{{res.simpleRecords}}</td>
+        <td><a [routerLink]="[res.item['_id']]">{{res.item.team1}} - {{res.item.team2}}</a></td>
+        <td>{{res.item.resurse}}</td>
+        <td>{{res.item.propability1}}</td>
+        <td>{{res.item.propabilityX}}</td>
+        <td>{{res.item.propability2}}</td>
+        <td>{{res.item.prediction}}</td>
+        <td>{{res.item.correctScore}}</td>
+        <td>{{res.item.avarageGoal}}</td>
+        <td>{{res.simples.length}}</td>
       </tr>
     </tbody>
   </table>

@@ -1,4 +1,4 @@
-{ 
+{{ 
     "_id" : ObjectId("5a6c7d0b819d361a459a4be5"), 
     "team1" : "CA Talleres", 
     "team2" : "San Lorenzo", 
@@ -25317,4 +25317,5 @@
     "propabilityOver" : "70", 
     "resurse" : "statarea", 
     "__v" : NumberInt(0)
+}
 }
