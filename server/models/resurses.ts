@@ -14,7 +14,8 @@ const resursesSchema = new mongoose.Schema({
   resurse: String,
   addedDate: Date,
   simpleRecords: Number,
-  resmatch: String
+  resmatch: String,
+  club : {type: mongoose.Schema.Types.ObjectId, ref: 'Club'}
 });
 
 const Resurses = mongoose.model('Resurses', resursesSchema);

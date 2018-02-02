@@ -5,7 +5,9 @@ const clubSchema = new mongoose.Schema({
   name2: String,
   name3: String,
   name4: String,
-  name5: String
+  name5: String,
+  name: String,
+  simpleNames: []
 });
 
 const Club = mongoose.model('Club', clubSchema);

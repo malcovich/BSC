@@ -35,6 +35,11 @@ export class ListResursesComponent implements OnInit {
    
   }
 
+  mapResurses () {
+    console.log(123)
+    this.resurseService.mapResurses().subscribe();
+  }
+
   getResurses() {
     this.resurseService.getResurses().subscribe(
       data => {

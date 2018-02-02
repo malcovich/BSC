@@ -2,41 +2,39 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 
-import { Cat } from '../shared/models/cat.model';
+
 
 @Injectable()
 export class ResurseService {
 
   constructor(private http: HttpClient) { }
 
-  getResurse(): Observable<Cat[]> {
-    return this.http.get<Cat[]>('/api/getresurse');
+  getResurse(): Observable<any> {
+    return this.http.get<any>('/api/getresurse');
   }
 
-  getResurses(): Observable<Cat[]> {
-    return this.http.get<Cat[]>('/api/listresurses');
+  getResurses(): Observable<any> {
+    return this.http.get<any>('/api/listresurses');
   }
   getItemResurses(id): Observable<number> {
     return this.http.get<number>(`/api/listresurses/${id}`);
   }
-  getSameItems(obj): Observable<Cat[]> {
-    return this.http.post<Cat[]>('/api/sameItems', obj);
+  getSameItems(obj): Observable<any> {
+    return this.http.post<any>('/api/sameItems', obj);
   }
 
-  addCat(cat: Cat): Observable<Cat> {
-    return this.http.post<Cat>('/api/cat', cat);
+  addClubs(obj): Observable<any> {
+    return this.http.post<any>('/api/addClubs', obj);
   }
 
-  getCat(cat: Cat): Observable<Cat> {
-    return this.http.get<Cat>(`/api/cat/${cat._id}`);
+  getClubsInfo(obj): Observable<any> {
+    return this.http.post<any>('/api/getClubsInfo', obj);
   }
-
-  editCat(cat: Cat): Observable<string> {
-    return this.http.put(`/api/cat/${cat._id}`, cat, { responseType: 'text' });
+  mapResurses(): Observable<any> {
+    return this.http.get<any>('/api/mapResurses');
   }
-
-  deleteCat(cat: Cat): Observable<string> {
-    return this.http.delete(`/api/cat/${cat._id}`, { responseType: 'text' });
+  addSimpleNames(obj): Observable<any> {
+    return this.http.post<any>('/api/addSimpleNames',obj);
   }
 
 }

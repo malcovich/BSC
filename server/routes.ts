@@ -36,6 +36,10 @@ export default function setRoutes(app) {
   router.route('/listresurses/:id').get(resursesCtrl.get);
   router.route('/listresurses/').get(resursesCtrl.getAllWithSame);
   router.route('/sameItems/').post(resursesCtrl.getSameItems);
+  router.route('/addClubs').post(resursesCtrl.addClubs);
+  router.route('/getClubsInfo/').post(resursesCtrl.getClubsInfo);
+  router.route('/addSimpleNames/').post(resursesCtrl.addSimpleNames);
+  router.route('/mapResurses').get(resursesCtrl.mapResurses)
   // Apply the routes to our application with the prefix /api
   app.use('/api', router);
 

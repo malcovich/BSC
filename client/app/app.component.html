@@ -1,8 +1,8 @@
-<div class="container">
+<!-- <div class="container">
 
   <nav class="navbar navbar-dark bg-primary">
     <div class="nav navbar-nav">
-      <a routerLink="/" class="nav-item nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+      <!-- <a routerLink="/" class="nav-item nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" >
         <i class="fa fa-home"></i> Home
       </a>
       <a routerLink="/cats" class="nav-item nav-link" routerLinkActive="active">
@@ -22,13 +22,14 @@
       </a>
       <a routerLink="/logout" class="nav-item nav-link" routerLinkActive="active" *ngIf="auth.loggedIn">
         <i class="fa fa-sign-out"></i> Logout
-      </a>
-       <a routerLink="/listresurses" class="nav-item nav-link" routerLinkActive="active" >
-        <i class="fa fa-sign-out"></i> List
-      </a>
-    </div>
+      </a> -->
+    
+
+<div class="d-flex flex-column flex-md-row align-items-center p-1 px-md-4  bg-white border-bottom box-shadow">
+  <h5 class="my-0 mr-md-auto font-weight-normal">BSC</h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-dark" routerLinkActive="active" routerLink="/listresurses" >Features</a>
   </nav>
-
-  <router-outlet></router-outlet>
-
+  <a class="btn btn-outline-primary" href="#">Sign up</a>
 </div>
+<router-outlet></router-outlet>

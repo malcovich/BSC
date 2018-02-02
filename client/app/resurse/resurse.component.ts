@@ -19,7 +19,11 @@ export class ResurseComponent implements OnInit {
   isLoading = true;
   isEditing = false;
   match: any;
-  sameRes: any;
+  sameRes: {}; 
+  arrayT: any[];
+  team1: any;
+  team2: any;
+  propabilityObjs: any;
 
   addCatForm: FormGroup;
   name = new FormControl('', Validators.required);
@@ -39,67 +43,119 @@ export class ResurseComponent implements OnInit {
    
   }
   getSameItems(obj){
+    this.arrayT = [];
     this.resurseService.getSameItems(obj).subscribe(
-      res => this.sameRes = res
+      res => {
+        // this.sameRes = res.map(item =>{
+        //   this.arrayT.push(this.setUnifyPrediciton(item));
+        //   item.prediction = this.setUnifyPrediciton(item);
+        //   return item;
+        // });
+        this.sameRes = res.same.map(item =>{
+          this.arrayT.push(this.setUnifyPrediciton(item));
+          item.prediction = this.setUnifyPrediciton(item);
+          return item;
+        });
+        this.propabilityObjs = res.prop;
+        this.getPrediction();
+   
+      }
     );
+  }
+  getPrediction () {
+    if (((this.arrayT.indexOf('1') > -1) || (this.arrayT.indexOf('1X') > -1))&&((this.arrayT.indexOf('2') > -1) || (this.arrayT.indexOf('X2') > -1))){
+      this.match.prediction ='NO PREDICTION';
+    }else 
+    if (this.arrayT.indexOf('1X') > -1){
+      this.match.prediction = "1X";
+    }else
+    if (this.arrayT.indexOf('2') > -1 && ((this.arrayT.indexOf('X2') > -1) || (this.arrayT.indexOf('X') > -1))){
+      this.match.prediction = "X2";
+    }else if (this.arrayT.indexOf('2') > -1) {
+      this.match.prediction = "2";
+    }else {
+      this.match.prediction = "1";
+    }
   }
 
   getItem(id) {
     this.resurseService.getItemResurses(id).subscribe(
       data => {
         this.match = data;
-        this.getSameItems({'team1':  this.match.team1,'team2': this.match.team2, id : id})
+        this.getSameItems({'team1':  this.match.team1,'team2': this.match.team2, id : id, club: this.match.club})
+        this.getClubsInfo({'team1':  this.match.team1,'team2': this.match.team2});
       },
       error => console.log(error),
       () => this.isLoading = false
     );
   }
 
-  addCat() {
-    this.catService.addCat(this.addCatForm.value).subscribe(
-      res => {
-        this.cats.push(res);
-        this.addCatForm.reset();
-        this.toast.setMessage('item added successfully.', 'success');
-      },
-      error => console.log(error)
+  getClubsInfo(obj){
+    this.resurseService.getClubsInfo(obj).subscribe(
+      data => {
+        this.team1 = data.team1[0];
+        this.team2 = data.team2[0];
+      }
     );
   }
 
-  enableEditing(cat: Cat) {
-    this.isEditing = true;
-    this.cat = cat;
-  }
-
-  cancelEditing() {
-    this.isEditing = false;
-    this.cat = new Cat();
-    this.toast.setMessage('item editing cancelled.', 'warning');
-    // reload the cats to reset the editing
-  }
-
-  editCat(cat: Cat) {
-    this.catService.editCat(cat).subscribe(
-      () => {
-        this.isEditing = false;
-        this.cat = cat;
-        this.toast.setMessage('item edited successfully.', 'success');
-      },
-      error => console.log(error)
-    );
-  }
-
-  deleteCat(cat: Cat) {
-    if (window.confirm('Are you sure you want to permanently delete this item?')) {
-      this.catService.deleteCat(cat).subscribe(
-        () => {
-          const pos = this.cats.map(elem => elem._id).indexOf(cat._id);
-          this.cats.splice(pos, 1);
-          this.toast.setMessage('item deleted successfully.', 'success');
-        },
-        error => console.log(error)
-      );
+  canAddSimpleClubNames (team1, team2) {
+    if (this.team1 && this.team2) {
+      if(this.team1.name == team1 &&  this.team2.name == team2){
+        return false;
+      }
+      if ((this.team1.name !== team1 && this.team1.simpleNames.indexOf(team1) == -1) || (this.team2.name !== team2 && this.team2.simpleNames.indexOf(team2) == -1)){
+        return true;
+      }
+    }
+    else{ 
+      return false;
     }
   }
 
+  saveSimpleNames (team1, team2){
+    this.resurseService.addSimpleNames({simpleName1: team1, simpleName2 : team2, idTeam1: this.team1._id, idTeam2: this.team2._id}).subscribe(
+      data => {
+        this.team1 = data.team1;
+        this.team2 = data.team2;
+      }
+    );
+  }
+  setUnifyPrediciton (item) {
+    let predictions = ['1','2','X','02', '12','10','1X','X2'];
+    if (item.prediction == 'Away Win '){
+      return '2';
+    };
+    if (item.prediction == 'Home Win '){
+      return '1';
+    };
+    if (item.prediction == '02'){
+      return 'X2';
+    };
+    if (item.prediction == '10'){
+      return '1X';
+    };
+    if (item.prediction == '' && item.correctScore){
+      let goals = item.correctScore.split('-');
+      if(goals[0] > goals[1]) {
+        return '1';
+      }else if (goals[0] < goals[1]) {
+        return '2';
+      }else {
+        return 'X';
+      }
+    }
+    return item.prediction;
+
+  }
+
+  addClubs(obj) {
+    this.resurseService.addClubs(obj).subscribe(
+      res => {
+        this.team1 = res.team1;
+        this.team2 = res.team2;
+      },  
+      error => console.log(error)
+    );
+  }
 }

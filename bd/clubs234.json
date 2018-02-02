@@ -1,0 +1,946 @@
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a71da52d8c8530ba0afac32"),
+	"name" : "Club Africain"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a71da52d8c8530ba0afac33"),
+	"name" : "JS Kairouanaise"
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a71f09ea365763a74168650"),
+	"name" : "Panserraikos 1964",
+	"simpleNames" : [
+		"Panserraikos",
+		"Panserraikos FC"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a71f09ea365763a74168651"),
+	"name" : "Ergotelis FC",
+	"simpleNames" : [
+		"Ergotelis",
+		"Ergotelis"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a71f42b091a11262c096d68"),
+	"name" : "Tottenham Hotspur",
+	"simpleNames" : [
+		"Tottenham"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a71f42b091a11262c096d69"),
+	"name" : "Manchester United",
+	"simpleNames" : [
+		"Manchester Utd"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a71f7b68ba37d32c46d6dd2"),
+	"name" : "Everton FC",
+	"simpleNames" : [
+		"Everton Liverpool",
+		"Everton"
+	]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a71f7b68ba37d32c46d6dd3"),
+	"name" : "Leicester City",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a71fb038fba9517885d9759"),
+	"name" : "CD Leganes",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a71fb038fba9517885d975a"),
+	"name" : "FC Sevilla",
+	"simpleNames" : [
+		"Sevilla FC"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a71fbeb19fa7a0ea03ac60e"),
+	"name" : "CD Nacional",
+	"simpleNames" : [
+		"CD Nacional Funchal",
+		"Nacional Madeira"
+	]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a71fbeb19fa7a0ea03ac60f"),
+	"name" : "UD Oliveirense",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a72017f19fa7a0ea03ac610"),
+	"name" : "Ross County",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a72017f19fa7a0ea03ac611"),
+	"name" : "Aberdeen FC",
+	"simpleNames" : [
+		"Aberdeen"
+	]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a72018d19fa7a0ea03ac612"),
+	"name" : "Stoke City",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a72018d19fa7a0ea03ac613"),
+	"name" : "FC Watford",
+	"simpleNames" : [
+		"Watford",
+		"Watford FC"
+	]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a72019919fa7a0ea03ac614"),
+	"name" : "AZ Alkmaar",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a72019919fa7a0ea03ac615"),
+	"name" : "PEC Zwolle",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a7201be19fa7a0ea03ac616"),
+	"name" : "Southampton FC",
+	"simpleNames" : [
+		"Southampton"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a7201be19fa7a0ea03ac617"),
+	"name" : "Brighton & Hove Albion FC",
+	"simpleNames" : [
+		"Brighton Hove Albion",
+		"Brighton & Hove Albion"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a7201d719fa7a0ea03ac618"),
+	"name" : "Etoile du Sahel",
+	"simpleNames" : [
+		"Étoile du Sahel",
+		"Etoile Du Sahel"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a7201d719fa7a0ea03ac619"),
+	"name" : "Zarzis",
+	"simpleNames" : [
+		"ES Zarzis",
+		"ES Zarzis"
+	]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a7201ef19fa7a0ea03ac61a"),
+	"name" : "Panegialios",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("3"),
+	"_id" : ObjectId("5a7201ef19fa7a0ea03ac61b"),
+	"name" : "Apollon Larisas",
+	"simpleNames" : [
+		"Apollon Larissa FC",
+		"Apollon Larissa",
+		"Larissas"
+	]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a72020b19fa7a0ea03ac61c"),
+	"name" : "Al Masry",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a72020b19fa7a0ea03ac61d"),
+	"name" : "Tala&apos;ea Al Jaish",
+	"simpleNames" : [
+		"Talaea EL Gaish",
+		"El Geish"
+	]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a7202f119fa7a0ea03ac61e"),
+	"name" : "Ajax Cape Town",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a7202f119fa7a0ea03ac61f"),
+	"name" : "Orlando Pirates",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a72d610b974df517c733564"),
+	"name" : "Barcelona",
+	"simpleNames" : [
+		"FC Barcelona"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a72d610b974df517c733565"),
+	"name" : "Valencia",
+	"simpleNames" : [
+		"Valencia CF"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a72d61db974df517c733566"),
+	"name" : "Naft Tehran",
+	"simpleNames" : [
+		"Naftoon Tehran"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a72d61db974df517c733567"),
+	"name" : "Paykan",
+	"simpleNames" : [
+		"Peykan",
+		"Paykan FC"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a72d62db974df517c733568"),
+	"name" : "Enugu Rangers",
+	"simpleNames" : [
+		"Enugu Rangers International FC"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a72d62db974df517c733569"),
+	"name" : "Rivers United FC",
+	"simpleNames" : [
+		"Rivers United"
+	]
+},
+{
+	"__v" : NumberInt("3"),
+	"_id" : ObjectId("5a72d63cb974df517c73356a"),
+	"name" : "Gostaresh",
+	"simpleNames" : [
+		"Gostaresh Foolad",
+		"Gostaresh Foolad",
+		"Gostaresh Foolad Tabriz"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a72d63cb974df517c73356b"),
+	"name" : "Siah Jamegan",
+	"simpleNames" : [
+		"Siah Jamegan Khorasan"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a72d66eb974df517c73356c"),
+	"name" : "Antigua GFC",
+	"simpleNames" : [
+		"Antigua Guatemala"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a72d66eb974df517c73356d"),
+	"name" : "Xelaju",
+	"simpleNames" : [
+		"Club Xelaju",
+		"Club Xelaj&#xFA; MC"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a72d707b974df517c7337ac"),
+	"name" : "Naftoon Tehran",
+	"simpleNames" : [
+		"Naft Tehran",
+		"Naft Tehran"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a72d707b974df517c7337ad"),
+	"name" : "Peykan",
+	"simpleNames" : [
+		"Paykan",
+		"Paykan FC"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a72d716b974df517c7337ae"),
+	"name" : "OFI",
+	"simpleNames" : [
+		"OFI Crete",
+		"OFI FC"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a72d716b974df517c7337af"),
+	"name" : "AE Karaiskakis",
+	"simpleNames" : [
+		"Karaiskakis"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a72d73cb974df517c7337b0"),
+	"name" : "Deportivo Marquense",
+	"simpleNames" : [
+		"CD Marquense"
+	]
+},
+{
+	"__v" : NumberInt("3"),
+	"_id" : ObjectId("5a72d73cb974df517c7337b1"),
+	"name" : "Comunicaciones",
+	"simpleNames" : [
+		"Club Comunicaciones",
+		"CSD Comunicaciones",
+		"CSD Comunicaciones"
+	]
+},
+{
+	"__v" : NumberInt("3"),
+	"_id" : ObjectId("5a72d749b974df517c7337b2"),
+	"name" : "Gap Connahs Quay FC",
+	"simpleNames" : [
+		"GAP Connah&apos;s Quay",
+		"Gap Connah's Quay",
+		"Connah's Quay"
+	]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a72d749b974df517c7337b3"),
+	"name" : "Bala Town",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a72d77bb974df517c7337b4"),
+	"name" : "Torku Konyaspor",
+	"simpleNames" : [
+		"Konyaspor"
+	]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a72d77bb974df517c7337b5"),
+	"name" : "Galatasaray",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a72d788b974df517c7337b6"),
+	"name" : "Kwara United",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a72d788b974df517c7337b7"),
+	"name" : "Lobi Stars",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("3"),
+	"_id" : ObjectId("5a72d793b974df517c7337b8"),
+	"name" : "Al Ahly",
+	"simpleNames" : [
+		"Ahli Amman",
+		"Al Ahli",
+		"Al-Ahli Amman"
+	]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a72d793b974df517c7337b9"),
+	"name" : "That Ras",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a72d7e3b974df517c7337ba"),
+	"name" : "Municipal Liberia",
+	"simpleNames" : [
+		"AD Municipal Liberia"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a72d7e3b974df517c7337bb"),
+	"name" : "AD Carmelita",
+	"simpleNames" : [
+		"Deportiva Carmelita"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a72d7efb974df517c7337bc"),
+	"name" : "CS Cartagines",
+	"simpleNames" : [
+		"C.S. Cartagines",
+		"CS Cartaginés"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a72d7efb974df517c7337bd"),
+	"name" : "Santos de Guapiles",
+	"simpleNames" : [
+		"Santos De Guapiles",
+		"Santos Guapiles"
+	]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a72d800b974df517c7337be"),
+	"name" : "Mexico",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a72d800b974df517c7337bf"),
+	"name" : "Bosnia and Herzegovina",
+	"simpleNames" : [
+		"Bosnia & Herzegovina"
+	]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a72d810b974df517c7337c0"),
+	"name" : "CD Motagua",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a72d810b974df517c7337c1"),
+	"name" : "CD Honduras",
+	"simpleNames" : [
+		"Honduras Progreso"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a730852a7b2e43f9c6d18d0"),
+	"name" : "Swansea City",
+	"simpleNames" : [
+		"Swansea"
+	]
+},
+{
+	"__v" : NumberInt("3"),
+	"_id" : ObjectId("5a730852a7b2e43f9c6d18d1"),
+	"name" : "Arsenal FC",
+	"simpleNames" : [
+		"Arsenal",
+		"Arsenal London",
+		"Arsenal"
+	]
+},
+{
+	"__v" : NumberInt("3"),
+	"_id" : ObjectId("5a73085ea7b2e43f9c6d18d2"),
+	"name" : "DVO Tachira",
+	"simpleNames" : [
+		"Deportivo Tachira FC",
+		"Deportivo Tachira",
+		"Deportivo Táchira"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a73085ea7b2e43f9c6d18d3"),
+	"name" : "Zulia FC",
+	"simpleNames" : [
+		"Zulia"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a730871a7b2e43f9c6d18d4"),
+	"name" : "Club Destroyers",
+	"simpleNames" : [
+		"Destroyers"
+	]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a730871a7b2e43f9c6d18d5"),
+	"name" : "Oriente Petrolero",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("3"),
+	"_id" : ObjectId("5a730881a7b2e43f9c6d18d6"),
+	"name" : "Al-Ahly Cairo",
+	"simpleNames" : [
+		"Al Ahly",
+		"Al Ahly Cairo",
+		"Ahly Cairo"
+	]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a730881a7b2e43f9c6d18d7"),
+	"name" : "Ismaily SC",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a73088ea7b2e43f9c6d18d8"),
+	"name" : "Birmingham City",
+	"simpleNames" : [
+		"Birmingham"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a73088ea7b2e43f9c6d18d9"),
+	"name" : "Sunderland AFC",
+	"simpleNames" : [
+		"Sunderland",
+		"Sunderland"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a73089da7b2e43f9c6d18da"),
+	"name" : "GD Estoril Praia",
+	"simpleNames" : [
+		"Estoril",
+		"GD Estoril"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a73089da7b2e43f9c6d18db"),
+	"name" : "CD Tondela",
+	"simpleNames" : [
+		"Tondela"
+	]
+},
+{
+	"__v" : NumberInt("3"),
+	"_id" : ObjectId("5a7308b1a7b2e43f9c6d18dc"),
+	"name" : "Sporting Braga",
+	"simpleNames" : [
+		"SC de Braga",
+		"Sporting de Braga",
+		"SC Braga"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a7308b1a7b2e43f9c6d18dd"),
+	"name" : "CD Aves",
+	"simpleNames" : [
+		"Aves"
+	]
+},
+{
+	"__v" : NumberInt("4"),
+	"_id" : ObjectId("5a7308bca7b2e43f9c6d18de"),
+	"name" : "SC Preußen Münster",
+	"simpleNames" : [
+		"Preußen Muenster",
+		"SC Preussen Münster",
+		"Preussen Munster",
+		"Preu&#xDF;en M&#xFC;nster"
+	]
+},
+{
+	"__v" : NumberInt("4"),
+	"_id" : ObjectId("5a7308bca7b2e43f9c6d18df"),
+	"name" : "Rot Weiss Erfurt",
+	"simpleNames" : [
+		"RW Erfurt",
+		"FC Rot-Weiss Erfurt",
+		"Rot-Weiss Erfurt",
+		"RW Erfurt"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a7308d9a7b2e43f9c6d18e0"),
+	"name" : "Hull City",
+	"simpleNames" : [
+		"Hull City AFC"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a7308d9a7b2e43f9c6d18e1"),
+	"name" : "Leeds United",
+	"simpleNames" : [
+		"Leeds"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a7308e6a7b2e43f9c6d18e2"),
+	"name" : "Sheffield United",
+	"simpleNames" : [
+		"Sheffield Utd"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a7308e6a7b2e43f9c6d18e3"),
+	"name" : "Aston Villa",
+	"simpleNames" : [
+		"Aston Villa Birmingham"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a7308ffa7b2e43f9c6d18e4"),
+	"name" : "Millwall FC",
+	"simpleNames" : [
+		"Millwall",
+		"Millwall"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a7308ffa7b2e43f9c6d18e5"),
+	"name" : "Derby County",
+	"simpleNames" : [
+		"Derby"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a730905a7b2e43f9c6d18e6"),
+	"name" : "Luton Town",
+	"simpleNames" : [
+		"Luton"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a730905a7b2e43f9c6d18e7"),
+	"name" : "Wycombe Wanderers",
+	"simpleNames" : [
+		"Wycombe",
+		"Wycombe"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a730e2a7606034c68df3aca"),
+	"name" : "Blackburn Rovers",
+	"simpleNames" : [
+		"Blackburn"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a730e2a7606034c68df3acb"),
+	"name" : "Walsall FC",
+	"simpleNames" : [
+		"Walsall",
+		"Walsall"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a730fb77606034c68df3acc"),
+	"name" : "Moreirense FC",
+	"simpleNames" : [
+		"Moreirense"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a730fb77606034c68df3acd"),
+	"name" : "FC Porto",
+	"simpleNames" : [
+		"Porto"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a730ff87606034c68df3ace"),
+	"name" : "Lincoln City",
+	"simpleNames" : [
+		"Lincoln"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a730ff87606034c68df3acf"),
+	"name" : "Newport County",
+	"simpleNames" : [
+		"Newport"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a7310d47606034c68df3ad0"),
+	"name" : "West Ham United",
+	"simpleNames" : [
+		"West Ham"
+	]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a7310d47606034c68df3ad1"),
+	"name" : "Crystal Palace",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a7310ed7606034c68df3ad2"),
+	"name" : "Huddersfield Town",
+	"simpleNames" : [
+		"Huddersfield"
+	]
+},
+{
+	"__v" : NumberInt("3"),
+	"_id" : ObjectId("5a7310ed7606034c68df3ad3"),
+	"name" : "Liverpool FC",
+	"simpleNames" : [
+		"Liverpool",
+		"FC Liverpool",
+		"Liverpool"
+	]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a7311007606034c68df3ad4"),
+	"name" : "Burton Albion",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a7311007606034c68df3ad5"),
+	"name" : "Reading FC",
+	"simpleNames" : [
+		"Reading"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a7311157606034c68df3ad6"),
+	"name" : "Berwick Rangers",
+	"simpleNames" : [
+		"Berwick Rangers FC",
+		"Berwick"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a7311157606034c68df3ad7"),
+	"name" : "Peterhead FC",
+	"simpleNames" : [
+		"Peterhead",
+		"Peterhead"
+	]
+},
+{
+	"__v" : NumberInt("3"),
+	"_id" : ObjectId("5a7311387606034c68df3ad9"),
+	"name" : "FC Linfield",
+	"simpleNames" : [
+		"FC Linfield Belfast",
+		"Linfield",
+		"Linfield Belfast"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a73114a7606034c68df3ada"),
+	"name" : "Rochdale",
+	"simpleNames" : [
+		"Rochdale AFC"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a73114a7606034c68df3adb"),
+	"name" : "Wigan Athletic",
+	"simpleNames" : [
+		"Wigan"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a73172c12a85b5434a4dcac"),
+	"name" : "Aberdeen",
+	"simpleNames" : [
+		"Aberdeen FC"
+	]
+},
+{
+	"__v" : NumberInt("1"),
+	"_id" : ObjectId("5a7324564c46e54becc1e61d"),
+	"name" : "Formartine United",
+	"simpleNames" : [
+		"Formartine Utd"
+	]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a73330a0b732412f8e11cf6"),
+	"name" : "Cove Rangers",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a7336d7c0bcd20c88c59b97"),
+	"name" : "Sevilla FC",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a7336d7c0bcd20c88c59b96"),
+	"name" : "SD Eibar",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("3"),
+	"_id" : ObjectId("5a7337b8c0bcd20c88c59b98"),
+	"name" : "Olympiakos Nicosia",
+	"simpleNames" : [
+		"Olympiakos Nikosia",
+		"Olympiakos Nic.",
+		"Olympiakos"
+	]
+},
+{
+	"__v" : NumberInt("2"),
+	"_id" : ObjectId("5a7337b8c0bcd20c88c59b99"),
+	"name" : "AEL Limassol",
+	"simpleNames" : [
+		"A.E.L.",
+		"AEL"
+	]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a7337f6c0bcd20c88c59b9a"),
+	"name" : "Inter Milano",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a7337f6c0bcd20c88c59b9b"),
+	"name" : "FC Crotone",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a73381dc0bcd20c88c59b9c"),
+	"name" : "Pachucha",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a73381dc0bcd20c88c59b9d"),
+	"name" : "Club Tijuana",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a74630e61c4071fd86c3128"),
+	"name" : "Exeter City",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a746d58914a6d3cbcf4d4e1"),
+	"name" : "Hamilton Academical",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a746d74914a6d3cbcf4d4e2"),
+	"name" : "Jorge Wilstermann",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a746da6914a6d3cbcf4d4e3"),
+	"name" : "Carlisle United",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a74701a48ce1a3e5cd2665d"),
+	"name" : "Cardiff City",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a74706148ce1a3e5cd2665f"),
+	"name" : "Santa Fe",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a74706148ce1a3e5cd2665e"),
+	"name" : "Deportivo Tachira FC",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a74708648ce1a3e5cd26660"),
+	"name" : "Walsall",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a74708648ce1a3e5cd26661"),
+	"name" : "Milton Keynes Dons",
+	"simpleNames" : [ ]
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a7485890ce3b9198cbeab25"),
+	"name" : "AFC Bournemouth",
+	"simpleNames" : [ ]
+},
