@@ -15,30 +15,73 @@ export default class ResursesCtrl extends BaseCtrl {
     var team1 = req.body.team1;
     var team2 = req.body.team2;
     var club = req.body.club;
+    var matchId =  req.body.id;
    
     var simp = [];
     var propability = [];
-    Resurses.find({'club': club}).exec((err, simple) =>{
-      console.log(simple)
-      Resurses.find({ "club" : { "$exists" : false }}).exec(function(err, listPredictions) {
-        listPredictions.forEach(element =>{
-          let a = wuzzy.tanimoto(
-            team1,
-            element.team1
-          );
-          let b = wuzzy.tanimoto(
-            team2,
-            element.team2
-          );
+    // Resurses.find({'club': club}).exec((err, simple) =>{
+    //   Resurses.find({ "club" : { "$exists" : false }}).exec(function(err, listPredictions) {
+    //     listPredictions.forEach(element =>{
+    //       let a = wuzzy.tanimoto(
+    //         team1,
+    //         element.team1
+    //       );
+    //       let b = wuzzy.tanimoto(
+    //         team2,
+    //         element.team2
+    //       );
         
-          if (a >= 0.2 && b >= 0.2){
-            propability.push(element);
-          }
-        })
-          // }
-        res.json({'same' : simple, 'prop': propability});
-      })
-    })
+    //       if (a >= 0.2 && b >= 0.2){
+    //         propability.push(element);
+    //       }
+    //     })
+    //       // }
+    //     res.json({'same' : simple, 'prop': propability});
+    //   })
+    // })
+
+
+    var forFront = [];
+    var stopWord = ['FC', 'AFC', 'SC', 'CD', 'US', 'PFC','FBC', 'SV', 'UC', 'CF'];
+    Resurses.find({}).exec((err,resurses)=>{
+      Resurses.findById(matchId).exec((err, match)=>{
+        var sim = [];
+        sim.push(match)
+        resurses.forEach((item, number) =>{
+          var copyTeam2;
+          if (!item.isSeted && (match.matchTime == item.matchTime) && (match.resurse !== item.resurse) && (item.team2 !== undefined) && ((match.resurse !== 'over25tips')  && (match.prediction !== ''))) {
+            var last3 = item.team2.substring(item.team2.length - 3, item.team2.length);
+            var last2 = item.team2.substring(item.team2.length - 2, item.team2.length);
+            var first2 = item.team2.substring(0, 2);
+            if(stopWord.indexOf(last3) !== -1  && item.team2[item.team2.length - 4] == ' ') {
+              copyTeam2 = item.team2.substring(0, item.team2.length - 3);
+            }
+            if(stopWord.indexOf(first2) !== -1  && item.team2[2] == ' ') {
+              copyTeam2 = item.team2.substring(2, item.team2.length - 1);
+            }
+            if(stopWord.indexOf(last2) !== -1 && item.team2[item.team2.length - 3] == ' ') {
+              copyTeam2 = item.team2.substring(0, item.team2.length - 2);
+            }else {
+              copyTeam2 = item.team2;
+            }
+            let a = wuzzy.tanimoto(
+              match.team1.replace(/[0-9]/g, ''),
+              item.team1.replace(/[0-9]/g, '')
+            );
+            let b = wuzzy.tanimoto(
+              match.team2.replace(/[0-9]/g, ''),
+              copyTeam2.replace(/[0-9]/g, '')
+            );
+            
+            if (a >= 0.47 || b >= 0.47 ){
+              resurses[number].isSeted = true;
+              sim.push(item);
+            }
+          } 
+        });
+        res.json({'same' : sim, 'prop': propability});
+      });
+    });
   }
 
   mapResurses = (req,res) =>{
@@ -153,66 +196,65 @@ export default class ResursesCtrl extends BaseCtrl {
   // }
 
   getAllWithSame = (req, res) => {
-    // {'addedDate':  {"$gte": new Date(2018, 0, 29), "$lt": new Date(2018, 0, 30)}}
-    Resurses.find().populate('club').exec((err,resurses)=>{
-      var withClub = resurses.filter(item => {
-        return item.club;
-      });
-
-      var forFront = [];
-
-      let result = [];
-      for (let index = 0; index < withClub.length; index++) {
-        var el = withClub[index].club.name;
-        console.log(el,result.indexOf(el))
-        if (result.indexOf(el) === -1) result.push(el);
-      }
-      let records = []
-      result.forEach((r, index)=>{
-        records[index] = withClub.filter(w => w.club.name == r);
-        forFront.push({'item':  records[index][0], 'simples':  records[index]});
-      })
-      res.json(forFront)
-    
-      // var leadItem;
-      // Club.find().exec((err,clubs)=>{
-      //   var forFront = [];
-      //   var listClubsName = [];
-      //   clubs.forEach(club =>{
-      //     var sp = club.simpleNames || [];
-      //     sp.push(club.name)
-      //     listClubsName.push(sp)
-      //   });
-      //   var arrayPromise = [];
-      //   listClubsName.forEach(listItem => {
-      //     var oneResursePromise = Resurses.find({'team1': {$in: listItem}});
-      //     arrayPromise.push(oneResursePromise);
-      //   });
-      //   Promise.all(arrayPromise).then(values => { 
-      //     values.forEach(item => {
-      //       if (item.length > 0) {
-      //         forFront.push({'item': item[0], 'simples': item});
-      //       }
-      //     });
-      //     res.json(forFront)
-      //   })
-      // })
+    var forFront = [];
+    var stopWord = ['FC', 'AFC', 'SC', 'CD', 'US', 'PFC','FBC', 'SV', 'UC', 'CF'];
+    Resurses.find({}).exec((err,resurses)=>{
+      resurses.forEach((r, index)=>{
+        if(!r.isSeted && ((r.resurse !== 'over25tips')  && (r.prediction !== ''))){
+          r.isSeted = true;
+          var sim = [];
+          resurses.forEach((item, number) =>{
+            var copyTeam2;
+            if (!item.isSeted && (r.matchTime == item.matchTime) && (r.resurse !== item.resurse) && (item.team2 !== undefined) && ((r.resurse !== 'over25tips')  && (r.prediction !== ''))) {
+              var last3 = item.team2.substring(item.team2.length - 3, item.team2.length);
+              var last2 = item.team2.substring(item.team2.length - 2, item.team2.length);
+              var first2 = item.team2.substring(0, 2);
+              if(stopWord.indexOf(last3) !== -1  && item.team2[item.team2.length - 4] == ' ') {
+                copyTeam2 = item.team2.substring(0, item.team2.length - 3);
+              }
+              if(stopWord.indexOf(first2) !== -1  && item.team2[2] == ' ') {
+                copyTeam2 = item.team2.substring(2, item.team2.length - 1);
+              }
+              if(stopWord.indexOf(last2) !== -1 && item.team2[item.team2.length - 3] == ' ') {
+                copyTeam2 = item.team2.substring(0, item.team2.length - 2);
+             }else {
+                copyTeam2 = item.team2;
+             }
+              let a = wuzzy.tanimoto(
+                r.team1.replace(/[0-9]/g, ''),
+                item.team1.replace(/[0-9]/g, '')
+              );
+              let b = wuzzy.tanimoto(
+                r.team2.replace(/[0-9]/g, ''),
+                copyTeam2.replace(/[0-9]/g, '')
+              );
+              
+              if (a >= 0.47 || b >= 0.47 ){
+                resurses[number].isSeted = true;
+                sim.push(item);
+              }
+            } 
+          });
+          forFront.push({'item': r, 'simples':  sim});
+          } 
+        })
+       res.json(forFront) 
     })
   } 
   
   getResurse  = (req, res) => {
     let url = 'https://www.forebet.com/en/football-tips-and-predictions-for-today';
-    let url1 = 'http://bettingtips1x2.com/tips/2018-02-02.html';
+    let url1 = 'https://www.bettingtips1x2.com/tips/2018-02-05.html';
     let url2 = 'https://www.over25tips.com/free-football-betting-tips/';
     let url3 = 'http://www.zulubet.com/';
     let url4 = 'http://www.betstudy.com/predictions/';
-    let url5 = 'http://www.iambettor.com/football-predictions-2018-02-02';
+    let url5 = 'http://www.iambettor.com/football-predictions-2018-02-05';
     let url6 = 'http://www.vitibet.com/?clanek=quicktips&sekce=fotbal';
     let url7 = 'http://www.bet-portal.net/en#axzz55OuMTyKO';
     let url8 = 'http://www.statarea.com/predictions';
 
-
     let url9 = 'http://www.statarea.com/predictions/date/2018-01-30/competition';
+
     // request(url, function(error, response, html){
     //   if(!error){
     //     var $ = cheerio.load(html);
@@ -226,26 +268,31 @@ export default class ResursesCtrl extends BaseCtrl {
     //         if (trs.eq(i).children().first().hasClass('tnms')){
     //             if(trs.eq(i).children().eq(4).hasClass('predict') ){
     //               var teams = trs.eq(i).children().first().find('a').html().split('<br> ');
-    //                         var propability1 = trs.eq(i).children().eq(1).text();
-    //                         var propabilityX = trs.eq(i).children().eq(2).text();
-    //                         var propability2 = trs.eq(i).children().eq(3).text();
-    //                         var prediction = trs.eq(i).children().eq(4).text();
-    //                         var correctScore = trs.eq(i).children().eq(5).text();
-    //                         var avarageGoal = trs.eq(i).children().eq(6).text();
-    //                         if ((teams[0] !== '') && (teams[1] !== '')){
-    //                           const obj = new Resurses({
-    //                             'team1': teams[0],
-    //                             'team2': teams[1],
-    //                             'addedDate': new Date(),
-    //                             'propability1' : propability1,
-    //                             'propabilityX' : propabilityX,
-    //                             'propability2': propability2,
-    //                             'prediction': prediction,
-    //                             'correctScore': correctScore,
-    //                             'avarageGoal': avarageGoal,
-    //                             'resurse': resurse
-    //                           });
-    //                           obj.save((err, item) => {});
+    //                 var propability1 = trs.eq(i).children().eq(1).text();
+    //                 var propabilityX = trs.eq(i).children().eq(2).text();
+    //                 var propability2 = trs.eq(i).children().eq(3).text();
+    //                 var prediction = trs.eq(i).children().eq(4).text();
+    //                 var correctScore = trs.eq(i).children().eq(5).text();
+    //                 var avarageGoal = trs.eq(i).children().eq(6).text();
+    //                 var matchTime = trs.eq(i).children().first().find('.date_bah').html().split(" ");
+    //                 var hours = matchTime[1].split(":");
+    //                 hours[0] = 2 + parseInt(hours[0])
+    //                 matchTime = hours.join(":");
+    //                 if ((teams[0] !== '') && (teams[1] !== '')){
+    //                   const obj = new Resurses({
+    //                     'team1': teams[0],
+    //                     'team2': teams[1],
+    //                     'addedDate': new Date(),
+    //                     'propability1' : propability1,
+    //                     'propabilityX' : propabilityX,
+    //                     'propability2': propability2,
+    //                     'prediction': prediction,
+    //                     'matchTime' : matchTime,
+    //                     'correctScore': correctScore,
+    //                     'avarageGoal': avarageGoal,
+    //                     'resurse': resurse
+    //                   });
+    //                   obj.save((err, item) => {});
     //             }
              
     //           }
@@ -258,22 +305,30 @@ export default class ResursesCtrl extends BaseCtrl {
     //   if(!error){
     //     var $ = cheerio.load(html);
     //     let resurse = 'bettingtips1x2'
-    //     $('.results').filter(function(){
+    //     $('.inner .results').filter(function(){
     //       var data = $(this);
     //       var trs = data.children().children();
             
     //       trs.each(function(i, elem){
     //         if (trs.eq(i).find('td').length){
     //           var teams = trs.eq(i).find('td').eq(3).find('a').text().split(' - ');
+    //           var matchTime = trs.eq(i).find('td').eq(2).text()
     //           var correctScore = trs.eq(i).find('td').eq(7).text();
-    //           const obj = new Resurses({
-    //             'team1': teams[0],
-    //             'team2': teams[1],
-    //             'addedDate': new Date(),
-    //             'correctScore': correctScore,
-    //             'resurse': resurse,
-    //           });
-    //           obj.save((err, item) => {});
+    //           var timeArray = matchTime.split(':');
+    //           timeArray[0] = 2 + parseInt(timeArray[0]);
+    //           matchTime = timeArray.join(':');
+    //           if (teams[0] !== " "){
+    //             const obj = new Resurses({
+    //               'team1': teams[0],
+    //               'team2': teams[1],
+    //               'addedDate': new Date(),
+    //               'matchTime' : matchTime,
+    //               'correctScore': correctScore,
+    //               'tournament' : trs.eq(i).find('td').eq(1).text(),
+    //               'resurse': resurse,
+    //             });
+    //             obj.save((err, item) => {});
+    //           }
     //         }
     //       })
     //     })
@@ -284,22 +339,29 @@ export default class ResursesCtrl extends BaseCtrl {
     //   if(!error){
     //     var $ = cheerio.load(html);
     //     let resurse = 'over25tips'
-    //     $('.predictionsTable').filter(function(){
+    //     $('.class').filter(function(){
     //       var data = $(this);
-    //       var trs = data.find('.main-row');
-    //       trs.each(function(i, elem){
-    //         if (trs.eq(i).find('td').length){
-    //           var correctScore = trs.eq(i).find('td').eq(7).text();
-    //           const obj = new Resurses({
-    //             'team1': trs.eq(i).find('td').eq(2).text().replace(/^\s*/,'').replace(/\s*$/,''),
-    //             'team2': trs.eq(i).find('td').eq(4).text().replace(/^\s*/,'').replace(/\s*$/,''),
-    //             'addedDate': new Date(),
-    //             'prediction': trs.eq(i).find('td').eq(15).text(),
-    //             'resurse': resurse,
-    //           });
-    //           obj.save((err, item) => {});
-    //         }
-    //       })
+    //       if (data.find('h1')){
+    //         var trs = data.find('.predictionsTable .main-row');
+    //         trs.each(function(i, elem){
+    //           if (trs.eq(i).find('td').length){
+    //             var correctScore = trs.eq(i).find('td').eq(7).text();
+    //             var matchTime = trs.eq(i).find('td').eq(0).text();
+    //             var timeArray = matchTime.split(':');
+    //             timeArray[0] = 2 + parseInt(timeArray[0]);
+    //             matchTime = timeArray.join(':');
+    //             const obj = new Resurses({
+    //               'team1': trs.eq(i).find('td').eq(2).text().replace(/^\s*/,'').replace(/\s*$/,''),
+    //               'team2': trs.eq(i).find('td').eq(4).text().replace(/^\s*/,'').replace(/\s*$/,''),
+    //               'addedDate': new Date(),
+    //               'matchTime' : matchTime,
+    //               'prediction': trs.eq(i).find('td').eq(15).text(),
+    //               'resurse': resurse,
+    //             });
+    //             obj.save((err, item) => {});
+    //           }
+    //         })
+    //       };
     //     })
     //   }
     // })
@@ -315,6 +377,14 @@ export default class ResursesCtrl extends BaseCtrl {
     //       trs.each(function(i, elem){
     //         if (!trs.eq(i).find('td').first().hasClass('Caption')){
     //           var teams = trs.eq(i).find('td').eq(1).find('span > a ').text().split(' - ');
+    //              if (!trs.eq(i).children('td').first().hasClass('prob2')){
+    //               var matchTime = trs.eq(i).children('td').first().text().split(', '); 
+    //               if (matchTime.length == 2){
+    //                 var timeArray = matchTime[1].split(':');
+    //                 timeArray[0] = 2 + parseInt(timeArray[0]);
+    //                 var matchTime2 = timeArray.join(':');
+    //               }
+    //              }
     //           var propability1 = trs.eq(i).find('td.prob2').eq(0).text();
     //                     var propabilityX = trs.eq(i).find('td.prob2').eq(1).text();
     //                     var propability2 = trs.eq(i).find('td.prob2').eq(2).text();
@@ -328,6 +398,7 @@ export default class ResursesCtrl extends BaseCtrl {
     //               'propability1' :propability1,
     //               'propabilityX':propabilityX,
     //               'propability2': propability2,
+    //               'matchTime' : matchTime2,
     //               'resurse': resurse
     //             });
     //             obj.save((err, item) => {});
@@ -345,9 +416,16 @@ export default class ResursesCtrl extends BaseCtrl {
     //     $('.tabulkaquick').filter(function(){
     //       var data = $(this);
     //       var trs = data.find('tr');
-    //         console.log()
     //       trs.each(function(i, elem){
     //         if (trs.eq(i).find('td').first().hasClass('standardbunka')){
+    //           if (!trs.eq(i).children('td').first().hasClass('prob2')){
+    //             var matchTime = trs.eq(i).children('td').first().text().split(', '); 
+    //             if (matchTime.length == 2){
+    //               var timeArray = matchTime[1].split(':');
+    //               timeArray[0] = 2 + parseInt(timeArray[0]);
+    //               var matchTime2 = timeArray.join(':');
+    //             }
+    //            }
     //           var cop = {
     //             'team1': trs.eq(i).find('td.standardbunka').eq(0).text(),
     //             'team2': trs.eq(i).find('td.standardbunka').eq(1).text(),
@@ -358,6 +436,7 @@ export default class ResursesCtrl extends BaseCtrl {
     //             'propability2':trs.eq(i).find('td.standardbunka').eq(5).text(),
     //             'propabilityUnder' :'',
     //             'propabilityOver':'',
+    //             'matchTime' : matchTime2,
     //             'correctScore':  trs.eq(i).find('td.vetsipismo').eq(0).text()+'-'+ trs.eq(i).find('td.vetsipismo').eq(1).text(),
     //             'resurse': resurse,
     //           }
@@ -380,6 +459,10 @@ export default class ResursesCtrl extends BaseCtrl {
             
     //       trs.each(function(i, elem){
     //         if (trs.eq(i).find('td').length){
+    //           var matchTime = trs.eq(i).find('td').eq(0).find('span').text().split(' '); 
+    //           var timeArray = matchTime[1].split(':');
+    //           timeArray[0] = 2 + parseInt(timeArray[0]);
+    //           var matchTime2 = timeArray.join(':');
     //           var teams = trs.eq(i).find('td').eq(1).find('a').eq(1).text().split(' - ');
     //           var propability1 = trs.eq(i).find('td').eq(2).text();
     //           var propabilityX = trs.eq(i).find('td').eq(3).text();
@@ -397,9 +480,9 @@ export default class ResursesCtrl extends BaseCtrl {
     //             'propability2': propability2,
     //             'propabilityUnder' :propabilityUnder,
     //             'propabilityOver': propabilityOver,
+    //             'matchTime' : matchTime2,
     //             'resurse': resurse,
     //           }
-    //           console.log(cop)
     //             var obj = new Resurses(cop);
     //             obj.save((err, item) => {});
     //         }
@@ -460,6 +543,9 @@ export default class ResursesCtrl extends BaseCtrl {
     //         trs.each(function(i, elem){
     //           if (trs.eq(i).hasClass('match')){
     //             var team1 = trs.eq(i).find('td').eq(0).text();
+    //             var t = trs.eq(i).find('td').eq(1).find('a').text().split(':')
+    //             t[0] = 1 + parseInt(t[0]);
+    //             var matchTime2 = t.join(':');
     //             var team2 = trs.eq(i).find('td').eq(2).text();
     //             var prediction = trs.eq(i).find('td').eq(3).find('div').text();
     //             var cop = {
@@ -467,13 +553,13 @@ export default class ResursesCtrl extends BaseCtrl {
     //               'team2': team2,
     //               'addedDate': new Date(),
     //               'prediction': prediction,
+    //               'matchTime' : matchTime2,
     //               'resurse': resurse,
     //             }
     //               var obj = new Resurses(cop);
     //               obj.save((err, item) => {});
     //           }
     //         })
-   
     //     })
     //   }
     // })
@@ -491,6 +577,7 @@ export default class ResursesCtrl extends BaseCtrl {
     //             var cop = {
     //               'team1': trs.eq(i).find('.teams').find('.hostteam > .name').text(),
     //               'team2': trs.eq(i).find('.teams').find('.guestteam > .name').text(),
+    //               'matchTime': trs.eq(i).find('.date').text(),
     //               'addedDate': new Date(),
     //               'prediction': trs.eq(i).find('.matchrow').find('.tip > .value > div').text(),
     //               'propability1': trs.eq(i).find('.inforow > .coefrow >.coefbox').eq(0).find('.value').text(),

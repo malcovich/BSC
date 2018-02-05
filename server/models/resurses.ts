@@ -13,6 +13,8 @@ const resursesSchema = new mongoose.Schema({
   avarageGoal: String,
   resurse: String,
   addedDate: Date,
+  matchTime: String,
+  tournament: String,
   simpleRecords: Number,
   resmatch: String,
   club : {type: mongoose.Schema.Types.ObjectId, ref: 'Club'}
