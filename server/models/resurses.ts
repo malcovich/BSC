@@ -17,6 +17,7 @@ const resursesSchema = new mongoose.Schema({
   tournament: String,
   simpleRecords: Number,
   resmatch: String,
+  individualPredition : Boolean,
   club : {type: mongoose.Schema.Types.ObjectId, ref: 'Club'}
 });
 

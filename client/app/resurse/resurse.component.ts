@@ -24,6 +24,7 @@ export class ResurseComponent implements OnInit {
   team1: any;
   team2: any;
   propabilityObjs: any;
+  result: any;
 
   addCatForm: FormGroup;
   name = new FormControl('', Validators.required);
@@ -62,6 +63,16 @@ export class ResurseComponent implements OnInit {
       }
     );
   }
+  
+  setToControllerR (result){
+    this.result = result
+  }
+  saveResult(item){
+    this.resurseService.saveResult({id: item._id, result : this.result, prediction: item.prediction }).subscribe(date =>{
+      item.resmatch = date.resmatch;
+      item.individualPredition = date.individualPredition;
+    })
+  };
   getPrediction () {
     if (((this.arrayT.indexOf('1') > -1) || (this.arrayT.indexOf('1X') > -1))&&((this.arrayT.indexOf('2') > -1) || (this.arrayT.indexOf('X2') > -1))){
       this.match.prediction ='NO PREDICTION';

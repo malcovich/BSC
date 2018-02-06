@@ -36,5 +36,7 @@ export class ResurseService {
   addSimpleNames(obj): Observable<any> {
     return this.http.post<any>('/api/addSimpleNames',obj);
   }
-
+  saveResult(obj): Observable<any> {
+    return this.http.post<any>('/api/saveResult',obj);
+  }
 }

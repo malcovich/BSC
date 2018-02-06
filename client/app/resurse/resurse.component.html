@@ -26,6 +26,7 @@
             <th scope="col">avarage Goal</th>
             <th scope="col">propabilityOver</th>
             <th scope="col">RESULT</th>
+            <th scope="col">individualPredition</th>
             <th scope="col">Actions</th>
           </tr>
         </thead>
@@ -42,10 +43,16 @@
             <td>{{res.avarageGoal}}</td>
             <td>{{res.propabilityOver}}</td> 
             <td><b>{{res.resmatch}}</b></td>
+            <td><b>{{res.individualPredition}}</b></td>
             <td>  <button class="btn btn-outline-success" 
               *ngIf="canAddSimpleClubNames(res.team1,res.team2)"
               (click) = "saveSimpleNames(res.team1,res.team2)">Add</button> </td> 
-          </tr>
+            <td>  <button class="btn btn-outline-success" 
+              (click) = "saveResult(res)">save Result</button> </td> 
+            <td>  <button class="btn btn-outline-success" 
+              *ngIf="res.resurse == 'statarea'"
+              (click) = "setToControllerR(res.resmatch)">Set</button> </td> 
+        </tr>
         </tbody>
       </table>
       <h3>Propability list :</h3>

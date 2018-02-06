@@ -16,33 +16,9 @@ export default class ResursesCtrl extends BaseCtrl {
     var team2 = req.body.team2;
     var club = req.body.club;
     var matchId =  req.body.id;
-   
     var simp = [];
     var propability = [];
-    // Resurses.find({'club': club}).exec((err, simple) =>{
-    //   Resurses.find({ "club" : { "$exists" : false }}).exec(function(err, listPredictions) {
-    //     listPredictions.forEach(element =>{
-    //       let a = wuzzy.tanimoto(
-    //         team1,
-    //         element.team1
-    //       );
-    //       let b = wuzzy.tanimoto(
-    //         team2,
-    //         element.team2
-    //       );
-        
-    //       if (a >= 0.2 && b >= 0.2){
-    //         propability.push(element);
-    //       }
-    //     })
-    //       // }
-    //     res.json({'same' : simple, 'prop': propability});
-    //   })
-    // })
-
-
     var forFront = [];
-    var stopWord = ['FC', 'AFC', 'SC', 'CD', 'US', 'PFC','FBC', 'SV', 'UC', 'CF'];
     Resurses.find({}).exec((err,resurses)=>{
       Resurses.findById(matchId).exec((err, match)=>{
         var sim = [];
@@ -50,32 +26,34 @@ export default class ResursesCtrl extends BaseCtrl {
         resurses.forEach((item, number) =>{
           var copyTeam2;
           if (!item.isSeted && (match.matchTime == item.matchTime) && (match.resurse !== item.resurse) && (item.team2 !== undefined) && ((match.resurse !== 'over25tips')  && (match.prediction !== ''))) {
-            var last3 = item.team2.substring(item.team2.length - 3, item.team2.length);
-            var last2 = item.team2.substring(item.team2.length - 2, item.team2.length);
-            var first2 = item.team2.substring(0, 2);
-            if(stopWord.indexOf(last3) !== -1  && item.team2[item.team2.length - 4] == ' ') {
-              copyTeam2 = item.team2.substring(0, item.team2.length - 3);
-            }
-            if(stopWord.indexOf(first2) !== -1  && item.team2[2] == ' ') {
-              copyTeam2 = item.team2.substring(2, item.team2.length - 1);
-            }
-            if(stopWord.indexOf(last2) !== -1 && item.team2[item.team2.length - 3] == ' ') {
-              copyTeam2 = item.team2.substring(0, item.team2.length - 2);
-            }else {
-              copyTeam2 = item.team2;
-            }
-            let a = wuzzy.tanimoto(
-              match.team1.replace(/[0-9]/g, ''),
-              item.team1.replace(/[0-9]/g, '')
-            );
-            let b = wuzzy.tanimoto(
-              match.team2.replace(/[0-9]/g, ''),
-              copyTeam2.replace(/[0-9]/g, '')
-            );
+            copyTeam2 = this.removeStopW(item.team2);
+            let a = this.getTanimoto(match.team1,item.team1); 
+            let b = this.getTanimoto(match.team2,copyTeam2); 
             
             if (a >= 0.47 || b >= 0.47 ){
               resurses[number].isSeted = true;
-              sim.push(item);
+              var arrResurses = sim.map(item => item.resurse);
+              if (arrResurses.indexOf(item.resurse) == -1){
+                sim.push(item);
+              }
+              else {
+                var itemSameResurse = sim[arrResurses.indexOf(item.resurse)];
+                var aa = this.getTanimoto(match.team1, itemSameResurse.team1);
+                var bb = this.getTanimoto(match.team2, itemSameResurse.team2);
+                if (a >= b) {
+                  if (aa >= bb){
+                    if (a > aa) {
+                      sim[arrResurses.indexOf(item.resurse)] = item;
+                    }
+                  }
+                }else{ 
+                  if (bb > aa) {
+                    if (b> bb) {
+                      sim[arrResurses.indexOf(item.resurse)] = item;
+                    }
+                  }
+                }
+              }
             }
           } 
         });
@@ -101,103 +79,9 @@ export default class ResursesCtrl extends BaseCtrl {
       });
     });
   }
-  // getSameItems  = (req, res) => {
-  //   var team1 = req.body.team1;
-  //   var team2 = req.body.team2;
-  //   if(team2[team2.length - 1] == 'C' && team2[team2.length - 2] == 'F'  && team2[team2.length - 3] == ' ') {
-  //     team2 = team2.substring(0, team2.length - 2);
-  //   };
-  //   if(team2[team2.length - 1] == 'C' && team2[team2.length - 2] == 'F'  && team2[team2.length - 3] == 'A' && team2[team2.length - 4] == ' ') {
-  //     team2 = team2.substring(0, team2.length - 3);
-  //   };
-  //   if(team1[team1.length - 1] == 'C' && team1[team1.length - 2] == 'F') {
-  //     team1 = team1.substring(0, team1.length - 2);
-  //   };
-  //   var stopWord = ['FC', 'AFC', 'SC', 'CD', 'US', 'PFC','FBC', 'SV'];
-
-  //   var firstT3 = team2.substring(0, 2);
-  //   if(stopWord.indexOf(firstT3) !== -1  && team2[3] == ' '){
-  //     team2 = team2.substring(2,team2.length - 1);
-  //   }
-  //   team1 = team1.replace(/^\s*/,'').replace(/\s*$/,'');
-  //   team2 = team2.replace(/^\s*/,'').replace(/\s*$/,'');
-  //   var Ro;
-  //   Resurses.find({}).exec(function(err,result) {
-  //     Ro = result;
-  //     var sim = [];
-  //     var copyTeam2;
-  //     var corectB;
-     
-  //     result.forEach(function(item){
-  //       if(
-  //         ((req.body.team1.replace(/^\s*/,'').replace(/\s*$/,'')  == item.team1.replace(/^\s*/,'').replace(/\s*$/,'')) && (req.body.resurse ! = item.resurse)) ||
-  //         ((req.body.team2.replace(/^\s*/,'').replace(/\s*$/,'')  == item.team2.replace(/^\s*/,'').replace(/\s*$/,'')) && (req.body.resurse ! = item.resurse))
-  //       ){
-  //         sim.push(item);
-  //       }else {
-  //       if (item.team2 !== undefined){
-  //         var last3 = item.team2.substring(item.team2.length - 3, item.team2.length);
-  //         var last2 = item.team2.substring(item.team2.length - 2, item.team2.length);
-  //         var first2 = item.team2.substring(0, 2);
-  //         if(stopWord.indexOf(last3) !== -1  && item.team2[item.team2.length - 4] == ' ') {
-  //           copyTeam2 = item.team2.substring(0, item.team2.length - 3);
-  //           copyTeam2 = copyTeam2.replace(/^\s*/,'').replace(/\s*$/,'');
-  //         }
-  //         if(stopWord.indexOf(first2) !== -1  && item.team2[2] == ' ') {
-  //           copyTeam2 = item.team2.substring(2, item.team2.length - 1);
-  //           copyTeam2 = copyTeam2.replace(/^\s*/,'').replace(/\s*$/,'');
-  //         }
-  //         if(stopWord.indexOf(last2) !== -1 && item.team2[item.team2.length - 3] == ' ') {
-  //           copyTeam2 = item.team2.substring(0, item.team2.length - 2);
-  //           copyTeam2 = copyTeam2.replace(/^\s*/,'').replace(/\s*$/,'');
-  //         } else {
-  //           copyTeam2 = item.team2;
-  //           copyTeam2 = copyTeam2.replace(/^\s*/,'').replace(/\s*$/,'');
-  //         };
-  //         var lengthWorld = copyTeam2.split(' ').length;
-  //         if (lengthWorld == 1) {
-  //           corectB = 0.6;
-  //         } else {
-  //           corectB = 0.39;
-  //         }
-  //         let a = wuzzy.tanimoto(
-  //           team1,
-  //           item.team1
-  //         );
-  //         let b = wuzzy.tanimoto(
-  //           team2,
-  //           copyTeam2
-  //         );
-  //         if (a >= 0.39  && b >= corectB){
-  //           sim.push(item);
-  //         }
-  //       }
-  //       }
-  //     })
-  //     if (sim.length == 0 ){
-  //       Ro.forEach(function(item){
-  //       if (item.team2 !== undefined){
-  //         let a = wuzzy.tanimoto(
-  //           team1,
-  //           item.team1
-  //         );
-  //         let b = wuzzy.tanimoto(
-  //           req.body.team2,
-  //           item.team2
-  //         );
-  //         if (a >= 0.55  || b >= 0.55 ){
-  //           sim.push(item);
-  //         }
-  //       }
-  //      })
-  //      }
-  //      res.json(sim);
-  //   })
-  // }
 
   getAllWithSame = (req, res) => {
     var forFront = [];
-    var stopWord = ['FC', 'AFC', 'SC', 'CD', 'US', 'PFC','FBC', 'SV', 'UC', 'CF'];
     Resurses.find({}).exec((err,resurses)=>{
       resurses.forEach((r, index)=>{
         if(!r.isSeted && ((r.resurse !== 'over25tips')  && (r.prediction !== ''))){
@@ -206,54 +90,61 @@ export default class ResursesCtrl extends BaseCtrl {
           resurses.forEach((item, number) =>{
             var copyTeam2;
             if (!item.isSeted && (r.matchTime == item.matchTime) && (r.resurse !== item.resurse) && (item.team2 !== undefined) && ((r.resurse !== 'over25tips')  && (r.prediction !== ''))) {
-              var last3 = item.team2.substring(item.team2.length - 3, item.team2.length);
-              var last2 = item.team2.substring(item.team2.length - 2, item.team2.length);
-              var first2 = item.team2.substring(0, 2);
-              if(stopWord.indexOf(last3) !== -1  && item.team2[item.team2.length - 4] == ' ') {
-                copyTeam2 = item.team2.substring(0, item.team2.length - 3);
-              }
-              if(stopWord.indexOf(first2) !== -1  && item.team2[2] == ' ') {
-                copyTeam2 = item.team2.substring(2, item.team2.length - 1);
-              }
-              if(stopWord.indexOf(last2) !== -1 && item.team2[item.team2.length - 3] == ' ') {
-                copyTeam2 = item.team2.substring(0, item.team2.length - 2);
-             }else {
-                copyTeam2 = item.team2;
-             }
-              let a = wuzzy.tanimoto(
-                r.team1.replace(/[0-9]/g, ''),
-                item.team1.replace(/[0-9]/g, '')
-              );
-              let b = wuzzy.tanimoto(
-                r.team2.replace(/[0-9]/g, ''),
-                copyTeam2.replace(/[0-9]/g, '')
-              );
-              
+              copyTeam2 = this.removeStopW(item.team2);
+              let a = this.getTanimoto(r.team1,item.team1); 
+              let b = this.getTanimoto(r.team2,copyTeam2); 
               if (a >= 0.47 || b >= 0.47 ){
                 resurses[number].isSeted = true;
                 sim.push(item);
               }
             } 
           });
-          forFront.push({'item': r, 'simples':  sim});
+          if (sim.length > 2){
+            forFront.push({'item': r, 'simples':  sim});
+          }
           } 
         })
        res.json(forFront) 
     })
-  } 
+  }
+  getTanimoto = (team1, team2) => {
+    return wuzzy.tanimoto(
+      team1.replace(/[0-9]/g, ''),
+      team2.replace(/[0-9]/g, '')
+    );
+  }
+  removeStopW = (team) => {
+    var copyTeam2;
+    var last3 = team.substring(team.length - 3, team.length);
+    var last2 = team.substring(team.length - 2, team.length);
+    var first2 = team.substring(0, 2);
+    var stopWord = ['FC', 'AFC', 'SC', 'CD', 'US', 'PFC','FBC', 'SV', 'UC', 'CF'];
+    if(stopWord.indexOf(last3) !== -1  && team[team.length - 4] == ' ') {
+      copyTeam2 = team.substring(0,team.length - 3);
+    }
+    if(stopWord.indexOf(first2) !== -1  && team[2] == ' ') {
+      copyTeam2 = team.substring(2, team.length - 1);
+    }
+    if(stopWord.indexOf(last2) !== -1 && team[team.length - 3] == ' ') {
+      copyTeam2 = team.substring(0, team.length - 2);
+    }else {
+      copyTeam2 = team;
+    }
+    return copyTeam2;
+  }
   
   getResurse  = (req, res) => {
     let url = 'https://www.forebet.com/en/football-tips-and-predictions-for-today';
-    let url1 = 'https://www.bettingtips1x2.com/tips/2018-02-05.html';
+    let url1 = 'https://www.bettingtips1x2.com/tips/2018-02-06.html';
     let url2 = 'https://www.over25tips.com/free-football-betting-tips/';
     let url3 = 'http://www.zulubet.com/';
     let url4 = 'http://www.betstudy.com/predictions/';
-    let url5 = 'http://www.iambettor.com/football-predictions-2018-02-05';
+    let url5 = 'http://www.iambettor.com/football-predictions-2018-02-06';
     let url6 = 'http://www.vitibet.com/?clanek=quicktips&sekce=fotbal';
     let url7 = 'http://www.bet-portal.net/en#axzz55OuMTyKO';
     let url8 = 'http://www.statarea.com/predictions';
 
-    let url9 = 'http://www.statarea.com/predictions/date/2018-01-30/competition';
+    let url9 = 'http://www.statarea.com/predictions/date/2018-02-05/competition';
 
     // request(url, function(error, response, html){
     //   if(!error){
@@ -593,33 +484,33 @@ export default class ResursesCtrl extends BaseCtrl {
     //     })
     //   }
     // })
-    // request(url9, function(error, response, html){
-    //   if(!error){
-    //     var $ = cheerio.load(html);
-    //     let resurse = 'statarea';
-    //     $('.datacotainer').filter(function(){
-    //       var data = $(this);
-    //        var trs = data.find('.match');
-    //         trs.each(function(i, elem){
-    //           var prediction = trs.eq(i).find('td').eq(3).find('div').text();
-    //           var cop = {
-    //             'team1': trs.eq(i).find('.teams').find('.hostteam > .goals').text(),
-    //             'team2': trs.eq(i).find('.teams').find('.guestteam > .goals').text(),
-    //             'name1': trs.eq(i).find('.teams').find('.hostteam > .name').text(),
-    //           }
-    //           console.log(cop)
-    //           Resurses.find({ $and : [{'resurse':'statarea'}, {'team1': cop.name1}]}).exec(function(err, resut){
-    //           if (resut.length) {
-    //             resut[0].resmatch = cop.team1 + '-' + cop.team2;
-    //             resut[0].save(function(err,item) {
-    //               console.log('save', item)
-    //             });
-    //           } 
-    //          })
-    //         })
-    //     })
-    //   }
-    // })
+    request(url9, function(error, response, html){
+      if(!error){
+        var $ = cheerio.load(html);
+        let resurse = 'statarea';
+        $('.datacotainer').filter(function(){
+          var data = $(this);
+           var trs = data.find('.match');
+            trs.each(function(i, elem){
+              var prediction = trs.eq(i).find('td').eq(3).find('div').text();
+              var cop = {
+                'team1': trs.eq(i).find('.teams').find('.hostteam > .goals').text(),
+                'team2': trs.eq(i).find('.teams').find('.guestteam > .goals').text(),
+                'name1': trs.eq(i).find('.teams').find('.hostteam > .name').text(),
+              }
+              console.log(cop)
+              Resurses.find({ $and : [{'resurse':'statarea'}, {'team1': cop.name1}]}).exec(function(err, resut){
+              if (resut.length) {
+                resut[0].resmatch = cop.team1 + '-' + cop.team2;
+                resut[0].save(function(err,item) {
+                  console.log('save', item)
+                });
+              } 
+             })
+            })
+        })
+      }
+    })
   }
 
   addClubs = (req, res, next) => {
@@ -652,6 +543,42 @@ export default class ResursesCtrl extends BaseCtrl {
         res.json({'team1' : teamHome, 'team2': teamAway});
       })
     });
+  }
+
+  saveResult = (req, res) =>{
+    var arrayOFResults = []
+    var arr = ['1', '2','X','1X','X2','12'];
+   
+    Resurses.findById(req.body.id).exec((err, resurse) => {
+      if (req.body.result){
+        resurse.resmatch = req.body.result;
+      }
+      var arrayOfGoals = resurse.resmatch.split('-');
+      if (arrayOfGoals[0] > arrayOfGoals[1]){
+        arrayOFResults.push('1');
+        arrayOFResults.push('1X');
+        arrayOFResults.push('12');
+      }else if  (arrayOfGoals[0] < arrayOfGoals[1]){
+        arrayOFResults.push('2');
+        arrayOFResults.push('12');
+        arrayOFResults.push('X2');
+      }else {
+        arrayOFResults.push('X');
+        arrayOFResults.push('1X');
+        arrayOFResults.push('X2');
+      }
+    
+      if(arr.indexOf(req.body.prediction) !== -1){
+        if (arrayOFResults.indexOf(req.body.prediction) != -1){
+          resurse.individualPredition = true;
+        } else {
+          resurse.individualPredition = false;
+        }
+      }
+      resurse.save((err, savedItem) => {
+        res.json(savedItem);
+      })
+    })
   }
 
   addSimpleNames = (req, res) => {
