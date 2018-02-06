@@ -30,7 +30,8 @@ export default class ResursesCtrl extends BaseCtrl {
             let a = this.getTanimoto(match.team1,item.team1); 
             let b = this.getTanimoto(match.team2,copyTeam2); 
             
-            if (a >= 0.47 || b >= 0.47 ){
+            if ((a >= 0.47 && b >= 0.25 )|| (a >= 0.25 && b >= 0.47 )){
+              console.log(a,b,item)
               resurses[number].isSeted = true;
               var arrResurses = sim.map(item => item.resurse);
               if (arrResurses.indexOf(item.resurse) == -1){
@@ -94,6 +95,7 @@ export default class ResursesCtrl extends BaseCtrl {
               let a = this.getTanimoto(r.team1,item.team1); 
               let b = this.getTanimoto(r.team2,copyTeam2); 
               if (a >= 0.47 || b >= 0.47 ){
+                
                 resurses[number].isSeted = true;
                 sim.push(item);
               }
@@ -118,7 +120,7 @@ export default class ResursesCtrl extends BaseCtrl {
     var last3 = team.substring(team.length - 3, team.length);
     var last2 = team.substring(team.length - 2, team.length);
     var first2 = team.substring(0, 2);
-    var stopWord = ['FC', 'AFC', 'SC', 'CD', 'US', 'PFC','FBC', 'SV', 'UC', 'CF'];
+    var stopWord = ['FC', 'AFC', 'SC', 'CD', 'US', 'PFC','FBC', 'SV', 'UC', 'CF', 'CA'];
     if(stopWord.indexOf(last3) !== -1  && team[team.length - 4] == ' ') {
       copyTeam2 = team.substring(0,team.length - 3);
     }
@@ -484,33 +486,33 @@ export default class ResursesCtrl extends BaseCtrl {
     //     })
     //   }
     // })
-    request(url9, function(error, response, html){
-      if(!error){
-        var $ = cheerio.load(html);
-        let resurse = 'statarea';
-        $('.datacotainer').filter(function(){
-          var data = $(this);
-           var trs = data.find('.match');
-            trs.each(function(i, elem){
-              var prediction = trs.eq(i).find('td').eq(3).find('div').text();
-              var cop = {
-                'team1': trs.eq(i).find('.teams').find('.hostteam > .goals').text(),
-                'team2': trs.eq(i).find('.teams').find('.guestteam > .goals').text(),
-                'name1': trs.eq(i).find('.teams').find('.hostteam > .name').text(),
-              }
-              console.log(cop)
-              Resurses.find({ $and : [{'resurse':'statarea'}, {'team1': cop.name1}]}).exec(function(err, resut){
-              if (resut.length) {
-                resut[0].resmatch = cop.team1 + '-' + cop.team2;
-                resut[0].save(function(err,item) {
-                  console.log('save', item)
-                });
-              } 
-             })
-            })
-        })
-      }
-    })
+    // request(url9, function(error, response, html){
+    //   if(!error){
+    //     var $ = cheerio.load(html);
+    //     let resurse = 'statarea';
+    //     $('.datacotainer').filter(function(){
+    //       var data = $(this);
+    //        var trs = data.find('.match');
+    //         trs.each(function(i, elem){
+    //           var prediction = trs.eq(i).find('td').eq(3).find('div').text();
+    //           var cop = {
+    //             'team1': trs.eq(i).find('.teams').find('.hostteam > .goals').text(),
+    //             'team2': trs.eq(i).find('.teams').find('.guestteam > .goals').text(),
+    //             'name1': trs.eq(i).find('.teams').find('.hostteam > .name').text(),
+    //           }
+    //           console.log(cop)
+    //           Resurses.find({ $and : [{'resurse':'statarea'}, {'team1': cop.name1}]}).exec(function(err, resut){
+    //           if (resut.length) {
+    //             resut[0].resmatch = cop.team1 + '-' + cop.team2;
+    //             resut[0].save(function(err,item) {
+    //               console.log('save', item)
+    //             });
+    //           } 
+    //          })
+    //         })
+    //     })
+    //   }
+    // })
   }
 
   addClubs = (req, res, next) => {
@@ -574,7 +576,44 @@ export default class ResursesCtrl extends BaseCtrl {
         } else {
           resurse.individualPredition = false;
         }
-      }
+      }else {
+        if (req.body.prediction.trim() == 'Under 2.5 goals' || req.body.prediction.trim() == 'Under 2.5' || req.body.prediction.trim() == 'under (2.5)'	 ){
+          if (parseInt(arrayOfGoals[0]) + parseInt(arrayOfGoals[1]) > 2) {
+            resurse.individualPredition = false;
+          }else{ 
+            resurse.individualPredition = true;
+          }
+        }
+        if (req.body.prediction.trim() == 'Over 2.5 goals' || req.body.prediction.trim() == 'over (2.5)' || req.body.prediction.trim() == 'Over 2.5'	){
+          if (parseInt(arrayOfGoals[0]) + parseInt(arrayOfGoals[1]) > 2) {
+            resurse.individualPredition = true;
+          }else{ 
+            resurse.individualPredition = false;
+          }
+        }
+        if (req.body.prediction.trim() == 'over (3.5)'){
+          if (parseInt(arrayOfGoals[0]) + parseInt(arrayOfGoals[1]) > 3) {
+            resurse.individualPredition = true;
+          }else{ 
+            resurse.individualPredition = false;
+          }
+        }
+        
+        if (req.body.prediction.trim() == 'no'){
+          if (parseInt(arrayOfGoals[0]) > 0 &&  parseInt(arrayOfGoals[1]) > 0) {
+            resurse.individualPredition = false;
+          }else{ 
+            resurse.individualPredition = true;
+          }
+        }
+        if (req.body.prediction.trim() == 'yes'){
+          if (parseInt(arrayOfGoals[0]) > 0 &&  parseInt(arrayOfGoals[1]) > 0) {
+            resurse.individualPredition = true;
+          }else{ 
+            resurse.individualPredition = false;
+          }
+        }
+      } 
       resurse.save((err, savedItem) => {
         res.json(savedItem);
       })

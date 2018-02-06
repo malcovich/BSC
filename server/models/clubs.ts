@@ -7,7 +7,8 @@ const clubSchema = new mongoose.Schema({
   name4: String,
   name5: String,
   name: String,
-  simpleNames: []
+  simpleNames: [],
+  tournament : String
 });
 
 const Club = mongoose.model('Club', clubSchema);
