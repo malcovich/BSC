@@ -31,7 +31,6 @@ export default class ResursesCtrl extends BaseCtrl {
             let b = this.getTanimoto(match.team2,copyTeam2); 
             
             if ((a >= 0.47 && b >= 0.25 )|| (a >= 0.25 && b >= 0.47 )){
-              console.log(a,b,item)
               resurses[number].isSeted = true;
               var arrResurses = sim.map(item => item.resurse);
               if (arrResurses.indexOf(item.resurse) == -1){
@@ -55,6 +54,8 @@ export default class ResursesCtrl extends BaseCtrl {
                   }
                 }
               }
+            }else if ((a >= 0.40 && b >= 0.20 )|| (a >= 0.20 && b >= 0.40 )){
+                propability.push(item)
             }
           } 
         });
@@ -94,11 +95,35 @@ export default class ResursesCtrl extends BaseCtrl {
               copyTeam2 = this.removeStopW(item.team2);
               let a = this.getTanimoto(r.team1,item.team1); 
               let b = this.getTanimoto(r.team2,copyTeam2); 
-              if (a >= 0.47 || b >= 0.47 ){
-                
-                resurses[number].isSeted = true;
+             
+
+            if ((a >= 0.47 && b >= 0.25 )|| (a >= 0.25 && b >= 0.47 )){
+              resurses[number].isSeted = true;
+              var arrResurses = sim.map(item => item.resurse);
+              if (arrResurses.indexOf(item.resurse) == -1){
                 sim.push(item);
               }
+              else {
+                var itemSameResurse = sim[arrResurses.indexOf(item.resurse)];
+                var aa = this.getTanimoto(r.team1, itemSameResurse.team1);
+                var bb = this.getTanimoto(r.team2, itemSameResurse.team2);
+                if (a >= b) {
+                  if (aa >= bb){
+                    if (a > aa) {
+                      sim[arrResurses.indexOf(item.resurse)] = item;
+                    }
+                  }
+                }else{ 
+                  if (bb > aa) {
+                    if (b> bb) {
+                      sim[arrResurses.indexOf(item.resurse)] = item;
+                    }
+                  }
+                }
+              }
+            }
+
+
             } 
           });
           if (sim.length > 2){
@@ -134,19 +159,28 @@ export default class ResursesCtrl extends BaseCtrl {
     }
     return copyTeam2;
   }
+
+  getindIvidual = (req, res) => {
+      Resurses.find().exec((err, list) =>{
+          res.json(list);
+      })
+      // Resurses.find({'individualPredition':{$exists: true}}).exec((err, list) =>{
+      //     res.json(list);
+      // })
+  }
   
   getResurse  = (req, res) => {
     let url = 'https://www.forebet.com/en/football-tips-and-predictions-for-today';
-    let url1 = 'https://www.bettingtips1x2.com/tips/2018-02-07.html';
+    let url1 = 'https://www.bettingtips1x2.com/tips/2018-02-08.html';
     let url2 = 'https://www.over25tips.com/free-football-betting-tips/';
     let url3 = 'http://www.zulubet.com/';
     let url4 = 'http://www.betstudy.com/predictions/';
-    let url5 = 'http://www.iambettor.com/football-predictions-2018-02-07';
+    let url5 = 'http://www.iambettor.com/football-predictions-2018-02-08';
     let url6 = 'http://www.vitibet.com/?clanek=quicktips&sekce=fotbal';
     let url7 = 'http://www.bet-portal.net/en#axzz55OuMTyKO';
     let url8 = 'http://www.statarea.com/predictions';
 
-    let url9 = 'http://www.statarea.com/predictions/date/2018-02-06/competition';
+    let url9 = 'http://www.statarea.com/predictions/date/2018-02-08/competition';
 
     // request(url, function(error, response, html){
     //   if(!error){
@@ -590,6 +624,14 @@ export default class ResursesCtrl extends BaseCtrl {
           }else{ 
             resurse.individualPredition = false;
           }
+        }
+        if (req.body.prediction.trim() == 'Over 2.5 goals and Btts'){
+            if ((parseInt(arrayOfGoals[0]) + parseInt(arrayOfGoals[1]) > 2) &&(parseInt(arrayOfGoals[0]) > 0 &&  parseInt(arrayOfGoals[1]) > 0)) {
+            resurse.individualPredition = true;
+          }else{ 
+            resurse.individualPredition = false;
+          }
+
         }
         if (req.body.prediction.trim() == 'over (3.5)'){
           if (parseInt(arrayOfGoals[0]) + parseInt(arrayOfGoals[1]) > 3) {

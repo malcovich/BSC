@@ -1,0 +1,149 @@
+<h1>Dashboard </h1>
+{{list.length}}
+<p>{{listT.length}}</p>
+<p>{{listF.length}}</p>
+
+ <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col" class="teams">Teams</th>
+            <th scope="col">Resurses</th>
+            <th scope="col">1%</th>
+            <th scope="col">x%</th>
+            <th scope="col">2%</th>
+            <th scope="col">Prediction</th>
+            <th scope="col">Correct Score</th>
+            <th scope="col">avarage Goal</th>
+            <th scope="col">propabilityOver</th>
+            <th scope="col">RESULT</th>
+            <th scope="col">individualPredition</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let res of listT;let i = index" >
+            <th scope="row">{{i+1}}</th>
+            <td><a [routerLink]="[res['_id']]">{{res.team1}} - {{res.team2}}</a></td>
+            <td>{{res.resurse}}</td>
+            <td>{{res.propability1}}</td>
+            <td>{{res.propabilityX}}</td>
+            <td>{{res.propability2}}</td>
+            <td>{{res.prediction}}</td>
+            <td>{{res.correctScore}}</td>
+            <td>{{res.avarageGoal}}</td>
+            <td>{{res.propabilityOver}}</td> 
+            <td><b>{{res.resmatch}}</b></td>
+            <td><b>{{res.individualPredition}}</b></td>
+        </tr>
+        </tbody>
+      </table>
+
+
+       <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col" class="teams">Teams</th>
+            <th scope="col">Resurses</th>
+            <th scope="col">1%</th>
+            <th scope="col">x%</th>
+            <th scope="col">2%</th>
+            <th scope="col">Prediction</th>
+            <th scope="col">Correct Score</th>
+            <th scope="col">avarage Goal</th>
+            <th scope="col">propabilityOver</th>
+            <th scope="col">RESULT</th>
+            <th scope="col">individualPredition</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let res of listF ;let i = index" >
+            <th scope="row">{{i+1}}</th>
+            <td><a [routerLink]="[res['_id']]">{{res.team1}} - {{res.team2}}</a></td>
+            <td>{{res.resurse}}</td>
+            <td>{{res.propability1}}</td>
+            <td>{{res.propabilityX}}</td>
+            <td>{{res.propability2}}</td>
+            <td>{{res.prediction}}</td>
+            <td>{{res.correctScore}}</td>
+            <td>{{res.avarageGoal}}</td>
+            <td>{{res.propabilityOver}}</td> 
+            <td><b>{{res.resmatch}}</b></td>
+            <td><b>{{res.individualPredition}}</b></td>
+        </tr>
+        </tbody>
+      </table>
+
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col" class="teams">Teams</th>
+            <th scope="col">Resurses</th>
+            <th scope="col">1%</th>
+            <th scope="col">x%</th>
+            <th scope="col">2%</th>
+            <th scope="col">Prediction</th>
+            <th scope="col">Correct Score</th>
+            <th scope="col">avarage Goal</th>
+            <th scope="col">propabilityOver</th>
+            <th scope="col">RESULT</th>
+            <th scope="col">individualPredition</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let res of listA;let i = index" >
+            <th scope="row">{{i+1}}</th>
+            <td><a [routerLink]="[res['_id']]">{{res.team1}} - {{res.team2}}</a></td>
+            <td>{{res.resurse}}</td>
+            <td>{{res.propability1}}</td>
+            <td>{{res.propabilityX}}</td>
+            <td>{{res.propability2}}</td>
+            <td>{{res.prediction}}</td>
+            <td>{{res.correctScore}}</td>
+            <td>{{res.avarageGoal}}</td>
+            <td>{{res.propabilityOver}}</td> 
+            <td><b>{{res.resmatch}}</b></td>
+            <td><b>{{res.individualPredition}}</b></td>
+        </tr>
+        </tbody>
+      </table>
+<table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col" class="teams">Teams</th>
+            <th scope="col">Resurses</th>
+            <th scope="col">1%</th>
+            <th scope="col">x%</th>
+            <th scope="col">2%</th>
+            <th scope="col">Prediction</th>
+            <th scope="col">Correct Score</th>
+            <th scope="col">avarage Goal</th>
+            <th scope="col">propabilityOver</th>
+            <th scope="col">RESULT</th>
+            <th scope="col">individualPredition</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let res of listB;let i = index" >
+            <th scope="row">{{i+1}}</th>
+            <td><a [routerLink]="[res['_id']]">{{res.team1}} - {{res.team2}}</a></td>
+            <td>{{res.resurse}}</td>
+            <td>{{res.propability1}}</td>
+            <td>{{res.propabilityX}}</td>
+            <td>{{res.propability2}}</td>
+            <td>{{res.prediction}}</td>
+            <td>{{res.correctScore}}</td>
+            <td>{{res.avarageGoal}}</td>
+            <td>{{res.propabilityOver}}</td> 
+            <td><b>{{res.resmatch}}</b></td>
+            <td><b>{{res.individualPredition}}</b></td>
+        </tr>
+        </tbody>
+      </table>

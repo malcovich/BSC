@@ -9,7 +9,8 @@ import * as wuzzy from 'wuzzy';
 import * as async from 'async';
 
 export default class ClubCtrl extends BaseCtrl {
-  model = Resurses;
+  model = Club;
   getSameItems  = (req, res) => {
   }
+  
 }

@@ -1,0 +1,5123 @@
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d2200"), 
+    "team1" : "Belo Jardim", 
+    "team2" : "Vitoria PE", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.832+0000"), 
+    "prediction" : "X", 
+    "propability1" : "1: 21%", 
+    "propabilityX" : "X: 55%", 
+    "propability2" : "2: 25%", 
+    "matchTime" : "25:00", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d2201"), 
+    "team1" : "Gremio RS", 
+    "team2" : "Brasil de Pelotas RS", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.841+0000"), 
+    "prediction" : "12", 
+    "propability1" : "1: 41%", 
+    "propabilityX" : "X: 16%", 
+    "propability2" : "2: 43%", 
+    "matchTime" : "25:45", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d2202"), 
+    "team1" : "Sao Paulo SP", 
+    "team2" : "Bragantino SP", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.847+0000"), 
+    "prediction" : "12", 
+    "propability1" : "1: 47%", 
+    "propabilityX" : "X: 13%", 
+    "propability2" : "2: 40%", 
+    "matchTime" : "25:45", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d2203"), 
+    "team1" : "Nacional de Football", 
+    "team2" : "Chapecoense SC", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.854+0000"), 
+    "prediction" : "12", 
+    "propability1" : "1: 33%", 
+    "propabilityX" : "X: 20%", 
+    "propability2" : "2: 47%", 
+    "matchTime" : "25:45", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d2204"), 
+    "team1" : "CA Nacional Potosi", 
+    "team2" : "The Strongest", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.860+0000"), 
+    "prediction" : "X2", 
+    "propability1" : "1: 24%", 
+    "propabilityX" : "X: 40%", 
+    "propability2" : "2: 36%", 
+    "matchTime" : "2:00", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d2205"), 
+    "team1" : "Club Atletico Acassuso", 
+    "team2" : "Defensores de Belgrano", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.867+0000"), 
+    "prediction" : "X", 
+    "propability1" : "1: 27%", 
+    "propabilityX" : "X: 55%", 
+    "propability2" : "2: 18%", 
+    "matchTime" : "2:00", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d2206"), 
+    "team1" : "Atlético Nacional Medellin", 
+    "team2" : "Millonarios FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.872+0000"), 
+    "prediction" : "1X", 
+    "propability1" : "1: 53%", 
+    "propabilityX" : "X: 30%", 
+    "propability2" : "2: 17%", 
+    "matchTime" : "2:05", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d2207"), 
+    "team1" : "Godoy Cruz A.T.", 
+    "team2" : "Atletico Lanus", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.876+0000"), 
+    "prediction" : "1X", 
+    "propability1" : "1: 49%", 
+    "propabilityX" : "X: 36%", 
+    "propability2" : "2: 14%", 
+    "matchTime" : "2:30", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d2208"), 
+    "team1" : "CD Olimpia", 
+    "team2" : "CD Honduras", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.881+0000"), 
+    "prediction" : "1", 
+    "propability1" : "1: 62%", 
+    "propabilityX" : "X: 15%", 
+    "propability2" : "2: 24%", 
+    "matchTime" : "3:00", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d2209"), 
+    "team1" : "Alianza FC", 
+    "team2" : "CD Arabe Unido", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.886+0000"), 
+    "prediction" : "X2", 
+    "propability1" : "1: 20%", 
+    "propabilityX" : "X: 54%", 
+    "propability2" : "2: 26%", 
+    "matchTime" : "3:00", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d220a"), 
+    "team1" : "CS Herediano", 
+    "team2" : "CS Cartagines", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.889+0000"), 
+    "prediction" : "1", 
+    "propability1" : "1: 60%", 
+    "propabilityX" : "X: 13%", 
+    "propability2" : "2: 27%", 
+    "matchTime" : "4:00", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d220c"), 
+    "team1" : "Saipa Karaj FC", 
+    "team2" : "Zob Ahan FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.898+0000"), 
+    "prediction" : "X", 
+    "propability1" : "1: 25%", 
+    "propabilityX" : "X: 55%", 
+    "propability2" : "2: 20%", 
+    "matchTime" : "14:30", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d220b"), 
+    "team1" : "Malavan Bandar Anzali FC", 
+    "team2" : "Saba Qom", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.894+0000"), 
+    "prediction" : "12", 
+    "propability1" : "1: 50%", 
+    "propabilityX" : "X: 23%", 
+    "propability2" : "2: 27%", 
+    "matchTime" : "12:30", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d220d"), 
+    "team1" : "Al Wahda", 
+    "team2" : "Hatta", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.903+0000"), 
+    "prediction" : "1", 
+    "propability1" : "1: 64%", 
+    "propabilityX" : "X: 12%", 
+    "propability2" : "2: 24%", 
+    "matchTime" : "15:30", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d220e"), 
+    "team1" : "Al-Najma Manama", 
+    "team2" : "Al Ittihad Bhr", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.909+0000"), 
+    "prediction" : "1", 
+    "propability1" : "1: 73%", 
+    "propabilityX" : "X: 15%", 
+    "propability2" : "2: 12%", 
+    "matchTime" : "17:10", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d220f"), 
+    "team1" : "Al-Jazeera", 
+    "team2" : "Al Hussein Irbid", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.915+0000"), 
+    "prediction" : "1", 
+    "propability1" : "1: 78%", 
+    "propabilityX" : "X: 13%", 
+    "propability2" : "2: 9%", 
+    "matchTime" : "17:30", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d2210"), 
+    "team1" : "AL AIN FC", 
+    "team2" : "Emirates", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.918+0000"), 
+    "prediction" : "1", 
+    "propability1" : "1: 65%", 
+    "propabilityX" : "X: 16%", 
+    "propability2" : "2: 19%", 
+    "matchTime" : "18:00", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d2211"), 
+    "team1" : "ADO Den Haag", 
+    "team2" : "Vitesse Arnhem", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.923+0000"), 
+    "prediction" : "12", 
+    "propability1" : "1: 34%", 
+    "propabilityX" : "X: 18%", 
+    "propability2" : "2: 48%", 
+    "matchTime" : "19:30", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d2212"), 
+    "team1" : "NEC Nijmegen", 
+    "team2" : "Jong PSV Eindhoven", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.925+0000"), 
+    "prediction" : "1", 
+    "propability1" : "1: 67%", 
+    "propabilityX" : "X: 21%", 
+    "propability2" : "2: 12%", 
+    "matchTime" : "21:00", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d2213"), 
+    "team1" : "Club Brugge", 
+    "team2" : "Standard Liege", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.928+0000"), 
+    "prediction" : "1", 
+    "propability1" : "1: 70%", 
+    "propabilityX" : "X: 16%", 
+    "propability2" : "2: 14%", 
+    "matchTime" : "21:45", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d2214"), 
+    "team1" : "Feyenoord Rotterdam", 
+    "team2" : "FC Groningen", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.930+0000"), 
+    "prediction" : "1", 
+    "propability1" : "1: 75%", 
+    "propabilityX" : "X: 11%", 
+    "propability2" : "2: 14%", 
+    "matchTime" : "21:45", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5cded2080adb9d2215"), 
+    "team1" : "Valencia CF", 
+    "team2" : "FC Barcelona", 
+    "addedDate" : ISODate("2018-02-08T06:17:00.933+0000"), 
+    "prediction" : "2", 
+    "propability1" : "1: 25%", 
+    "propabilityX" : "X: 15%", 
+    "propability2" : "2: 60%", 
+    "matchTime" : "22:30", 
+    "resurse" : "zulubet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2217"), 
+    "team1" : "Al-Hilal Saudi FC", 
+    "team2" : "Al-Nassr Riyadh", 
+    "matchTime" : "19:20", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.257+0000"), 
+    "prediction" : "1", 
+    "propability1" : "51", 
+    "propabilityX" : "29", 
+    "propability2" : "20", 
+    "propabilityOver" : "85", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2216"), 
+    "team1" : "Valencia", 
+    "team2" : "Barcelona", 
+    "matchTime" : "22:30", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.254+0000"), 
+    "prediction" : "2", 
+    "propability1" : "31", 
+    "propabilityX" : "26", 
+    "propability2" : "43", 
+    "propabilityOver" : "92", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d221b"), 
+    "team1" : "Club Brugge", 
+    "team2" : "Standard Liege", 
+    "matchTime" : "21:45", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.272+0000"), 
+    "prediction" : "1", 
+    "propability1" : "59", 
+    "propabilityX" : "24", 
+    "propability2" : "17", 
+    "propabilityOver" : "90", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d221e"), 
+    "team1" : "Nacional De Football", 
+    "team2" : "Chapecoense", 
+    "matchTime" : "01:45", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.281+0000"), 
+    "prediction" : "1", 
+    "propability1" : "49", 
+    "propabilityX" : "29", 
+    "propability2" : "22", 
+    "propabilityOver" : "69", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2218"), 
+    "team1" : "Al-Ahli Jeddah", 
+    "team2" : "Al-Faisaly FC", 
+    "matchTime" : "19:20", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.266+0000"), 
+    "prediction" : "1", 
+    "propability1" : "53", 
+    "propabilityX" : "28", 
+    "propability2" : "19", 
+    "propabilityOver" : "95", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2220"), 
+    "team1" : "Atromitos Athinon", 
+    "team2" : "PAOK", 
+    "matchTime" : "19:30", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.286+0000"), 
+    "prediction" : "X2", 
+    "propability1" : "34", 
+    "propabilityX" : "31", 
+    "propability2" : "35", 
+    "propabilityOver" : "55", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d221f"), 
+    "team1" : "Vasco Da Gama", 
+    "team2" : "Universidad De Concepcion", 
+    "matchTime" : "01:45", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.284+0000"), 
+    "prediction" : "1X", 
+    "propability1" : "52", 
+    "propabilityX" : "35", 
+    "propability2" : "13", 
+    "propabilityOver" : "81", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2223"), 
+    "team1" : "Atlas", 
+    "team2" : "Tampico Madero", 
+    "matchTime" : "05:00", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.295+0000"), 
+    "prediction" : "1", 
+    "propability1" : "46", 
+    "propabilityX" : "27", 
+    "propability2" : "27", 
+    "propabilityOver" : "90", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2219"), 
+    "team1" : "Godoy Cruz", 
+    "team2" : "Lanus", 
+    "matchTime" : "02:30", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.268+0000"), 
+    "prediction" : "1", 
+    "propability1" : "58", 
+    "propabilityX" : "24", 
+    "propability2" : "18", 
+    "propabilityOver" : "60", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2224"), 
+    "team1" : "Zacatepec 1948", 
+    "team2" : "Necaxa", 
+    "matchTime" : "03:00", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.298+0000"), 
+    "prediction" : "1X", 
+    "propability1" : "41", 
+    "propabilityX" : "34", 
+    "propability2" : "25", 
+    "propabilityOver" : "85", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2225"), 
+    "team1" : "Galatasaray", 
+    "team2" : "Konyaspor", 
+    "matchTime" : "19:30", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.310+0000"), 
+    "prediction" : "1", 
+    "propability1" : "67", 
+    "propabilityX" : "22", 
+    "propability2" : "11", 
+    "propabilityOver" : "90", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d221c"), 
+    "team1" : "Feyenoord", 
+    "team2" : "Groningen", 
+    "matchTime" : "21:45", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.275+0000"), 
+    "prediction" : "1", 
+    "propability1" : "68", 
+    "propabilityX" : "21", 
+    "propability2" : "11", 
+    "propabilityOver" : "92", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2228"), 
+    "team1" : "CS Herediano", 
+    "team2" : "CS Cartagines", 
+    "matchTime" : "04:00", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.319+0000"), 
+    "prediction" : "1", 
+    "propability1" : "69", 
+    "propabilityX" : "22", 
+    "propability2" : "9", 
+    "propabilityOver" : "82", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d221a"), 
+    "team1" : "Atletico Nacional", 
+    "team2" : "Millonarios", 
+    "matchTime" : "02:05", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.270+0000"), 
+    "prediction" : "1", 
+    "propability1" : "62", 
+    "propabilityX" : "28", 
+    "propability2" : "10", 
+    "propabilityOver" : "71", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2229"), 
+    "team1" : "Deportivo Saprissa", 
+    "team2" : "Perez Zeledon", 
+    "matchTime" : "04:00", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.321+0000"), 
+    "prediction" : "1", 
+    "propability1" : "57", 
+    "propabilityX" : "25", 
+    "propability2" : "18", 
+    "propabilityOver" : "82", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d222a"), 
+    "team1" : "Municipal Grecia", 
+    "team2" : "Municipal Liberia", 
+    "matchTime" : "23:00", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.324+0000"), 
+    "prediction" : "1", 
+    "propability1" : "56", 
+    "propabilityX" : "29", 
+    "propability2" : "15", 
+    "propabilityOver" : "80", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2221"), 
+    "team1" : "Toluca", 
+    "team2" : "Santos Laguna", 
+    "matchTime" : "04:30", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.289+0000"), 
+    "prediction" : "1", 
+    "propability1" : "50", 
+    "propabilityX" : "29", 
+    "propability2" : "21", 
+    "propabilityOver" : "86", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d221d"), 
+    "team1" : "ADO Den Haag", 
+    "team2" : "Vitesse", 
+    "matchTime" : "19:30", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.278+0000"), 
+    "prediction" : "X2", 
+    "propability1" : "31", 
+    "propabilityX" : "31", 
+    "propability2" : "38", 
+    "propabilityOver" : "83", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2226"), 
+    "team1" : "Al-Rayyan SC", 
+    "team2" : "Al-Sadd", 
+    "matchTime" : "17:50", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.313+0000"), 
+    "prediction" : "12", 
+    "propability1" : "43", 
+    "propabilityX" : "23", 
+    "propability2" : "34", 
+    "propabilityOver" : "95", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d222d"), 
+    "team1" : "CD Olimpia", 
+    "team2" : "CD Honduras", 
+    "matchTime" : "03:00", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.334+0000"), 
+    "prediction" : "1", 
+    "propability1" : "67", 
+    "propabilityX" : "21", 
+    "propability2" : "12", 
+    "propabilityOver" : "75", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d222e"), 
+    "team1" : "Platense FC", 
+    "team2" : "CD Motagua", 
+    "matchTime" : "03:15", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.337+0000"), 
+    "prediction" : "X2", 
+    "propability1" : "30", 
+    "propabilityX" : "32", 
+    "propability2" : "38", 
+    "propabilityOver" : "90", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d222f"), 
+    "team1" : "Real Espana", 
+    "team2" : "Lobos UPNFM", 
+    "matchTime" : "03:00", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.339+0000"), 
+    "prediction" : "1", 
+    "propability1" : "57", 
+    "propabilityX" : "25", 
+    "propability2" : "18", 
+    "propabilityOver" : "90", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2222"), 
+    "team1" : "Puebla", 
+    "team2" : "Cruz Azul", 
+    "matchTime" : "05:00", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.292+0000"), 
+    "prediction" : "X", 
+    "propability1" : "39", 
+    "propabilityX" : "33", 
+    "propability2" : "28", 
+    "propabilityOver" : "73", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d222b"), 
+    "team1" : "Nacional Potosi", 
+    "team2" : "The Strongest", 
+    "matchTime" : "02:00", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.327+0000"), 
+    "prediction" : "1", 
+    "propability1" : "43", 
+    "propabilityX" : "28", 
+    "propability2" : "29", 
+    "propabilityOver" : "92", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2230"), 
+    "team1" : "Vida", 
+    "team2" : "Juticalpa", 
+    "matchTime" : "03:15", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.342+0000"), 
+    "prediction" : "1X", 
+    "propability1" : "51", 
+    "propabilityX" : "30", 
+    "propability2" : "19", 
+    "propabilityOver" : "85", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2232"), 
+    "team1" : "Esteghlal FC", 
+    "team2" : "Sepidrood Rasht", 
+    "matchTime" : "14:30", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.348+0000"), 
+    "prediction" : "1", 
+    "propability1" : "63", 
+    "propabilityX" : "27", 
+    "propability2" : "10", 
+    "propabilityOver" : "85", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2233"), 
+    "team1" : "Al-Ain FC", 
+    "team2" : "Emirates Club", 
+    "matchTime" : "18:00", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.352+0000"), 
+    "prediction" : "1", 
+    "propability1" : "75", 
+    "propabilityX" : "18", 
+    "propability2" : "7", 
+    "propabilityOver" : "95", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2227"), 
+    "team1" : "Al Mokawloon", 
+    "team2" : "Al Ahly Cairo", 
+    "matchTime" : "19:00", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.316+0000"), 
+    "prediction" : "2", 
+    "propability1" : "19", 
+    "propabilityX" : "28", 
+    "propability2" : "53", 
+    "propabilityOver" : "95", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2234"), 
+    "team1" : "Al-Dhafra", 
+    "team2" : "Dibba Al-Fujairah", 
+    "matchTime" : "15:30", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.355+0000"), 
+    "prediction" : "X", 
+    "propability1" : "38", 
+    "propabilityX" : "36", 
+    "propability2" : "26", 
+    "propabilityOver" : "95", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2235"), 
+    "team1" : "Malavan", 
+    "team2" : "Saba Qom", 
+    "matchTime" : "12:30", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.358+0000"), 
+    "prediction" : "1", 
+    "propability1" : "67", 
+    "propabilityX" : "23", 
+    "propability2" : "10", 
+    "propabilityOver" : "60", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d222c"), 
+    "team1" : "Grenoble", 
+    "team2" : "Strasbourg", 
+    "matchTime" : "22:00", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.331+0000"), 
+    "prediction" : "X", 
+    "propability1" : "36", 
+    "propabilityX" : "37", 
+    "propability2" : "27", 
+    "propabilityOver" : "81", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2238"), 
+    "team1" : "Bala Town", 
+    "team2" : "Cefn Druids AFC", 
+    "matchTime" : "21:45", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.371+0000"), 
+    "prediction" : "1", 
+    "propability1" : "45", 
+    "propabilityX" : "27", 
+    "propability2" : "28", 
+    "propabilityOver" : "82", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2237"), 
+    "team1" : "Khoneh Be Khoneh", 
+    "team2" : "Nassaji Mazandaran", 
+    "matchTime" : "12:30", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.368+0000"), 
+    "prediction" : "1X", 
+    "propability1" : "56", 
+    "propabilityX" : "31", 
+    "propability2" : "13", 
+    "propabilityOver" : "50", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2239"), 
+    "team1" : "Alianza", 
+    "team2" : "CD Arabe Unido", 
+    "matchTime" : "03:00", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.374+0000"), 
+    "prediction" : "X", 
+    "propability1" : "31", 
+    "propabilityX" : "44", 
+    "propability2" : "25", 
+    "propabilityOver" : "55", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2231"), 
+    "team1" : "Saipa", 
+    "team2" : "Zob Ahan", 
+    "matchTime" : "14:30", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.345+0000"), 
+    "prediction" : "X2", 
+    "propability1" : "35", 
+    "propabilityX" : "35", 
+    "propability2" : "30", 
+    "propabilityOver" : "70", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2236"), 
+    "team1" : "Rah Ahan", 
+    "team2" : "Oxin Alborz", 
+    "matchTime" : "12:30", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.361+0000"), 
+    "prediction" : "2", 
+    "propability1" : "19", 
+    "propabilityX" : "30", 
+    "propability2" : "51", 
+    "propabilityOver" : "60", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d223a"), 
+    "team1" : "Gremio", 
+    "team2" : "Brasil de Pelotas", 
+    "matchTime" : "01:45", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.378+0000"), 
+    "prediction" : "1", 
+    "propability1" : "47", 
+    "propabilityX" : "24", 
+    "propability2" : "29", 
+    "propabilityOver" : "90", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d223c"), 
+    "team1" : "Mansheyat Bani Hasan", 
+    "team2" : "Al-Ahli Amman", 
+    "matchTime" : "15:00", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.383+0000"), 
+    "prediction" : "X2", 
+    "propability1" : "37", 
+    "propabilityX" : "32", 
+    "propability2" : "31", 
+    "propabilityOver" : "80", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d223b"), 
+    "team1" : "Sao Paulo", 
+    "team2" : "Bragantino", 
+    "matchTime" : "01:45", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.381+0000"), 
+    "prediction" : "1X", 
+    "propability1" : "59", 
+    "propabilityX" : "34", 
+    "propability2" : "7", 
+    "propabilityOver" : "86", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d223d"), 
+    "team1" : "Atletico De Kolkata", 
+    "team2" : "Kerala Blasters", 
+    "matchTime" : "16:30", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.387+0000"), 
+    "prediction" : "X2", 
+    "propability1" : "32", 
+    "propabilityX" : "34", 
+    "propability2" : "34", 
+    "propabilityOver" : "80", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d223e"), 
+    "team1" : "NEC Nijmegen", 
+    "team2" : "Jong PSV", 
+    "matchTime" : "21:00", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.391+0000"), 
+    "prediction" : "1", 
+    "propability1" : "65", 
+    "propabilityX" : "19", 
+    "propability2" : "16", 
+    "propabilityOver" : "92", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d223f"), 
+    "team1" : "Al-Qadsia", 
+    "team2" : "Kazma", 
+    "matchTime" : "18:05", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.393+0000"), 
+    "prediction" : "1", 
+    "propability1" : "54", 
+    "propabilityX" : "29", 
+    "propability2" : "17", 
+    "propabilityOver" : "90", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2240"), 
+    "team1" : "Al-Tadhamon", 
+    "team2" : "Al-Salmiyah", 
+    "matchTime" : "15:45", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.394+0000"), 
+    "prediction" : "2", 
+    "propability1" : "23", 
+    "propabilityX" : "27", 
+    "propability2" : "50", 
+    "propabilityOver" : "60", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2241"), 
+    "team1" : "Acassuso", 
+    "team2" : "Defensores De Belgrano", 
+    "matchTime" : "02:00", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.396+0000"), 
+    "prediction" : "1X", 
+    "propability1" : "42", 
+    "propabilityX" : "31", 
+    "propability2" : "27", 
+    "propabilityOver" : "65", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2242"), 
+    "team1" : "America-PE", 
+    "team2" : "Central-PE", 
+    "matchTime" : "01:00", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.397+0000"), 
+    "prediction" : "2", 
+    "propability1" : "32", 
+    "propabilityX" : "29", 
+    "propability2" : "39", 
+    "propabilityOver" : "75", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2243"), 
+    "team1" : "Belo Jardim", 
+    "team2" : "Vitoria das Tabocas", 
+    "matchTime" : "01:00", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.400+0000"), 
+    "prediction" : "X2", 
+    "propability1" : "27", 
+    "propabilityX" : "30", 
+    "propability2" : "43", 
+    "propabilityOver" : "50", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2244"), 
+    "team1" : "Jacobina", 
+    "team2" : "Fluminense de Feira", 
+    "matchTime" : "01:30", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.401+0000"), 
+    "prediction" : "2", 
+    "propability1" : "36", 
+    "propabilityX" : "28", 
+    "propability2" : "36", 
+    "propabilityOver" : "60", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2245"), 
+    "team1" : "Al-Najma Club", 
+    "team2" : "Al-Ittihad", 
+    "matchTime" : "17:10", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.403+0000"), 
+    "prediction" : "1", 
+    "propability1" : "62", 
+    "propabilityX" : "26", 
+    "propability2" : "12", 
+    "propabilityOver" : "65", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2246"), 
+    "team1" : "Riffa SC", 
+    "team2" : "Muharraq Club", 
+    "matchTime" : "19:40", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.405+0000"), 
+    "prediction" : "2", 
+    "propability1" : "19", 
+    "propabilityX" : "23", 
+    "propability2" : "58", 
+    "propabilityOver" : "60", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2247"), 
+    "team1" : "Oman Club", 
+    "team2" : "Al-Nasr Salalah", 
+    "matchTime" : "15:15", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.407+0000"), 
+    "prediction" : "X2", 
+    "propability1" : "26", 
+    "propabilityX" : "31", 
+    "propability2" : "43", 
+    "propabilityOver" : "65", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2248"), 
+    "team1" : "Al-Mudhaibi SC", 
+    "team2" : "Al-Shabab SC", 
+    "matchTime" : "18:15", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.408+0000"), 
+    "prediction" : "X2", 
+    "propability1" : "25", 
+    "propabilityX" : "30", 
+    "propability2" : "45", 
+    "propabilityOver" : "70", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2249"), 
+    "team1" : "Boavista Sport Club", 
+    "team2" : "Bangu", 
+    "matchTime" : "21:00", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.410+0000"), 
+    "prediction" : "12", 
+    "propability1" : "43", 
+    "propabilityX" : "24", 
+    "propability2" : "33", 
+    "propabilityOver" : "65", 
+    "resurse" : "statarea", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d224a"), 
+    "team1" : "Godoy Cruz", 
+    "team2" : "CA Lanus", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.479+0000"), 
+    "prediction" : "1", 
+    "propability1" : "65 %", 
+    "propabilityX" : "20 %", 
+    "propability2" : "15 %", 
+    "correctScore" : "2-0", 
+    "resurse" : "vitibet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d224b"), 
+    "team1" : "ADO Den Haag", 
+    "team2" : "BV Vitesse Arnhem", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.481+0000"), 
+    "prediction" : "02", 
+    "propability1" : "27 %", 
+    "propabilityX" : "29 %", 
+    "propability2" : "44 %", 
+    "correctScore" : "1-2", 
+    "resurse" : "vitibet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d224c"), 
+    "team1" : "Feyenoord Rotterdam", 
+    "team2" : "FC Groningen", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.483+0000"), 
+    "prediction" : "1", 
+    "propability1" : "58 %", 
+    "propabilityX" : "23 %", 
+    "propability2" : "19 %", 
+    "correctScore" : "2-0", 
+    "resurse" : "vitibet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d224d"), 
+    "team1" : "NEC Nijmegen", 
+    "team2" : "PSV Eidhoven (jun.)", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.484+0000"), 
+    "prediction" : "1", 
+    "propability1" : "50 %", 
+    "propabilityX" : "27 %", 
+    "propability2" : "23 %", 
+    "correctScore" : "2-1", 
+    "resurse" : "vitibet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d224e"), 
+    "team1" : "Godoy Cruz", 
+    "team2" : "Lanus", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.639+0000"), 
+    "prediction" : "under (2.5)", 
+    "matchTime" : "1:30", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d224f"), 
+    "team1" : "Club Brugge", 
+    "team2" : "Standard Liege", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.639+0000"), 
+    "prediction" : "over (2.5)", 
+    "matchTime" : "20:45", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2250"), 
+    "team1" : "Sao Raimundo RR", 
+    "team2" : "Villa Nova AC", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.640+0000"), 
+    "prediction" : "no", 
+    "matchTime" : "1:30", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2251"), 
+    "team1" : "Manaus FC", 
+    "team2" : "CS Alagoano", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.640+0000"), 
+    "prediction" : "2", 
+    "matchTime" : "1:30", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2252"), 
+    "team1" : "Deportivo Saprissa", 
+    "team2" : "Zeledon", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.641+0000"), 
+    "prediction" : "1", 
+    "matchTime" : "3:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2253"), 
+    "team1" : "Herediano", 
+    "team2" : "CS Cartaginés", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.642+0000"), 
+    "prediction" : "11", 
+    "matchTime" : "3:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2254"), 
+    "team1" : "AD Municipal Grecia", 
+    "team2" : "Municipal Liberia", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.642+0000"), 
+    "prediction" : "1", 
+    "matchTime" : "22:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2255"), 
+    "team1" : "El Mokawloon", 
+    "team2" : "Al Ahly Cairo", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.643+0000"), 
+    "prediction" : "2", 
+    "matchTime" : "18:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2256"), 
+    "team1" : "Sonsonate", 
+    "team2" : "CD LA Firpo", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.643+0000"), 
+    "prediction" : "1", 
+    "matchTime" : "2:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2257"), 
+    "team1" : "Grenoble Foot 38", 
+    "team2" : "Strasbourg", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.644+0000"), 
+    "prediction" : "X", 
+    "matchTime" : "21:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2258"), 
+    "team1" : "Atletico De Kolkata", 
+    "team2" : "Kerala Blasters", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.644+0000"), 
+    "prediction" : "X2", 
+    "matchTime" : "15:30", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2259"), 
+    "team1" : "Spartak Nalchik", 
+    "team2" : "Anghust Nazran", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.645+0000"), 
+    "prediction" : "1", 
+    "matchTime" : "9:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d225a"), 
+    "team1" : "South Melbourne", 
+    "team2" : "Guangzhou R&F", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.645+0000"), 
+    "prediction" : "over (2.5)", 
+    "matchTime" : "9:30", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d225b"), 
+    "team1" : "Western Strikers", 
+    "team2" : "Adelaide Comets", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.646+0000"), 
+    "prediction" : "2", 
+    "matchTime" : "9:30", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d225c"), 
+    "team1" : "Lokomotiv Moscow (Youth)", 
+    "team2" : "Veles", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.646+0000"), 
+    "prediction" : "1X", 
+    "matchTime" : "10:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d225d"), 
+    "team1" : "Partizan Belgrade", 
+    "team2" : "Shakhtyor Salihorsk", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.647+0000"), 
+    "prediction" : "1", 
+    "matchTime" : "10:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d225f"), 
+    "team1" : "Crisul Chisineu Cris", 
+    "team2" : "UTA Arad", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.648+0000"), 
+    "prediction" : "under (2.5)", 
+    "matchTime" : "12:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d225e"), 
+    "team1" : "Gyirmot", 
+    "team2" : "Szolnoki MÁV", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.648+0000"), 
+    "prediction" : "1", 
+    "matchTime" : "11:30", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2260"), 
+    "team1" : "FK Krasnodar", 
+    "team2" : "Videoton", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.649+0000"), 
+    "prediction" : "1", 
+    "matchTime" : "12:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2262"), 
+    "team1" : "Bekescsaba", 
+    "team2" : "TSC Bačka Topola", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.650+0000"), 
+    "prediction" : "1", 
+    "matchTime" : "13:30", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2261"), 
+    "team1" : "FC Astana", 
+    "team2" : "Shendon Lunen", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.649+0000"), 
+    "prediction" : "1", 
+    "matchTime" : "12:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2263"), 
+    "team1" : "Brann", 
+    "team2" : "Viking FK", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.650+0000"), 
+    "prediction" : "1", 
+    "matchTime" : "14:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2264"), 
+    "team1" : "NK Crensovci", 
+    "team2" : "NK Veržej", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.651+0000"), 
+    "prediction" : "2", 
+    "matchTime" : "14:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2265"), 
+    "team1" : "FK Grbalj Radanovici", 
+    "team2" : "FK Bokelj", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.651+0000"), 
+    "prediction" : "1", 
+    "matchTime" : "14:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2266"), 
+    "team1" : "Gomel", 
+    "team2" : "Ural", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.652+0000"), 
+    "prediction" : "2", 
+    "matchTime" : "15:30", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2267"), 
+    "team1" : "Sarpsborg", 
+    "team2" : "Kalmar", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.653+0000"), 
+    "prediction" : "X", 
+    "matchTime" : "16:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2268"), 
+    "team1" : "FC Baden", 
+    "team2" : "NV Estudiantes de Murcia CF", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.653+0000"), 
+    "prediction" : "X2", 
+    "matchTime" : "16:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2269"), 
+    "team1" : "Dynamo Kyiv", 
+    "team2" : "Tianjin Teda", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.654+0000"), 
+    "prediction" : "11", 
+    "matchTime" : "16:30", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d226b"), 
+    "team1" : "Partizán Bardejov", 
+    "team2" : "MFK Vranov nad Topľou", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.655+0000"), 
+    "prediction" : "1", 
+    "matchTime" : "17:30", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d226a"), 
+    "team1" : "Hellerup IK", 
+    "team2" : "Greve", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.654+0000"), 
+    "prediction" : "1", 
+    "matchTime" : "17:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d226c"), 
+    "team1" : "ASK Klingenbach", 
+    "team2" : "SC Neudorfl", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.655+0000"), 
+    "prediction" : "over (2.5)", 
+    "matchTime" : "18:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d226d"), 
+    "team1" : "ASV St. Martin an der Raab", 
+    "team2" : "UFC Fehring", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.657+0000"), 
+    "prediction" : "2", 
+    "matchTime" : "20:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d226e"), 
+    "team1" : "Malmo FF", 
+    "team2" : "DC United", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.657+0000"), 
+    "prediction" : "1", 
+    "matchTime" : "20:30", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d226f"), 
+    "team1" : "Esteghlal", 
+    "team2" : "Sepidrood Rasht", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.658+0000"), 
+    "prediction" : "11", 
+    "matchTime" : "13:30", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2270"), 
+    "team1" : "Saipa Karadj", 
+    "team2" : "Zob Ahan", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.658+0000"), 
+    "prediction" : "1X", 
+    "matchTime" : "13:30", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2271"), 
+    "team1" : "ADO Den Haag", 
+    "team2" : "Vitesse", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.659+0000"), 
+    "prediction" : "2", 
+    "matchTime" : "18:30", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2272"), 
+    "team1" : "Feyenoord", 
+    "team2" : "Groningen", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.660+0000"), 
+    "prediction" : "yes", 
+    "matchTime" : "20:45", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2273"), 
+    "team1" : "NEC", 
+    "team2" : "PSV Eindhoven Reserves", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.660+0000"), 
+    "prediction" : "over (3.5)", 
+    "matchTime" : "20:00", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2274"), 
+    "team1" : "Al-Gharrafa", 
+    "team2" : "AL Duhail SC", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.661+0000"), 
+    "prediction" : "over (3.5)", 
+    "matchTime" : "14:40", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2275"), 
+    "team1" : "Al-Rayyan", 
+    "team2" : "Al-Sadd SC", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.675+0000"), 
+    "prediction" : "1X", 
+    "matchTime" : "16:50", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2276"), 
+    "team1" : "Valencia", 
+    "team2" : "Barcelona", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.675+0000"), 
+    "prediction" : "no", 
+    "matchTime" : "21:30", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2277"), 
+    "team1" : "Galatasaray", 
+    "team2" : "Konyaspor", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.676+0000"), 
+    "prediction" : "1", 
+    "matchTime" : "18:30", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2278"), 
+    "team1" : "Bala Town", 
+    "team2" : "Cefn Druids", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.677+0000"), 
+    "prediction" : "1", 
+    "matchTime" : "20:45", 
+    "resurse" : "bet-portal", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2279"), 
+    "team1" : "Spartak Nal'chik", 
+    "team2" : "Angusht", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.727+0000"), 
+    "prediction" : "1", 
+    "propability1" : "%88", 
+    "propabilityX" : "%11", 
+    "propability2" : "%1", 
+    "propabilityUnder" : "%70", 
+    "propabilityOver" : "%1", 
+    "matchTime" : "10:00", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d227a"), 
+    "team1" : "Kuban' Krasnodar", 
+    "team2" : "Podbrezová", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.729+0000"), 
+    "prediction" : "1", 
+    "propability1" : "%66", 
+    "propabilityX" : "%16", 
+    "propability2" : "%18", 
+    "propabilityUnder" : "%41", 
+    "propabilityOver" : "%18", 
+    "matchTime" : "10:00", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d227b"), 
+    "team1" : "Anzhi", 
+    "team2" : "Dinamo Minsk", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.729+0000"), 
+    "prediction" : "Over 2.5", 
+    "propability1" : "%41", 
+    "propabilityX" : "%8", 
+    "propability2" : "%51", 
+    "propabilityUnder" : "%58", 
+    "propabilityOver" : "%51", 
+    "matchTime" : "12:00", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d227c"), 
+    "team1" : "Malavan", 
+    "team2" : "Saba Qom", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.730+0000"), 
+    "prediction" : "Under 2.5", 
+    "propability1" : "%55", 
+    "propabilityX" : "%22", 
+    "propability2" : "%23", 
+    "propabilityUnder" : "%33", 
+    "propabilityOver" : "%23", 
+    "matchTime" : "12:30", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d227d"), 
+    "team1" : "Rah Ahan", 
+    "team2" : "Oxin Alborz", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.731+0000"), 
+    "prediction" : "Under 2.5", 
+    "propability1" : "%30", 
+    "propabilityX" : "%38", 
+    "propability2" : "%32", 
+    "propabilityUnder" : "%23", 
+    "propabilityOver" : "%32", 
+    "matchTime" : "12:30", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d227e"), 
+    "team1" : "Khouneh Be Khouneh Babol", 
+    "team2" : "Nassaji Mazandaran", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.732+0000"), 
+    "prediction" : "1", 
+    "propability1" : "%78", 
+    "propabilityX" : "%14", 
+    "propability2" : "%8", 
+    "propabilityUnder" : "%35", 
+    "propabilityOver" : "%8", 
+    "matchTime" : "12:30", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2280"), 
+    "team1" : "Al Kahrabaa", 
+    "team2" : "Al Bahri", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.734+0000"), 
+    "prediction" : "Under 2.5", 
+    "propability1" : "%53", 
+    "propabilityX" : "%46", 
+    "propability2" : "%1", 
+    "propabilityUnder" : "%46", 
+    "propabilityOver" : "%1", 
+    "matchTime" : "13:30", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2281"), 
+    "team1" : "Naft Al-Janoob", 
+    "team2" : "Karbala", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.735+0000"), 
+    "prediction" : "Under 2.5", 
+    "propability1" : "%55", 
+    "propabilityX" : "%27", 
+    "propability2" : "%18", 
+    "propabilityUnder" : "%33", 
+    "propabilityOver" : "%18", 
+    "matchTime" : "13:30", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d227f"), 
+    "team1" : "Windsor Arch Ka I", 
+    "team2" : "Monte Carlo", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.733+0000"), 
+    "prediction" : "Over 2.5", 
+    "propability1" : "%27", 
+    "propabilityX" : "%27", 
+    "propability2" : "%46", 
+    "propabilityUnder" : "%66", 
+    "propabilityOver" : "%46", 
+    "matchTime" : "13:15", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2282"), 
+    "team1" : "Lokomotiv Sofia 1929", 
+    "team2" : "Vitosha Bistritsa", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.736+0000"), 
+    "prediction" : "1", 
+    "propability1" : "%61", 
+    "propabilityX" : "%30", 
+    "propability2" : "%9", 
+    "propabilityUnder" : "%46", 
+    "propabilityOver" : "%9", 
+    "matchTime" : "14:00", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2283"), 
+    "team1" : "Esteghlal", 
+    "team2" : "Sepidrood Rasht", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.737+0000"), 
+    "prediction" : "1", 
+    "propability1" : "%83", 
+    "propabilityX" : "%16", 
+    "propability2" : "%1", 
+    "propabilityUnder" : "%66", 
+    "propabilityOver" : "%1", 
+    "matchTime" : "14:30", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2285"), 
+    "team1" : "Brann", 
+    "team2" : "Viking", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.739+0000"), 
+    "prediction" : "Under 2.5", 
+    "propability1" : "%38", 
+    "propabilityX" : "%27", 
+    "propability2" : "%35", 
+    "propabilityUnder" : "%44", 
+    "propabilityOver" : "%35", 
+    "matchTime" : "15:00", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2286"), 
+    "team1" : "Mansheyat", 
+    "team2" : "Al Ahli", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.740+0000"), 
+    "prediction" : "Under 2.5", 
+    "propability1" : "%50", 
+    "propabilityX" : "%21", 
+    "propability2" : "%29", 
+    "propabilityUnder" : "%42", 
+    "propabilityOver" : "%29", 
+    "matchTime" : "15:00", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2287"), 
+    "team1" : "Ruvu Shooting", 
+    "team2" : "Kagera Sugar", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.740+0000"), 
+    "prediction" : "Under 2.5", 
+    "propability1" : "%27", 
+    "propabilityX" : "%50", 
+    "propability2" : "%23", 
+    "propabilityUnder" : "%22", 
+    "propabilityOver" : "%23", 
+    "matchTime" : "15:00", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2284"), 
+    "team1" : "Saipa", 
+    "team2" : "Zob Ahan", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.738+0000"), 
+    "prediction" : "Under 2.5", 
+    "propability1" : "%38", 
+    "propabilityX" : "%22", 
+    "propability2" : "%40", 
+    "propabilityUnder" : "%22", 
+    "propabilityOver" : "%40", 
+    "matchTime" : "14:30", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2288"), 
+    "team1" : "Lai Chi", 
+    "team2" : "Alfândega", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.741+0000"), 
+    "prediction" : "Over 2.5", 
+    "propability1" : "%28", 
+    "propabilityX" : "%28", 
+    "propability2" : "%44", 
+    "propabilityUnder" : "%71", 
+    "propabilityOver" : "%44", 
+    "matchTime" : "15:15", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d228a"), 
+    "team1" : "Al Jazira Res.", 
+    "team2" : "Al Wasl Res.", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.743+0000"), 
+    "prediction" : "Over 2.5", 
+    "propability1" : "%28", 
+    "propabilityX" : "%14", 
+    "propability2" : "%58", 
+    "propabilityUnder" : "%92", 
+    "propabilityOver" : "%58", 
+    "matchTime" : "15:25", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2289"), 
+    "team1" : "Oman FC", 
+    "team2" : "Al Nasr", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.742+0000"), 
+    "prediction" : "Under 2.5", 
+    "propability1" : "%22", 
+    "propabilityX" : "%33", 
+    "propability2" : "%45", 
+    "propabilityUnder" : "%33", 
+    "propabilityOver" : "%45", 
+    "matchTime" : "15:15", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d228b"), 
+    "team1" : "Al Wahda Res.", 
+    "team2" : "Hatta Res.", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.744+0000"), 
+    "prediction" : "1", 
+    "propability1" : "%83", 
+    "propabilityX" : "%16", 
+    "propability2" : "%1", 
+    "propabilityUnder" : "%75", 
+    "propabilityOver" : "%1", 
+    "matchTime" : "15:25", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d228c"), 
+    "team1" : "Al Dhafra", 
+    "team2" : "Dibba Al Fujairah", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.745+0000"), 
+    "prediction" : "Under 2.5", 
+    "propability1" : "%25", 
+    "propabilityX" : "%31", 
+    "propability2" : "%44", 
+    "propabilityUnder" : "%50", 
+    "propabilityOver" : "%44", 
+    "matchTime" : "15:30", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d228d"), 
+    "team1" : "Al Gharafa", 
+    "team2" : "Lekhwiya", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.746+0000"), 
+    "prediction" : "Over 2.5", 
+    "propability1" : "%22", 
+    "propabilityX" : "%22", 
+    "propability2" : "%56", 
+    "propabilityUnder" : "%66", 
+    "propabilityOver" : "%56", 
+    "matchTime" : "15:40", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d228e"), 
+    "team1" : "Al Shorta", 
+    "team2" : "Baghdad", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.747+0000"), 
+    "prediction" : "Under 2.5", 
+    "propability1" : "%66", 
+    "propabilityX" : "%22", 
+    "propability2" : "%12", 
+    "propabilityUnder" : "%33", 
+    "propabilityOver" : "%12", 
+    "matchTime" : "15:45", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d228f"), 
+    "team1" : "Al Tadhamon", 
+    "team2" : "Al Salmiyah", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.748+0000"), 
+    "prediction" : "Under 2.5", 
+    "propability1" : "%44", 
+    "propabilityX" : "%16", 
+    "propability2" : "%40", 
+    "propabilityUnder" : "%50", 
+    "propabilityOver" : "%40", 
+    "matchTime" : "15:45", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2290"), 
+    "team1" : "Al Ansar", 
+    "team2" : "Al Nejmeh", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.749+0000"), 
+    "prediction" : "2", 
+    "propability1" : "%16", 
+    "propabilityX" : "%27", 
+    "propability2" : "%57", 
+    "propabilityUnder" : "%44", 
+    "propabilityOver" : "%57", 
+    "matchTime" : "16:00", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2291"), 
+    "team1" : "Taraji Wadi Al-Nes", 
+    "team2" : "Shabab Dora", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.750+0000"), 
+    "prediction" : "Under 2.5", 
+    "propability1" : "%40", 
+    "propabilityX" : "%20", 
+    "propability2" : "%40", 
+    "propabilityUnder" : "%46", 
+    "propabilityOver" : "%40", 
+    "matchTime" : "16:00", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2292"), 
+    "team1" : "JS Poto-Poto", 
+    "team2" : "St-Michel Ouenzé", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.751+0000"), 
+    "prediction" : "1", 
+    "propability1" : "%60", 
+    "propabilityX" : "%26", 
+    "propability2" : "%14", 
+    "propabilityUnder" : "%46", 
+    "propabilityOver" : "%14", 
+    "matchTime" : "16:00", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2293"), 
+    "team1" : "Atlético de Kolkata", 
+    "team2" : "Kerala Blasters", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.765+0000"), 
+    "prediction" : "Under 2.5", 
+    "propability1" : "%26", 
+    "propabilityX" : "%26", 
+    "propability2" : "%48", 
+    "propabilityUnder" : "%46", 
+    "propabilityOver" : "%48", 
+    "matchTime" : "16:30", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2294"), 
+    "team1" : "Gomel", 
+    "team2" : "Ural", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.766+0000"), 
+    "prediction" : "Under 2.5", 
+    "propability1" : "%33", 
+    "propabilityX" : "%25", 
+    "propability2" : "%42", 
+    "propabilityUnder" : "%33", 
+    "propabilityOver" : "%42", 
+    "matchTime" : "16:30", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2295"), 
+    "team1" : "Sarpsborg 08", 
+    "team2" : "Kalmar", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.767+0000"), 
+    "prediction" : "1", 
+    "propability1" : "%66", 
+    "propabilityX" : "%33", 
+    "propability2" : "%1", 
+    "propabilityUnder" : "%50", 
+    "propabilityOver" : "%1", 
+    "matchTime" : "17:00", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2296"), 
+    "team1" : "Al Najma", 
+    "team2" : "Al Ittihad", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.768+0000"), 
+    "prediction" : "1", 
+    "propability1" : "%56", 
+    "propabilityX" : "%37", 
+    "propability2" : "%7", 
+    "propabilityUnder" : "%50", 
+    "propabilityOver" : "%7", 
+    "matchTime" : "17:10", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2297"), 
+    "team1" : "Dynamo Kyiv", 
+    "team2" : "Tianjin Teda", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.769+0000"), 
+    "prediction" : "Over 2.5", 
+    "propability1" : "%69", 
+    "propabilityX" : "%15", 
+    "propability2" : "%16", 
+    "propabilityUnder" : "%76", 
+    "propabilityOver" : "%16", 
+    "matchTime" : "17:30", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2298"), 
+    "team1" : "Al Jazeera", 
+    "team2" : "Al Hussein", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.770+0000"), 
+    "prediction" : "1", 
+    "propability1" : "%61", 
+    "propabilityX" : "%22", 
+    "propability2" : "%17", 
+    "propabilityUnder" : "%50", 
+    "propabilityOver" : "%17", 
+    "matchTime" : "17:30", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d2299"), 
+    "team1" : "Al Rayyan", 
+    "team2" : "Al Sadd", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.771+0000"), 
+    "prediction" : "Over 2.5", 
+    "propability1" : "%44", 
+    "propabilityX" : "%5", 
+    "propability2" : "%51", 
+    "propabilityUnder" : "%88", 
+    "propabilityOver" : "%51", 
+    "matchTime" : "17:50", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d229a"), 
+    "team1" : "Hapoel Jerusalem", 
+    "team2" : "Maccabi Tzur Shalom", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.772+0000"), 
+    "prediction" : "Under 2.5", 
+    "propability1" : "%25", 
+    "propabilityX" : "%41", 
+    "propability2" : "%34", 
+    "propabilityUnder" : "%25", 
+    "propabilityOver" : "%34", 
+    "matchTime" : "18:00", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d229b"), 
+    "team1" : "Al Ain", 
+    "team2" : "Emirates", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.773+0000"), 
+    "prediction" : "1", 
+    "propability1" : "%77", 
+    "propabilityX" : "%11", 
+    "propability2" : "%12", 
+    "propabilityUnder" : "%66", 
+    "propabilityOver" : "%12", 
+    "matchTime" : "18:00", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d229c"), 
+    "team1" : "Chicago Fire", 
+    "team2" : "Philadelphia Union", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.774+0000"), 
+    "prediction" : "1", 
+    "propability1" : "%61", 
+    "propabilityX" : "%33", 
+    "propability2" : "%6", 
+    "propabilityUnder" : "%55", 
+    "propabilityOver" : "%6", 
+    "matchTime" : "18:00", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d229d"), 
+    "team1" : "Al Qadsia", 
+    "team2" : "Kazma", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.774+0000"), 
+    "prediction" : "Under 2.5", 
+    "propability1" : "%50", 
+    "propabilityX" : "%33", 
+    "propability2" : "%17", 
+    "propabilityUnder" : "%50", 
+    "propabilityOver" : "%17", 
+    "matchTime" : "18:05", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d229e"), 
+    "team1" : "Al-Mudhaibi", 
+    "team2" : "Al Shabab", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.775+0000"), 
+    "prediction" : "2", 
+    "propability1" : "%25", 
+    "propabilityX" : "%8", 
+    "propability2" : "%67", 
+    "propabilityUnder" : "%41", 
+    "propabilityOver" : "%67", 
+    "matchTime" : "18:15", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d22a0"), 
+    "team1" : "Al Hilal", 
+    "team2" : "Al Nassr", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.777+0000"), 
+    "prediction" : "Under 2.5", 
+    "propability1" : "%61", 
+    "propabilityX" : "%16", 
+    "propability2" : "%23", 
+    "propabilityUnder" : "%38", 
+    "propabilityOver" : "%23", 
+    "matchTime" : "19:20", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d229f"), 
+    "team1" : "Al Mokawloon", 
+    "team2" : "Al Ahly", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.776+0000"), 
+    "prediction" : "2", 
+    "propability1" : "%11", 
+    "propabilityX" : "%27", 
+    "propability2" : "%62", 
+    "propabilityUnder" : "%44", 
+    "propabilityOver" : "%62", 
+    "matchTime" : "19:00", 
+    "resurse" : "betstudy", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d22a1"), 
+    "team1" : "Godoy Cruz", 
+    "team2" : "CA Lanus", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.821+0000"), 
+    "prediction" : "", 
+    "propability1" : "65 %", 
+    "propabilityX" : "20 %", 
+    "propability2" : "15 %", 
+    "propabilityUnder" : "", 
+    "propabilityOver" : "", 
+    "correctScore" : "2-0", 
+    "resurse" : "iambettor", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d22a2"), 
+    "team1" : "ADO Den Haag", 
+    "team2" : "BV Vitesse Arnhem", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.822+0000"), 
+    "prediction" : "", 
+    "propability1" : "27 %", 
+    "propabilityX" : "29 %", 
+    "propability2" : "44 %", 
+    "propabilityUnder" : "", 
+    "propabilityOver" : "", 
+    "correctScore" : "1-2", 
+    "resurse" : "iambettor", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d22a3"), 
+    "team1" : "Feyenoord Rotterdam", 
+    "team2" : "FC Groningen", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.823+0000"), 
+    "prediction" : "", 
+    "propability1" : "58 %", 
+    "propabilityX" : "23 %", 
+    "propability2" : "19 %", 
+    "propabilityUnder" : "", 
+    "propabilityOver" : "", 
+    "correctScore" : "2-0", 
+    "resurse" : "iambettor", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5dded2080adb9d22a4"), 
+    "team1" : "NEC Nijmegen", 
+    "team2" : "PSV Eidhoven (jun.)", 
+    "addedDate" : ISODate("2018-02-08T06:17:01.824+0000"), 
+    "prediction" : "", 
+    "propability1" : "50 %", 
+    "propabilityX" : "27 %", 
+    "propability2" : "23 %", 
+    "propabilityUnder" : "", 
+    "propabilityOver" : "", 
+    "correctScore" : "2-1", 
+    "resurse" : "iambettor", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22a5"), 
+    "team1" : "Godoy Cruz", 
+    "team2" : "Lanus", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.266+0000"), 
+    "matchTime" : "2:30", 
+    "prediction" : "Home Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22a6"), 
+    "team1" : "Al Mokawloon Al Arab", 
+    "team2" : "Al Ahly", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.267+0000"), 
+    "matchTime" : "19:00", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22a8"), 
+    "team1" : "Grenoble", 
+    "team2" : "Strasbourg", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.268+0000"), 
+    "matchTime" : "22:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22a7"), 
+    "team1" : "Valencia", 
+    "team2" : "Barcelona", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.267+0000"), 
+    "matchTime" : "22:30", 
+    "prediction" : "Away Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22a9"), 
+    "team1" : "ADO Den Haag", 
+    "team2" : "Vitesse", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.269+0000"), 
+    "matchTime" : "19:30", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22aa"), 
+    "team1" : "Feyenoord", 
+    "team2" : "FC Groningen", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.269+0000"), 
+    "matchTime" : "21:45", 
+    "prediction" : "Home Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22ab"), 
+    "team1" : "NEC Nijmegen", 
+    "team2" : "Jong PSV", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.270+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Over 2.5 goals and Btts ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22ac"), 
+    "team1" : "Club Brugge", 
+    "team2" : "Standard Liege", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.271+0000"), 
+    "matchTime" : "21:45", 
+    "prediction" : "Over 2.5 goals and Btts ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22ae"), 
+    "team1" : "Brann", 
+    "team2" : "Viking", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.272+0000"), 
+    "matchTime" : "15:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22ad"), 
+    "team1" : "Anzhi Makhachkala", 
+    "team2" : "Dinamo Minsk", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.271+0000"), 
+    "matchTime" : "16:00", 
+    "prediction" : "Home Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22af"), 
+    "team1" : "Olimpija Ljubljana", 
+    "team2" : "FC Rostov", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.272+0000"), 
+    "matchTime" : "16:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22b0"), 
+    "team1" : "Sarpsborg 08", 
+    "team2" : "Kalmar FF", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.273+0000"), 
+    "matchTime" : "17:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22b1"), 
+    "team1" : "Ural", 
+    "team2" : "Gomel", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.273+0000"), 
+    "matchTime" : "16:30", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22b3"), 
+    "team1" : "DC United", 
+    "team2" : "Malmoe FF", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.275+0000"), 
+    "matchTime" : "21:30", 
+    "prediction" : "Away Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22b2"), 
+    "team1" : "Videoton FC", 
+    "team2" : "FC Krasnodar", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.274+0000"), 
+    "matchTime" : "17:00", 
+    "prediction" : "Away Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22b5"), 
+    "team1" : "Galatasaray", 
+    "team2" : "Konyaspor", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.276+0000"), 
+    "matchTime" : "19:30", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22b4"), 
+    "team1" : "Atromitos", 
+    "team2" : "PAOK Thessaloniki FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.275+0000"), 
+    "matchTime" : "19:30", 
+    "prediction" : "Home Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22b6"), 
+    "team1" : "Bala Town", 
+    "team2" : "Cefn Druids AFC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.277+0000"), 
+    "matchTime" : "21:45", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22b7"), 
+    "team1" : "Acassuso", 
+    "team2" : "CA Defensores de Belgrano", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.277+0000"), 
+    "matchTime" : "2:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22b8"), 
+    "team1" : "Manaus FC", 
+    "team2" : "CS Alagoano", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.278+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22b9"), 
+    "team1" : "Sao Raimundo RR", 
+    "team2" : "Vila Nova", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.278+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22ba"), 
+    "team1" : "Nacional Potosi", 
+    "team2" : "The Strongest", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.279+0000"), 
+    "matchTime" : "2:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22bb"), 
+    "team1" : "Atletico Nacional", 
+    "team2" : "Millonarios", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.280+0000"), 
+    "matchTime" : "2:05", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22bc"), 
+    "team1" : "Atlantico FC", 
+    "team2" : "Racing FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.280+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22bd"), 
+    "team1" : "Puebla", 
+    "team2" : "Cruz Azul", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.281+0000"), 
+    "matchTime" : "5:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22be"), 
+    "team1" : "Toluca", 
+    "team2" : "Santos", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.282+0000"), 
+    "matchTime" : "4:30", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22bf"), 
+    "team1" : "CA Zacatepec", 
+    "team2" : "Necaxa", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.283+0000"), 
+    "matchTime" : "3:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22c0"), 
+    "team1" : "Atlas", 
+    "team2" : "Jaibos Tampico Madero", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.283+0000"), 
+    "matchTime" : "5:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22c1"), 
+    "team1" : "Club Sport Herediano", 
+    "team2" : "C.S. Cartagines", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.284+0000"), 
+    "matchTime" : "4:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22c2"), 
+    "team1" : "Deportivo Saprissa", 
+    "team2" : "Municipal Perez Zeledon", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.285+0000"), 
+    "matchTime" : "4:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22c3"), 
+    "team1" : "Grecia", 
+    "team2" : "AD Municipal Liberia", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.285+0000"), 
+    "matchTime" : "23:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22c4"), 
+    "team1" : "CD Sonsonate", 
+    "team2" : "Firpo", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.286+0000"), 
+    "matchTime" : "3:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22c5"), 
+    "team1" : "CD Olimpia", 
+    "team2" : "Honduras Progreso", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.286+0000"), 
+    "matchTime" : "3:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22c7"), 
+    "team1" : "CD Vida", 
+    "team2" : "Juticalpa", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.288+0000"), 
+    "matchTime" : "3:15", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22c6"), 
+    "team1" : "Real Espana", 
+    "team2" : "Lobos UPNFM", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.287+0000"), 
+    "matchTime" : "3:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22c8"), 
+    "team1" : "Platense FC", 
+    "team2" : "CD Motagua", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.298+0000"), 
+    "matchTime" : "3:15", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22c9"), 
+    "team1" : "ATK", 
+    "team2" : "Kerala Blasters FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.298+0000"), 
+    "matchTime" : "16:30", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22ca"), 
+    "team1" : "Esteghlal", 
+    "team2" : "Sepidrood Rasht", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.299+0000"), 
+    "matchTime" : "14:30", 
+    "prediction" : "Home Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22cb"), 
+    "team1" : "Saipa", 
+    "team2" : "Zob Ahan", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.299+0000"), 
+    "matchTime" : "14:30", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22cd"), 
+    "team1" : "Al Hilal", 
+    "team2" : "Al Nassr FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.301+0000"), 
+    "matchTime" : "19:20", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22cc"), 
+    "team1" : "Al Ahli", 
+    "team2" : "Al-Faisaly", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.300+0000"), 
+    "matchTime" : "19:20", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22ce"), 
+    "team1" : "Al-Dhafra", 
+    "team2" : "Dibba Al Fujairah", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.301+0000"), 
+    "matchTime" : "15:30", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22cf"), 
+    "team1" : "Al-Ain", 
+    "team2" : "Emirates Club", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.302+0000"), 
+    "matchTime" : "18:00", 
+    "prediction" : "Home Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22d0"), 
+    "team1" : "APR FC", 
+    "team2" : "Anse Reunion FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.302+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22d1"), 
+    "team1" : "AS Tanda", 
+    "team2" : "La Mancha", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.303+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22d2"), 
+    "team1" : "Africa Sport d’Abidjan", 
+    "team2" : "Nouadhibou", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.304+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22d3"), 
+    "team1" : "Akwa United", 
+    "team2" : "Real de Banjul", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.304+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22d4"), 
+    "team1" : "Al Masry Club", 
+    "team2" : "Green Buffaloes FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.305+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22d5"), 
+    "team1" : "Al-Ittihad", 
+    "team2" : "Sahel FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.305+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22d6"), 
+    "team1" : "Asante Kotoko", 
+    "team2" : "CARA Brazzaville", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.306+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Under 2.5 goals  ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22d7"), 
+    "team1" : "Costa do Sol", 
+    "team2" : "Jwaneng Galaxy FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.306+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22d8"), 
+    "team1" : "Djoliba", 
+    "team2" : "Belouizdad", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.307+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22d9"), 
+    "team1" : "Leopards", 
+    "team2" : "SOM Fosa FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.309+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22da"), 
+    "team1" : "Mangasport", 
+    "team2" : "Maniema Union", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.309+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22db"), 
+    "team1" : "New Star de Douala", 
+    "team2" : "Deportivo Niefang FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.310+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22dc"), 
+    "team1" : "Ngazi Club", 
+    "team2" : "AS Port-Louis 2000", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.310+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22dd"), 
+    "team1" : "Olympic Star", 
+    "team2" : "Etoile Filante", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.311+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22de"), 
+    "team1" : "Onze Createurs", 
+    "team2" : "ELWA United", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.311+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22df"), 
+    "team1" : "Petro de Luanda", 
+    "team2" : "Masters Security FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.312+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22e0"), 
+    "team1" : "RSB Berkane", 
+    "team2" : "Mbour Petite Côte", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.313+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22e1"), 
+    "team1" : "Simba SC", 
+    "team2" : "Gendarmerie Nationale", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.314+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22e2"), 
+    "team1" : "Young Buffaloes FC", 
+    "team2" : "Cape Town City", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.314+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22e3"), 
+    "team1" : "Zimamoto", 
+    "team2" : "Welayta Dicha", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.315+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22e4"), 
+    "team1" : "Villa Dalmine", 
+    "team2" : "Juventud Unida Gualeguaychu", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.317+0000"), 
+    "matchTime" : "25:05", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22e5"), 
+    "team1" : "Portuguesa FC", 
+    "team2" : "Mineros De Guayana", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.317+0000"), 
+    "matchTime" : "23:45", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22e6"), 
+    "team1" : "Real Garcilaso", 
+    "team2" : "Deportivo Municipal", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.318+0000"), 
+    "matchTime" : "22:00", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22e7"), 
+    "team1" : "Atletico Junior", 
+    "team2" : "Olimpia", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.319+0000"), 
+    "matchTime" : "4:15", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22e8"), 
+    "team1" : "Millwall", 
+    "team2" : "Cardiff City", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.319+0000"), 
+    "matchTime" : "21:45", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22e9"), 
+    "team1" : "Cambridge United", 
+    "team2" : "Lincoln City", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.320+0000"), 
+    "matchTime" : "21:45", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22eb"), 
+    "team1" : "Fiorentina", 
+    "team2" : "Juventus", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.321+0000"), 
+    "matchTime" : "21:45", 
+    "prediction" : "Away Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22ea"), 
+    "team1" : "FC United of Manchester", 
+    "team2" : "Chorley", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.320+0000"), 
+    "matchTime" : "21:45", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22ec"), 
+    "team1" : "Bisceglie", 
+    "team2" : "Lecce", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.321+0000"), 
+    "matchTime" : "21:45", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22ed"), 
+    "team1" : "Athletic Bilbao", 
+    "team2" : "Las Palmas", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.322+0000"), 
+    "matchTime" : "22:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22ee"), 
+    "team1" : "Granada", 
+    "team2" : "Valladolid", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.322+0000"), 
+    "matchTime" : "22:00", 
+    "prediction" : "Home Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22f0"), 
+    "team1" : "Bochum", 
+    "team2" : "Darmstadt", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.324+0000"), 
+    "matchTime" : "19:30", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22ef"), 
+    "team1" : "RasenBallsport Leipzig", 
+    "team2" : "Augsburg", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.323+0000"), 
+    "matchTime" : "21:30", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22f1"), 
+    "team1" : "Kaiserslautern", 
+    "team2" : "Holstein Kiel", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.324+0000"), 
+    "matchTime" : "19:30", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22f2"), 
+    "team1" : "Osnabrueck", 
+    "team2" : "Chemnitzer FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.325+0000"), 
+    "matchTime" : "20:00", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22f3"), 
+    "team1" : "Paderborn", 
+    "team2" : "RW Erfurt", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.325+0000"), 
+    "matchTime" : "20:00", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22f4"), 
+    "team1" : "FCA Walldorf", 
+    "team2" : "Wormatia Worms", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.326+0000"), 
+    "matchTime" : "20:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22f5"), 
+    "team1" : "Saint-Etienne", 
+    "team2" : "Marseille", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.326+0000"), 
+    "matchTime" : "21:45", 
+    "prediction" : "Away Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22f6"), 
+    "team1" : "AC Ajaccio", 
+    "team2" : "Lorient", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.327+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Over 2.5 goals and Btts ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22f7"), 
+    "team1" : "Chateauroux", 
+    "team2" : "Bourg en Bresse Peronnas", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.327+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22f8"), 
+    "team1" : "Clermont Foot", 
+    "team2" : "GFC Ajaccio", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.328+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22f9"), 
+    "team1" : "Le Havre", 
+    "team2" : "Brest", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.328+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22fa"), 
+    "team1" : "Nancy", 
+    "team2" : "Quevilly", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.329+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Over 2.5 goals  ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22fb"), 
+    "team1" : "Niort", 
+    "team2" : "Orleans", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.330+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22fc"), 
+    "team1" : "Reims", 
+    "team2" : "Sochaux", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.330+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22fd"), 
+    "team1" : "Tours", 
+    "team2" : "Paris FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.331+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22fe"), 
+    "team1" : "AS Beziers", 
+    "team2" : "Boulogne", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.331+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d22ff"), 
+    "team1" : "Avranches", 
+    "team2" : "Pau", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.332+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2300"), 
+    "team1" : "Laval", 
+    "team2" : "Dunkerque", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.332+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2302"), 
+    "team1" : "Lyon la Duchere", 
+    "team2" : "Concarneau", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.333+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2301"), 
+    "team1" : "Les Herbiers", 
+    "team2" : "Entente SSG", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.333+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2303"), 
+    "team1" : "Marseille Consolat", 
+    "team2" : "Cholet", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.334+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2304"), 
+    "team1" : "Cambuur", 
+    "team2" : "MVV Maastricht", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.334+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2305"), 
+    "team1" : "De Graafschap", 
+    "team2" : "FC Volendam", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.335+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Over 2.5 goals and Btts ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2306"), 
+    "team1" : "FC Den Bosch", 
+    "team2" : "FC Eindhoven", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.335+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Over 2.5 goals and Btts ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2308"), 
+    "team1" : "FC Oss", 
+    "team2" : "Almere City FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.336+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2307"), 
+    "team1" : "FC Dordrecht", 
+    "team2" : "Helmond Sport", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.336+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2309"), 
+    "team1" : "Go Ahead Eagles", 
+    "team2" : "FC Emmen", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.338+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Home Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d230a"), 
+    "team1" : "Jong FC Utrecht", 
+    "team2" : "RKC Waalwijk", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.346+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d230b"), 
+    "team1" : "Telstar", 
+    "team2" : "Jong Ajax", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.347+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d230c"), 
+    "team1" : "Genk", 
+    "team2" : "Zulte-Waregem", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.348+0000"), 
+    "matchTime" : "21:30", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d230d"), 
+    "team1" : "KFCO Beerschot-Wilrijk", 
+    "team2" : "Westerlo", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.348+0000"), 
+    "matchTime" : "21:30", 
+    "prediction" : "Away Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d230e"), 
+    "team1" : "Pacos de Ferreira", 
+    "team2" : "Tondela", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.349+0000"), 
+    "matchTime" : "22:30", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d230f"), 
+    "team1" : "FC Ufa", 
+    "team2" : "FK Liepaja", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.350+0000"), 
+    "matchTime" : "13:00", 
+    "prediction" : "Home Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2310"), 
+    "team1" : "FC Zbrojovka Brno", 
+    "team2" : "SKA-Khabarovsk", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.351+0000"), 
+    "matchTime" : "13:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2311"), 
+    "team1" : "Vaalerenga", 
+    "team2" : "Stabaek", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.352+0000"), 
+    "matchTime" : "13:45", 
+    "prediction" : "Over 2.5 goals and Btts ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2312"), 
+    "team1" : "FK Haugesund", 
+    "team2" : "Odds Ballklubb", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.353+0000"), 
+    "matchTime" : "14:00", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2313"), 
+    "team1" : "Djurgaarden", 
+    "team2" : "Assyriska FF", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.353+0000"), 
+    "matchTime" : "15:00", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2314"), 
+    "team1" : "FC Ufa", 
+    "team2" : "Cukaricki", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.354+0000"), 
+    "matchTime" : "16:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2315"), 
+    "team1" : "Kristiansund BK", 
+    "team2" : "Aalesund", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.354+0000"), 
+    "matchTime" : "16:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2316"), 
+    "team1" : "IFK Gothenburg", 
+    "team2" : "1860 Muenchen", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.355+0000"), 
+    "matchTime" : "17:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2317"), 
+    "team1" : "Lokomotiv Moscow", 
+    "team2" : "Stroemsgodset", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.356+0000"), 
+    "matchTime" : "17:00", 
+    "prediction" : "Over 2.5 goals and Btts ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2318"), 
+    "team1" : "Tromsoe", 
+    "team2" : "Tromsdalen", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.356+0000"), 
+    "matchTime" : "17:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2319"), 
+    "team1" : "Start", 
+    "team2" : "Sandefjord", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.357+0000"), 
+    "matchTime" : "18:00", 
+    "prediction" : "Over 2.5 goals and Btts ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d231a"), 
+    "team1" : "AC Horsens", 
+    "team2" : "FC Midtjylland", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.357+0000"), 
+    "matchTime" : "20:00", 
+    "prediction" : "Away Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d231b"), 
+    "team1" : "Oestersunds FK", 
+    "team2" : "Trelleborgs FF", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.358+0000"), 
+    "matchTime" : "20:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d231c"), 
+    "team1" : "RoPS", 
+    "team2" : "AC Oulu", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.358+0000"), 
+    "matchTime" : "17:30", 
+    "prediction" : "Over 2.5 goals and Btts ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d231d"), 
+    "team1" : "HIFK", 
+    "team2" : "FC KTP", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.359+0000"), 
+    "matchTime" : "19:00", 
+    "prediction" : "Home Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d231e"), 
+    "team1" : "FC Inter", 
+    "team2" : "TPS", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.359+0000"), 
+    "matchTime" : "19:00", 
+    "prediction" : "Away Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2320"), 
+    "team1" : "Yeni Malatyaspor", 
+    "team2" : "Kasimpasa", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.360+0000"), 
+    "matchTime" : "19:00", 
+    "prediction" : "Away Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d231f"), 
+    "team1" : "Xamax", 
+    "team2" : "Aarau", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.360+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2321"), 
+    "team1" : "Gaziantepspor", 
+    "team2" : "Adana Demirspor", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.361+0000"), 
+    "matchTime" : "17:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2322"), 
+    "team1" : "TNS", 
+    "team2" : "Bangor City", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.361+0000"), 
+    "matchTime" : "21:45", 
+    "prediction" : "Away Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2323"), 
+    "team1" : "Aberystwyth", 
+    "team2" : "Llandudno FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.362+0000"), 
+    "matchTime" : "22:00", 
+    "prediction" : "Away Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2324"), 
+    "team1" : "Wisla Plock", 
+    "team2" : "Gornik Zabrze", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.362+0000"), 
+    "matchTime" : "19:00", 
+    "prediction" : "Home Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2325"), 
+    "team1" : "Zaglebie Lubin", 
+    "team2" : "Legia Warszawa", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.363+0000"), 
+    "matchTime" : "21:30", 
+    "prediction" : "Away Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2326"), 
+    "team1" : "Inter Zapresic", 
+    "team2" : "Slaven", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.363+0000"), 
+    "matchTime" : "19:00", 
+    "prediction" : "Away Win ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2327"), 
+    "team1" : "ACS Poli Timisoara", 
+    "team2" : "FC Voluntari", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.364+0000"), 
+    "matchTime" : "18:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2328"), 
+    "team1" : "Astra Giurgiu", 
+    "team2" : "Gaz Metan Medias", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.365+0000"), 
+    "matchTime" : "20:45", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2329"), 
+    "team1" : "Hapoel Hadera Eran", 
+    "team2" : "Hapoel Petah Tikva", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.365+0000"), 
+    "matchTime" : "15:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d232a"), 
+    "team1" : "Hapoel Katamon Jerusalem", 
+    "team2" : "Maccabi Ahi Nazareth", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.366+0000"), 
+    "matchTime" : "15:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d232b"), 
+    "team1" : "Hapoel Nazareth Illit", 
+    "team2" : "Hapoel Bnei Lod", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.366+0000"), 
+    "matchTime" : "15:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d232c"), 
+    "team1" : "Hapoel Nir Ramat HaSharon", 
+    "team2" : "Beitar Tel Aviv Ramla", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.367+0000"), 
+    "matchTime" : "15:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d232d"), 
+    "team1" : "Hapoel Tel Aviv", 
+    "team2" : "Ironi Nesher", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.367+0000"), 
+    "matchTime" : "15:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d232e"), 
+    "team1" : "Santa Fe", 
+    "team2" : "Deportivo Tachira", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.368+0000"), 
+    "matchTime" : "2:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d232f"), 
+    "team1" : "Jorge Wilstermann", 
+    "team2" : "Oriente Petrolero", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.368+0000"), 
+    "matchTime" : "2:30", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2331"), 
+    "team1" : "Union", 
+    "team2" : "Arsenal Sarandi", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.369+0000"), 
+    "matchTime" : "24:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2330"), 
+    "team1" : "Defensa y Justicia", 
+    "team2" : "Chacarita Juniors", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.369+0000"), 
+    "matchTime" : "24:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2332"), 
+    "team1" : "Santo Andre", 
+    "team2" : "Corinthians", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.370+0000"), 
+    "matchTime" : "23:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2333"), 
+    "team1" : "Sao Bento", 
+    "team2" : "Linense", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.370+0000"), 
+    "matchTime" : "23:15", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2334"), 
+    "team1" : "Bolivar", 
+    "team2" : "Real Potosi", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.371+0000"), 
+    "matchTime" : "2:00", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2335"), 
+    "team1" : "Destroyers", 
+    "team2" : "Universitario", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.371+0000"), 
+    "matchTime" : "2:30", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2336"), 
+    "team1" : "Union La Calera", 
+    "team2" : "Antofagasta", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.372+0000"), 
+    "matchTime" : "24:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2337"), 
+    "team1" : "Deportivo Capiata", 
+    "team2" : "Luqueno", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.372+0000"), 
+    "matchTime" : "23:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2338"), 
+    "team1" : "Independiente CG", 
+    "team2" : "Nacional", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.373+0000"), 
+    "matchTime" : "25:20", 
+    "prediction" : "Over 2.5 goals  ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2339"), 
+    "team1" : "Monagas SC", 
+    "team2" : "Zamora FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.373+0000"), 
+    "matchTime" : "25:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d233a"), 
+    "team1" : "Racing FC", 
+    "team2" : "Central FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.374+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d233b"), 
+    "team1" : "Santos de Guapiles", 
+    "team2" : "LD Alajuelense", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.374+0000"), 
+    "matchTime" : "4:00", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d233c"), 
+    "team1" : "CD FAS", 
+    "team2" : "Alianza FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.375+0000"), 
+    "matchTime" : "3:30", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d233d"), 
+    "team1" : "Bengaluru FC", 
+    "team2" : "FC Goa", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.375+0000"), 
+    "matchTime" : "16:30", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d233e"), 
+    "team1" : "Buriram United", 
+    "team2" : "Ratchaburi FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.376+0000"), 
+    "matchTime" : "14:00", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d233f"), 
+    "team1" : "Padideh FC", 
+    "team2" : "Pars Jonoubi Jam Bushehr", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.376+0000"), 
+    "matchTime" : "13:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2340"), 
+    "team1" : "Esteghlal Khuzestan", 
+    "team2" : "Foolad Khuzestan", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.377+0000"), 
+    "matchTime" : "13:30", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2341"), 
+    "team1" : "Paykan", 
+    "team2" : "Meshki Pooshan", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.377+0000"), 
+    "matchTime" : "13:30", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2342"), 
+    "team1" : "Sepahan", 
+    "team2" : "Naft Tehran", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.378+0000"), 
+    "matchTime" : "14:30", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2343"), 
+    "team1" : "Al-Raed", 
+    "team2" : "Al Batin", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.378+0000"), 
+    "matchTime" : "14:50", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2344"), 
+    "team1" : "Ohod", 
+    "team2" : "Al-Taawon", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.379+0000"), 
+    "matchTime" : "17:55", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2345"), 
+    "team1" : "Al Qadasiya", 
+    "team2" : "Al Ittihad", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.379+0000"), 
+    "matchTime" : "19:20", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2347"), 
+    "team1" : "Shabab Al-Ahli Dubai FC", 
+    "team2" : "Sharjah Cultural Club", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.380+0000"), 
+    "matchTime" : "18:00", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2346"), 
+    "team1" : "Ajman", 
+    "team2" : "Al-Nasr SC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.380+0000"), 
+    "matchTime" : "15:25", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2348"), 
+    "team1" : "Melbourne Victory", 
+    "team2" : "Brisbane Roar FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.381+0000"), 
+    "matchTime" : "10:50", 
+    "prediction" : "Over 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2349"), 
+    "team1" : "Energie FC", 
+    "team2" : "Hafia FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.381+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d234a"), 
+    "team1" : "USM Blida", 
+    "team2" : "Paradou AC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.382+0000"), 
+    "matchTime" : "16:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d234b"), 
+    "team1" : "CS Constantine", 
+    "team2" : "USM El Harrach", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.382+0000"), 
+    "matchTime" : "17:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d234c"), 
+    "team1" : "USM Alger", 
+    "team2" : "USM Bel Abbes", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.383+0000"), 
+    "matchTime" : "18:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d234d"), 
+    "team1" : "El Dakhleya", 
+    "team2" : "Ismaily SC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.383+0000"), 
+    "matchTime" : "14:30", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d234e"), 
+    "team1" : "Wadi Degla FC", 
+    "team2" : "Petrojet", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.384+0000"), 
+    "matchTime" : "17:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d234f"), 
+    "team1" : "El Entag El Harby", 
+    "team2" : "Al-Ittihad Al-Sakandary", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.384+0000"), 
+    "matchTime" : "19:30", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2350"), 
+    "team1" : "Nakumatt", 
+    "team2" : "Thika United", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.385+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2351"), 
+    "team1" : "Mathare United", 
+    "team2" : "Nzoia Sugar FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.386+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2352"), 
+    "team1" : "Cape Town All Stars", 
+    "team2" : "Mamelodi Sundowns FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.386+0000"), 
+    "matchTime" : "21:00", 
+    "prediction" : "Under 2.5 goals ", 
+    "resurse" : "over25tips", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2353"), 
+    "team1" : "Esteghlal Tehran", 
+    "team2" : "Sepidrood Rasht", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.454+0000"), 
+    "propability1" : "59", 
+    "propabilityX" : "31", 
+    "propability2" : "10", 
+    "prediction" : "1", 
+    "matchTime" : "14:30", 
+    "correctScore" : "2 - 1", 
+    "avarageGoal" : "2.63", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2355"), 
+    "team1" : "Mansheyat", 
+    "team2" : "Ahli Amman", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.455+0000"), 
+    "propability1" : "34", 
+    "propabilityX" : "39", 
+    "propability2" : "27", 
+    "prediction" : "X", 
+    "matchTime" : "15:00", 
+    "correctScore" : "1 - 1", 
+    "avarageGoal" : "1.88", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2354"), 
+    "team1" : "Saipa Karaj", 
+    "team2" : "Zob Ahan", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.455+0000"), 
+    "propability1" : "28", 
+    "propabilityX" : "41", 
+    "propability2" : "31", 
+    "prediction" : "X", 
+    "matchTime" : "14:30", 
+    "correctScore" : "1 - 1", 
+    "avarageGoal" : "2.00", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2356"), 
+    "team1" : "Al Dhafra", 
+    "team2" : "Dubba Al Fujairah", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.456+0000"), 
+    "propability1" : "34", 
+    "propabilityX" : "37", 
+    "propability2" : "29", 
+    "prediction" : "X", 
+    "matchTime" : "15:30", 
+    "correctScore" : "2 - 2", 
+    "avarageGoal" : "3.67", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2357"), 
+    "team1" : "Tadamon (KUW)", 
+    "team2" : "Salmiya SC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.456+0000"), 
+    "propability1" : "17", 
+    "propabilityX" : "33", 
+    "propability2" : "50", 
+    "prediction" : "2", 
+    "matchTime" : "15:45", 
+    "correctScore" : "0 - 3", 
+    "avarageGoal" : "2.53", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2358"), 
+    "team1" : "Gharrafa SC", 
+    "team2" : "Al-Duhail", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.457+0000"), 
+    "propability1" : "15", 
+    "propabilityX" : "44", 
+    "propability2" : "41", 
+    "prediction" : "X", 
+    "matchTime" : "15:45", 
+    "correctScore" : "1 - 1", 
+    "avarageGoal" : "2.88", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2359"), 
+    "team1" : "Jazeera Amman", 
+    "team2" : "Hussein Irbid", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.457+0000"), 
+    "propability1" : "52", 
+    "propabilityX" : "28", 
+    "propability2" : "19", 
+    "prediction" : "1", 
+    "matchTime" : "17:30", 
+    "correctScore" : "2 - 1", 
+    "avarageGoal" : "2.81", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d235a"), 
+    "team1" : "Rayyan SC", 
+    "team2" : "Al Sadd SC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.458+0000"), 
+    "propability1" : "30", 
+    "propabilityX" : "29", 
+    "propability2" : "42", 
+    "prediction" : "2", 
+    "matchTime" : "17:50", 
+    "correctScore" : "2 - 3", 
+    "avarageGoal" : "3.77", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d235b"), 
+    "team1" : "Al Ain", 
+    "team2" : "Emirates Club", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.459+0000"), 
+    "propability1" : "72", 
+    "propabilityX" : "19", 
+    "propability2" : "9", 
+    "prediction" : "1", 
+    "matchTime" : "18:00", 
+    "correctScore" : "3 - 0", 
+    "avarageGoal" : "4.02", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d235c"), 
+    "team1" : "Qadisiya Kuwait", 
+    "team2" : "Kazma SC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.460+0000"), 
+    "propability1" : "28", 
+    "propabilityX" : "51", 
+    "propability2" : "21", 
+    "prediction" : "X", 
+    "matchTime" : "18:05", 
+    "correctScore" : "1 - 1", 
+    "avarageGoal" : "2.01", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d235d"), 
+    "team1" : "ADO Den Haag", 
+    "team2" : "Vitesse Arnhem", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.460+0000"), 
+    "propability1" : "24", 
+    "propabilityX" : "35", 
+    "propability2" : "41", 
+    "prediction" : "2", 
+    "matchTime" : "19:30", 
+    "correctScore" : "1 - 3", 
+    "avarageGoal" : "2.80", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d235e"), 
+    "team1" : "NEC Nijmegen", 
+    "team2" : "Jong PSV", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.461+0000"), 
+    "propability1" : "38", 
+    "propabilityX" : "32", 
+    "propability2" : "30", 
+    "prediction" : "1", 
+    "matchTime" : "21:00", 
+    "correctScore" : "3 - 2", 
+    "avarageGoal" : "4.33", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d235f"), 
+    "team1" : "Feyenoord", 
+    "team2" : "FC Groningen", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.461+0000"), 
+    "propability1" : "55", 
+    "propabilityX" : "27", 
+    "propability2" : "18", 
+    "prediction" : "1", 
+    "matchTime" : "21:45", 
+    "correctScore" : "3 - 1", 
+    "avarageGoal" : "3.22", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2360"), 
+    "team1" : "Bala Town", 
+    "team2" : "Cefn Druids AFC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.462+0000"), 
+    "propability1" : "50", 
+    "propabilityX" : "26", 
+    "propability2" : "25", 
+    "prediction" : "1", 
+    "matchTime" : "21:45", 
+    "correctScore" : "2 - 0", 
+    "avarageGoal" : "2.23", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2361"), 
+    "team1" : "Grenoble", 
+    "team2" : "Strasbourg", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.463+0000"), 
+    "propability1" : "32", 
+    "propabilityX" : "31", 
+    "propability2" : "38", 
+    "prediction" : "2", 
+    "matchTime" : "22:00", 
+    "correctScore" : "1 - 2", 
+    "avarageGoal" : "2.50", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2362"), 
+    "team1" : "Valencia CF", 
+    "team2" : "FC Barcelona", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.463+0000"), 
+    "propability1" : "21", 
+    "propabilityX" : "38", 
+    "propability2" : "41", 
+    "prediction" : "2", 
+    "matchTime" : "22:30", 
+    "correctScore" : "2 - 3", 
+    "avarageGoal" : "3.10", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2363"), 
+    "team1" : "Municipal Grecia", 
+    "team2" : "Municipal Liberia", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.464+0000"), 
+    "propability1" : "60", 
+    "propabilityX" : "22", 
+    "propability2" : "18", 
+    "prediction" : "1", 
+    "matchTime" : "23:00", 
+    "correctScore" : "3 - 0", 
+    "avarageGoal" : "3.00", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2364"), 
+    "team1" : "Bol&#xED;var", 
+    "team2" : "Real Potos&#xED;", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.465+0000"), 
+    "propability1" : "58", 
+    "propabilityX" : "25", 
+    "propability2" : "17", 
+    "prediction" : "1", 
+    "matchTime" : "2:00", 
+    "correctScore" : "3 - 1", 
+    "avarageGoal" : "3.08", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2365"), 
+    "team1" : "Club Destroyers", 
+    "team2" : "Universitario Sucre", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.465+0000"), 
+    "propability1" : "44", 
+    "propabilityX" : "29", 
+    "propability2" : "27", 
+    "prediction" : "1", 
+    "matchTime" : "2:30", 
+    "correctScore" : "3 - 0", 
+    "avarageGoal" : "3.12", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2366"), 
+    "team1" : "Chorrillo FC", 
+    "team2" : "Santa Gema", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.466+0000"), 
+    "propability1" : "42", 
+    "propabilityX" : "43", 
+    "propability2" : "15", 
+    "prediction" : "X", 
+    "matchTime" : "3:00", 
+    "correctScore" : "1 - 1", 
+    "avarageGoal" : "1.78", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2367"), 
+    "team1" : "San Francisco FC", 
+    "team2" : "Tauro FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.466+0000"), 
+    "propability1" : "16", 
+    "propabilityX" : "44", 
+    "propability2" : "40", 
+    "prediction" : "X", 
+    "matchTime" : "3:00", 
+    "correctScore" : "1 - 1", 
+    "avarageGoal" : "2.53", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2369"), 
+    "team1" : "Sporting San Miguelito", 
+    "team2" : "CD Plaza Amador", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.467+0000"), 
+    "propability1" : "22", 
+    "propabilityX" : "39", 
+    "propability2" : "40", 
+    "prediction" : "2", 
+    "matchTime" : "3:00", 
+    "correctScore" : "1 - 2", 
+    "avarageGoal" : "2.66", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2368"), 
+    "team1" : "Atl&#xE9;tico Verag&#xFC;ense", 
+    "team2" : "CAI de La Chorrera", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.467+0000"), 
+    "propability1" : "33", 
+    "propabilityX" : "35", 
+    "propability2" : "32", 
+    "prediction" : "X", 
+    "matchTime" : "3:00", 
+    "correctScore" : "1 - 1", 
+    "avarageGoal" : "1.55", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d236a"), 
+    "team1" : "CD FAS", 
+    "team2" : "Alianza FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.468+0000"), 
+    "propability1" : "21", 
+    "propabilityX" : "43", 
+    "propability2" : "36", 
+    "prediction" : "X", 
+    "matchTime" : "3:30", 
+    "correctScore" : "1 - 1", 
+    "avarageGoal" : "2.09", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d236b"), 
+    "team1" : "Santos Gu&#xE1;piles", 
+    "team2" : "LD Alajuelense", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.468+0000"), 
+    "propability1" : "40", 
+    "propabilityX" : "27", 
+    "propability2" : "33", 
+    "prediction" : "1", 
+    "matchTime" : "4:00", 
+    "correctScore" : "3 - 1", 
+    "avarageGoal" : "3.02", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d236c"), 
+    "team1" : "Alianza FC (PAN)", 
+    "team2" : "CD &#xC1;rabe Unido", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.470+0000"), 
+    "propability1" : "20", 
+    "propabilityX" : "34", 
+    "propability2" : "46", 
+    "prediction" : "2", 
+    "matchTime" : "3:00", 
+    "correctScore" : "1 - 2", 
+    "avarageGoal" : "2.71", 
+    "resurse" : "Forebet", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d236d"), 
+    "team1" : "", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.493+0000"), 
+    "matchTime" : "7", 
+    "correctScore" : "", 
+    "tournament" : "Fabien Victor", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d236e"), 
+    "team1" : "", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.494+0000"), 
+    "matchTime" : "7", 
+    "correctScore" : "", 
+    "tournament" : "Noburu Shun", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d236f"), 
+    "team1" : "", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.494+0000"), 
+    "matchTime" : "7", 
+    "correctScore" : "", 
+    "tournament" : "Marc Demouge", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2370"), 
+    "team1" : "", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.495+0000"), 
+    "matchTime" : "7", 
+    "correctScore" : "", 
+    "tournament" : "Andreas Friz", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2371"), 
+    "team1" : "", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.496+0000"), 
+    "matchTime" : "7", 
+    "correctScore" : "", 
+    "tournament" : "Aleks Nikiforov", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2372"), 
+    "team1" : "", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.496+0000"), 
+    "matchTime" : "7", 
+    "correctScore" : "", 
+    "tournament" : "Andre Trigueira", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2373"), 
+    "team1" : "", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.497+0000"), 
+    "matchTime" : "7", 
+    "correctScore" : "", 
+    "tournament" : "Tom de Reuver", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2374"), 
+    "team1" : "", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.497+0000"), 
+    "matchTime" : "6", 
+    "correctScore" : "", 
+    "tournament" : "Reid Bodle", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2375"), 
+    "team1" : "", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.498+0000"), 
+    "matchTime" : "6", 
+    "correctScore" : "", 
+    "tournament" : "Tolek Rusak", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2376"), 
+    "team1" : "", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.498+0000"), 
+    "matchTime" : "6", 
+    "correctScore" : "", 
+    "tournament" : "Owen Hudson", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2377"), 
+    "team1" : "Nacional Potosi", 
+    "team2" : "The Strongest", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.499+0000"), 
+    "matchTime" : "2:00", 
+    "correctScore" : "2:1", 
+    "tournament" : "Bolivian Profesional Liga", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2378"), 
+    "team1" : "CA Acassuso", 
+    "team2" : "Defensores de Belgrano", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.499+0000"), 
+    "matchTime" : "2:05", 
+    "correctScore" : "2:0", 
+    "tournament" : "Argentinian Primera B Metro", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2379"), 
+    "team1" : "Atletico Nacional", 
+    "team2" : "Millonarios", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.500+0000"), 
+    "matchTime" : "2:05", 
+    "correctScore" : "3:1", 
+    "tournament" : "Colombian Super Cup", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d237a"), 
+    "team1" : "Godoy Cruz", 
+    "team2" : "Atletico Lanus", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.500+0000"), 
+    "matchTime" : "2:30", 
+    "correctScore" : "0:1", 
+    "tournament" : "Argentinian Primera", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d237b"), 
+    "team1" : "Sarmiento de Resistencia", 
+    "team2" : "Crucero Del Norte", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.501+0000"), 
+    "matchTime" : "2:30", 
+    "correctScore" : "1:2", 
+    "tournament" : "Copa Argentina", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d237d"), 
+    "team1" : "Sao Raimundo", 
+    "team2" : "Vila Nova", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.502+0000"), 
+    "matchTime" : "2:30", 
+    "correctScore" : "2:2", 
+    "tournament" : "Copa do Brasil", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d237c"), 
+    "team1" : "Manaus FC", 
+    "team2" : "Csa Al", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.501+0000"), 
+    "matchTime" : "2:30", 
+    "correctScore" : "1:3", 
+    "tournament" : "Copa do Brasil", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d237e"), 
+    "team1" : "Atlético Zacatepec", 
+    "team2" : "Necaxa", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.502+0000"), 
+    "matchTime" : "3:00", 
+    "correctScore" : "0:2", 
+    "tournament" : "Copa Mexico", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d237f"), 
+    "team1" : "CD Sonsonate", 
+    "team2" : "Luis Angel Firpo", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.503+0000"), 
+    "matchTime" : "3:00", 
+    "correctScore" : "2:1", 
+    "tournament" : "El Salvador Primera", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2380"), 
+    "team1" : "Olimpia", 
+    "team2" : "CD Honduras", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.503+0000"), 
+    "matchTime" : "3:00", 
+    "correctScore" : "2:1", 
+    "tournament" : "Honduran Liga Nacional", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2381"), 
+    "team1" : "Real Espana", 
+    "team2" : "UPNFM", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.504+0000"), 
+    "matchTime" : "3:00", 
+    "correctScore" : "2:1", 
+    "tournament" : "Honduran Liga Nacional", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2382"), 
+    "team1" : "CA Independiente", 
+    "team2" : "Atletico Veraguense", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.504+0000"), 
+    "matchTime" : "3:00", 
+    "correctScore" : "0:2", 
+    "tournament" : "Panamanian Primera", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2383"), 
+    "team1" : "Alianza FC", 
+    "team2" : "CD Arabe Unido", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.505+0000"), 
+    "matchTime" : "3:00", 
+    "correctScore" : "1:1", 
+    "tournament" : "Panamanian Primera", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2384"), 
+    "team1" : "CD Platense", 
+    "team2" : "Motagua", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.505+0000"), 
+    "matchTime" : "3:15", 
+    "correctScore" : "2:0", 
+    "tournament" : "Honduran Liga Nacional", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2385"), 
+    "team1" : "CD Vida", 
+    "team2" : "Juticalpa FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.506+0000"), 
+    "matchTime" : "3:15", 
+    "correctScore" : "0:1", 
+    "tournament" : "Honduran Liga Nacional", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2386"), 
+    "team1" : "CS Herediano", 
+    "team2" : "Cartagines", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.506+0000"), 
+    "matchTime" : "4:00", 
+    "correctScore" : "3:0", 
+    "tournament" : "Costa Rican Primera Division", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2387"), 
+    "team1" : "Deportivo Saprissa", 
+    "team2" : "Zeledon", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.507+0000"), 
+    "matchTime" : "4:00", 
+    "correctScore" : "3:1", 
+    "tournament" : "Costa Rican Primera Division", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2388"), 
+    "team1" : "Toluca", 
+    "team2" : "Santos Laguna", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.507+0000"), 
+    "matchTime" : "4:30", 
+    "correctScore" : "2:0", 
+    "tournament" : "Copa Mexico", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2389"), 
+    "team1" : "Puebla", 
+    "team2" : "Cruz Azul", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.508+0000"), 
+    "matchTime" : "5:00", 
+    "correctScore" : "0:1", 
+    "tournament" : "Copa Mexico", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d238a"), 
+    "team1" : "Atlas Guadalajara", 
+    "team2" : "Tampico Madero", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.508+0000"), 
+    "matchTime" : "5:00", 
+    "correctScore" : "0:0", 
+    "tournament" : "Copa Mexico", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d238b"), 
+    "team1" : "Spartak Nalchik", 
+    "team2" : "FK Angusht Nazran", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.509+0000"), 
+    "matchTime" : "10:00", 
+    "correctScore" : "1:0", 
+    "tournament" : "Club Friendlies", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d238c"), 
+    "team1" : "Western Strikers", 
+    "team2" : "Adelaide Comets", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.510+0000"), 
+    "matchTime" : "10:30", 
+    "correctScore" : "0:4", 
+    "tournament" : "Club Friendlies", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d238d"), 
+    "team1" : "South Melbourne", 
+    "team2" : "Guangzhou R&F", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.510+0000"), 
+    "matchTime" : "10:30", 
+    "correctScore" : "0:2", 
+    "tournament" : "Club Friendlies", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d238e"), 
+    "team1" : "Lokomotiv Moscow Youth", 
+    "team2" : "Veles", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.511+0000"), 
+    "matchTime" : "11:00", 
+    "correctScore" : "2:1", 
+    "tournament" : "Club Friendlies", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d238f"), 
+    "team1" : "Gyirmot SE", 
+    "team2" : "Szolnoki MÁV", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.511+0000"), 
+    "matchTime" : "12:30", 
+    "correctScore" : "0:2", 
+    "tournament" : "Club Friendlies", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2390"), 
+    "team1" : "Khoneh Be Khoneh", 
+    "team2" : "Nassaji Mazandaran", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.512+0000"), 
+    "matchTime" : "12:30", 
+    "correctScore" : "0:1", 
+    "tournament" : "Iranian Azadegan League", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2391"), 
+    "team1" : "Malavan Bandar Anzali FC", 
+    "team2" : "Saba Qom FC", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.512+0000"), 
+    "matchTime" : "12:30", 
+    "correctScore" : "4:1", 
+    "tournament" : "Iranian Azadegan League", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2392"), 
+    "team1" : "Videoton", 
+    "team2" : "FC Krasnodar", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.513+0000"), 
+    "matchTime" : "13:00", 
+    "correctScore" : "2:2", 
+    "tournament" : "Club Friendlies", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2393"), 
+    "team1" : "Saipa Karaj", 
+    "team2" : "Zob Ahan", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.513+0000"), 
+    "matchTime" : "14:30", 
+    "correctScore" : "0:1", 
+    "tournament" : "Iranian Pro League", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2394"), 
+    "team1" : "Esteghlal", 
+    "team2" : "Sepidroud Rasht", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.514+0000"), 
+    "matchTime" : "14:30", 
+    "correctScore" : "4:1", 
+    "tournament" : "Iranian Pro League", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2395"), 
+    "team1" : "Brann", 
+    "team2" : "Viking", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.514+0000"), 
+    "matchTime" : "15:00", 
+    "correctScore" : "4:0", 
+    "tournament" : "Club Friendlies", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2396"), 
+    "team1" : "Shandong Luneng", 
+    "team2" : "FC Astana", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.515+0000"), 
+    "matchTime" : "15:00", 
+    "correctScore" : "0:2", 
+    "tournament" : "Club Friendlies", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2397"), 
+    "team1" : "Manshia Bani Hassan", 
+    "team2" : "Al Ahli Amman", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.515+0000"), 
+    "matchTime" : "15:00", 
+    "correctScore" : "2:0", 
+    "tournament" : "Jordanian Pro League", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2398"), 
+    "team1" : "Al Dhafra", 
+    "team2" : "Dibba Al Fujairah", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.516+0000"), 
+    "matchTime" : "15:30", 
+    "correctScore" : "0:1", 
+    "tournament" : "UAE Premier League", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d2399"), 
+    "team1" : "Al Gharafa", 
+    "team2" : "Lekhwiya", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.516+0000"), 
+    "matchTime" : "15:40", 
+    "correctScore" : "1:2", 
+    "tournament" : "Qatari Stars League", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d239a"), 
+    "team1" : "Al Tadhamon", 
+    "team2" : "Al Salmiyah", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.517+0000"), 
+    "matchTime" : "15:45", 
+    "correctScore" : "2:2", 
+    "tournament" : "Kuwaiti Premier League", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d239c"), 
+    "team1" : "Atlético de Kolkata", 
+    "team2" : "Kerala Blasters", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.518+0000"), 
+    "matchTime" : "16:30", 
+    "correctScore" : "0:3", 
+    "tournament" : "Indian Super League", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d239b"), 
+    "team1" : "FK Gomel", 
+    "team2" : "Ural Sverdlovsk Oblast", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.517+0000"), 
+    "matchTime" : "16:30", 
+    "correctScore" : "1:1", 
+    "tournament" : "Club Friendlies", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d239d"), 
+    "team1" : "Sarpsborg", 
+    "team2" : "Kalmar", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.518+0000"), 
+    "matchTime" : "17:00", 
+    "correctScore" : "1:2", 
+    "tournament" : "Club Friendlies", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d239e"), 
+    "team1" : "Al-Najma Manama", 
+    "team2" : "Al Ittihad", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.519+0000"), 
+    "matchTime" : "17:10", 
+    "correctScore" : "2:0", 
+    "tournament" : "Bahraini King's Cup", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d239f"), 
+    "team1" : "Al Jazeera", 
+    "team2" : "Al Hussein", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.520+0000"), 
+    "matchTime" : "17:30", 
+    "correctScore" : "1:0", 
+    "tournament" : "Jordanian Pro League", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23a0"), 
+    "team1" : "Al Rayyan", 
+    "team2" : "Al Sadd", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.520+0000"), 
+    "matchTime" : "17:50", 
+    "correctScore" : "0:0", 
+    "tournament" : "Qatari Stars League", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23a1"), 
+    "team1" : "Hellerup IK", 
+    "team2" : "Greve", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.521+0000"), 
+    "matchTime" : "18:00", 
+    "correctScore" : "2:1", 
+    "tournament" : "Club Friendlies", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23a2"), 
+    "team1" : "Al Ain", 
+    "team2" : "Emirates Club", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.521+0000"), 
+    "matchTime" : "18:00", 
+    "correctScore" : "3:0", 
+    "tournament" : "UAE Premier League", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23a4"), 
+    "team1" : "Al-Mudhaibi SC", 
+    "team2" : "Al Shahab", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.522+0000"), 
+    "matchTime" : "18:15", 
+    "correctScore" : "2:0", 
+    "tournament" : "Omani Pro League", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23a3"), 
+    "team1" : "AL Qadsia", 
+    "team2" : "Kazma", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.522+0000"), 
+    "matchTime" : "18:05", 
+    "correctScore" : "2:0", 
+    "tournament" : "Kuwaiti Premier League", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23a5"), 
+    "team1" : "Al Moqawloon Al Arab", 
+    "team2" : "Al-Ahly Cairo", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.524+0000"), 
+    "matchTime" : "19:00", 
+    "correctScore" : "0:3", 
+    "tournament" : "Egyptian Pr. League", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23a6"), 
+    "team1" : "Al Ahli Jeddah", 
+    "team2" : "Al Faisaly", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.524+0000"), 
+    "matchTime" : "19:20", 
+    "correctScore" : "1:2", 
+    "tournament" : "Saudi Arabian Pro League", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23a7"), 
+    "team1" : "Al Hilal", 
+    "team2" : "Al Nassr", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.525+0000"), 
+    "matchTime" : "19:20", 
+    "correctScore" : "1:2", 
+    "tournament" : "Saudi Arabian Pro League", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23a8"), 
+    "team1" : "Eupen II", 
+    "team2" : "Zulte Waregem II", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.525+0000"), 
+    "matchTime" : "19:30", 
+    "correctScore" : "2:1", 
+    "tournament" : "Belgian Reserve Pro League", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23a9"), 
+    "team1" : "ADO Den Haag", 
+    "team2" : "Vitesse", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.526+0000"), 
+    "matchTime" : "19:30", 
+    "correctScore" : "2:1", 
+    "tournament" : "Dutch Eredivisie", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23aa"), 
+    "team1" : "Malta W.", 
+    "team2" : "Estonia W.", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.526+0000"), 
+    "matchTime" : "19:30", 
+    "correctScore" : "2:0", 
+    "tournament" : "Friendly Intls. W.", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23ab"), 
+    "team1" : "Atromitos", 
+    "team2" : "PAOK", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.527+0000"), 
+    "matchTime" : "19:30", 
+    "correctScore" : "2:0", 
+    "tournament" : "Greek Cup", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23ac"), 
+    "team1" : "Galatasaray", 
+    "team2" : "Konyaspor", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.527+0000"), 
+    "matchTime" : "19:30", 
+    "correctScore" : "1:1", 
+    "tournament" : "Turkish Cup", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23ad"), 
+    "team1" : "Al-Riffa", 
+    "team2" : "Al Muharraq", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.528+0000"), 
+    "matchTime" : "19:40", 
+    "correctScore" : "1:1", 
+    "tournament" : "Bahraini King's Cup", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23ae"), 
+    "team1" : "Boavista", 
+    "team2" : "Bangu", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.528+0000"), 
+    "matchTime" : "21:00", 
+    "correctScore" : "0:0", 
+    "tournament" : "Brazilian Carioca", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23af"), 
+    "team1" : "NEC Nijmegen", 
+    "team2" : "Jong PSV Eindhoven", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.529+0000"), 
+    "matchTime" : "21:00", 
+    "correctScore" : "2:1", 
+    "tournament" : "Dutch Eerste Divisie", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23b0"), 
+    "team1" : "Club Brugge", 
+    "team2" : "Standard Liege", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.529+0000"), 
+    "matchTime" : "21:45", 
+    "correctScore" : "3:1", 
+    "tournament" : "Belgian Cup", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23b1"), 
+    "team1" : "Feyenoord", 
+    "team2" : "Groningen", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.530+0000"), 
+    "matchTime" : "21:45", 
+    "correctScore" : "5:0", 
+    "tournament" : "Dutch Eredivisie", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23b2"), 
+    "team1" : "Bala Town", 
+    "team2" : "Cefn Druids", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.530+0000"), 
+    "matchTime" : "21:45", 
+    "correctScore" : "3:0", 
+    "tournament" : "Welsh Premier League", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23b3"), 
+    "team1" : "Grenoble Foot 38", 
+    "team2" : "Strasbourg", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.530+0000"), 
+    "matchTime" : "22:00", 
+    "correctScore" : "0:3", 
+    "tournament" : "French Cup", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23b4"), 
+    "team1" : "Valencia", 
+    "team2" : "Barcelona", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.531+0000"), 
+    "matchTime" : "22:30", 
+    "correctScore" : "1:3", 
+    "tournament" : "Spanish Copa del Rey", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23b5"), 
+    "team1" : "Municipal Grecia", 
+    "team2" : "Municipal Liberia", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.532+0000"), 
+    "matchTime" : "23:00", 
+    "correctScore" : "1:2", 
+    "tournament" : "Costa Rican Primera Division", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23b6"), 
+    "team1" : "Sampaio Correa MA", 
+    "team2" : "Salgueiro PE", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.532+0000"), 
+    "matchTime" : "24:00", 
+    "correctScore" : "1:2", 
+    "tournament" : "Brazilian Copa do Nordeste", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23b7"), 
+    "team1" : "Uberlandia", 
+    "team2" : "America MG", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.533+0000"), 
+    "matchTime" : "24:15", 
+    "correctScore" : "1:3", 
+    "tournament" : "Brazilian Mineiro", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23b8"), 
+    "team1" : "Internacional RS", 
+    "team2" : "Sao Jose RS", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.533+0000"), 
+    "matchTime" : "24:30", 
+    "correctScore" : "1:1", 
+    "tournament" : "Brazilian Gaucho", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5a7beb5eded2080adb9d23b9"), 
+    "team1" : "Juazeirense BA", 
+    "team2" : "Bahia de Feira", 
+    "addedDate" : ISODate("2018-02-08T06:17:02.534+0000"), 
+    "matchTime" : "25:00", 
+    "correctScore" : "3:0", 
+    "tournament" : "Brazilian Baiano", 
+    "resurse" : "bettingtips1x2", 
+    "__v" : NumberInt(0)
+}

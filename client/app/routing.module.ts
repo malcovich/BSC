@@ -14,6 +14,8 @@ import { AuthGuardLogin } from './services/auth-guard-login.service';
 import { AuthGuardAdmin } from './services/auth-guard-admin.service';
 import { ListResursesComponent } from './listResurses/listResurses.component';
 import { ResurseComponent } from './resurse/resurse.component';
+import { ClubComponent } from './clubs/club/club-detail.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 const routes: Routes = [
   { path: '', component: AboutComponent },
   { path: 'cats', component: CatsComponent },
@@ -26,6 +28,8 @@ const routes: Routes = [
   { path: 'account', component: AccountComponent, canActivate: [AuthGuardLogin] },
   { path: 'admin', component: AdminComponent, canActivate: [AuthGuardAdmin] },
   { path: 'notfound', component: NotFoundComponent },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'clubs/:id', component: ClubComponent },
   { path: '**', redirectTo: '/notfound' },
 ];
 

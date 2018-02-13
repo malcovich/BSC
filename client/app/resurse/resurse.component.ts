@@ -146,15 +146,27 @@ export class ResurseComponent implements OnInit {
     if (item.prediction == '10'){
       return '1X';
     };
-    if (item.prediction == '' && item.correctScore){
-      let goals = item.correctScore.split('-');
-      if(goals[0] > goals[1]) {
-        return '1';
-      }else if (goals[0] < goals[1]) {
-        return '2';
-      }else {
-        return 'X';
-      }
+    if (item.prediction == undefined && item.correctScore){
+      // if(item.correctScore.indexOf('-') > -1) {
+      //   let goals = item.correctScore.split('-');
+      //   if(goals[0] > goals[1]) {
+      //     return '1';
+      //   }else if (goals[0] < goals[1]) {
+      //     return '2';
+      //   }else {
+      //     return 'X';
+      //   }
+      // }if(item.correctScore.indexOf(':') > -1)  {
+        let goals = item.correctScore.split(':');
+        if(goals[0] > goals[1]) {
+          return '1';
+        }else if (goals[0] < goals[1]) {
+          return '2';
+        }else {
+          return 'X';
+        }
+      // }
+      
     }
     return item.prediction;
 

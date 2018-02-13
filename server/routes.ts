@@ -3,6 +3,7 @@ import * as express from 'express';
 import CatCtrl from './controllers/cat';
 import UserCtrl from './controllers/user';
 import ResursesCtrl from './controllers/resurses';
+import ClubCtrl from './controllers/club';
 import Cat from './models/cat';
 import User from './models/user';
 
@@ -13,6 +14,7 @@ export default function setRoutes(app) {
   const catCtrl = new CatCtrl();
   const userCtrl = new UserCtrl();
   const resursesCtrl = new ResursesCtrl();
+  const clubCtrl = new ClubCtrl();
 
   // Cats
   router.route('/cats').get(catCtrl.getAll);
@@ -40,8 +42,14 @@ export default function setRoutes(app) {
   router.route('/getClubsInfo/').post(resursesCtrl.getClubsInfo);
   router.route('/addSimpleNames/').post(resursesCtrl.addSimpleNames);
   router.route('/mapResurses').get(resursesCtrl.mapResurses)
+  router.route('/getindividual').get(resursesCtrl.getindIvidual)
   router.route('/saveResult/').post(resursesCtrl.saveResult);
   // Apply the routes to our application with the prefix /api
+
+
+  //Clubs 
+
+ router.route('/clubs/:id').get(clubCtrl.get);
   app.use('/api', router);
 
 }

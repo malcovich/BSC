@@ -12,6 +12,9 @@ export class ResurseService {
   getResurse(): Observable<any> {
     return this.http.get<any>('/api/getresurse');
   }
+  getResurseWithIndividualResults(): Observable<any> {
+    return this.http.get<any>('/api/getindividual');
+  }
 
   getResurses(): Observable<any> {
     return this.http.get<any>('/api/listresurses');
