@@ -18,6 +18,15 @@ const resursesSchema = new mongoose.Schema({
   simpleRecords: Number,
   resmatch: String,
   individualPredition : Boolean,
+  country: String,
+  lige: String,
+  odd1: String,
+  oddX: String,
+  odd2: String,
+  last5home: [String],
+  last5away: [String],
+  systemPredicion: String,
+  systemPredicionStatus: Boolean,
   club : {type: mongoose.Schema.Types.ObjectId, ref: 'Club'}
 });
 

@@ -38,9 +38,7 @@ export default function setRoutes(app) {
   router.route('/listresurses/:id').get(resursesCtrl.get);
   router.route('/listresurses/').get(resursesCtrl.getAllWithSame);
   router.route('/sameItems/').post(resursesCtrl.getSameItems);
-  router.route('/addClubs').post(resursesCtrl.addClubs);
-  router.route('/getClubsInfo/').post(resursesCtrl.getClubsInfo);
-  router.route('/addSimpleNames/').post(resursesCtrl.addSimpleNames);
+
   router.route('/mapResurses').get(resursesCtrl.mapResurses)
   router.route('/getindividual').get(resursesCtrl.getindIvidual)
   router.route('/saveResult/').post(resursesCtrl.saveResult);
@@ -48,6 +46,10 @@ export default function setRoutes(app) {
 
 
   //Clubs 
+  router.route('/addClubs').post(clubCtrl.addClubs);
+  router.route('/getClubsInfo/').post(clubCtrl.getClubsInfo);
+  router.route('/addSimpleNames/').post(clubCtrl.addSimpleNames);
+  
 
  router.route('/clubs/:id').get(clubCtrl.get);
   app.use('/api', router);

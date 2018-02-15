@@ -23,7 +23,7 @@ import { ListResursesComponent } from './listResurses/listResurses.component';
 import { ResurseComponent } from './resurse/resurse.component';
 import { ClubComponent } from './clubs/club/club-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
+import { StatisticComponent } from './dashboard/statistic/statistic.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +39,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ListResursesComponent,
     ResurseComponent,
     ClubComponent,
-    DashboardComponent
+    DashboardComponent,
+    StatisticComponent
   ],
   imports: [
     RoutingModule,

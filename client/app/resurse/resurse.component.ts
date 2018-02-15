@@ -47,19 +47,14 @@ export class ResurseComponent implements OnInit {
     this.arrayT = [];
     this.resurseService.getSameItems(obj).subscribe(
       res => {
-        // this.sameRes = res.map(item =>{
-        //   this.arrayT.push(this.setUnifyPrediciton(item));
-        //   item.prediction = this.setUnifyPrediciton(item);
-        //   return item;
-        // });
         this.sameRes = res.same.map(item =>{
-          this.arrayT.push(this.setUnifyPrediciton(item));
-          item.prediction = this.setUnifyPrediciton(item);
+          var unifyPrediction = this.setUnifyPrediciton(item);
+          this.arrayT.push(unifyPrediction);
+          item.prediction = unifyPrediction;
           return item;
         });
         this.propabilityObjs = res.prop;
         this.getPrediction();
-   
       }
     );
   }
@@ -67,14 +62,18 @@ export class ResurseComponent implements OnInit {
   setToControllerR (result){
     this.result = result
   }
+
   saveResult(item){
-    this.resurseService.saveResult({id: item._id, result : this.result, prediction: item.prediction }).subscribe(date =>{
+    this.resurseService.saveResult({id: item._id, result : this.result, prediction: item.prediction, systemPredicion: this.match.prediction}).subscribe(date =>{
       item.resmatch = date.resmatch;
+      item.systemPredicion = date.systemPredicion;
       item.individualPredition = date.individualPredition;
     })
   };
+
   getPrediction () {
-    if (((this.arrayT.indexOf('1') > -1) || (this.arrayT.indexOf('1X') > -1))&&((this.arrayT.indexOf('2') > -1) || (this.arrayT.indexOf('X2') > -1))){
+    if ((this.arrayT.indexOf('12')> -1) || ((this.arrayT.indexOf('1') > -1) || (this.arrayT.indexOf('1X') > -1))
+        && ((this.arrayT.indexOf('2') > -1) || (this.arrayT.indexOf('X2') > -1))){
       this.match.prediction ='NO PREDICTION';
     }else 
     if (this.arrayT.indexOf('1X') > -1){
@@ -82,6 +81,10 @@ export class ResurseComponent implements OnInit {
     }else
     if (this.arrayT.indexOf('2') > -1 && ((this.arrayT.indexOf('X2') > -1) || (this.arrayT.indexOf('X') > -1))){
       this.match.prediction = "X2";
+    }
+    else
+    if (this.arrayT.indexOf('1') > -1 && ((this.arrayT.indexOf('1X') > -1) || (this.arrayT.indexOf('X') > -1))){
+      this.match.prediction = "1X";
     }else if (this.arrayT.indexOf('2') > -1) {
       this.match.prediction = "2";
     }else {
@@ -137,7 +140,16 @@ export class ResurseComponent implements OnInit {
     if (item.prediction == 'Away Win '){
       return '2';
     };
+    if (item.prediction == 'Away'){
+      return '2';
+    };
+    if (item.prediction == 'Draw'){
+      return 'X';
+    };
     if (item.prediction == 'Home Win '){
+      return '1';
+    };
+    if (item.prediction == 'Home'){
       return '1';
     };
     if (item.prediction == '02'){
@@ -146,17 +158,20 @@ export class ResurseComponent implements OnInit {
     if (item.prediction == '10'){
       return '1X';
     };
-    if (item.prediction == undefined && item.correctScore){
-      // if(item.correctScore.indexOf('-') > -1) {
-      //   let goals = item.correctScore.split('-');
-      //   if(goals[0] > goals[1]) {
-      //     return '1';
-      //   }else if (goals[0] < goals[1]) {
-      //     return '2';
-      //   }else {
-      //     return 'X';
-      //   }
-      // }if(item.correctScore.indexOf(':') > -1)  {
+    if (((item.prediction == undefined) || (item.prediction == '')) && item.correctScore){
+      console.log('item.prediction',item.prediction, item.correctScore )
+      
+      if(item.correctScore.indexOf('-') > -1) {
+        let goals = item.correctScore.split('-');
+        if(goals[0] > goals[1]) {
+          return '1';
+        }else if (goals[0] < goals[1]) {
+          return '2';
+        }else {
+          return 'X';
+        }
+      }
+      if(item.correctScore.indexOf(':') > -1)  {
         let goals = item.correctScore.split(':');
         if(goals[0] > goals[1]) {
           return '1';
@@ -165,7 +180,7 @@ export class ResurseComponent implements OnInit {
         }else {
           return 'X';
         }
-      // }
+      }
       
     }
     return item.prediction;

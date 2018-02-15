@@ -23,63 +23,67 @@ export default class ResursesCtrl extends BaseCtrl {
       Resurses.findById(matchId).exec((err, match)=>{
         var sim = [];
         sim.push(match)
-        resurses.forEach((item, number) =>{
-          var copyTeam2;
-          if (!item.isSeted && (match.matchTime == item.matchTime) && (match.resurse !== item.resurse) && (item.team2 !== undefined) && ((match.resurse !== 'over25tips')  && (match.prediction !== ''))) {
-            copyTeam2 = this.removeStopW(item.team2);
-            let a = this.getTanimoto(match.team1,item.team1); 
-            let b = this.getTanimoto(match.team2,copyTeam2); 
-            
-            if ((a >= 0.47 && b >= 0.25 )|| (a >= 0.25 && b >= 0.47 )){
-              resurses[number].isSeted = true;
-              var arrResurses = sim.map(item => item.resurse);
-              if (arrResurses.indexOf(item.resurse) == -1){
+        var promises = [];
+        promises[0] = Club.find({$or: [{'name': team1}, {'simpleNames': team1}]});
+        promises[1] = Club.find({$or: [{'name': team2}, {'simpleNames': team2}]});
+        
+        Promise.all(promises).then(values => {
+          console.log(123,values);
+          var arrayClubsName1 = [];
+          var arrayClubsName2 = [];
+          values[0].forEach(club =>{
+            arrayClubsName1.push(club.name);
+            arrayClubsName1 = arrayClubsName1.concat(club.simpleNames);
+          });
+          values[1].forEach(club =>{
+            arrayClubsName2.push(club.name);
+            arrayClubsName2 = arrayClubsName2.concat(club.simpleNames);
+          });
+          resurses.forEach((item, number) =>{
+            // && (match.matchTime == item.matchTime)
+            if (!item.isSeted  && (match.resurse !== item.resurse) && (item.team2 !== undefined) && ((match.resurse !== 'over25tips')  && (match.prediction !== ''))) {
+              if ((arrayClubsName1.indexOf(item.team1) > -1) || (arrayClubsName2.indexOf(item.team2) > -1)){
                 sim.push(item);
-              }
-              else {
-                var itemSameResurse = sim[arrResurses.indexOf(item.resurse)];
-                var aa = this.getTanimoto(match.team1, itemSameResurse.team1);
-                var bb = this.getTanimoto(match.team2, itemSameResurse.team2);
-                if (a >= b) {
-                  if (aa >= bb){
-                    if (a > aa) {
-                      sim[arrResurses.indexOf(item.resurse)] = item;
-                    }
-                  }
-                }else{ 
-                  if (bb > aa) {
-                    if (b> bb) {
-                      sim[arrResurses.indexOf(item.resurse)] = item;
-                    }
+                item.isSeted = true;
+              } else {
+                var copyTeam2, copyTeam1;
+                copyTeam2 = this.removeStopW(item.team2);
+                copyTeam1 = this.removeStopW(item.team1);
+                let a = this.getTanimoto(match.team1, copyTeam1);
+                let b = this.getTanimoto(match.team2,copyTeam2);
+                if ((a >= 0.35 && b >= 0.2 )|| (a >= 0.2 && b >= 0.35 )){
+                  resurses[number].isSeted = true;
+                  var arrResurses = sim.map(item => item.resurse);
+                  if (arrResurses.indexOf(item.resurse) == -1){
+                    propability.push(item);
+                    item.isSeted = true;
                   }
                 }
               }
-            }else if ((a >= 0.40 && b >= 0.20 )|| (a >= 0.20 && b >= 0.40 )){
-                propability.push(item)
             }
-          } 
+          });
+          res.json({'same' : sim, 'prop': propability});
         });
-        res.json({'same' : sim, 'prop': propability});
       });
     });
   }
 
   mapResurses = (req,res) =>{
-    var simpleNames = [];
-    Club.find({}).exec((err, clubs) => {
-      clubs.forEach(clubItem => {
-        simpleNames = clubItem.simpleNames || [];
-        simpleNames.push(clubItem.name)
-        Resurses.find({'team1': {$in: simpleNames}}).exec(function(err, listPredictions) {
-          listPredictions.forEach(prediction =>{
-            prediction.club = clubItem._id;
-            prediction.save((err, item)=> {
-              console.log('SAve', item)
-            })
-          });
-        });
-      });
-    });
+    // var simpleNames = [];
+    // Club.find({}).exec((err, clubs) => {
+    //   clubs.forEach(clubItem => {
+    //     simpleNames = clubItem.simpleNames || [];
+    //     simpleNames.push(clubItem.name)
+    //     Resurses.find({'team1': {$in: simpleNames}}).exec(function(err, listPredictions) {
+    //       listPredictions.forEach(prediction =>{
+    //         prediction.club = clubItem._id;
+    //         prediction.save((err, item)=> {
+    //           console.log('SAve', item)
+    //         })
+    //       });
+    //     });
+    //   });
+    // });
   }
 
   getAllWithSame = (req, res) => {
@@ -91,11 +95,11 @@ export default class ResursesCtrl extends BaseCtrl {
           var sim = [];
           resurses.forEach((item, number) =>{
             var copyTeam2;
-            if (!item.isSeted && (r.matchTime == item.matchTime) && (r.resurse !== item.resurse) && (item.team2 !== undefined) && ((r.resurse !== 'over25tips')  && (r.prediction !== ''))) {
+            if (!item.isSeted  && (r.resurse !== item.resurse) && (item.team2 !== undefined) && ((r.resurse !== 'over25tips')  && (r.prediction !== ''))) {
               copyTeam2 = this.removeStopW(item.team2);
-              let a = this.getTanimoto(r.team1,item.team1); 
-              let b = this.getTanimoto(r.team2,copyTeam2); 
-             
+              let a = this.getTanimoto(r.team1,item.team1);
+              let b = this.getTanimoto(r.team2,copyTeam2);
+
 
             if ((a >= 0.47 && b >= 0.25 )|| (a >= 0.25 && b >= 0.47 )){
               resurses[number].isSeted = true;
@@ -113,7 +117,7 @@ export default class ResursesCtrl extends BaseCtrl {
                       sim[arrResurses.indexOf(item.resurse)] = item;
                     }
                   }
-                }else{ 
+                }else{
                   if (bb > aa) {
                     if (b> bb) {
                       sim[arrResurses.indexOf(item.resurse)] = item;
@@ -124,14 +128,14 @@ export default class ResursesCtrl extends BaseCtrl {
             }
 
 
-            } 
+            }
           });
-          if (sim.length > 2){
+          if (sim.length > 3){
             forFront.push({'item': r, 'simples':  sim});
           }
-          } 
+          }
         })
-       res.json(forFront) 
+       res.json(forFront)
     })
   }
   getTanimoto = (team1, team2) => {
@@ -168,19 +172,21 @@ export default class ResursesCtrl extends BaseCtrl {
       //     res.json(list);
       // })
   }
-  
+
   getResurse  = (req, res) => {
     let url = 'https://www.forebet.com/en/football-tips-and-predictions-for-today';
-    let url1 = 'https://www.bettingtips1x2.com/tips/2018-02-08.html';
+    let url1 = 'https://www.bettingtips1x2.com/tips/2018-02-15.html';
     let url2 = 'https://www.over25tips.com/free-football-betting-tips/';
     let url3 = 'http://www.zulubet.com/';
     let url4 = 'http://www.betstudy.com/predictions/';
-    let url5 = 'http://www.iambettor.com/football-predictions-2018-02-08';
+    let url5 = 'http://www.iambettor.com/football-predictions-2018-02-15';
     let url6 = 'http://www.vitibet.com/?clanek=quicktips&sekce=fotbal';
     let url7 = 'http://www.bet-portal.net/en#axzz55OuMTyKO';
     let url8 = 'http://www.statarea.com/predictions';
+    let url10 = 'https://hintwise.com/index?date=2018-02-15&show=all'
 
-    let url9 = 'http://www.statarea.com/predictions/date/2018-02-08/competition';
+    let url9 = 'http://www.statarea.com/predictions/date/2018-02-14/competition';
+
 
     // request(url, function(error, response, html){
     //   if(!error){
@@ -190,7 +196,7 @@ export default class ResursesCtrl extends BaseCtrl {
     //     $('.schema').filter(function(){
     //       var data = $(this);
     //       var trs = data.children().children();
-            
+
     //       trs.each(function(i, elem){
     //         if (trs.eq(i).children().first().hasClass('tnms')){
     //             if(trs.eq(i).children().eq(4).hasClass('predict') ){
@@ -221,7 +227,7 @@ export default class ResursesCtrl extends BaseCtrl {
     //                   });
     //                   obj.save((err, item) => {});
     //             }
-             
+
     //           }
     //         }
     //       })
@@ -235,7 +241,7 @@ export default class ResursesCtrl extends BaseCtrl {
     //     $('.inner .results').filter(function(){
     //       var data = $(this);
     //       var trs = data.children().children();
-            
+
     //       trs.each(function(i, elem){
     //         if (trs.eq(i).find('td').length){
     //           var teams = trs.eq(i).find('td').eq(3).find('a').text().split(' - ');
@@ -300,12 +306,12 @@ export default class ResursesCtrl extends BaseCtrl {
     //     $('.content_table').filter(function(){
     //       var data = $(this);
     //       var trs = data.find('tr');
-            
+
     //       trs.each(function(i, elem){
     //         if (!trs.eq(i).find('td').first().hasClass('Caption')){
     //           var teams = trs.eq(i).find('td').eq(1).find('span > a ').text().split(' - ');
     //              if (!trs.eq(i).children('td').first().hasClass('prob2')){
-    //               var matchTime = trs.eq(i).children('td').first().text().split(', '); 
+    //               var matchTime = trs.eq(i).children('td').first().text().split(', ');
     //               if (matchTime.length == 2){
     //                 var timeArray = matchTime[1].split(':');
     //                 timeArray[0] = 2 + parseInt(timeArray[0]);
@@ -346,7 +352,7 @@ export default class ResursesCtrl extends BaseCtrl {
     //       trs.each(function(i, elem){
     //         if (trs.eq(i).find('td').first().hasClass('standardbunka')){
     //           if (!trs.eq(i).children('td').first().hasClass('prob2')){
-    //             var matchTime = trs.eq(i).children('td').first().text().split(', '); 
+    //             var matchTime = trs.eq(i).children('td').first().text().split(', ');
     //             if (matchTime.length == 2){
     //               var timeArray = matchTime[1].split(':');
     //               timeArray[0] = 2 + parseInt(timeArray[0]);
@@ -383,10 +389,10 @@ export default class ResursesCtrl extends BaseCtrl {
     //     $('.soccer-table').filter(function(){
     //       var data = $(this);
     //       var trs = data.find('tr');
-            
+
     //       trs.each(function(i, elem){
     //         if (trs.eq(i).find('td').length){
-    //           var matchTime = trs.eq(i).find('td').eq(0).find('span').text().split(' '); 
+    //           var matchTime = trs.eq(i).find('td').eq(0).find('span').text().split(' ');
     //           var timeArray = matchTime[1].split(':');
     //           timeArray[0] = 2 + parseInt(timeArray[0]);
     //           var matchTime2 = timeArray.join(':');
@@ -425,7 +431,7 @@ export default class ResursesCtrl extends BaseCtrl {
     //     $('.tabulkaquick').filter(function(){
     //       var data = $(this);
     //       var trs = data.find('tr');
-            
+
     //       trs.each(function(i, elem){
     //         if (trs.eq(i).find('td').eq(0).hasClass('standardbunka')){
     //           var date = trs.eq(i).find('td').eq(0).text();
@@ -471,7 +477,7 @@ export default class ResursesCtrl extends BaseCtrl {
     //           if (trs.eq(i).hasClass('match')){
     //             var team1 = trs.eq(i).find('td').eq(0).text();
     //             var t = trs.eq(i).find('td').eq(1).find('a').text().split(':')
-    //             t[0] = 1 + parseInt(t[0]);
+    //             t[0] = parseInt(t[0]);
     //             var matchTime2 = t.join(':');
     //             var team2 = trs.eq(i).find('td').eq(2).text();
     //             var prediction = trs.eq(i).find('td').eq(3).find('div').text();
@@ -516,7 +522,106 @@ export default class ResursesCtrl extends BaseCtrl {
     //               var obj = new Resurses(cop);
     //               obj.save((err, item) => {});
     //         })
-   
+
+    //     })
+    //   }
+    // })
+    // request(url10, function(error, response, html){
+    //   if(!error){
+    //     var $ = cheerio.load(html);
+    //     let resurse = 'hintwise';
+    //     $('#soccer_gridview').filter(function(){
+    //       var data = $(this);
+    //        var trs = data.find('.odd');
+    //        var trs2 = data.find('.even');
+
+    //         trs.each(function(i, elem){
+    //           var last5home = [];
+    //           var last5away = [];
+    //           var hSpans = trs.eq(i).find('td').eq(14).find('span');
+    //           hSpans.each((index, span)=>{
+    //             last5home.push(hSpans.eq(index).text());
+    //           });
+    //           var aSpans = trs.eq(i).find('td').eq(15).find('span');
+    //           aSpans.each((index, span)=>{
+    //             last5away.push(aSpans.eq(index).text());
+    //           });
+    //           var odd1 = trs.eq(i).find('td.cellOdds ').eq(0).find('input').val();
+    //           var oddX = trs.eq(i).find('td.cellOdds ').eq(1).find('input').val();
+    //           var odd2 = trs.eq(i).find('td.cellOdds ').eq(2).find('input').val();
+    //           var matchTime = trs.eq(i).find('td.cell50').find('span').text().split(':');
+    //           matchTime[0] = 1 + parseInt(matchTime[0]);
+    //           var matchTime2 = matchTime.join(':');
+    //           var country = trs.eq(i).find('td').eq(1).text();
+    //           var lige = trs.eq(i).find('td').eq(3).text();
+    //           var teams = trs.eq(i).find('td.cellTEAMS').find('a').text().split(' vs ');
+    //           var team1 = teams[0];
+    //           var team2 = teams[1];
+    //           var prediction = trs.eq(i).find('td.cell90').find('div').text();
+    //           var underOver = trs.eq(i).find('td.underOver').find('div').text();
+    //           var winLose_Soccer = trs.eq(i).find('td.winLose_Soccer').find('span').text();
+    //           var cop = {
+    //             'team1': team1,
+    //             'team2': team2,
+    //             'matchTime': matchTime2,
+    //             'addedDate': new Date(),
+    //             'prediction': prediction,
+    //             'correctScore' : winLose_Soccer,
+    //             'propabilityOver': underOver,
+    //             'resurse': resurse,
+    //             'last5home' :last5home,
+    //             'last5away' : last5away,
+    //             'odd1':odd1,
+    //             'oddX' : oddX,
+    //             'odd2' : odd2
+    //           }
+    //             var obj = new Resurses(cop);
+    //             obj.save((err, item) => {});
+    //         })
+    //         trs2.each(function(i, elem){
+    //           var last5home = [];
+    //           var last5away = [];
+    //           var hSpans = trs.eq(i).find('td').eq(14).find('span');
+    //           hSpans.each((index, span)=>{
+    //             last5home.push(hSpans.eq(index).text());
+    //           });
+    //           var aSpans = trs.eq(i).find('td').eq(15).find('span');
+    //           aSpans.each((index, span)=>{
+    //             last5away.push(aSpans.eq(index).text());
+    //           });
+    //           var odd1 = trs.eq(i).find('td.cellOdds ').eq(0).find('input').val();
+    //           var oddX = trs.eq(i).find('td.cellOdds ').eq(1).find('input').val();
+    //           var odd2 = trs.eq(i).find('td.cellOdds ').eq(2).find('input').val();
+    //           var matchTime = trs.eq(i).find('td.cell50').find('span').text().split(':');
+    //           matchTime[0] = 2 + parseInt(matchTime[0]);
+    //           var matchTime2 = matchTime.join(':');
+    //           var country = trs.eq(i).find('td').eq(1).text();
+    //           var lige = trs.eq(i).find('td').eq(3).text();
+    //             var teams = trs.eq(i).find('td.cellTEAMS').find('a').text().split(' vs ');
+    //             var team1 = teams[0];
+    //             var team2 = teams[1];
+    //             var prediction = trs.eq(i).find('td.cell90').find('div').text();
+    //             var underOver = trs.eq(i).find('td.underOver').find('div').text();
+    //             var winLose_Soccer = trs.eq(i).find('td.winLose_Soccer').find('span').text();
+    //             var cop = {
+    //               'team1': team1,
+    //               'team2': team2,
+    //               'matchTime': matchTime2,
+    //               'addedDate': new Date(),
+    //               'prediction': prediction,
+    //               'correctScore' : winLose_Soccer,
+    //               'propabilityOver': underOver,
+    //               'resurse': resurse,
+    //               'last5home' :last5home,
+    //               'last5away' : last5away,
+    //               'odd1':odd1,
+    //               'oddX' : oddX,
+    //               'odd2' : odd2
+    //             }
+    //               var obj = new Resurses(cop);
+    //               obj.save((err, item) => {});
+    //         })
+
     //     })
     //   }
     // })
@@ -541,7 +646,7 @@ export default class ResursesCtrl extends BaseCtrl {
     //             resut[0].save(function(err,item) {
     //               console.log('save', item)
     //             });
-    //           } 
+    //           }
     //          })
     //         })
     //     })
@@ -549,46 +654,16 @@ export default class ResursesCtrl extends BaseCtrl {
     // })
   }
 
-  addClubs = (req, res, next) => {
-    var team1 = req.body.team1;
-    var team2 = req.body.team2;
-    var teams = [];
-    Club.find({'name' : team1}).exec((err, teamHome) => {
-      Club.find({'name' : team2}).exec((err, teamAway) => {
-        if (teamHome.length == 0){
-          var team11 = new Club({name: req.body.team1});
-          teams.push (team11.save());
-        }
-        if (teamAway.length == 0){
-          var team21 = new Club({name: req.body.team2});
-          teams.push (team21.save());
-        }
-        Promise.all(teams).then(values => { 
-          res.json({'team1' : teamHome[0] ? teamHome[0]: values[0], 'team2' : teamAway[0]?teamAway[0]:values[1]});
-        });
-      })
-    });
-  }
  
-  getClubsInfo = (req, res) => {
-    var team1 = req.body.team1;
-    var team2 = req.body.team2;
-
-    Club.find({'name' : team1}).exec((err, teamHome) => {
-      Club.find({'name' : team2}).exec((err, teamAway) => {
-        res.json({'team1' : teamHome, 'team2': teamAway});
-      })
-    });
-  }
 
   saveResult = (req, res) =>{
     var arrayOFResults = []
     var arr = ['1', '2','X','1X','X2','12'];
-   
+
     Resurses.findById(req.body.id).exec((err, resurse) => {
       if (req.body.result){
-        resurse.resmatch = req.body.result;
-      }
+      resurse.resmatch = req.body.result;
+        
       var arrayOfGoals = resurse.resmatch.split('-');
       if (arrayOfGoals[0] > arrayOfGoals[1]){
         arrayOFResults.push('1');
@@ -603,7 +678,17 @@ export default class ResursesCtrl extends BaseCtrl {
         arrayOFResults.push('1X');
         arrayOFResults.push('X2');
       }
-    
+
+        resurse.systemPredicion = req.body.systemPredicion;
+        if (resurse.systemPredicion != 'NO PREDICTION'){
+          if (arrayOFResults.indexOf(req.body.systemPredicion) != -1){
+            resurse.systemPredicionStatus = true;
+          } else {
+            resurse.systemPredicionStatus = false;
+          }
+        }
+      }
+
       if(arr.indexOf(req.body.prediction) !== -1){
         if (arrayOFResults.indexOf(req.body.prediction) != -1){
           resurse.individualPredition = true;
@@ -614,21 +699,21 @@ export default class ResursesCtrl extends BaseCtrl {
         if (req.body.prediction.trim() == 'Under 2.5 goals' || req.body.prediction.trim() == 'Under 2.5' || req.body.prediction.trim() == 'under (2.5)'	 ){
           if (parseInt(arrayOfGoals[0]) + parseInt(arrayOfGoals[1]) > 2) {
             resurse.individualPredition = false;
-          }else{ 
+          }else{
             resurse.individualPredition = true;
           }
         }
         if (req.body.prediction.trim() == 'Over 2.5 goals' || req.body.prediction.trim() == 'over (2.5)' || req.body.prediction.trim() == 'Over 2.5'	){
           if (parseInt(arrayOfGoals[0]) + parseInt(arrayOfGoals[1]) > 2) {
             resurse.individualPredition = true;
-          }else{ 
+          }else{
             resurse.individualPredition = false;
           }
         }
         if (req.body.prediction.trim() == 'Over 2.5 goals and Btts'){
             if ((parseInt(arrayOfGoals[0]) + parseInt(arrayOfGoals[1]) > 2) &&(parseInt(arrayOfGoals[0]) > 0 &&  parseInt(arrayOfGoals[1]) > 0)) {
             resurse.individualPredition = true;
-          }else{ 
+          }else{
             resurse.individualPredition = false;
           }
 
@@ -636,51 +721,31 @@ export default class ResursesCtrl extends BaseCtrl {
         if (req.body.prediction.trim() == 'over (3.5)'){
           if (parseInt(arrayOfGoals[0]) + parseInt(arrayOfGoals[1]) > 3) {
             resurse.individualPredition = true;
-          }else{ 
+          }else{
             resurse.individualPredition = false;
           }
         }
-        
+
         if (req.body.prediction.trim() == 'no'){
           if (parseInt(arrayOfGoals[0]) > 0 &&  parseInt(arrayOfGoals[1]) > 0) {
             resurse.individualPredition = false;
-          }else{ 
+          }else{
             resurse.individualPredition = true;
           }
         }
         if (req.body.prediction.trim() == 'yes'){
           if (parseInt(arrayOfGoals[0]) > 0 &&  parseInt(arrayOfGoals[1]) > 0) {
             resurse.individualPredition = true;
-          }else{ 
+          }else{
             resurse.individualPredition = false;
           }
         }
-      } 
+      }
       resurse.save((err, savedItem) => {
         res.json(savedItem);
       })
     })
   }
 
-  addSimpleNames = (req, res) => {
-    var team1 = req.body.simpleName1;
-    var team2 = req.body.simpleName2;
-    var id1 = req.body.idTeam1;
-    var id2 = req.body.idTeam2;
-    Club.findById(id1).exec((err, teamHome) => {
-        if (teamHome.name !== team1) {
-          teamHome.simpleNames.push(team1)
-        }
-        teamHome.save((err, item) => {
-          Club.findById(id2).exec((err, teamAway) => {
-            if (teamAway.name !== team2) {
-              teamAway.simpleNames.push(team2)
-            }
-            teamAway.save((err, item2) => {
-              res.json({'team1': item, 'team2' : item2});
-            })
-          })
-        })
-    });
-  }
+  
 }

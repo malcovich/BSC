@@ -2,7 +2,7 @@
   <div class="col-lg-12">
     <div class="jumbotron text-center">
       <div class="container" *ngIf="match">
-        <h1 class="jumbotron-heading mb-3" >{{match.team1}} - {{match.team2}}</h1>
+        <h1 class="jumbotron-heading mb-3" *ngIf="!(team1 && team2)" >{{match.team1}} - {{match.team2}}</h1>
           <h1 *ngIf="team1 && team2">
             <a [routerLink]="['../../clubs',team1['_id']]">{{match.team1}}</a> - 
             <a [routerLink]="['../../clubs',team2['_id']]">{{match.team2}}</a>
@@ -31,6 +31,8 @@
             <th scope="col">propabilityOver</th>
             <th scope="col">RESULT</th>
             <th scope="col">individualPredition</th>
+            <th scope="col">SystemPredition</th>
+            <th scope="col">SystemPreditionStatus</th>
             <th scope="col">Actions</th>
           </tr>
         </thead>
@@ -48,6 +50,8 @@
             <td>{{res.propabilityOver}}</td> 
             <td><b>{{res.resmatch}}</b></td>
             <td><b>{{res.individualPredition}}</b></td>
+            <td><b>{{res.systemPredicion}}</b></td>
+            <td><b>{{res.systemPredicionStatus}}</b></td>
             <td>  <button class="btn btn-outline-success" 
               *ngIf="canAddSimpleClubNames(res.team1,res.team2)"
               (click) = "saveSimpleNames(res.team1,res.team2)">Add</button> </td> 
@@ -80,7 +84,7 @@
           <tbody>
             <tr *ngFor="let res of propabilityObjs;let i = index" >
               <th scope="row">{{i+1}}</th>
-              <td><a [routerLink]="[res['_id']]">{{res.team1}} - {{res.team2}}</a></td>
+              <td><a [routerLink]="['../',res['_id']]">{{res.team1}} - {{res.team2}}</a></td>
               <td>{{res.resurse}}</td>
               <td>{{res.propability1}}</td>
               <td>{{res.propabilityX}}</td>

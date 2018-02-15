@@ -26,6 +26,8 @@ export class DashboardComponent implements OnInit {
   listF: any;
   listB: any;
   listA: any;
+  resurse: any;
+  listRES: any;
 
   addCatForm: FormGroup;
   name = new FormControl('', Validators.required);
@@ -40,6 +42,8 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     this.getItems();
+    this.listRES = ['zulubet', 'statarea', 'Forebet', 'betstudy']
+    this.resurse = "zulubet";
   }
 
   getItems() {
