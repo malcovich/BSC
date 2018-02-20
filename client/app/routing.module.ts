@@ -16,6 +16,8 @@ import { ListResursesComponent } from './listResurses/listResurses.component';
 import { ResurseComponent } from './resurse/resurse.component';
 import { ClubComponent } from './clubs/club/club-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FavoritesComponent } from './favorites/favorites.component';
+
 const routes: Routes = [
   { path: '', component: AboutComponent },
   { path: 'cats', component: CatsComponent },
@@ -29,6 +31,7 @@ const routes: Routes = [
   { path: 'admin', component: AdminComponent, canActivate: [AuthGuardAdmin] },
   { path: 'notfound', component: NotFoundComponent },
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'favorites', component: FavoritesComponent },
   { path: 'clubs/:id', component: ClubComponent },
   { path: '**', redirectTo: '/notfound' },
 ];

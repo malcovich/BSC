@@ -24,6 +24,8 @@ import { ResurseComponent } from './resurse/resurse.component';
 import { ClubComponent } from './clubs/club/club-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StatisticComponent } from './dashboard/statistic/statistic.component';
+import { FavoritesComponent } from './favorites/favorites.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +42,8 @@ import { StatisticComponent } from './dashboard/statistic/statistic.component';
     ResurseComponent,
     ClubComponent,
     DashboardComponent,
-    StatisticComponent
+    StatisticComponent,
+    FavoritesComponent
   ],
   imports: [
     RoutingModule,

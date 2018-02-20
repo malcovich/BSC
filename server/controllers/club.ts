@@ -37,9 +37,9 @@ export default class ClubCtrl extends BaseCtrl {
     var team1 = req.body.team1;
     var team2 = req.body.team2;
 
-    Club.find({'name' : team1}).exec((err, teamHome) => {
-      Club.find({'name' : team2}).exec((err, teamAway) => {
-        res.json({'team1' : teamHome, 'team2': teamAway});
+    Club.find({$or: [{'name': team1}, {'simpleNames': team1}]}).exec((err, teamHome) => {
+      Club.find({$or: [{'name': team2}, {'simpleNames': team2}]}).exec((err, teamAway) => {
+        res.json({'team1' : teamHome[0], 'team2': teamAway[0]});
       })
     });
   }

@@ -26,6 +26,10 @@ export class ResurseService {
     return this.http.post<any>('/api/sameItems', obj);
   }
 
+  getFavoriteItems(): Observable<any> {
+    return this.http.get<any>('/api/getFavoriteItems');
+  }
+
   addClubs(obj): Observable<any> {
     return this.http.post<any>('/api/addClubs', obj);
   }
@@ -41,5 +45,8 @@ export class ResurseService {
   }
   saveResult(obj): Observable<any> {
     return this.http.post<any>('/api/saveResult',obj);
+  }
+  addToFavorite(obj): Observable<any> {
+    return this.http.post<any>('/api/addToFavorite',obj);
   }
 }

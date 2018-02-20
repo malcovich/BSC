@@ -3,19 +3,26 @@
     <div class="jumbotron text-center">
       <div class="container" *ngIf="match">
         <h1 class="jumbotron-heading mb-3" *ngIf="!(team1 && team2)" >{{match.team1}} - {{match.team2}}</h1>
-          <h1 *ngIf="team1 && team2">
+        <h1 *ngIf="(team1 && team2)">
             <a [routerLink]="['../../clubs',team1['_id']]">{{match.team1}}</a> - 
             <a [routerLink]="['../../clubs',team2['_id']]">{{match.team2}}</a>
+            <span class="u-icon-v1  g-mr-15 g-mb-15" (click)="addToFavorite()" [ngClass]="{'g-color-lightred': match.isFavorite, 'g-color-primary': !match.isFavorite}">
+              <i class="icon-star"></i>
+            </span>
           </h1>
         <h3 class="mb-2">Prediction : {{match.prediction}}</h3>
         <button class="btn btn-lg btn-outline-success" 
           (click) = "addClubs({'team1': match.team1, 'team2': match.team2})"
           [disabled] = "team1 && team2">Save Clubs</button>
+        <p *ngIf="hintwise">
+          <span *ngFor="let result of hintwise.last5home" class="u-icon-v3 g-mr-15 g-mb-15" [ngClass]="{'g-bg-red ': result == 'L', 'g-bg-primary': result == 'W', 'g-bg-orange': result == 'D'}"><i>{{result}}</i></span>
+          -
+          <span *ngFor="let result of hintwise.last5away"class="u-icon-v3 g-mr-15 g-mb-15" [ngClass]="{'g-bg-red ': result == 'L', 'g-bg-primary': result == 'W', 'g-bg-orange': result == 'D'}"><i>{{result}}</i></span>
+        </p>
       </div>
     </div>
     <div>
       <h3 class="mb-3">List same prediction</h3>
-  
       <table class="table">
         <thead>
           <tr>

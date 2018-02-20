@@ -1,0 +1,21 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Time </th>
+      <th scope="col" class="teams">Teams</th>
+      <th scope="col">Prediction</th>
+      <th scope="col">RESULT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let res of list;let i = index" >
+      <td>{{i+1}}</td>
+      <td>{{res.matchTime}}</td>
+      <td><a [routerLink]="['../listresurses',res['_id']]">{{res.team1}} - {{res.team2}}</a></td>
+      <td>{{res.systemPredicion}}</td>
+      <td><b>{{res.resmatch}}</b></td>
+   
+  </tr>
+  </tbody>
+</table>

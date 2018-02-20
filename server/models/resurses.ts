@@ -27,6 +27,7 @@ const resursesSchema = new mongoose.Schema({
   last5away: [String],
   systemPredicion: String,
   systemPredicionStatus: Boolean,
+  isFavorite: Boolean,
   club : {type: mongoose.Schema.Types.ObjectId, ref: 'Club'}
 });
 

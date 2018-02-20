@@ -42,6 +42,8 @@ export default function setRoutes(app) {
   router.route('/mapResurses').get(resursesCtrl.mapResurses)
   router.route('/getindividual').get(resursesCtrl.getindIvidual)
   router.route('/saveResult/').post(resursesCtrl.saveResult);
+  router.route('/addToFavorite/').post(resursesCtrl.addToFavorite);
+  router.route('/getFavoriteItems/').get(resursesCtrl.getFavoriteItems);
   // Apply the routes to our application with the prefix /api
 
 
