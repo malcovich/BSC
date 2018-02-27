@@ -1,5 +1,6 @@
 import Resurses from '../models/resurses';
 import Club from '../models/clubs';
+import Match from '../models/match';
 import BaseCtrl from './base';
 import * as path from 'path';
 import * as fs from 'fs';
@@ -174,413 +175,415 @@ export default class ResursesCtrl extends BaseCtrl {
 
   getResurse  = (req, res) => {
     let url = 'https://www.forebet.com/en/football-tips-and-predictions-for-today';
-    let url1 = 'https://www.bettingtips1x2.com/tips/2018-02-20.html';
+    let url1 = 'https://www.bettingtips1x2.com/tips/2018-02-27.html';
     let url2 = 'https://www.over25tips.com/free-football-betting-tips/';
     let url3 = 'http://www.zulubet.com/';
     let url4 = 'http://www.betstudy.com/predictions/';
-    let url5 = 'http://www.iambettor.com/football-predictions-2018-02-20';
+    let url5 = 'http://www.iambettor.com/football-predictions-2018-02-27';
     let url6 = 'http://www.vitibet.com/?clanek=quicktips&sekce=fotbal';
     let url7 = 'http://www.bet-portal.net/en#axzz55OuMTyKO';
     let url8 = 'http://www.statarea.com/predictions';
-    let url10 = 'https://hintwise.com/index?date=2018-02-20&show=all'
+    let url10 = 'https://hintwise.com/index?date=2018-02-27&show=all'
 
-    let url9 = 'http://www.statarea.com/predictions/date/2018-02-19/competition';
+    let url9 = 'http://www.statarea.com/predictions/date/2018-02-26/competition';
 
-
-    request(url, function(error, response, html){
-      if(!error){
-        var $ = cheerio.load(html);
-
-        let resurse = 'Forebet'
-        $('.schema').filter(function(){
-          var data = $(this);
-          var trs = data.children().children();
-
-          trs.each(function(i, elem){
-            if (trs.eq(i).children().first().hasClass('tnms')){
-                if(trs.eq(i).children().eq(4).hasClass('predict') ){
-                  var teams = trs.eq(i).children().first().find('a').html().split('<br> ');
-                    var propability1 = trs.eq(i).children().eq(1).text();
-                    var propabilityX = trs.eq(i).children().eq(2).text();
-                    var propability2 = trs.eq(i).children().eq(3).text();
-                    var prediction = trs.eq(i).children().eq(4).text();
-                    var correctScore = trs.eq(i).children().eq(5).text();
-                    var avarageGoal = trs.eq(i).children().eq(6).text();
-                    var matchTime = trs.eq(i).children().first().find('.date_bah').html().split(" ");
-                    var hours = matchTime[1].split(":");
-                    hours[0] = 2 + parseInt(hours[0])
-                    matchTime = hours.join(":");
-                    if ((teams[0] !== '') && (teams[1] !== '')){
-                      const obj = new Resurses({
-                        'team1': teams[0],
-                        'team2': teams[1],
-                        'addedDate': new Date(),
-                        'propability1' : propability1,
-                        'propabilityX' : propabilityX,
-                        'propability2': propability2,
-                        'prediction': prediction,
-                        'matchTime' : matchTime,
-                        'correctScore': correctScore,
-                        'avarageGoal': avarageGoal,
-                        'resurse': resurse
-                      });
-                      obj.save((err, item) => {});
-                }
-
-              }
-            }
-          })
-        })
-      }
-    })
-    request(url1, function(error, response, html){
-      if(!error){
-        var $ = cheerio.load(html);
-        let resurse = 'bettingtips1x2'
-        $('.inner .results').filter(function(){
-          var data = $(this);
-          var trs = data.children().children();
-
-          trs.each(function(i, elem){
-            if (trs.eq(i).find('td').length){
-              var teams = trs.eq(i).find('td').eq(3).find('a').text().split(' - ');
-              var matchTime = trs.eq(i).find('td').eq(2).text()
-              var correctScore = trs.eq(i).find('td').eq(7).text();
-              var timeArray = matchTime.split(':');
-              timeArray[0] = 2 + parseInt(timeArray[0]);
-              matchTime = timeArray.join(':');
-              if (teams[0] !== " "){
-                const obj = new Resurses({
-                  'team1': teams[0],
-                  'team2': teams[1],
-                  'addedDate': new Date(),
-                  'matchTime' : matchTime,
-                  'correctScore': correctScore,
-                  'tournament' : trs.eq(i).find('td').eq(1).text(),
-                  'resurse': resurse,
-                });
-                obj.save((err, item) => {});
-              }
-            }
-          })
-        })
-      }
-    })
-
-    request(url2, function(error, response, html){
-      if(!error){
-        var $ = cheerio.load(html);
-        let resurse = 'over25tips'
-        $('.class').filter(function(){
-          var data = $(this);
-          if (data.find('h1')){
-            var trs = data.find('.predictionsTable .main-row');
-            trs.each(function(i, elem){
-              if (trs.eq(i).find('td').length){
-                var correctScore = trs.eq(i).find('td').eq(7).text();
-                var matchTime = trs.eq(i).find('td').eq(0).text();
-                var timeArray = matchTime.split(':');
-                timeArray[0] = 2 + parseInt(timeArray[0]);
-                matchTime = timeArray.join(':');
-                const obj = new Resurses({
-                  'team1': trs.eq(i).find('td').eq(2).text().replace(/^\s*/,'').replace(/\s*$/,''),
-                  'team2': trs.eq(i).find('td').eq(4).text().replace(/^\s*/,'').replace(/\s*$/,''),
-                  'addedDate': new Date(),
-                  'matchTime' : matchTime,
-                  'prediction': trs.eq(i).find('td').eq(15).text(),
-                  'resurse': resurse,
-                });
-                obj.save((err, item) => {});
-              }
-            })
-          };
-        })
-      }
-    })
-
-    request(url3, function(error, response, html){
-      if(!error){
-        var $ = cheerio.load(html);
-        let resurse = 'zulubet'
-        $('.content_table').filter(function(){
-          var data = $(this);
-          var trs = data.find('tr');
-
-          trs.each(function(i, elem){
-            if (!trs.eq(i).find('td').first().hasClass('Caption')){
-              var teams = trs.eq(i).find('td').eq(1).find('span > a ').text().split(' - ');
-                 if (!trs.eq(i).children('td').first().hasClass('prob2')){
-                  var matchTime = trs.eq(i).children('td').first().text().split(', ');
-                  if (matchTime.length == 2){
-                    var timeArray = matchTime[1].split(':');
-                    timeArray[0] = 2 + parseInt(timeArray[0]);
-                    var matchTime2 = timeArray.join(':');
-                  }
-                 }
-              var propability1 = trs.eq(i).find('td.prob2').eq(0).text();
-                        var propabilityX = trs.eq(i).find('td.prob2').eq(1).text();
-                        var propability2 = trs.eq(i).find('td.prob2').eq(2).text();
-              var prediction = trs.eq(i).find('td').eq(9).text();
-              if (teams.length == 2){
-                var obj = new Resurses({
-                  'team1': teams[0],
-                  'team2': teams[1],
-                  'addedDate': new Date(),
-                  'prediction': prediction,
-                  'propability1' :propability1,
-                  'propabilityX':propabilityX,
-                  'propability2': propability2,
-                  'matchTime' : matchTime2,
-                  'resurse': resurse
-                });
-                obj.save((err, item) => {});
-              }
-            }
-          })
-        })
-      }
-    })
-
-    request(url5, function(error, response, html){
-      if(!error){
-        var $ = cheerio.load(html);
-        let resurse = 'iambettor'
-        $('.tabulkaquick').filter(function(){
-          var data = $(this);
-          var trs = data.find('tr');
-          trs.each(function(i, elem){
-            if (trs.eq(i).find('td').first().hasClass('standardbunka')){
-              if (!trs.eq(i).children('td').first().hasClass('prob2')){
-                var matchTime = trs.eq(i).children('td').first().text().split(', ');
-                if (matchTime.length == 2){
-                  var timeArray = matchTime[1].split(':');
-                  timeArray[0] = 2 + parseInt(timeArray[0]);
-                  var matchTime2 = timeArray.join(':');
-                }
-               }
-              var cop = {
-                'team1': trs.eq(i).find('td.standardbunka').eq(0).text(),
-                'team2': trs.eq(i).find('td.standardbunka').eq(1).text(),
-                'addedDate': new Date(),
-                'prediction': '',
-                'propability1': trs.eq(i).find('td.standardbunka').eq(3).text(),
-                'propabilityX': trs.eq(i).find('td.standardbunka').eq(4).text(),
-                'propability2':trs.eq(i).find('td.standardbunka').eq(5).text(),
-                'propabilityUnder' :'',
-                'propabilityOver':'',
-                'matchTime' : matchTime2,
-                'correctScore':  trs.eq(i).find('td.vetsipismo').eq(0).text()+'-'+ trs.eq(i).find('td.vetsipismo').eq(1).text(),
-                'resurse': resurse,
-              }
-                var obj = new Resurses(cop);
-                obj.save((err, item) => {});
-            }
-          })
-        })
-      }
-    })
+    let url11 = 'http://www.soccervista.com/results-Premier_League-2017_2018-849884.html';
 
 
-    request(url4, function(error, response, html){
-      if(!error){
-        var $ = cheerio.load(html);
-        let resurse = 'betstudy'
-        $('.soccer-table').filter(function(){
-          var data = $(this);
-          var trs = data.find('tr');
+    // request(url, function(error, response, html){
+    //   if(!error){
+    //     var $ = cheerio.load(html);
 
-          trs.each(function(i, elem){
-            if (trs.eq(i).find('td').length){
-              var matchTime = trs.eq(i).find('td').eq(0).find('span').text().split(' ');
-              var timeArray = matchTime[1].split(':');
-              timeArray[0] = 2 + parseInt(timeArray[0]);
-              var matchTime2 = timeArray.join(':');
-              var teams = trs.eq(i).find('td').eq(1).find('a').eq(1).text().split(' - ');
-              var propability1 = trs.eq(i).find('td').eq(2).text();
-              var propabilityX = trs.eq(i).find('td').eq(3).text();
-              var propability2 = trs.eq(i).find('td').eq(4).text();
-              var prediction = trs.eq(i).find('td').eq(7).text();
-              var propabilityOver = trs.eq(i).find('td').eq(4).text();
-              var propabilityUnder = trs.eq(i).find('td').eq(5).text();
-              var cop = {
-                'team1': teams[0],
-                'team2': teams[1],
-                'addedDate': new Date(),
-                'prediction': prediction,
-                'propability1': propability1,
-                'propabilityX': propabilityX,
-                'propability2': propability2,
-                'propabilityUnder' :propabilityUnder,
-                'propabilityOver': propabilityOver,
-                'matchTime' : matchTime2,
-                'resurse': resurse,
-              }
-                var obj = new Resurses(cop);
-                obj.save((err, item) => {});
-            }
-          })
-        })
-      }
-    })
+    //     let resurse = 'Forebet'
+    //     $('.schema').filter(function(){
+    //       var data = $(this);
+    //       var trs = data.children().children();
 
-    request(url6, function(error, response, html){
-      if(!error){
-        var $ = cheerio.load(html);
-        let resurse = 'vitibet'
-        $('.tabulkaquick').filter(function(){
-          var data = $(this);
-          var trs = data.find('tr');
+    //       trs.each(function(i, elem){
+    //         if (trs.eq(i).children().first().hasClass('tnms')){
+    //             if(trs.eq(i).children().eq(4).hasClass('predict') ){
+    //               var teams = trs.eq(i).children().first().find('a').html().split('<br> ');
+    //                 var propability1 = trs.eq(i).children().eq(1).text();
+    //                 var propabilityX = trs.eq(i).children().eq(2).text();
+    //                 var propability2 = trs.eq(i).children().eq(3).text();
+    //                 var prediction = trs.eq(i).children().eq(4).text();
+    //                 var correctScore = trs.eq(i).children().eq(5).text();
+    //                 var avarageGoal = trs.eq(i).children().eq(6).text();
+    //                 var matchTime = trs.eq(i).children().first().find('.date_bah').html().split(" ");
+    //                 var hours = matchTime[1].split(":");
+    //                 hours[0] = 2 + parseInt(hours[0])
+    //                 matchTime = hours.join(":");
+    //                 if ((teams[0] !== '') && (teams[1] !== '')){
+    //                   const obj = new Resurses({
+    //                     'team1': teams[0],
+    //                     'team2': teams[1],
+    //                     'addedDate': new Date(),
+    //                     'propability1' : propability1,
+    //                     'propabilityX' : propabilityX,
+    //                     'propability2': propability2,
+    //                     'prediction': prediction,
+    //                     'matchTime' : matchTime,
+    //                     'correctScore': correctScore,
+    //                     'avarageGoal': avarageGoal,
+    //                     'resurse': resurse
+    //                   });
+    //                   obj.save((err, item) => {});
+    //             }
 
-          trs.each(function(i, elem){
-            if (trs.eq(i).find('td').eq(0).hasClass('standardbunka')){
-              var date = trs.eq(i).find('td').eq(0).text();
-              console.log(date)
-              var arrDate = date.split('.');
-              var a = new Date(2018, arrDate[1]-1, arrDate[0]);
-              var b = new Date(2018, new Date().getMonth(), new Date().getDate());
-              console.log(a.getTime() - b.getTime() === 0)
-              if (a.getTime() - b.getTime() === 0){
-                var team1 = trs.eq(i).find('td').eq(1).find('a').text();
-                var team2 = trs.eq(i).find('td').eq(2).find('a').text();
-                var propability1 = trs.eq(i).find('td').eq(6).text();
-                var propabilityX = trs.eq(i).find('td').eq(7).text();
-                var propability2 = trs.eq(i).find('td').eq(8).text();
-                var prediction = trs.eq(i).find('td').eq(9).text();
-                var cop = {
-                  'team1': team1,
-                  'team2': team2,
-                  'addedDate': new Date(),
-                  'prediction': prediction,
-                  'propability1': propability1,
-                  'propabilityX': propabilityX,
-                  'propability2': propability2,
-                  'correctScore':  trs.eq(i).find('td.vetsipismo').eq(0).text()+'-'+ trs.eq(i).find('td.vetsipismo').eq(1).text(),
-                  'resurse': resurse,
-                }
-                  var obj = new Resurses(cop);
-                  obj.save((err, item) => {});
-                }
-            }
-          })
-        })
-      }
-    })
-    request(url7, function(error, response, html){
-      if(!error){
-        var $ = cheerio.load(html);
-        let resurse ='bet-portal';
-        $('#predictions-1').filter(function(){
-          var data = $(this);
-           var trs = data.find('tr');
-            trs.each(function(i, elem){
-              if (trs.eq(i).hasClass('match')){
-                var team1 = trs.eq(i).find('td').eq(0).text();
-                var t = trs.eq(i).find('td').eq(1).find('a').text().split(':')
-                t[0] = parseInt(t[0]);
-                var matchTime2 = t.join(':');
-                var team2 = trs.eq(i).find('td').eq(2).text();
-                var prediction = trs.eq(i).find('td').eq(3).find('div').text();
-                var cop = {
-                  'team1': team1,
-                  'team2': team2,
-                  'addedDate': new Date(),
-                  'prediction': prediction,
-                  'matchTime' : matchTime2,
-                  'resurse': resurse,
-                }
-                  var obj = new Resurses(cop);
-                  obj.save((err, item) => {});
-              }
-            })
-        })
-      }
-    })
-    request(url8, function(error, response, html){
-      if(!error){
-        var $ = cheerio.load(html);
-        let resurse = 'statarea';
-        $('.datacotainer').filter(function(){
-          var data = $(this);
-           var trs = data.find('.match');
-            trs.each(function(i, elem){
-                var team1 = trs.eq(i).find('td').eq(0).text();
-                var team2 = trs.eq(i).find('td').eq(2).text();
-                var prediction = trs.eq(i).find('td').eq(3).find('div').text();
-                var cop = {
-                  'team1': trs.eq(i).find('.teams').find('.hostteam > .name').text(),
-                  'team2': trs.eq(i).find('.teams').find('.guestteam > .name').text(),
-                  'matchTime': trs.eq(i).find('.date').text(),
-                  'addedDate': new Date(),
-                  'prediction': trs.eq(i).find('.matchrow').find('.tip > .value > div').text(),
-                  'propability1': trs.eq(i).find('.inforow > .coefrow >.coefbox').eq(0).find('.value').text(),
-                  'propabilityX': trs.eq(i).find('.inforow > .coefrow >.coefbox').eq(1).find('.value').text(),
-                  'propability2': trs.eq(i).find('.inforow > .coefrow >.coefbox').eq(2).find('.value').text(),
-                  'propabilityOver': trs.eq(i).find('.inforow > .coefrow >.coefbox').eq(6).find('.value').text(),
-                  'resurse': resurse,
-                }
-                  var obj = new Resurses(cop);
-                  obj.save((err, item) => {});
-            })
+    //           }
+    //         }
+    //       })
+    //     })
+    //   }
+    // })
+    // request(url1, function(error, response, html){
+    //   if(!error){
+    //     var $ = cheerio.load(html);
+    //     let resurse = 'bettingtips1x2'
+    //     $('.inner .results').filter(function(){
+    //       var data = $(this);
+    //       var trs = data.children().children();
 
-        })
-      }
-    })
-    request(url10, function(error, response, html){
-      if(!error){
-        var $ = cheerio.load(html);
-        let resurse = 'hintwise';
-        $('#soccer_gridview').filter(function(){
-          var data = $(this);
-           var trs = data.find('tr');
-            trs.each(function(i, elem){
-              if (trs.eq(i).hasClass('odd') || trs.eq(i).hasClass('even') ){
+    //       trs.each(function(i, elem){
+    //         if (trs.eq(i).find('td').length){
+    //           var teams = trs.eq(i).find('td').eq(3).find('a').text().split(' - ');
+    //           var matchTime = trs.eq(i).find('td').eq(2).text()
+    //           var correctScore = trs.eq(i).find('td').eq(7).text();
+    //           var timeArray = matchTime.split(':');
+    //           timeArray[0] = 2 + parseInt(timeArray[0]);
+    //           matchTime = timeArray.join(':');
+    //           if (teams[0] !== " "){
+    //             const obj = new Resurses({
+    //               'team1': teams[0],
+    //               'team2': teams[1],
+    //               'addedDate': new Date(),
+    //               'matchTime' : matchTime,
+    //               'correctScore': correctScore,
+    //               'tournament' : trs.eq(i).find('td').eq(1).text(),
+    //               'resurse': resurse,
+    //             });
+    //             obj.save((err, item) => {});
+    //           }
+    //         }
+    //       })
+    //     })
+    //   }
+    // })
 
-              var last5home = [];
-              var last5away = [];
-              var hSpans = trs.eq(i).find('td').eq(14).find('span');
-              hSpans.each((index, span)=>{
-                last5home.push(hSpans.eq(index).text());
-              });
-              var aSpans = trs.eq(i).find('td').eq(15).find('span');
-              aSpans.each((index, span)=>{
-                last5away.push(aSpans.eq(index).text());
-              });
-              var odd1 = trs.eq(i).find('td.cellOdds ').eq(0).find('input').val();
-              var oddX = trs.eq(i).find('td.cellOdds ').eq(1).find('input').val();
-              var odd2 = trs.eq(i).find('td.cellOdds ').eq(2).find('input').val();
-              var matchTime = trs.eq(i).find('td.cell50').find('span').text().split(':');
-              matchTime[0] = 1 + parseInt(matchTime[0]);
-              var matchTime2 = matchTime.join(':');
-              var country = trs.eq(i).find('td').eq(1).text();
-              var lige = trs.eq(i).find('td').eq(3).text();
-              var teams = trs.eq(i).find('td.cellTEAMS').find('a').text().split(' - ');
-              var team1 = teams[0];
-              var team2 = teams[1];
-              var prediction = trs.eq(i).find('td.cell90').find('div').text();
-              var underOver = trs.eq(i).find('td.underOver').find('div').text();
-              var winLose_Soccer = trs.eq(i).find('td.winLose_Soccer').find('span').text();
-              var cop = {
-                'team1': team1,
-                'team2': team2,
-                'matchTime': matchTime2,
-                'addedDate': new Date(),
-                'prediction': prediction,
-                'correctScore' : winLose_Soccer,
-                'propabilityOver': underOver,
-                'resurse': resurse,
-                'last5home' :last5home,
-                'last5away' : last5away,
-                'odd1':odd1,
-                'oddX' : oddX,
-                'odd2' : odd2
-              }
-                var obj = new Resurses(cop);
-                obj.save((err, item) => {});
-            }
-            })
-        })
-      }
-    })
+    // request(url2, function(error, response, html){
+    //   if(!error){
+    //     var $ = cheerio.load(html);
+    //     let resurse = 'over25tips'
+    //     $('.class').filter(function(){
+    //       var data = $(this);
+    //       if (data.find('h1')){
+    //         var trs = data.find('.predictionsTable .main-row');
+    //         trs.each(function(i, elem){
+    //           if (trs.eq(i).find('td').length){
+    //             var correctScore = trs.eq(i).find('td').eq(7).text();
+    //             var matchTime = trs.eq(i).find('td').eq(0).text();
+    //             var timeArray = matchTime.split(':');
+    //             timeArray[0] = 2 + parseInt(timeArray[0]);
+    //             matchTime = timeArray.join(':');
+    //             const obj = new Resurses({
+    //               'team1': trs.eq(i).find('td').eq(2).text().replace(/^\s*/,'').replace(/\s*$/,''),
+    //               'team2': trs.eq(i).find('td').eq(4).text().replace(/^\s*/,'').replace(/\s*$/,''),
+    //               'addedDate': new Date(),
+    //               'matchTime' : matchTime,
+    //               'prediction': trs.eq(i).find('td').eq(15).text(),
+    //               'resurse': resurse,
+    //             });
+    //             obj.save((err, item) => {});
+    //           }
+    //         })
+    //       };
+    //     })
+    //   }
+    // })
+
+    // request(url3, function(error, response, html){
+    //   if(!error){
+    //     var $ = cheerio.load(html);
+    //     let resurse = 'zulubet'
+    //     $('.content_table').filter(function(){
+    //       var data = $(this);
+    //       var trs = data.find('tr');
+
+    //       trs.each(function(i, elem){
+    //         if (!trs.eq(i).find('td').first().hasClass('Caption')){
+    //           var teams = trs.eq(i).find('td').eq(1).find('span > a ').text().split(' - ');
+    //              if (!trs.eq(i).children('td').first().hasClass('prob2')){
+    //               var matchTime = trs.eq(i).children('td').first().text().split(', ');
+    //               if (matchTime.length == 2){
+    //                 var timeArray = matchTime[1].split(':');
+    //                 timeArray[0] = 2 + parseInt(timeArray[0]);
+    //                 var matchTime2 = timeArray.join(':');
+    //               }
+    //              }
+    //           var propability1 = trs.eq(i).find('td.prob2').eq(0).text();
+    //                     var propabilityX = trs.eq(i).find('td.prob2').eq(1).text();
+    //                     var propability2 = trs.eq(i).find('td.prob2').eq(2).text();
+    //           var prediction = trs.eq(i).find('td').eq(9).text();
+    //           if (teams.length == 2){
+    //             var obj = new Resurses({
+    //               'team1': teams[0],
+    //               'team2': teams[1],
+    //               'addedDate': new Date(),
+    //               'prediction': prediction,
+    //               'propability1' :propability1,
+    //               'propabilityX':propabilityX,
+    //               'propability2': propability2,
+    //               'matchTime' : matchTime2,
+    //               'resurse': resurse
+    //             });
+    //             obj.save((err, item) => {});
+    //           }
+    //         }
+    //       })
+    //     })
+    //   }
+    // })
+
+    // request(url5, function(error, response, html){
+    //   if(!error){
+    //     var $ = cheerio.load(html);
+    //     let resurse = 'iambettor'
+    //     $('.tabulkaquick').filter(function(){
+    //       var data = $(this);
+    //       var trs = data.find('tr');
+    //       trs.each(function(i, elem){
+    //         if (trs.eq(i).find('td').first().hasClass('standardbunka')){
+    //           if (!trs.eq(i).children('td').first().hasClass('prob2')){
+    //             var matchTime = trs.eq(i).children('td').first().text().split(', ');
+    //             if (matchTime.length == 2){
+    //               var timeArray = matchTime[1].split(':');
+    //               timeArray[0] = 2 + parseInt(timeArray[0]);
+    //               var matchTime2 = timeArray.join(':');
+    //             }
+    //            }
+    //           var cop = {
+    //             'team1': trs.eq(i).find('td.standardbunka').eq(0).text(),
+    //             'team2': trs.eq(i).find('td.standardbunka').eq(1).text(),
+    //             'addedDate': new Date(),
+    //             'prediction': '',
+    //             'propability1': trs.eq(i).find('td.standardbunka').eq(3).text(),
+    //             'propabilityX': trs.eq(i).find('td.standardbunka').eq(4).text(),
+    //             'propability2':trs.eq(i).find('td.standardbunka').eq(5).text(),
+    //             'propabilityUnder' :'',
+    //             'propabilityOver':'',
+    //             'matchTime' : matchTime2,
+    //             'correctScore':  trs.eq(i).find('td.vetsipismo').eq(0).text()+'-'+ trs.eq(i).find('td.vetsipismo').eq(1).text(),
+    //             'resurse': resurse,
+    //           }
+    //             var obj = new Resurses(cop);
+    //             obj.save((err, item) => {});
+    //         }
+    //       })
+    //     })
+    //   }
+    // })
+
+
+    // request(url4, function(error, response, html){
+    //   if(!error){
+    //     var $ = cheerio.load(html);
+    //     let resurse = 'betstudy'
+    //     $('.soccer-table').filter(function(){
+    //       var data = $(this);
+    //       var trs = data.find('tr');
+
+    //       trs.each(function(i, elem){
+    //         if (trs.eq(i).find('td').length){
+    //           var matchTime = trs.eq(i).find('td').eq(0).find('span').text().split(' ');
+    //           var timeArray = matchTime[1].split(':');
+    //           timeArray[0] = 2 + parseInt(timeArray[0]);
+    //           var matchTime2 = timeArray.join(':');
+    //           var teams = trs.eq(i).find('td').eq(1).find('a').eq(1).text().split(' - ');
+    //           var propability1 = trs.eq(i).find('td').eq(2).text();
+    //           var propabilityX = trs.eq(i).find('td').eq(3).text();
+    //           var propability2 = trs.eq(i).find('td').eq(4).text();
+    //           var prediction = trs.eq(i).find('td').eq(7).text();
+    //           var propabilityOver = trs.eq(i).find('td').eq(4).text();
+    //           var propabilityUnder = trs.eq(i).find('td').eq(5).text();
+    //           var cop = {
+    //             'team1': teams[0],
+    //             'team2': teams[1],
+    //             'addedDate': new Date(),
+    //             'prediction': prediction,
+    //             'propability1': propability1,
+    //             'propabilityX': propabilityX,
+    //             'propability2': propability2,
+    //             'propabilityUnder' :propabilityUnder,
+    //             'propabilityOver': propabilityOver,
+    //             'matchTime' : matchTime2,
+    //             'resurse': resurse,
+    //           }
+    //             var obj = new Resurses(cop);
+    //             obj.save((err, item) => {});
+    //         }
+    //       })
+    //     })
+    //   }
+    // })
+
+    // request(url6, function(error, response, html){
+    //   if(!error){
+    //     var $ = cheerio.load(html);
+    //     let resurse = 'vitibet'
+    //     $('.tabulkaquick').filter(function(){
+    //       var data = $(this);
+    //       var trs = data.find('tr');
+
+    //       trs.each(function(i, elem){
+    //         if (trs.eq(i).find('td').eq(0).hasClass('standardbunka')){
+    //           var date = trs.eq(i).find('td').eq(0).text();
+    //           console.log(date)
+    //           var arrDate = date.split('.');
+    //           var a = new Date(2018, arrDate[1]-1, arrDate[0]);
+    //           var b = new Date(2018, new Date().getMonth(), new Date().getDate());
+    //           console.log(a.getTime() - b.getTime() === 0)
+    //           if (a.getTime() - b.getTime() === 0){
+    //             var team1 = trs.eq(i).find('td').eq(1).find('a').text();
+    //             var team2 = trs.eq(i).find('td').eq(2).find('a').text();
+    //             var propability1 = trs.eq(i).find('td').eq(6).text();
+    //             var propabilityX = trs.eq(i).find('td').eq(7).text();
+    //             var propability2 = trs.eq(i).find('td').eq(8).text();
+    //             var prediction = trs.eq(i).find('td').eq(9).text();
+    //             var cop = {
+    //               'team1': team1,
+    //               'team2': team2,
+    //               'addedDate': new Date(),
+    //               'prediction': prediction,
+    //               'propability1': propability1,
+    //               'propabilityX': propabilityX,
+    //               'propability2': propability2,
+    //               'correctScore':  trs.eq(i).find('td.vetsipismo').eq(0).text()+'-'+ trs.eq(i).find('td.vetsipismo').eq(1).text(),
+    //               'resurse': resurse,
+    //             }
+    //               var obj = new Resurses(cop);
+    //               obj.save((err, item) => {});
+    //             }
+    //         }
+    //       })
+    //     })
+    //   }
+    // })
+    // request(url7, function(error, response, html){
+    //   if(!error){
+    //     var $ = cheerio.load(html);
+    //     let resurse ='bet-portal';
+    //     $('#predictions-1').filter(function(){
+    //       var data = $(this);
+    //        var trs = data.find('tr');
+    //         trs.each(function(i, elem){
+    //           if (trs.eq(i).hasClass('match')){
+    //             var team1 = trs.eq(i).find('td').eq(0).text();
+    //             var t = trs.eq(i).find('td').eq(1).find('a').text().split(':')
+    //             t[0] = parseInt(t[0]);
+    //             var matchTime2 = t.join(':');
+    //             var team2 = trs.eq(i).find('td').eq(2).text();
+    //             var prediction = trs.eq(i).find('td').eq(3).find('div').text();
+    //             var cop = {
+    //               'team1': team1,
+    //               'team2': team2,
+    //               'addedDate': new Date(),
+    //               'prediction': prediction,
+    //               'matchTime' : matchTime2,
+    //               'resurse': resurse,
+    //             }
+    //               var obj = new Resurses(cop);
+    //               obj.save((err, item) => {});
+    //           }
+    //         })
+    //     })
+    //   }
+    // })
+    // request(url8, function(error, response, html){
+    //   if(!error){
+    //     var $ = cheerio.load(html);
+    //     let resurse = 'statarea';
+    //     $('.datacotainer').filter(function(){
+    //       var data = $(this);
+    //        var trs = data.find('.match');
+    //         trs.each(function(i, elem){
+    //             var team1 = trs.eq(i).find('td').eq(0).text();
+    //             var team2 = trs.eq(i).find('td').eq(2).text();
+    //             var prediction = trs.eq(i).find('td').eq(3).find('div').text();
+    //             var cop = {
+    //               'team1': trs.eq(i).find('.teams').find('.hostteam > .name').text(),
+    //               'team2': trs.eq(i).find('.teams').find('.guestteam > .name').text(),
+    //               'matchTime': trs.eq(i).find('.date').text(),
+    //               'addedDate': new Date(),
+    //               'prediction': trs.eq(i).find('.matchrow').find('.tip > .value > div').text(),
+    //               'propability1': trs.eq(i).find('.inforow > .coefrow >.coefbox').eq(0).find('.value').text(),
+    //               'propabilityX': trs.eq(i).find('.inforow > .coefrow >.coefbox').eq(1).find('.value').text(),
+    //               'propability2': trs.eq(i).find('.inforow > .coefrow >.coefbox').eq(2).find('.value').text(),
+    //               'propabilityOver': trs.eq(i).find('.inforow > .coefrow >.coefbox').eq(6).find('.value').text(),
+    //               'resurse': resurse,
+    //             }
+    //               var obj = new Resurses(cop);
+    //               obj.save((err, item) => {});
+    //         })
+
+    //     })
+    //   }
+    // })
+    // request(url10, function(error, response, html){
+    //   if(!error){
+    //     var $ = cheerio.load(html);
+    //     let resurse = 'hintwise';
+    //     $('#soccer_gridview').filter(function(){
+    //       var data = $(this);
+    //        var trs = data.find('tr');
+    //         trs.each(function(i, elem){
+    //           if (trs.eq(i).hasClass('odd') || trs.eq(i).hasClass('even') ){
+
+    //           var last5home = [];
+    //           var last5away = [];
+    //           var hSpans = trs.eq(i).find('td').eq(14).find('span');
+    //           hSpans.each((index, span)=>{
+    //             last5home.push(hSpans.eq(index).text());
+    //           });
+    //           var aSpans = trs.eq(i).find('td').eq(15).find('span');
+    //           aSpans.each((index, span)=>{
+    //             last5away.push(aSpans.eq(index).text());
+    //           });
+    //           var odd1 = trs.eq(i).find('td.cellOdds ').eq(0).find('input').val();
+    //           var oddX = trs.eq(i).find('td.cellOdds ').eq(1).find('input').val();
+    //           var odd2 = trs.eq(i).find('td.cellOdds ').eq(2).find('input').val();
+    //           var matchTime = trs.eq(i).find('td.cell50').find('span').text().split(':');
+    //           matchTime[0] = 1 + parseInt(matchTime[0]);
+    //           var matchTime2 = matchTime.join(':');
+    //           var country = trs.eq(i).find('td').eq(1).text();
+    //           var lige = trs.eq(i).find('td').eq(3).text();
+    //           var teams = trs.eq(i).find('td.cellTEAMS').find('a').text().split(' - ');
+    //           var team1 = teams[0];
+    //           var team2 = teams[1];
+    //           var prediction = trs.eq(i).find('td.cell90').find('div').text();
+    //           var underOver = trs.eq(i).find('td.underOver').find('div').text();
+    //           var winLose_Soccer = trs.eq(i).find('td.winLose_Soccer').find('span').text();
+    //           var cop = {
+    //             'team1': team1,
+    //             'team2': team2,
+    //             'matchTime': matchTime2,
+    //             'addedDate': new Date(),
+    //             'prediction': prediction,
+    //             'correctScore' : winLose_Soccer,
+    //             'propabilityOver': underOver,
+    //             'resurse': resurse,
+    //             'last5home' :last5home,
+    //             'last5away' : last5away,
+    //             'odd1':odd1,
+    //             'oddX' : oddX,
+    //             'odd2' : odd2
+    //           }
+    //             var obj = new Resurses(cop);
+    //             obj.save((err, item) => {});
+    //         }
+    //         })
+    //     })
+    //   }
+    // })
     // request(url9, function(error, response, html){
     //   if(!error){
     //     var $ = cheerio.load(html);
@@ -608,6 +611,54 @@ export default class ResursesCtrl extends BaseCtrl {
     //     })
     //   }
     // })
+
+     request(url11, function(error, response, html){
+      if(!error){
+        var $ = cheerio.load(html);
+        $('.upcoming').filter(function(){
+          var data = $(this);
+          var trs = data.find('.predict');
+          Club.find({'league': '5a953a92e144536463b60b2e'}).exec((err, clubs)=>{
+            trs.each(function(i, elem){
+              var team1 = trs.eq(i).find('td').eq(3).text();
+              var team2 = trs.eq(i).find('td').eq(5).text();
+              var homeTeamId = clubs.filter((elem, index) =>{
+                if (elem.name == team1){
+                  return elem;
+                }
+              })[0]._id;
+              var awayTeamId = clubs.filter((elem, index) =>{
+                if (elem.name == team2){
+                  return elem;
+                }
+              })[0]._id;
+              console.log(123, homeTeamId)
+              var result = trs.eq(i).find('td').eq(4).text();
+              var cop = {
+                'team1': homeTeamId,
+                'team2': awayTeamId,
+                'date': trs.eq(i).find('td').eq(0).text(),
+                'round': trs.eq(i).find('td').eq(1).text(),
+                'result': result
+              }
+              console.log(cop)
+              var match = new Match(cop);
+              match.save((err,savedMatch)=>{
+                console.log('match saved')
+              })
+            //   Resurses.find({ $and : [{'resurse':'statarea'}, {'team1': cop.name1}]}).exec(function(err, resut){
+            //   if (resut.length) {
+            //     resut[0].resmatch = cop.team1 + '-' + cop.team2;
+            //     resut[0].save(function(err,item) {
+            //       console.log('save', item)
+            //     });
+            //   }
+            //  })
+            })
+          });
+        })
+      }
+    })
   }
 
  

@@ -51,6 +51,8 @@ export default function setRoutes(app) {
   router.route('/addClubs').post(clubCtrl.addClubs);
   router.route('/getClubsInfo/').post(clubCtrl.getClubsInfo);
   router.route('/addSimpleNames/').post(clubCtrl.addSimpleNames);
+  router.route('/getAllClubsFromLeague/').post(clubCtrl.getAllClubsFromLeague);
+  router.route('/getMatchesWithClub/').post(clubCtrl.getMatchesWithClub);
   
 
  router.route('/clubs/:id').get(clubCtrl.get);

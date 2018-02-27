@@ -12,4 +12,11 @@ export class ClubService {
   getClub(id): Observable<any> {
     return this.http.get<any>(`/api/clubs/${id}`);
   }
+  getAllClubsFromLeague(obj): Observable<any> {
+    return this.http.post<any>('/api/getAllClubsFromLeague', obj);
+  }
+  getMatchesWithClub(obj): Observable<any> {
+    return this.http.post<any>('/api/getMatchesWithClub', obj);
+  }
+
 }

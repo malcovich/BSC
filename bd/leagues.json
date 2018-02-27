@@ -1,0 +1,9 @@
+{
+	"_id" : ObjectId("5a953a92e144536463b60b2e"),
+	"name" : "Premier League"
+},
+{
+	"_id" : ObjectId("5a956dbee144536463b6d286"),
+	"league" : ObjectId("5a953a92e144536463b60b2e"),
+	"name" : "Zorya"
+},

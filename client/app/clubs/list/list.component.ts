@@ -9,20 +9,20 @@ import { ToastComponent } from '../../shared/toast/toast.component';
 import { Cat } from '../../shared/models/cat.model';
 
 @Component({
-  selector: 'club-detail',
-  templateUrl: './club-detail.component.html',
-  styleUrls: ['./club-detail.component.css']
+  selector: 'clubs-list',
+  templateUrl: './list.component.html',
+  styleUrls: ['./list.component.css']
 })
-export class ClubComponent implements OnInit {
+export class ClubsListComponent implements OnInit {
 
   cat = new Cat();
   cats: Cat[] = [];
   isLoading = true;
   isEditing = false;
   resurses: any;
+  list: any;
   f: any;
   team : any;
-  matches: any;
 
   addCatForm: FormGroup;
   name = new FormControl('', Validators.required);
@@ -37,26 +37,18 @@ export class ClubComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      this.getItem(params['id']);
-      this.getMatchesWithClub(params['id']);
+      this.getItems();
     });
    
   }
 
-  getItem(id) {
-    this.clubsService.getClub(id).subscribe(
+  getItems() {
+    this.clubsService.getAllClubsFromLeague({'league': '5a953a92e144536463b60b2e'}).subscribe(
       data => {
-        this.team = data;
+        this.list = data;
+        console.log(this.list)
       }
      );
-  }
-
-  getMatchesWithClub(id) {
-    this.clubsService.getMatchesWithClub({club: id}).subscribe(
-      data => {
-        this.matches = data;
-      }
-    );
   }
 
 }

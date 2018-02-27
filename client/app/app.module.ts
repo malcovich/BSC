@@ -22,6 +22,7 @@ import { GetResursesComponent } from './getResurses/getResurses.component';
 import { ListResursesComponent } from './listResurses/listResurses.component';
 import { ResurseComponent } from './resurse/resurse.component';
 import { ClubComponent } from './clubs/club/club-detail.component';
+import { ClubsListComponent } from './clubs/list/list.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StatisticComponent } from './dashboard/statistic/statistic.component';
 import { FavoritesComponent } from './favorites/favorites.component';
@@ -43,7 +44,8 @@ import { FavoritesComponent } from './favorites/favorites.component';
     ClubComponent,
     DashboardComponent,
     StatisticComponent,
-    FavoritesComponent
+    FavoritesComponent,
+    ClubsListComponent
   ],
   imports: [
     RoutingModule,

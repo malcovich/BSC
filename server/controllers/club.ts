@@ -1,5 +1,6 @@
 import Resurses from '../models/resurses';
 import Club from '../models/clubs';
+import Match from '../models/match';
 import BaseCtrl from './base';
 import * as path from 'path';
 import * as fs from 'fs';
@@ -10,7 +11,6 @@ import * as async from 'async';
 
 export default class ClubCtrl extends BaseCtrl {
   model = Club;
-
 
   addClubs = (req, res, next) => {
     var team1 = req.body.team1;
@@ -30,6 +30,12 @@ export default class ClubCtrl extends BaseCtrl {
           res.json({'team1' : teamHome[0] ? teamHome[0]: values[0], 'team2' : teamAway[0]?teamAway[0]:values[1]});
         });
       })
+    });
+  }
+
+  getAllClubsFromLeague = (req, res, next) => {
+    Club.find({'league': req.body.league}).exec((err, clubs) => {
+      res.json(clubs);
     });
   }
 
@@ -64,6 +70,14 @@ export default class ClubCtrl extends BaseCtrl {
           })
         })
     });
+  }
+
+  getMatchesWithClub = (req, res) =>{
+    console.log(req.body.club)
+    Match.find({$or: [{'team1': req.body.club},{'team2':req.body.club}]}).populate('team1').populate('team2').exec((err, matches)=>{
+      console.log(matches)
+      res.json(matches);
+    })
   }
   
 }
