@@ -9,6 +9,7 @@ const clubSchema = new mongoose.Schema({
   name5: String,
   name: String,
   simpleNames: [],
+  ukrName : String,
   tournament : String,
   league: {type: mongoose.Schema.Types.ObjectId, ref: 'League'}
 });
