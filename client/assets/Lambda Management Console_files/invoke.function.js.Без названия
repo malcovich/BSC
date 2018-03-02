@@ -1,0 +1,158 @@
+'use strict';
+
+define(function () {
+    function main(options, imports, register) {
+        function contentGenerator(resultEditor, parsedResponse) {
+            var executionResultsEditor = resultEditor;
+
+            executionResultsEditor.insert('Response:\n');
+            if (parsedResponse.output) {
+                executionResultsEditor.insert(parsedResponse.output);
+            }
+
+            executionResultsEditor.insert('\n\nRequest ID:\n');
+            if (parsedResponse.info && parsedResponse.info.RequestId) {
+                executionResultsEditor.insert(JSON.stringify(parsedResponse.info.RequestId));
+            }
+
+            executionResultsEditor.insert('\n\nFunction Logs:\n');
+            if (parsedResponse.logs) {
+                executionResultsEditor.insert(parsedResponse.logs);
+            }
+        }
+
+        function parseInfo(info) {
+            var infoVariableMatchers = {
+                RequestId: 'RequestId: ([a-f0-9-]+)',
+                Version: 'Version: ([^\n ]+)',
+                Duration: 'Duration: ([0-9.]+ [^\t ]+)',
+                BilledDuration: 'Billed Duration: ([0-9.]+ [^\t ]+)',
+                MemorySize: 'Memory Size: ([0-9.]+ [^\t ]+)',
+                MaxMemoryUsed: 'Max Memory Used: ([0-9.]+ [^\t ]+)'
+            };
+            var parsedInfo = {};
+            Object.keys(infoVariableMatchers).forEach(function (variable) {
+                var matcher = infoVariableMatchers[variable];
+                var parsedVariable = info.match(matcher);
+                if (parsedVariable) {
+                    parsedInfo[variable] = parsedVariable[1];
+                }
+            });
+
+            return parsedInfo;
+        }
+
+        function parseResponse(response) {
+            var parsedInfo = parseInfo(response.logs);
+            var parsedResponse = {
+                error: response.error,
+                output: response.message,
+                logs: response.logs,
+                info: parsedInfo
+            };
+            return parsedResponse;
+        }
+
+        function updateExecutionSummary(container, response) {
+            var info = response.info;
+
+            var headerBar = container.getElementsByClassName('title')[0];
+            var firstPosition = headerBar.firstElementChild;
+            var statuses = void 0;
+
+            // Reset Execution Results Summary or init if it doesn't exist
+            if (firstPosition && firstPosition.classList.contains('extras')) {
+                statuses = firstPosition;
+                statuses.innerHTML = '';
+            } else {
+                statuses = headerBar.insertBefore(System.global.document.createElement('div'), firstPosition);
+                statuses.className = 'extras';
+            }
+
+            var n = void 0;
+            if (response.error !== undefined && response.error !== null) {
+                n = statuses.appendChild(System.global.document.createElement('div'));
+                if (response.error) {
+                    n.className = 'status error';
+                    n.innerHTML = 'Status: <span>Failed</span>';
+                } else {
+                    n.className = 'status ok';
+                    n.innerHTML = 'Status: <span>Succeeded</span>';
+                }
+            }
+            if (info.MaxMemoryUsed) {
+                n = statuses.appendChild(System.global.document.createElement('div'));
+                n.className = 'memory';
+                n.innerHTML = 'Max Memory Used: <span>' + info.MaxMemoryUsed + '</span>';
+                n.title = 'Total Memory Size:' + info.MemorySize;
+            }
+            if (info.Duration) {
+                n = statuses.appendChild(System.global.document.createElement('div'));
+                n.className = 'duration';
+                n.innerHTML = 'Time: <span>' + info.Duration + '</span>';
+                n.title = 'Billed Duration: ' + info.BilledDuration;
+            }
+        }
+
+        function showResults(resultsContainer, resultsEditor, response) {
+            var executionResultsEditor = resultsEditor;
+            var parsedResponse = parseResponse(response);
+
+            // Show output as JSON if appropriate
+            contentGenerator(executionResultsEditor, parsedResponse);
+
+            updateExecutionSummary(resultsContainer, parsedResponse);
+        }
+
+        function clearResults(resultsContainer, resultsEditor) {
+            var editor = resultsEditor;
+            var container = resultsContainer;
+
+            var emptyExecSummaryFunction = {
+                RequestId: '',
+                Version: '',
+                Duration: '',
+                BilledDuration: '',
+                MemorySize: '',
+                MaxMemoryUsed: ''
+            };
+
+            var parsedResponse = {
+                error: null,
+                output: null,
+                info: emptyExecSummaryFunction,
+                requestId: null
+            };
+
+            // Clear values of summary
+            updateExecutionSummary(container, parsedResponse);
+
+            editor.setValue('');
+        }
+
+        function setLoading(resultsContainer, resultsEditor) {
+            var container = resultsContainer;
+            var editor = resultsEditor;
+
+            clearResults(container, editor);
+
+            editor.setValue('Loading');
+        }
+
+        register(null, {
+            'lambda.invoke.function': {
+                setLoading: setLoading,
+                contentGenerator: contentGenerator,
+                showResults: showResults,
+                parseResponse: parseResponse,
+                parseInfo: parseInfo,
+                updateExecutionSummary: updateExecutionSummary,
+                clearResults: clearResults
+            }
+        });
+    }
+
+    main.consumes = [];
+    main.provides = ['lambda.invoke.function'];
+    return main;
+});

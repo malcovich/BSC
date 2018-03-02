@@ -1,0 +1,127 @@
+'use strict';
+
+define(function () {
+    function main(options, imports, register) {
+        var Plugin = imports.Plugin,
+            commands = imports.commands,
+            ui = imports.ui,
+            layout = imports.layout;
+
+        var plugin = new Plugin('Lambda UI', main.consumes);
+        var bus = imports['lambda.daemon'].bus;
+
+        var vfs = imports['vfs.api'];
+        var showInfo = imports['dialog.info'];
+        var showError = imports['dialog.error'];
+        var fullscreen = imports['lambda.fullscreen'];
+
+        var SAVE_CODE_BUTTON = 'btnSaveCode';
+
+        function updateCodeSaveSuccessNotice(saveCodeResults) {
+            var btnSaveCode = plugin.getElement(SAVE_CODE_BUTTON);
+            if (btnSaveCode) {
+                btnSaveCode.setAttribute('disabled', false);
+            }
+
+            if (saveCodeResults && saveCodeResults.saveSuccess) {
+                showInfo.show('Deployment package successfully saved', 3000);
+            } else if (saveCodeResults && !saveCodeResults.saveSuccess && saveCodeResults.saveErrorMessage) {
+                showError.show(saveCodeResults.saveErrorMessage, 3000);
+            } else {
+                showError.show('Something went wrong, please try again later', 3000);
+            }
+        }
+
+        var webappToIdeRequest = {
+            updateCodeSaveSuccessNotice: updateCodeSaveSuccessNotice
+        };
+
+        bus.on('lambda.webapp.save', function (fn) {
+            for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+                args[_key - 1] = arguments[_key];
+            }
+
+            webappToIdeRequest[fn].apply(webappToIdeRequest, args);
+        });
+
+        /***** Set λ menu *****/
+
+        // Command for deploy button
+        commands.addCommand({
+            name: 'savelambdafunction',
+            group: 'Lambda',
+            exec: function exec() {
+                if (fullscreen.isFullscreen) {
+                    // Set button to be disabled and wait async callback to enable it
+                    var btnSaveCode = plugin.getElement(SAVE_CODE_BUTTON);
+                    if (btnSaveCode) {
+                        btnSaveCode.setAttribute('disabled', true);
+                    }
+
+                    vfs.upload();
+                }
+            },
+
+            bindKey: {
+                mac: 'Command-Shift-U',
+                win: 'Ctrl-Shift-U'
+            }
+        }, plugin);
+
+        /***** Draw *****/
+
+        var drawn = false;
+        function draw() {
+            if (drawn) {
+                return;
+            }
+            drawn = true;
+
+            // Add save button to toolbar
+            ui.insertByIndex(layout.getElement('barTools'), new ui.button({
+                id: 'btnSaveCode',
+                class: 'btnSave hidden', // hide button by default when just load plugin, it will be toggled in fullscreen plugin
+                skin: 'c9-menu-btn',
+                command: 'savelambdafunction',
+                caption: 'Save',
+                tooltip: 'Save your Lambda function'
+            }), 100, plugin);
+        }
+
+        /***** Load and register *****/
+
+        var loaded = false;
+        plugin.on('load', function () {
+            if (loaded) {
+                return false;
+            }
+            loaded = true;
+
+            draw();
+
+            // hide or display save button in/out fullscreen mode
+            fullscreen.on('toggleFullscreen', function () {
+                var btnSaveCode = plugin.getElement(SAVE_CODE_BUTTON);
+                if (fullscreen.isFullscreen) {
+                    btnSaveCode.setAttribute('class', 'btnSave');
+                } else {
+                    btnSaveCode.setAttribute('class', 'btnSave hidden');
+                }
+            }, plugin);
+
+            return true;
+        });
+
+        plugin.freezePublicAPI({
+            updateCodeSaveSuccessNotice: updateCodeSaveSuccessNotice
+        });
+
+        register(null, { 'lambda.save': plugin });
+    }
+
+    // WEIRD THING: if you don't consume MenuItem, even if you don't use it,
+    // buttons won't work in toolbar (I guess it's because toolbar is inside menubar). Freaking Cloud9, man.
+    main.consumes = ['Plugin', 'MenuItem', 'commands', 'ui', 'layout', 'lambda.daemon', 'vfs.api', 'dialog.info', 'dialog.error', 'lambda.fullscreen'];
+    main.provides = ['lambda.save'];
+    return main;
+});

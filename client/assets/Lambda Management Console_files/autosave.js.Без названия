@@ -1,0 +1,134 @@
+'use strict';
+
+define(function () {
+    function main(options, imports, register) {
+        var c9 = imports.c9,
+            Plugin = imports.Plugin,
+            save = imports.save;
+
+        var tabs = imports.tabManager;
+
+        /***** Initialization *****/
+
+        var plugin = new Plugin('Ajax.org', main.consumes);
+
+        var CHANGE_TIMEOUT = 500;
+        var SLOW_CHANGE_TIMEOUT = options.slowChangeTimeout || 30000;
+        var SLOW_SAVE_THRESHOLD = 100 * 1024; // 100KB
+        var autosave = true;
+
+        var docChangeTimeout = null;
+        var btnSave = void 0;
+
+        /***** Helpers START *****/
+        function saveTab(tab, force) {
+            if (!autosave) return;
+
+            if (!c9.has(c9.STORAGE)) {
+                save.setSavingState(tab, 'offline');
+                return;
+            }
+
+            var doc = tab.document;
+            if (!force && (!tab.path || !doc.changed || doc.meta.newfile || doc.meta.nofs || doc.meta.error || doc.meta.$saving)) {
+                return;
+            }
+
+            var value = doc.value;
+            var slow = value.length > SLOW_SAVE_THRESHOLD;
+            if (slow && !doc.meta.$slowSave) {
+                doc.meta.$slowSave = true;
+                return;
+            }
+            doc.meta.$slowSave = slow;
+
+            save.save(tab, {
+                silentsave: true,
+                timeout: 1,
+                value: value
+            }, function () {});
+        }
+
+        function transformButton() {
+            if (!btnSave) return;
+            if (btnSave.autosave === autosave) return;
+
+            if (autosave) {
+                // reset btnSave
+                btnSave.setAttribute('caption', '');
+                btnSave.setAttribute('margin', '0 20');
+                btnSave.removeAttribute('command');
+            }
+
+            btnSave.autosave = autosave;
+        }
+        /***** Helpers END *****/
+
+        var loaded = false;
+        function load() {
+            if (loaded) return false;
+            loaded = true;
+
+            save.getElement('btnSave', function (btn) {
+                btnSave = btn;
+                transformButton();
+            });
+
+            // Set timeout for enabling autosave in new/focused tab
+            tabs.on('tabCreate', function (e) {
+                var tab = e.tab;
+                tab.document.undoManager.on('change', function () {
+                    if (!autosave || !tab.path) {
+                        return;
+                    }
+
+                    clearTimeout(docChangeTimeout);
+                    docChangeTimeout = setTimeout(function () {
+                        saveTab(tab);
+                    }, tab.document.meta.$slowSave ? SLOW_CHANGE_TIMEOUT : CHANGE_TIMEOUT);
+                }, plugin);
+            }, plugin);
+
+            // Cache file when tab destory
+            tabs.on('tabDestroy', function (e) {
+                if (!e.tab.path) {
+                    return;
+                }
+                if (tabs.getTabs().length === 1) {
+                    btnSave.hide();
+                }
+                saveTab(e.tab);
+            }, plugin);
+
+            // Override local save success message
+            save.CAPTION_SAVED = '';
+
+            return true;
+        }
+
+        /***** Lifecycle *****/
+
+        plugin.on('load', function () {
+            load();
+        });
+
+        plugin.on('unload', function () {
+            loaded = false;
+        });
+
+        /***** Register and define API *****/
+
+        /**
+         * Implements auto save for Lambda Cloud9 Lite. AutoSave is enabled by default.
+         * the contents of files are automatically saved into local forage about 500ms after the change is made.
+         **/
+        plugin.freezePublicAPI({});
+
+        register(null, {
+            'lambda.autosave': plugin
+        });
+    }
+    main.consumes = ['c9', 'Plugin', 'save', 'tabManager'];
+    main.provides = ['lambda.autosave'];
+    return main;
+});

@@ -40,6 +40,7 @@
     "bootstrap": "4.0.0-alpha.5",
     "cheerio": "^1.0.0-rc.2",
     "core-js": "^2.4.1",
+    "d3-ng2-service": "^2.0.0",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
     "font-awesome": "^4.7.0",

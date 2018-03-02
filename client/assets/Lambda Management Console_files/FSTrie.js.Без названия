@@ -1,0 +1,218 @@
+'use strict';
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+define(function () {
+    return function () {
+        function FSTrie() {
+            _classCallCheck(this, FSTrie);
+
+            this.trie = {};
+        }
+
+        _createClass(FSTrie, [{
+            key: '_findNode',
+            value: function _findNode(path, create, val) {
+                var parts = (path || '/').split('/');
+                if (!parts[parts.length - 1]) {
+                    parts.pop(); // root
+                }
+                var data = this.trie;
+                var prev = null;
+                for (var i = 0; i < parts.length; i++) {
+                    prev = data;
+                    data = data['!' + parts[i]]; // the ith level's data
+                    if (data === null || data === undefined) {
+                        if (create && typeof prev !== 'string') {
+                            // prev is a dir
+                            prev['!' + parts[i]] = {};
+                            data = prev['!' + parts[i]];
+                        } else {
+                            return data;
+                        }
+                    }
+                }
+                if (val !== undefined) {
+                    prev['!' + parts[parts.length - 1]] = val;
+                    data = prev['!' + parts[parts.length - 1]];
+                }
+                return data;
+            }
+
+            /**
+             * return undefined if it's not in the trie, otherwise return the file value.
+             * A string or null for normal file, object for folder.
+             * @param {string} path : a file path in c9. All possible values end without '/' except the root which is '/'
+             */
+
+        }, {
+            key: 'lookup',
+            value: function lookup(path) {
+                return this._findNode(path);
+            }
+
+            /**
+             * return undefined if a folder is going to be created under a normal file,
+             * otherwise return the new created folder which is an empty object.
+             * @param {string} path
+             */
+
+        }, {
+            key: 'mkdir',
+            value: function mkdir(path) {
+                var res = this._findNode(path, true);
+                if (res === undefined) {
+                    // error case: try to create a folder under a normal file
+                    var err = new Error();
+                    err.code = 'ENOENT';
+                    return err;
+                }
+                return res;
+            }
+
+            /**
+             * return undefined if a normal file is going to be created under a normal file,
+             * otherwise return the new created file data which is string or null. null value is
+             * reserved for files from webapp but haven't been opened.
+             * @param {string} path
+             */
+
+        }, {
+            key: 'write',
+            value: function write(path, val) {
+                var parts = path.split('/');
+                var name = '!' + parts.pop();
+                var parent = this._findNode(parts.join('/'), true);
+                if (!parent || typeof parent === 'string' || _typeof(parent[name]) === 'object' && parent[name] !== null) {
+                    // parent[name] !== null is necessary for checking the temporary empty webapp file case because the stupid JavaScript returns object for typeof null
+                    var err = new Error();
+                    err.code = 'ENOENT';
+                    return err;
+                }
+                parent[name] = val;
+                return val;
+            }
+
+            /**
+             * return undefined if we successfully delete the file, otherwise we will return an Error
+             * @param {string} path
+             */
+
+        }, {
+            key: '_remove',
+            value: function _remove(path) {
+                var parts = path.split('/');
+                var name = '!' + parts.pop();
+                var parent = this._findNode(parts.join('/'));
+                if (!parent || parent[name] === undefined) {
+                    var err = new Error();
+                    err.code = 'ENOENT';
+                    return err;
+                }
+
+                return { parent: parent, name: name };
+            }
+        }, {
+            key: 'rmfile',
+            value: function rmfile(path) {
+                var res = this._remove(path);
+
+                if (res instanceof Error) {
+                    return res;
+                }
+                var parent = res.parent,
+                    name = res.name;
+
+                var data = parent[name];
+                if ((typeof data === 'undefined' ? 'undefined' : _typeof(data)) === 'object' && data !== null) {
+                    return new Error('EISDIR');
+                }
+                delete parent[name];
+                return data;
+            }
+        }, {
+            key: 'rmdir',
+            value: function rmdir(path) {
+                var res = this._remove(path);
+                if (res instanceof Error) {
+                    return res;
+                }
+                var parent = res.parent,
+                    name = res.name;
+
+                var data = parent[name];
+                if (typeof data === 'string') {
+                    return new Error('EISFILE');
+                }
+                delete parent[name];
+                return data;
+            }
+
+            /**
+             * return an Error if the new name is occupied
+             * @param {string} to : the path we are going to write the new file
+             * @param {string} from : the existing file we are going to rename
+             * @param {*} overwrite : always be undefined according to my observation so far.
+             * It might be a boolean type, I leave the usage as same as the cloud9
+             */
+
+        }, {
+            key: 'rename',
+            value: function rename(to, from, overwrite) {
+                var parts = to.split('/');
+                var toName = '!' + parts.pop();
+                var toParent = this.lookup(parts.join('/'));
+
+                parts = from.split('/');
+                var fromName = '!' + parts.pop();
+                var fromParent = this.lookup(parts.join('/'));
+                if (toParent[toName] !== undefined && !overwrite) {
+                    var err = new Error();
+                    err.code = 'ENOENT';
+                    return err;
+                }
+
+                toParent[toName] = fromParent[fromName];
+                var file = fromParent[fromName];
+                delete fromParent[fromName];
+                return file;
+            }
+        }, {
+            key: 'copy',
+            value: function copy(to, from, overwrite) {
+                // All these pop(), join(), concat() are all because cloud9 is using weird symbol like '!' and we have to match the patterns.
+                var toParts = to.split('/');
+                var toName = '!' + toParts.pop();
+                var pathToName = toParts.join('/');
+                var toParent = this.lookup(toParts.join('/'));
+
+                var fromParts = from.split('/');
+                var fromName = '!' + fromParts.pop();
+                var fromParent = this.lookup(fromParts.join('/'));
+
+                // If there is a file has same name in target folder, append number (keep +1) at the end of filename
+                var counter = 1;
+                var name = toName;
+                while (toParent[toName] !== undefined && !overwrite) {
+                    toName = name + '.' + counter++;
+                }
+                toParent[toName] = fromParent[fromName];
+
+                // Concat toParent + new toName
+                return { to: pathToName.concat('/' + toName.substr(1)) };
+            }
+        }, {
+            key: 'isdir',
+            value: function isdir(path) {
+                var data = this.lookup(path);
+                return (typeof data === 'undefined' ? 'undefined' : _typeof(data)) === 'object' && data !== null;
+            }
+        }]);
+
+        return FSTrie;
+    }();
+});

@@ -1,0 +1,193 @@
+'use strict';
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * Generate a Version 4 UUID according to RFC4122 for use in uniquely
+ * identifying and ordering messages. Note that this implementation is NOT
+ * high-quality due to its use of Math.random(), but it doesn't need to be.
+ */
+function generateMessageId() {
+    /* eslint-disable no-bitwise */
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (group) {
+        var random = Math.random() * 16 | 0;
+        return (group === 'x' ? random : random & 0x3 | 0x8).toString(16);
+    });
+    /* eslint-enable no-bitwise */
+}
+
+/**
+ * A super simple event bus. Callbacks can be registered to fire on unique
+ * channels. The notion of a channel exists to enforce clear separation of
+ * concerns; each component should generally only "emit" to a single channel.
+ */
+define(function () {
+    return function () {
+        function Bus() {
+            var _this = this;
+
+            _classCallCheck(this, Bus);
+
+            this.reset();
+            this._broadcast = function (channel) {
+                for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+                    args[_key - 1] = arguments[_key];
+                }
+
+                if (!_this.handlers.has(channel)) {
+                    _this.handlers.set(channel, []);
+                }
+                var subs = _this.handlers.get(channel);
+                subs.forEach(function (sub) {
+                    return sub.apply(undefined, args);
+                });
+            };
+        }
+
+        /**
+         * Reset the bus by clearing all handlers.
+         */
+
+
+        _createClass(Bus, [{
+            key: 'reset',
+            value: function reset() {
+                this.handlers = new Map();
+            }
+
+            /**
+             * Subscribe the given callback function `cb` to a `channel`.
+             */
+
+        }, {
+            key: 'on',
+            value: function on(channel, cb) {
+                if (!this.handlers.has(channel)) {
+                    this.handlers.set(channel, []);
+                }
+                this.handlers.get(channel).push(cb);
+            }
+
+            /**
+             * Unsubscribe the given callback function `cb` from a `channel`.
+             */
+
+        }, {
+            key: 'off',
+            value: function off(channel, cb) {
+                var subs = this.handlers.get(channel) || [];
+                this.handlers.set(channel, subs.filter(function (sub) {
+                    return sub !== cb;
+                }));
+            }
+
+            /**
+             * Emit one or more arguments to the given `channel`.
+             */
+
+        }, {
+            key: 'emit',
+            value: function emit(channel) {
+                for (var _len2 = arguments.length, args = Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+                    args[_key2 - 1] = arguments[_key2];
+                }
+
+                this._broadcast.apply(this, [channel].concat(args));
+            }
+
+            /**
+             * Handle a single message from a `channel`, as identified by a unique
+             * `messageId`. Pass "*" as the message ID to force handling of the message
+             * in cases where a message ID handshake cannot be made. This is generally
+             * not meant to be used directly; use call() and handle() instead.
+             */
+
+        }, {
+            key: 'once',
+            value: function once(channel, messageId, cb) {
+                var _this2 = this;
+
+                this.handlers.set(channel, []);
+                var handler = function handler(id) {
+                    for (var _len3 = arguments.length, args = Array(_len3 > 1 ? _len3 - 1 : 0), _key3 = 1; _key3 < _len3; _key3++) {
+                        args[_key3 - 1] = arguments[_key3];
+                    }
+
+                    if (id !== messageId && id !== '*') {
+                        return;
+                    }
+                    _this2.off(channel, handler);
+                    cb.apply(undefined, args);
+                };
+                this.on(channel, handler);
+            }
+
+            /**
+             * A wrapper around once() that listens for messages of the form (err, res)
+             * returns a Promise that resolves/rejects as appropriate. This is
+             * generally not meant to be used directly; use call() and handle() instead.
+             */
+
+        }, {
+            key: 'promise',
+            value: function promise(channel, messageId) {
+                var _this3 = this;
+
+                return new Promise(function (resolve, reject) {
+                    _this3.once(channel, messageId, function (err, res) {
+                        if (err) {
+                            reject(err);
+                        } else {
+                            resolve(res);
+                        }
+                    });
+                });
+            }
+
+            /**
+             * Emulates an RPC on the given `channel`. Think of the channel as the
+             * name of the function to call, and `args` as the arguments to pass.
+             */
+
+        }, {
+            key: 'call',
+            value: function call(channel) {
+                var id = generateMessageId();
+                var waitForResponse = this.promise(channel + ':response', id);
+
+                for (var _len4 = arguments.length, args = Array(_len4 > 1 ? _len4 - 1 : 0), _key4 = 1; _key4 < _len4; _key4++) {
+                    args[_key4 - 1] = arguments[_key4];
+                }
+
+                this.emit.apply(this, [channel + ':request', id].concat(args));
+                return waitForResponse;
+            }
+
+            /**
+             * The "server-side" counterpart to call(). Handle requests to the given
+             * `channel` with a handler that accepts one or more arguments, followed
+             * by a callback function with signature (err, res).
+             */
+
+        }, {
+            key: 'handle',
+            value: function handle(channel, handler) {
+                var _this4 = this;
+
+                this.on(channel + ':request', function (id) {
+                    for (var _len5 = arguments.length, args = Array(_len5 > 1 ? _len5 - 1 : 0), _key5 = 1; _key5 < _len5; _key5++) {
+                        args[_key5 - 1] = arguments[_key5];
+                    }
+
+                    return handler.apply(undefined, args.concat([function (err, res) {
+                        _this4.emit(channel + ':response', id, err, res);
+                    }]));
+                });
+            }
+        }]);
+
+        return Bus;
+    }();
+});

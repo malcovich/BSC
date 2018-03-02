@@ -1,0 +1,8 @@
+(function(){
+  if(('undefined' !== typeof iam_console_prelogin_success) &&
+     (iam_console_prelogin_success instanceof Function)) {
+    iam_console_prelogin_success();
+  } else {
+    console.log('WARN: iam_console_prelogin requested but callback function iam_console_prelogin_success not defined');
+  }
+})();

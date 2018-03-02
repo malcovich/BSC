@@ -1,4 +1,4 @@
-import { Component, OnInit, Pipe, PipeTransform } from '@angular/core';
+import { Component, OnInit, Pipe, PipeTransform, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -14,7 +14,7 @@ import { Cat } from '../../shared/models/cat.model';
   styleUrls: ['./club-detail.component.css']
 })
 export class ClubComponent implements OnInit {
-
+  @ViewChild('chart') elementView: ElementRef;
   cat = new Cat();
   cats: Cat[] = [];
   isLoading = true;
@@ -24,6 +24,9 @@ export class ClubComponent implements OnInit {
   team : any;
   matches: any;
   statistic: any;
+  data: any;
+  width: any;
+  
 
   addCatForm: FormGroup;
   name = new FormControl('', Validators.required);
@@ -37,12 +40,23 @@ export class ClubComponent implements OnInit {
               public toast: ToastComponent) { }
 
   ngOnInit() {
+    this.data = [
+      {name : 'A', yVal : 1},
+      {name : 'B', yVal : 4},
+      {name : 'C', yVal : 2},
+      {name : 'D', yVal : 3}
+   ];
     this.statistic = {};
     this.route.params.subscribe(params => {
       this.getItem(params['id']);
       this.getMatchesWithClub(params['id']);
     });
    
+  }
+
+  ngAfterViewInit() {
+    this.width = this.elementView.nativeElement.clientWidth;
+    console.log(this.elementView.nativeElement.clientWidth)
   }
 
   getItem(id) {

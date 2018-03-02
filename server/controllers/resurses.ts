@@ -175,17 +175,17 @@ export default class ResursesCtrl extends BaseCtrl {
 
   getResurse  = (req, res) => {
     let url = 'https://www.forebet.com/en/football-tips-and-predictions-for-today';
-    let url1 = 'https://www.bettingtips1x2.com/tips/2018-03-01.html';
+    let url1 = 'https://www.bettingtips1x2.com/tips/2018-03-02.html';
     let url2 = 'https://www.over25tips.com/free-football-betting-tips/';
     let url3 = 'http://www.zulubet.com/';
     let url4 = 'http://www.betstudy.com/predictions/';
-    let url5 = 'http://www.iambettor.com/football-predictions-2018-03-01';
+    let url5 = 'http://www.iambettor.com/football-predictions-2018-03-02';
     let url6 = 'http://www.vitibet.com/?clanek=quicktips&sekce=fotbal';
     let url7 = 'http://www.bet-portal.net/en#axzz55OuMTyKO';
     let url8 = 'http://www.statarea.com/predictions';
-    let url10 = 'https://hintwise.com/index?date=2018-03-01&show=all'
+    let url10 = 'https://hintwise.com/index?date=2018-03-02&show=all'
 
-    let url9 = 'http://www.statarea.com/predictions/date/2018-02-28/competition';
+    let url9 = 'http://www.statarea.com/predictions/date/2018-03-01/competition';
 
     let url11 = 'http://www.soccervista.com/results-Premier_League-2017_2018-849884.html';
 

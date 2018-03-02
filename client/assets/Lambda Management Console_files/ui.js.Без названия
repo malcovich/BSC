@@ -1,0 +1,41 @@
+'use strict';
+
+// TODO, We should move setDefaults to index.html somehow, this shouldn't be a plugin.
+define(function () {
+    function main(options, imports, register) {
+        var Plugin = imports.Plugin,
+            settings = imports.settings;
+
+        var plugin = new Plugin('Lambda UI', main.consumes);
+
+        /***** Load and register *****/
+
+        var loaded = false;
+        plugin.on('load', function () {
+            if (loaded) {
+                return false;
+            }
+            loaded = true;
+
+            // Set default settings
+            settings.on('read', function () {
+                /**
+                 * Set a new default skin (except cloud9) can cause UI issue with fontSize > 12
+                 * remove setting metadata in localstorage can fix the error,
+                 * #TODO research on preference and settings in localstorage
+                 */
+                settings.setDefaults('user/general', [['skin', 'flat-light']]);
+                settings.setDefaults('user/ace', [['theme', 'ace/theme/cloud9_day'], ['fontSize', 12]]);
+                settings.setDefaults('state/panels/commands.panel', [['enabled', false]]);
+            }, plugin);
+
+            return true;
+        });
+
+        register(null, { 'lambda.ui': plugin });
+    }
+
+    main.consumes = ['Plugin', 'settings'];
+    main.provides = ['lambda.ui'];
+    return main;
+});

@@ -1,0 +1,69 @@
+'use strict';
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+/**
+ * An event bus that operates over a PostMessage boundary, such as that of an
+ * iframe. Performs basic validation of messages received.
+ */
+define(function (require) {
+    var Bus = require('./bus');
+    return function (_Bus) {
+        _inherits(PostMessageBus, _Bus);
+
+        function PostMessageBus(page, remote, origin, messageType) {
+            _classCallCheck(this, PostMessageBus);
+
+            var _this = _possibleConstructorReturn(this, (PostMessageBus.__proto__ || Object.getPrototypeOf(PostMessageBus)).call(this));
+
+            _this.page = page;
+            _this.remote = remote;
+            _this.origin = origin;
+            _this.messageType = messageType;
+            // Broadcast events from PostMessage calls, since an iframe cannot
+            // call the Bus emit() method directly
+            _this.listener = function (e) {
+                if (e.origin !== origin || e.source !== remote || _typeof(e.data) !== 'object' || e.data.type !== _this.messageType || !e.data.channel) {
+                    return;
+                }
+                _this._broadcast.apply(_this, [e.data.channel].concat(_toConsumableArray(e.data.value)));
+            };
+            _this.page.addEventListener('message', _this.listener);
+            return _this;
+        }
+
+        _createClass(PostMessageBus, [{
+            key: 'emit',
+            value: function emit(channel) {
+                for (var _len = arguments.length, data = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+                    data[_key - 1] = arguments[_key];
+                }
+
+                // Emit this message across the PostMessage boundary, rather than
+                // broadcasting locally
+                this.remote.postMessage({
+                    channel: channel,
+                    type: this.messageType,
+                    value: data
+                }, this.origin);
+            }
+        }, {
+            key: 'remove',
+            value: function remove() {
+                this.page.removeEventListener('message', this.listener);
+            }
+        }]);
+
+        return PostMessageBus;
+    }(Bus);
+});

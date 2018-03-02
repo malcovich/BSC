@@ -26,6 +26,9 @@ import { ClubsListComponent } from './clubs/list/list.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StatisticComponent } from './dashboard/statistic/statistic.component';
 import { FavoritesComponent } from './favorites/favorites.component';
+import { D3graphComponent } from './d3graph/d3graph.component';
+
+import { D3Service } from 'd3-ng2-service'; //
 
 @NgModule({
   declarations: [
@@ -45,7 +48,8 @@ import { FavoritesComponent } from './favorites/favorites.component';
     DashboardComponent,
     StatisticComponent,
     FavoritesComponent,
-    ClubsListComponent
+    ClubsListComponent,
+    D3graphComponent
   ],
   imports: [
     RoutingModule,
@@ -59,6 +63,7 @@ import { FavoritesComponent } from './favorites/favorites.component';
     UserService,
     ResurseService,
     ClubService,
+    D3Service
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]

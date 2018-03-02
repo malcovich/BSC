@@ -1,0 +1,84 @@
+'use strict';
+
+// Lambda daemon plugin
+define(function (require) {
+    // Simple message bus for communicating with an enclosing window
+    var MESSAGE_TYPE = 'application/x-cloud9-lite-v1+json';
+    var PostMessageBus = require('./post-message-bus');
+
+    function main(options, imports, register) {
+        var Plugin = imports.Plugin;
+
+        var origin = window.query.origin; // Passed in by webapp
+        var api = new PostMessageBus(window, window.parent, origin, MESSAGE_TYPE);
+
+        /***** Initialization *****/
+
+        var plugin = new Plugin('Lambda Daemon', main.consumes);
+
+        // Send polling request metrics without using Bus and Metrics.js plugin, due to cycle dependency and daemon init sequence.
+        function emitMetrics(operation) {
+            for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+                args[_key - 1] = arguments[_key];
+            }
+
+            api.emit.apply(api, ['lambda.metrics', operation].concat(args));
+        }
+
+        function ideRetrySectionalMetrics(retryCount) {
+            var millisec = 500 * retryCount;
+            if (retryCount < 20) {
+                emitMetrics('logEventWithValue', 'ideRetryX', millisec);
+            } else if (retryCount >= 20 && retryCount < 40) {
+                emitMetrics('logEventWithValue', 'ideRetry1X', millisec);
+            } else if (retryCount >= 40 && retryCount < 60) {
+                emitMetrics('logEventWithValue', 'ideRetry2X', millisec);
+            } else {
+                emitMetrics('logEventWithValue', 'ideRetry3XorMore', millisec);
+            }
+        }
+
+        // Send initialization handshake. Polling explanation can be found in https://issues.amazon.com/issues/LambdaConsole-2330
+        function ideHandshake(callback) {
+            var retryCount = 0;
+            var refreshIntervalId = setInterval(function () {
+                api.call('lambda.daemon', 'load').then(function (response) {
+                    if (response === 'webappReady') {
+                        // Clear interval since handshake is success
+                        ideRetrySectionalMetrics(retryCount);
+                        clearInterval(refreshIntervalId);
+                        callback();
+                    }
+                });
+                retryCount += 1;
+
+                // Clear Interval after 1 mins due to 60 sec timeout limit.
+                if (retryCount === 120) {
+                    ideRetrySectionalMetrics(retryCount);
+                    clearInterval(refreshIntervalId);
+                }
+            }, 500);
+        }
+
+        /***** Lifecycle *****/
+        plugin.on('unload', function () {
+            // Kill handshake
+            api.remove();
+        });
+
+        /***** Register and define API *****/
+        plugin.freezePublicAPI({
+            bus: api,
+
+            // freeze API for testing purpose only, DO NOT USE IT in other plugins
+            ideHandshake: ideHandshake
+        });
+        ideHandshake(function () {
+            return register(null, { 'lambda.daemon': plugin });
+        });
+    }
+
+    main.consumes = ['Plugin'];
+    main.provides = ['lambda.daemon'];
+    return main;
+});

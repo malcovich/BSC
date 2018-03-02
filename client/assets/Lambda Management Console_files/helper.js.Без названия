@@ -1,0 +1,82 @@
+'use strict';
+
+/**
+ * Helper functions used in vfs.js
+ */
+define(function (require) {
+    var _require = require('stream'),
+        Stream = _require.Stream;
+
+    function toZipFilePath(localPath) {
+        // The string JSZip accepts should not begin with `/`
+        return localPath.startsWith('/') ? localPath.slice(1) : localPath;
+    }
+
+    function toLocalPath(zipPath) {
+        return '/' + (zipPath.endsWith('/') ? zipPath.slice(0, -1) : zipPath);
+    }
+
+    // Send data via a specific callback
+    function sendStream(data, cb) {
+        var stream = new Stream();
+        stream.readable = true;
+        cb(null, { stream: stream });
+        if (Array.isArray(data)) {
+            data.forEach(function (x) {
+                stream.emit('data', x);
+            });
+        } else {
+            stream.emit('data', data);
+        }
+        stream.emit('end');
+    }
+
+    // Error handling function
+    function ENOENT() {
+        var code = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'ENOENT';
+
+        var err = new Error();
+        err.code = code;
+        return err;
+    }
+
+    function webappError() {
+        var msg = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'Please try again';
+
+        return new Error(msg);
+    }
+
+    function initStateSetting(handler) {
+        /**
+         * The below tab0 refers to the tab open at the first position (position 0).
+         * So if there is only one tab, this tab is tab0.
+         */
+        return JSON.stringify({
+            tabs: {
+                'json()': {
+                    focus: '/' + handler,
+                    meta: { accessList: ['tab0'] },
+                    name: 'pane0',
+                    nodes: [{
+                        type: 'tab',
+                        name: 'tab0',
+                        path: '/' + handler,
+                        className: ['tab0', 'focus'],
+                        editorType: 'ace',
+                        active: true
+                    }],
+                    type: 'pane'
+                }
+            }
+        });
+    }
+
+    return {
+        toZipFilePath: toZipFilePath,
+        toLocalPath: toLocalPath,
+        initStateSetting: initStateSetting,
+        sendStream: sendStream,
+        ENOENT: ENOENT,
+        webappError: webappError
+    };
+});

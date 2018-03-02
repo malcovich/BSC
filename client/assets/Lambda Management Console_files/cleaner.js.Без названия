@@ -1,0 +1,42 @@
+'use strict';
+
+/**
+ * Clean buttons and menus that Cloud9 Lite doesn't need.
+ *
+ * #NOTE: there is a weird problem in Cloud9 that consuming settings and tree
+ * plugins at the same time overrides setting changes we make. Therefore, this
+ * is separate from lambda.ui/ui.
+ */
+define(function () {
+    function main(options, imports, register) {
+        var Plugin = imports.Plugin,
+            menus = imports.menus,
+            tree = imports.tree;
+
+        var plugin = new Plugin('Lambda Cleaner', main.consumes);
+
+        var itemsToRemove = [menus.get('AWS Cloud9').item, menus.get('Tools/Toggle Macro Recording').item, menus.get('Tools/Play Macro').item, menus.get('View/Editors').item, menus.get('Window/Saved Layouts').item];
+
+        tree.getElement('mnuCtxTree', function (mnuCtxTree) {
+            mnuCtxTree.childNodes.slice().forEach(function (item) {
+                if (/duplicate|refresh/i.test(item.getAttribute('caption'))) {
+                    itemsToRemove.push(item);
+                }
+            });
+        });
+
+        tree.getElement('btnTreeSettings', function (btnTreeSettings) {
+            itemsToRemove.push(btnTreeSettings);
+        });
+
+        itemsToRemove.forEach(function (item) {
+            return item && item.removeNode();
+        });
+
+        register(null, { 'lambda.cleaner': plugin });
+    }
+
+    main.consumes = ['Plugin', 'menus', 'tabbehavior', 'tree'];
+    main.provides = ['lambda.cleaner'];
+    return main;
+});

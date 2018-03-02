@@ -1,0 +1,80 @@
+'use strict';
+
+define(function () {
+    function main(options, imports, register) {
+        var PreferencePanel = imports.PreferencePanel,
+            preferences = imports.preferences,
+            ui = imports.ui;
+
+        /***** Initialization *****/
+
+        var plugin = new PreferencePanel('Ajax.org', main.consumes, {
+            caption: 'Project Settings',
+            form: true,
+            index: 50
+        });
+        var emit = plugin.getEmitter();
+        emit.setMaxListeners(1000);
+
+        var intro = void 0;
+
+        var loaded = false;
+        function load() {
+            if (loaded) {
+                return false;
+            }
+            loaded = true;
+
+            plugin.form.add([{
+                type: 'custom',
+                title: 'Introduction',
+                position: 1,
+                node: intro = new ui.bar({
+                    class: 'intro',
+                    style: 'padding:12px;position:relative;'
+                })
+            }], plugin);
+
+            preferences.on('add', function (e) {
+                if ('Project' in e.state) {
+                    plugin.add(e.state, e.plugin);
+                }
+            }, plugin);
+
+            preferences.on('draw', function () {
+                if (!preferences.activePanel) {
+                    preferences.activate(plugin);
+                }
+            }, plugin);
+            return true;
+        }
+
+        var drawn = false;
+        function draw() {
+            if (drawn) {
+                return;
+            }
+            drawn = true;
+            intro.$int.innerHTML = '<h1>Project Settings</h1>';
+        }
+
+        /***** Lifecycle *****/
+
+        plugin.on('load', load);
+        plugin.on('draw', draw);
+        plugin.on('unload', function () {
+            loaded = false;
+            drawn = false;
+            intro = null;
+        });
+
+        /***** Register and define API *****/
+
+        plugin.freezePublicAPI({ _events: [] });
+        register(null, { 'preferences.project': plugin });
+    }
+
+    main.consumes = ['PreferencePanel', 'ui', 'dialog.confirm', 'settings', 'preferences'];
+    main.provides = ['preferences.project'];
+    return main;
+});

@@ -1,0 +1,109 @@
+'use strict';
+
+define(function () {
+    function main(options, imports, register) {
+        var Plugin = imports.Plugin,
+            commands = imports.commands,
+            ui = imports.ui,
+            layout = imports.layout;
+
+        var plugin = new Plugin('Lambda UI', main.consumes);
+        var pluginEmit = plugin.getEmitter();
+        var bus = imports['lambda.daemon'].bus;
+
+        var metrics = imports['lambda.metrics'];
+
+        var fullscreen = false;
+
+        function emit(operation) {
+            for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+                args[_key - 1] = arguments[_key];
+            }
+
+            bus.emit.apply(bus, ['lambda.fullscreen', operation].concat(args));
+        }
+
+        // Command for fullscreen button
+        function toggleFullscreen() {
+            fullscreen = !fullscreen;
+
+            metrics.logEvent('ideFullscreen');
+            emit('toggleFullscreen');
+
+            pluginEmit('toggleFullscreen');
+        }
+
+        commands.addCommand({
+            name: 'togglefullscreen',
+            group: 'Lambda',
+            exec: function exec() {
+                toggleFullscreen();
+            },
+
+            bindKey: {
+                mac: 'Command-Shift-F',
+                win: 'Ctrl-Shift-F'
+            }
+        }, plugin);
+
+        var webappToIdeRequest = {
+            toggleFullscreen: toggleFullscreen
+        };
+
+        bus.on('lambda.webapp.fullscreen', function (fn) {
+            for (var _len2 = arguments.length, args = Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+                args[_key2 - 1] = arguments[_key2];
+            }
+
+            webappToIdeRequest[fn].apply(webappToIdeRequest, args);
+        });
+
+        /***** Draw *****/
+
+        var drawn = false;
+        function draw() {
+            if (drawn) {
+                return;
+            }
+            drawn = true;
+
+            // Add fullscreen button to top right, by preferences
+            ui.insertByIndex(layout.getElement('barExtras'), new ui.button({
+                id: 'btnFullscreen',
+                class: 'btnFullscreen',
+                skin: 'c9-menu-btn',
+                command: 'togglefullscreen',
+                tooltip: 'Toggle fullscreen'
+            }), 100, plugin);
+        }
+
+        /***** Load and register *****/
+
+        var loaded = false;
+        plugin.on('load', function () {
+            if (loaded) {
+                return false;
+            }
+            loaded = true;
+            draw();
+
+            return true;
+        });
+
+        plugin.freezePublicAPI({
+            get isFullscreen() {
+                return fullscreen;
+            },
+            _events: ['toggleFullscreen'],
+            toggleFullscreen: toggleFullscreen
+        });
+
+        register(null, { 'lambda.fullscreen': plugin });
+    }
+
+    // WEIRD THING: if you don't consume MenuItem, even if you don't use it,
+    // buttons won't work in toolbar (I guess it's because toolbar is inside menubar). Freaking Cloud9, man.
+    main.consumes = ['Plugin', 'MenuItem', 'commands', 'layout', 'lambda.daemon', 'lambda.metrics', 'settings', 'ui'];
+    main.provides = ['lambda.fullscreen'];
+    return main;
+});

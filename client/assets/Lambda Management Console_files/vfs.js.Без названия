@@ -1,0 +1,498 @@
+'use strict';
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
+define(function (require) {
+    var lsData = {};
+    var fallbackLocalStorage = {
+        setItem: function setItem(id, val) {
+            return lsData[id] = String(val);
+        },
+        getItem: function getItem(id) {
+            return Object.prototype.hasOwnProperty.call(lsData, id) ? lsData[id] : undefined;
+        },
+        removeItem: function removeItem(id) {
+            return delete lsData[id];
+        },
+        clear: function clear() {
+            return lsData = {};
+        }
+    };
+
+    var localStorageWithFallback = void 0;
+    try {
+        // Detect if we have localStorage, and it actually works (this is how modernizr does it)
+        var testItem = 'lsCheck';
+        window.localStorage.setItem(testItem, testItem);
+        window.localStorage.removeItem(testItem);
+        localStorageWithFallback = window.localStorage;
+    } catch (err) {
+        localStorageWithFallback = fallbackLocalStorage;
+    }
+
+    function main(mainOptions, imports, register) {
+        var init = function () {
+            var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+                var localSettings, localMeta;
+                return regeneratorRuntime.wrap(function _callee$(_context) {
+                    while (1) {
+                        switch (_context.prev = _context.next) {
+                            case 0:
+                                _context.next = 2;
+                                return bus.call('lambda.vfs', 'sendIdentity');
+
+                            case 2:
+                                identity = _context.sent;
+
+                                metaName = identity.id + '-' + identity.funcName + '-metadata';
+
+                                // #TODO reset preference is not working, it also causes UI issue with default skin. Need to fix this.
+                                settingName = identity.id + '-settings';
+
+                                // Load file
+                                if (identity.code) {
+                                    fsCache.write('/' + identity.fileName, identity.code);
+                                }
+
+                                // Load settings
+                                localSettings = localStorageWithFallback.getItem(settingName);
+
+                                if (localSettings) {
+                                    settings = JSON.parse(localSettings);
+                                }
+
+                                // Load state setting
+                                settings['/.c9/state.settings'] = initStateSetting(identity.fileName);
+                                Object.keys(settings).forEach(function (path) {
+                                    fsCache.write(path, settings[path]);
+                                });
+
+                                // Load metadata
+                                localMeta = localStorageWithFallback.getItem(metaName);
+
+                                if (localMeta) {
+                                    metaData = JSON.parse(localMeta);
+                                    Object.keys(metaData).forEach(function (path) {
+                                        var metaPath = '/.c9/metadata/workspace' + path;
+                                        fsCache.write(metaPath, metaData[path]);
+                                    });
+                                }
+
+                            case 12:
+                            case 'end':
+                                return _context.stop();
+                        }
+                    }
+                }, _callee, this);
+            }));
+
+            return function init() {
+                return _ref.apply(this, arguments);
+            };
+        }();
+
+        var Plugin = imports.Plugin;
+        var bus = imports['lambda.daemon'].bus;
+
+        var metrics = imports['lambda.metrics'];
+        var showError = imports['dialog.error'];
+
+        var _require = require('./helper'),
+            toZipFilePath = _require.toZipFilePath,
+            toLocalPath = _require.toLocalPath,
+            initStateSetting = _require.initStateSetting,
+            sendStream = _require.sendStream,
+            ENOENT = _require.ENOENT,
+            webappError = _require.webappError;
+
+        var FSTrie = require('../lambda.utils/FSTrie');
+
+        /***** Initialization *****/
+
+        var plugin = new Plugin('Lambda VFS', main.consumes);
+
+        // The whole file cache
+        var fsCache = new FSTrie();
+
+        // Data to be saved into local storage
+        var settings = {};
+        var metaData = {};
+
+        // Fields of local storage
+        var settingName = null;
+        var metaName = null;
+        var identity = null;
+
+        // The following three are debugging usage or placeholders
+        var noop = function noop() {};
+        var silent = function silent() {};
+        var connection = {};
+
+        function upload() {
+            metrics.logEvent('ideSave');
+            bus.call('lambda.vfs', 'handleZip', 'deploy').then(function () {
+                localStorageWithFallback.removeItem(metaName);
+                metrics.logEvent('ideSave', true);
+            }).catch(function () {
+                // #TODO: put error text in a single file when we do localization for the IDE
+                showError.show('Failed to save the function. Please try again.');
+                metrics.logEvent('ideSave', false);
+            });
+        }
+
+        /***** SYSTEM CALLS *****/
+
+        function mkfile(path, options, cb) {
+            var val = '';
+            options.stream.on('data', function (e) {
+                if (e) {
+                    val += e;
+                }
+            });
+            options.stream.on('end', function (e) {
+                if (e) {
+                    val += e;
+                }
+                setTimeout(function () {
+                    var res = fsCache.write(path, val);
+                    if (res instanceof Error) {
+                        cb(res);
+                        return;
+                    }
+                    // Do not save state
+                    if (path === '/.c9/state.settings') {
+                        cb(null);
+                        return;
+                    }
+                    // Save metadata
+                    if (path.startsWith('/.c9/metadata/workspace')) {
+                        metaData[path.replace('/.c9/metadata/workspace', '')] = val;
+                        localStorageWithFallback.setItem(metaName, JSON.stringify(metaData));
+                        cb(null);
+                        return;
+                    }
+                    // Save c9 settings
+                    if (path.startsWith('/.c9/')) {
+                        settings[path] = val;
+                        localStorageWithFallback.setItem(settingName, JSON.stringify(settings));
+                        cb(null);
+                        return;
+                    }
+                    bus.call('lambda.vfs', 'handleZip', 'write', toZipFilePath(path), val).then(function () {
+                        return cb(null);
+                    }).catch(function () {
+                        fsCache.rmfile(path);
+                        cb(webappError());
+                    });
+                });
+            });
+        }
+
+        function mkdir(path, options, cb) {
+            var res = fsCache.mkdir(path);
+            setTimeout(function () {
+                if (res instanceof Error) {
+                    cb(res);
+                    return;
+                }
+                bus.call('lambda.vfs', 'handleZip', 'write', toZipFilePath(path), {}).then(function () {
+                    return cb();
+                }).catch(function () {
+                    fsCache.rmdir(path);
+                    cb(webappError());
+                });
+            });
+        }
+
+        /*
+         * Implementation of readfile(). readFileInBackground is called for reading files
+         * which are not opened in the IDE, e.g., settings and .eslintrc files
+         */
+        function readFileInBackground(path, options, cb) {
+            var data = fsCache.lookup(path);
+            setTimeout(function () {
+                if (typeof data !== 'string') {
+                    cb(ENOENT());
+                    return;
+                }
+                sendStream(data, cb);
+            }, 20);
+        }
+
+        function readdir(path, options, cb) {
+            bus.call('lambda.vfs', 'handleZip', 'ls', toZipFilePath(path)).then(function (list) {
+                list.forEach(function (file) {
+                    var localPath = toLocalPath(file);
+                    if (file.endsWith('/')) {
+                        fsCache.mkdir(localPath); // a folder
+                    } else {
+                        fsCache.write(localPath, null); // set the value to null
+                    }
+                });
+                setTimeout(function () {
+                    var data = fsCache.lookup(path);
+                    if (!data || typeof data === 'string') {
+                        cb(ENOENT());
+                        return;
+                    }
+                    var stats = Object.keys(data).map(function (file) {
+                        var isFile = typeof data[file] === 'string' || data[file] === null;
+                        return {
+                            name: file.substr(1),
+                            mtime: 0,
+                            ctime: 0,
+                            mime: isFile ? '' : 'folder'
+                        };
+                    });
+                    sendStream(stats, cb);
+                });
+            });
+        }
+
+        /**
+         * stat() is called when cloud9 is checking the existence of a file
+         */
+        function stat(path, options, cb) {
+            var data = fsCache.lookup(path);
+            var name = path.split('/').pop();
+            setTimeout(function () {
+                if (data === undefined) {
+                    cb(ENOENT());
+                    return;
+                }
+                var isFile = typeof data === 'string' || data === null;
+                var statEntry = {
+                    name: name,
+                    mtime: 0,
+                    ctime: 0,
+                    mime: isFile ? '' : 'folder'
+                };
+                cb(null, statEntry);
+            }, 20);
+        }
+
+        var rmHelper = function rmHelper(path, res, isDir, cb) {
+            if (res instanceof Error) {
+                // If cache can't find the file, normally this mean a new file/folder is just opened and closed without save
+                // We don't need show the error message since it's more confusing
+                if (res.code !== 'ENOENT') {
+                    cb(res);
+                }
+                return;
+            }
+            bus.call('lambda.vfs', 'handleZip', 'remove', toZipFilePath(path), isDir).then(function () {
+                return cb();
+            }).catch(function () {
+                if (isDir) {
+                    var parts = path.split('/');
+                    var name = '!' + parts.pop();
+                    var parent = fsCache.lookup(parts.join('/'));
+                    parent[name] = res;
+                } else {
+                    fsCache.write(path, res);
+                }
+                cb(webappError());
+            });
+        };
+
+        /**
+         * Cloud9 calls the rmfile() not only when users delete file but also close the preference tab
+         */
+        function rmfile(path, options, cb) {
+            if (path.startsWith('/.c9/metadata/tab')) {
+                // enter this if when the preference tab is closing
+                // we don't remove any thing since nothing is written into the cache for the preference tab
+                return;
+            }
+            setTimeout(function () {
+                return rmHelper(path, fsCache.rmfile(path), false, cb);
+            });
+        }
+
+        function rmdir(path, options, cb) {
+            setTimeout(function () {
+                return rmHelper(path, fsCache.rmdir(path), true, cb);
+            });
+        }
+
+        function rename(to, options, cb) {
+            var from = options.from,
+                overwrite = options.overwrite;
+
+            var name = from.split('/').pop();
+            setTimeout(function () {
+                var res = fsCache.rename(to, from, overwrite);
+                if (res instanceof Error) {
+                    cb(res);
+                    return;
+                }
+                bus.call('lambda.vfs', 'handleZip', 'rename', toZipFilePath(to), toZipFilePath(from), fsCache.isdir(to)).then(function () {
+                    return cb();
+                }).catch(function () {
+                    fsCache.rename(from, to, overwrite);
+                    cb(webappError('Failed to rename ' + name + '. Please try again.'));
+                });
+            });
+        }
+
+        function copy(from, options, cb) {
+            setTimeout(function () {
+                var to = options.to,
+                    overwrite = options.overwrite;
+
+                var res = fsCache.copy(to, from, overwrite);
+                bus.call('lambda.vfs', 'handleZip', 'copy', toZipFilePath(res.to), toZipFilePath(from), fsCache.isdir(to)).then(function () {
+                    return cb(null, res);
+                }).catch(function () {
+                    fsCache.isdir(to) ? fsCache.rmdir(to) : fsCache.rmfile(to);
+                    cb(webappError());
+                });
+            });
+        }
+
+        // Save and retrieve Metadata
+        function metadata(path, value, sync, cb) {
+            var metaPath = '/.c9/metadata/workspace' + path;
+            var syncMetadata = function syncMetadata() {
+                var stringVal = JSON.stringify(value);
+                fsCache.write(metaPath, stringVal);
+                metaData[path] = stringVal;
+                localStorageWithFallback.setItem(metaName, JSON.stringify(metaData));
+                cb();
+            };
+
+            return sync ? syncMetadata() : setTimeout(syncMetadata);
+        }
+
+        /**
+         * readFileWithMetadata() reads both file content and file metadata.
+         * The metadata is used to restore the editing state like selection
+         * and scroll position, etc.
+         */
+        function readFileWithMetadata(path, encoding, cb) {
+            var meta = fsCache.lookup('/.c9/metadata/workspace' + path);
+            var data = fsCache.lookup(path);
+            if (data === null) {
+                setTimeout(function () {
+                    bus.call('lambda.vfs', 'handleZip', 'cat', toZipFilePath(path)).then(function (val) {
+                        if (typeof val !== 'string') {
+                            cb(ENOENT());
+                            return;
+                        }
+                        var res = fsCache.write(path, val);
+                        if (res instanceof Error) {
+                            cb(res);
+                            return;
+                        }
+                        cb(null, val, meta);
+                    });
+                });
+            } else {
+                setTimeout(function () {
+                    if (typeof data !== 'string') {
+                        cb(ENOENT());
+                        return;
+                    }
+                    cb(null, data, meta);
+                });
+            }
+            return {
+                abort: function abort() {}
+            };
+        }
+
+        /***** Register and define API *****/
+
+        plugin.freezePublicAPI({
+            on: function on() {},
+            once: function once() {},
+
+
+            // Connections (we are automatically connected, no backend!)
+            get connection() {
+                return connection;
+            },
+            get connecting() {
+                return false;
+            },
+            get connected() {
+                return true;
+            },
+
+            get previewUrl() {
+                throw new Error('gone');
+            },
+            get serviceUrl() {
+                return 'serviceUrl';
+            },
+            get id() {
+                return 'id';
+            },
+            get baseUrl() {
+                return 'vfsBaseUrl';
+            },
+            get region() {
+                return '';
+            },
+
+            // File management
+            mkfile: mkfile,
+            mkdir: mkdir,
+            mkdirP: mkdir,
+            readfile: readFileInBackground,
+            readdir: readdir,
+            stat: stat,
+            rmfile: rmfile,
+            rmdir: rmdir,
+            rename: rename,
+            copy: copy,
+
+            // Save and retrieve Metadata
+            metadata: metadata,
+            readFileWithMetadata: readFileWithMetadata,
+
+            rest: noop,
+            download: noop,
+            url: noop,
+            reconnect: noop,
+
+            vfsUrl: noop,
+
+            // Wrapper around fs.watch or fs.watchFile
+            watch: silent,
+
+            // Network connection
+            connect: noop,
+
+            // Process Management
+            spawn: silent,
+            pty: silent,
+            tmux: silent,
+            execFile: silent,
+            killtree: silent,
+
+            // Extending the API
+            use: silent,
+            extend: silent,
+            unextend: silent,
+
+            isIdle: function isIdle() {
+                return true;
+            }
+        });
+
+        init().then(function () {
+            register(null, {
+                vfs: plugin,
+                'vfs.ping': {},
+                'vfs.log': { log: silent },
+                'vfs.endpoint': { clearCache: silent },
+                'vfs.api': { upload: upload }
+            });
+        });
+    }
+
+    main.consumes = ['Plugin', 'lambda.daemon', 'lambda.metrics', 'dialog.error'];
+    main.provides = ['vfs', 'vfs.ping', 'vfs.log', 'vfs.endpoint', 'vfs.api'];
+    return main;
+});

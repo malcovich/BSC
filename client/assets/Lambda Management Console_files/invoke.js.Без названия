@@ -1,0 +1,391 @@
+'use strict';
+
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
+define(function (require) {
+    function main(options, imports, register) {
+
+        // Get necessary data first from webapp before this plugin registered
+        var init = function () {
+            var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+                return regeneratorRuntime.wrap(function _callee$(_context) {
+                    while (1) {
+                        switch (_context.prev = _context.next) {
+                            case 0:
+                                _context.next = 2;
+                                return bus.call('lambda.invoke.call', 'sendEventsInfo');
+
+                            case 2:
+                                eventsInfo = _context.sent;
+
+                            case 3:
+                            case 'end':
+                                return _context.stop();
+                        }
+                    }
+                }, _callee, this);
+            }));
+
+            return function init() {
+                return _ref.apply(this, arguments);
+            };
+        }();
+
+        var ace = imports.ace,
+            Editor = imports.Editor,
+            ui = imports.ui,
+            editors = imports.editors,
+            settings = imports.settings,
+            layout = imports.layout,
+            commands = imports.commands;
+
+        var tabs = imports.tabManager;
+        var invokeFunction = imports['lambda.invoke.function'];
+        var bus = imports['lambda.daemon'].bus;
+
+        var fullscreen = imports['lambda.fullscreen'];
+        var metrics = imports['lambda.metrics'];
+
+        var extensions = [];
+        var executionResults = void 0;
+        var eventsInfo = {
+            selectedEventId: '',
+            savedEvents: [{}]
+        };
+
+        // Define emit method which used to send call to webapp
+        function emit(operation) {
+            for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+                args[_key - 1] = arguments[_key];
+            }
+
+            bus.emit.apply(bus, ['lambda.invoke.emit', operation].concat(args));
+        }
+
+        function searchExistingExecutionResultsTab(path) {
+            var pane = void 0;
+            tabs.getTabs().every(function (tab) {
+                if (tab.editorType === 'lambdaOutput' && (!path && tab.isActive() || path && path !== -1 && path === (tab.document.getSession() || {}).path)) {
+                    pane = tab;
+                    return false;
+                }
+                return true;
+            });
+            return pane;
+        }
+
+        function openExecutionResultTab() {
+            // Following logic makes sure Results tab can open correctly when multiple panes appear without focused
+            var focusedPane = tabs.focussedTab && tabs.focussedTab.pane;
+            if (!focusedPane) {
+                focusedPane = tabs.getPanes()[0];
+            }
+
+            // Find existing Results tab, otherwise, open a new Results tab with empty execution results.
+            var existingTab = searchExistingExecutionResultsTab();
+            if (!existingTab) {
+                var newPane = focusedPane.vsplit(true);
+                tabs.open({
+                    editorType: 'lambdaOutput',
+                    active: true,
+                    pane: newPane,
+                    document: {
+                        title: 'Execution Results'
+                    }
+                }, function () {});
+            }
+
+            // Show execution results if it's existing
+            if (executionResults) {
+                var tab = searchExistingExecutionResultsTab();
+                if (tab && tab.editor && tab.editor.meta) {
+                    var resultsContainer = tab.editor.meta.$resultsContainer;
+                    var resultsEditor = tab.editor.meta.$resultsEditor;
+
+                    invokeFunction.clearResults(resultsContainer, resultsEditor);
+                    invokeFunction.showResults(resultsContainer, resultsEditor, executionResults);
+                }
+            }
+        }
+
+        function updateExecutionResults(response) {
+            // Cache execution results in memory
+            executionResults = response;
+
+            openExecutionResultTab();
+        }
+
+        function updateTestEventsList(newEventsList) {
+            eventsInfo.savedEvents = newEventsList;
+        }
+
+        function updateSelectedTestEvent(eventId) {
+            eventsInfo.selectedEventId = eventId;
+        }
+
+        var webappToIdeRequest = {
+            updateExecutionResults: updateExecutionResults,
+            updateTestEventsList: updateTestEventsList,
+            updateSelectedTestEvent: updateSelectedTestEvent
+        };
+
+        // Initialization for listening webapp side request
+        bus.on('lambda.webapp.invoke', function (fn) {
+            for (var _len2 = arguments.length, args = Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+                args[_key2 - 1] = arguments[_key2];
+            }
+
+            webappToIdeRequest[fn].apply(webappToIdeRequest, args);
+        });
+
+        // Define LambdaOutput type editor
+        function LambdaOutput() {
+            /* eslint-disable import/no-unresolved, import/no-webpack-loader-syntax */
+            var AceEditor = require('ace/editor').Editor;
+            var VirtualRenderer = require('ace/virtual_renderer').VirtualRenderer;
+
+            // theme needs to be loaded later after IDE loading fully completed, otherwise settings will return empty
+            var theme = settings.get('user/ace/@theme');
+            var plugin = new Editor('Ajax.org', main.consumes, extensions);
+            var resultsContainer = void 0;
+            var resultsEditor = void 0;
+
+            plugin.on('draw', function (e) {
+                if (resultsEditor) {
+                    return;
+                }
+                resultsContainer = e.htmlNode;
+
+                // Insert the UI
+                var html = '<div class="lambdaExecutionTab"></div>';
+                ui.insertHtml(resultsContainer, html, plugin);
+
+                var sbox = new ui.vsplitbox({
+                    splitter: true,
+                    anchors: '0 0 0 0'
+                });
+
+                resultsContainer.host.appendChild(sbox);
+
+                var executionResultsContainer = sbox.appendChild(ui.frame({
+                    class: 'execution-results absframe',
+                    caption: 'Execution results',
+                    buttons: 'min',
+                    activetitle: 'min'
+                }));
+
+                var vrender = new VirtualRenderer(executionResultsContainer.$int, theme);
+
+                var executionResultsEditor = new AceEditor(vrender, null);
+                executionResultsEditor.setOption('readOnly', true);
+                executionResultsEditor.setShowPrintMargin('enabled', false);
+                executionResultsEditor.renderer.setShowGutter(false);
+                executionResultsEditor.setValue('No execution results yet', 1);
+
+                resultsEditor = executionResultsEditor;
+
+                ace.on('themeChange', function (editor) {
+                    executionResultsEditor.setTheme(editor.path);
+                }, plugin);
+            });
+
+            plugin.on('documentLoad', function (e) {
+                var doc = e.doc;
+                var editor = doc.tab.editor;
+
+                editor.meta.$resultsContainer = resultsContainer;
+                editor.meta.$resultsEditor = resultsEditor;
+            });
+
+            plugin.on('documentActivate', function () {});
+
+            plugin.on('documentUnload', function () {
+                resultsContainer = null;
+                resultsEditor = null;
+            });
+
+            plugin.freezePublicAPI({});
+
+            plugin.load(null, 'lambdaOutput');
+
+            return plugin;
+        }
+
+        // Register the editor
+        var handle = editors.register('lambdaOutput', 'LambdaOutput', LambdaOutput, extensions);
+
+        function selectEventId(eventId) {
+            eventsInfo.selectedEventId = eventId;
+            emit('selectEventIdToInvoke', eventId);
+        }
+
+        function createToolbarTestSubMenu() {
+            var selectedIcon = 'check.png';
+            var runSubMenu = new ui.menu();
+
+            var configEvents = new ui.item({
+                caption: 'Configure Events',
+                command: 'openconfigurationevent'
+            });
+            runSubMenu.appendChild(configEvents);
+
+            runSubMenu.appendChild(new ui.divider());
+
+            runSubMenu.addEventListener('prop.visible', function (e) {
+                if (!e.value) return;
+
+                // Re-add proper selected menus except config and divider options
+                for (var i = runSubMenu.childNodes.length - 1; i >= 2; i--) {
+                    runSubMenu.removeChild(runSubMenu.childNodes[i]);
+                }
+
+                if (eventsInfo.savedEvents) {
+                    eventsInfo.savedEvents.forEach(function (event) {
+                        var eventItem = new ui.item({
+                            icon: eventsInfo.selectedEventId === event.id ? selectedIcon : undefined,
+                            caption: event.name,
+                            onclick: function onclick() {
+                                selectEventId(event.id);
+                            }
+                        });
+                        runSubMenu.appendChild(eventItem);
+                    });
+                }
+            });
+
+            return runSubMenu;
+        }
+
+        function createLambdaToolbar() {
+            var toolbarMarkup = require('text!./toolbar.xml');
+            var toolbar = layout.getElement('barTools');
+            ui.insertMarkup(toolbar, toolbarMarkup, handle);
+            var lambdaToolbar = handle.getElement('lambdaToolbar');
+            var runSubMenu = createToolbarTestSubMenu();
+
+            var btnTest = new ui.splitbutton({
+                id: 'btnTest',
+                skin: 'c9-menu-btn',
+                caption: 'Test',
+                command: 'testlambdafunction',
+                tooltip: 'Run the selected Lambda test',
+                class: 'runtestbtn hidden', // hide button by default when just load plugin, it will be toggled in fullscreen plugin
+                submenu: runSubMenu
+                // #TODO we'd like it to have icons but flat dark theme doesn't
+                // have the right one for this or the runtest version either
+                //icon: 'run.png',
+            });
+            ui.insertByIndex(lambdaToolbar, btnTest, 200, handle);
+        }
+
+        function openTestEventsModal() {
+            emit('openTestEventsModal');
+        }
+
+        function sendTestRequest() {
+            var tab = searchExistingExecutionResultsTab();
+
+            // Show loading when invoke function.
+            if (tab && tab.editor && tab.editor.meta) {
+                var resultsContainer = tab.editor.meta.$resultsContainer;
+                var resultsEditor = tab.editor.meta.$resultsEditor;
+
+                // Don't show loading when no selectedEventId, it will need to be config in webapp side first.
+                if (eventsInfo.selectedEventId) {
+                    invokeFunction.setLoading(resultsContainer, resultsEditor);
+                }
+            }
+
+            metrics.logEvent('ideTest');
+            emit('testFunction');
+        }
+
+        handle.on('load', function () {
+            ui.insertCss(require('text!./lambda-toolbar.css'), options.staticPrefix, handle);
+
+            // Add command to open execution results tab
+            commands.addCommand({
+                name: 'openexecutionresults',
+                group: 'Lambda',
+                hint: 'Opens a new execution result window',
+                msg: 'opening execution.',
+                exec: function exec() {
+                    openExecutionResultTab();
+                }
+            }, handle);
+
+            // command for invoke/test lambda function
+            commands.addCommand({
+                name: 'testlambdafunction',
+                group: 'Lambda',
+                exec: function exec() {
+                    openExecutionResultTab();
+                    sendTestRequest();
+                },
+
+                bindKey: {
+                    mac: 'Command-I',
+                    win: 'Ctrl-I'
+                }
+            }, handle);
+
+            // Add command to open event configuration modal
+            commands.addCommand({
+                name: 'openconfigurationevent',
+                group: 'Lambda',
+                hint: 'Opens configuration of test events',
+                msg: 'opening configuration.',
+                exec: function exec() {
+                    openTestEventsModal();
+                },
+
+                bindKey: {
+                    mac: 'Command-J',
+                    win: 'Ctrl-J'
+                }
+            }, handle);
+
+            createLambdaToolbar();
+
+            // hide or display save button in/out fullscreen mode
+            fullscreen.on('toggleFullscreen', function () {
+                var btnTest = handle.getElement('btnTest');
+                if (fullscreen.isFullscreen) {
+                    openExecutionResultTab();
+                    btnTest.setAttribute('class', 'runtestbtn');
+                } else {
+                    btnTest.setAttribute('class', 'runtestbtn hidden');
+                }
+            }, handle);
+        });
+
+        init().then(function () {
+            register(null, {
+                lambdaOutput: handle
+            });
+        });
+
+        handle.freezePublicAPI({
+            get executionResults() {
+                return executionResults;
+            },
+            get eventsInfo() {
+                return eventsInfo;
+            },
+
+            // Request TO webapp
+            sendTestRequest: sendTestRequest,
+            openTestEventsModal: openTestEventsModal,
+            selectEventId: selectEventId,
+
+            // Request FROM webapp
+            updateExecutionResults: updateExecutionResults,
+            updateTestEventsList: updateTestEventsList,
+            updateSelectedTestEvent: updateSelectedTestEvent
+        });
+    }
+
+    main.consumes = ['ace', 'Editor', 'Dialog', 'editors', 'ui', 'layout', 'commands', 'tabManager', 'settings', 'lambda.invoke.function', 'lambda.daemon', 'lambda.fullscreen', 'lambda.metrics'];
+    main.provides = ['lambdaOutput'];
+    return main;
+});

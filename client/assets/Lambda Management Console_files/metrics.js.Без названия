@@ -1,0 +1,41 @@
+'use strict';
+
+define(function () {
+    function main(options, imports, register) {
+        var Plugin = imports.Plugin;
+        var bus = imports['lambda.daemon'].bus;
+
+
+        var plugin = new Plugin('Lambda Metrics', main.consumes);
+
+        /***** Metric methods *****/
+
+        function emit(operation) {
+            for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+                args[_key - 1] = arguments[_key];
+            }
+
+            bus.emit.apply(bus, ['lambda.metrics', operation].concat(args));
+        }
+
+        function logEvent(name, successful) {
+            emit('logEvent', name, successful);
+        }
+
+        function submitCustomTimer(metric, time) {
+            emit('submitCustomTimer', metric, time);
+        }
+
+        /***** Define API *****/
+
+        plugin.freezePublicAPI({
+            logEvent: logEvent,
+            submitCustomTimer: submitCustomTimer
+        });
+        register(null, { 'lambda.metrics': plugin });
+    }
+
+    main.consumes = ['Plugin', 'lambda.daemon'];
+    main.provides = ['lambda.metrics'];
+    return main;
+});

@@ -1,0 +1,109 @@
+'use strict';
+
+define(function () {
+    function main(options, imports, register) {
+        var PreferencePanel = imports.PreferencePanel,
+            preferences = imports.preferences,
+            ui = imports.ui;
+        // const confirm = imports['dialog.confirm'].show;
+
+        /***** Initialization *****/
+
+        var plugin = new PreferencePanel('Ajax.org', main.consumes, {
+            caption: 'User Settings',
+            form: true,
+            index: 100
+        });
+        var emit = plugin.getEmitter();
+        emit.setMaxListeners(1000);
+
+        var intro = void 0;
+
+        var loaded = false;
+        function load() {
+            if (loaded) {
+                return false;
+            }
+            loaded = true;
+
+            plugin.form.add([{
+                type: 'custom',
+                title: 'Introduction',
+                position: 1,
+                node: intro = new ui.bar({
+                    class: 'intro',
+                    style: 'padding:12px;position:relative;'
+                })
+            }], plugin);
+
+            preferences.on('add', function (e) {
+                if (!('Project' in e.state)) {
+                    plugin.add(e.state, e.plugin);
+                }
+            }, plugin);
+            return true;
+        }
+
+        var drawn = false;
+        function draw() {
+            if (drawn) {
+                return;
+            }
+            drawn = true;
+
+            plugin.add({
+                General: {
+                    position: 10,
+                    // TODO hide reset button for now since it's not working
+                    // General: {
+                    //     position: 10,
+                    //     'Reset to Factory Settings': {
+                    //         type: 'button',
+                    //         caption: 'Reset to Defaults',
+                    //         width: 140,
+                    //         onclick: () => {
+                    //             confirm('Reset Settings', 'Are you sure you want to reset your settings?',
+                    //                 "By resetting your settings to their defaults you will lose all custom settings. Editor will return to it's original configuration",
+                    //                 () => settings.reset(), () => {},
+                    //                 { yes: 'Reset settings', no: 'Cancel' });
+                    //         },
+                    //     },
+                    // },
+                    'User Interface': {
+                        position: 20,
+                        'Enable UI Animations': {
+                            type: 'checkbox',
+                            path: 'user/general/@animateui',
+                            position: 1000
+                        },
+                        'Use an Asterisk (*) to Mark Changed Tabs': {
+                            type: 'checkbox',
+                            path: 'user/tabs/@asterisk',
+                            position: 1050
+                        }
+                    }
+                }
+            }, plugin);
+            intro.$int.innerHTML = '<h1>User Settings</h1>';
+        }
+
+        /***** Lifecycle *****/
+
+        plugin.on('load', load);
+        plugin.on('draw', draw);
+        plugin.on('unload', function () {
+            loaded = false;
+            drawn = false;
+            intro = null;
+        });
+
+        /***** Register and define API *****/
+
+        plugin.freezePublicAPI({});
+        register(null, { 'preferences.general': plugin });
+    }
+
+    main.consumes = ['PreferencePanel', 'ui', 'dialog.confirm', 'settings', 'preferences'];
+    main.provides = ['preferences.general'];
+    return main;
+});
