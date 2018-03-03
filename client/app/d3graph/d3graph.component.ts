@@ -40,7 +40,7 @@ export class D3graphComponent implements OnInit {
         let name: string;
         let yVal: number;
         let colors: any = [];
-        let data: {name: string, yVal: number}[] = [];
+        let data: {team: string, scored: number, date: string}[] = [];
         let padding: number = 25;
         let width: number;
         let height: number = 500;
@@ -52,6 +52,7 @@ export class D3graphComponent implements OnInit {
         width = this.width;
 
         data = this.data;
+        console.log(this.data)
     if (this.parentNativeElement !== null) {
         svg = d3.select(this.parentNativeElement)
           .append('svg')        // create an <svg> element
@@ -62,23 +63,28 @@ export class D3graphComponent implements OnInit {
 
       colors = ['red', 'yellow', 'green', 'blue'];
 
-    
+      var parseDate = d3.timeFormat('%m-%d');
+      data.forEach((item) =>{
+        item.date = parseDate(new Date(item.date));
+      })
 
       xScale = d3.scaleBand()
-          .domain(data.map(function(d){ return d.name; }))
+          .domain(data.map(function(d){ return d.date; }))
           .range([0, width]);
 
       yScale = d3.scaleLinear()
-          .domain([0,d3.max(data, function(d) {return d.yVal})])
+          .domain([0,d3.max(data, function(d) {return d.scored+1})])
           .range([height-50, 0]);
 
       xAxis = d3.axisBottom(xScale) // d3.js v.4
-          .ticks(5)
+          .ticks(this.data.length)
           .scale(xScale);
+         
+         
 
       yAxis = d3.axisLeft(xScale) // d3.js v.4
           .scale(yScale)
-          .ticks(5);
+          .ticks(7);
 
         svg.append("g")
         .attr("class", "axis")
@@ -87,7 +93,7 @@ export class D3graphComponent implements OnInit {
 
 	       svg.append('g')            // create a <g> element
          .attr('class', 'axis')   // specify classes
-	       .attr("transform", "translate(" + padding + "," + (height - padding) + ")")
+	       .attr("transform", "translate(" + 10 + "," + (height - padding) + ")")
          .call(xAxis);            // let the axis do its thing
 
       var rects = svg.selectAll('rect')
@@ -95,21 +101,20 @@ export class D3graphComponent implements OnInit {
           rects.size();
 
       var newRects = rects.enter();
+     
 
       newRects.append('rect')
           .attr('x', function(d,i) {
-            return xScale(d.name );
+            return xScale(d.date);
           })
           .attr('y', function(d) {
-              return yScale(d.yVal);
+              return yScale(d.scored);
             })
-	        .attr("transform","translate(" + (padding -5  + 45) + "," + (padding - 5) + ")")
+	        .attr("transform","translate(" + (5  + 25) + "," + (padding - 5) + ")")
           .attr('height', function(d) {
-              return height - yScale(d.yVal) - (2*padding) + 5})
+              return height - yScale(d.scored) - (2*padding) + 5})
           .attr('width', 40)
-          .attr('fill', function(d, i) {
-            return colors[i];
-          });
+          .attr('fill', 'orange');
      }
    }
  }

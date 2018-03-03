@@ -33,7 +33,7 @@
     /* box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.3); */
     background: #fff;
 	float: left;
-	margin: 40px 0 0 40px;
+	margin: 40px 40px 0 0;
 	display: block;
 	text-align: center;
 	border-radius: 2px 2px 2px 2px;
@@ -67,8 +67,9 @@
     list-style: none;
     padding: 0;
     position: absolute;
-    top:39px;
+    top:55px;
     left: 15px;
+    width: calc(100% - 15px);
 }
 .list-striker li{
     overflow: hidden;
@@ -125,10 +126,13 @@
     font-size: 155px;
     /* color: darkgreen; */
     color:#567da7;
-    top: 30px;
-    right: 60px;
+    left: 0;
+    top: 40px;
     font-weight: bold;
-    letter-spacing: -17px;
+    width: 100%;
+    text-align: center;
+
+    /* letter-spacing: -17px; */
 }
 .fullScreen{
     height: calc(100vh - 110px);
@@ -172,6 +176,5 @@
 .chart {
     float: left; 
     margin-top:40px;
-    margin-left: 40px;
     width: 100%;
 }

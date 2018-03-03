@@ -26,6 +26,7 @@ export class ClubComponent implements OnInit {
   statistic: any;
   data: any;
   width: any;
+  showScored: boolean = false;
   
 
   addCatForm: FormGroup;
@@ -40,12 +41,6 @@ export class ClubComponent implements OnInit {
               public toast: ToastComponent) { }
 
   ngOnInit() {
-    this.data = [
-      {name : 'A', yVal : 1},
-      {name : 'B', yVal : 4},
-      {name : 'C', yVal : 2},
-      {name : 'D', yVal : 3}
-   ];
     this.statistic = {};
     this.route.params.subscribe(params => {
       this.getItem(params['id']);
@@ -71,6 +66,10 @@ export class ClubComponent implements OnInit {
      );
   }
 
+  showHideScored(){
+    this.showScored = !this.showScored;
+  }
+
   getMatchesWithClub(id) {
     this.clubsService.getMatchesWithClub({club: id}).subscribe(
       data => {
@@ -81,19 +80,42 @@ export class ClubComponent implements OnInit {
   }
 
   calculateTotalGoals(id) {
+    this.data = [
+      {name : 'A', yVal : 1},
+      {name : 'B', yVal : 4},
+      {name : 'C', yVal : 2},
+      {name : 'D', yVal : 3}
+   ];
+    this.data = [];
+   
     this.statistic.totalGoals = 0;
     this.statistic.omittedGoals = 0;
     this.matches.forEach(match => {
+      let obj = {
+        scored: 0,
+        team : '',
+        date: ''
+      };
       var result = match.result.split(':');
       if(match.team1._id == id) {
         this.statistic.totalGoals += +result[0];
         this.statistic.omittedGoals += +result[1];  
+        obj.scored = +result[0];
+        obj.team = match.team2.name;
+        obj.date = match.date;
       }else {
         this.statistic.totalGoals += +result[1];
-        this.statistic.omittedGoals += +result[0];  
+        this.statistic.omittedGoals += +result[0];
+        obj.scored = +result[1];
+        obj.team = match.team1.name;
+        obj.date = match.date;
       }
+      this.createScoredDataForChart(obj);
     });
-    
+    console.log('data',this.data)
   }
 
+  createScoredDataForChart(item){
+    this.data.push(item);
+  }
 }
