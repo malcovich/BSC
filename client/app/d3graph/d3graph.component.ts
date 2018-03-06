@@ -42,14 +42,13 @@ export class D3graphComponent implements OnInit {
         let colors: any = [];
         let data: {team: string, scored: number, date: string}[] = [];
         let padding: number = 25;
-        let width: number;
+        let width: number = 920;
         let height: number = 500;
         let xScale: any;
         let yScale: any;
         let xColor: any;
         let xAxis: any;
         let yAxis: any;
-        width = this.width;
 
         data = this.data;
         console.log(this.data)
@@ -70,7 +69,7 @@ export class D3graphComponent implements OnInit {
 
       xScale = d3.scaleBand()
           .domain(data.map(function(d){ return d.date; }))
-          .range([0, width]);
+          .range([0, width-25]);
 
       yScale = d3.scaleLinear()
           .domain([0,d3.max(data, function(d) {return d.scored+1})])
@@ -93,7 +92,7 @@ export class D3graphComponent implements OnInit {
 
 	       svg.append('g')            // create a <g> element
          .attr('class', 'axis')   // specify classes
-	       .attr("transform", "translate(" + 10 + "," + (height - padding) + ")")
+	       .attr("transform", "translate(" + 25 + "," + (height - padding) + ")")
          .call(xAxis);            // let the axis do its thing
 
       var rects = svg.selectAll('rect')
@@ -110,10 +109,10 @@ export class D3graphComponent implements OnInit {
           .attr('y', function(d) {
               return yScale(d.scored);
             })
-	        .attr("transform","translate(" + (5  + 25) + "," + (padding - 5) + ")")
+	        .attr("transform","translate(" + (5  + 22) + "," + (padding - 5) + ")")
           .attr('height', function(d) {
               return height - yScale(d.scored) - (2*padding) + 5})
-          .attr('width', 40)
+          .attr('width', 30)
           .attr('fill', 'orange');
      }
    }

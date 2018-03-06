@@ -26,6 +26,7 @@ export class ClubComponent implements OnInit {
   statistic: any;
   data: any;
   width: any;
+  players: any;
   showScored: boolean = false;
   
 
@@ -45,13 +46,8 @@ export class ClubComponent implements OnInit {
     this.route.params.subscribe(params => {
       this.getItem(params['id']);
       this.getMatchesWithClub(params['id']);
+      this.getPlayersForClub(params['id']);
     });
-   
-  }
-
-  ngAfterViewInit() {
-    this.width = this.elementView.nativeElement.clientWidth;
-    console.log(this.elementView.nativeElement.clientWidth)
   }
 
   getItem(id) {
@@ -64,6 +60,15 @@ export class ClubComponent implements OnInit {
         this.team.imageAbstr1 = "assets/"+this.team.name.split(' ')[0] +"_abstr1.png"; 
       }
      );
+  }
+  getPlayersForClub(id) {
+    console.log(id)
+    this.clubsService.getPlayersForClub({'club': id}).subscribe(
+      data =>{
+        this.players = data;
+        this.getPersentOfLegioners();
+      }
+    )
   }
 
   showHideScored(){
@@ -80,12 +85,6 @@ export class ClubComponent implements OnInit {
   }
 
   calculateTotalGoals(id) {
-    this.data = [
-      {name : 'A', yVal : 1},
-      {name : 'B', yVal : 4},
-      {name : 'C', yVal : 2},
-      {name : 'D', yVal : 3}
-   ];
     this.data = [];
    
     this.statistic.totalGoals = 0;
@@ -112,7 +111,19 @@ export class ClubComponent implements OnInit {
       }
       this.createScoredDataForChart(obj);
     });
-    console.log('data',this.data)
+  }
+
+  getPersentOfLegioners(){
+    this.statistic.legioners = [];
+    let persentLegioner = this.players.filter(item => {
+      if (item.country != "UKR") {
+        this.statistic.legioners.push(item); 
+        return item
+      };
+    }).length / this.players.length * 100;
+    this.statistic.persentLegioner =  Math.round(persentLegioner).toFixed(0);
+    console.log(this.statistic.persentLegioner )
+    
   }
 
   createScoredDataForChart(item){

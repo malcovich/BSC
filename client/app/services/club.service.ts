@@ -18,5 +18,8 @@ export class ClubService {
   getMatchesWithClub(obj): Observable<any> {
     return this.http.post<any>('/api/getMatchesWithClub', obj);
   }
+  getPlayersForClub(obj): Observable<any> {
+    return this.http.post<any>('/api/getPlayersForClub', obj);
+  }
 
 }
