@@ -27,6 +27,8 @@ export class ClubComponent implements OnInit {
   data: any;
   width: any;
   players: any;
+  lastestMatch : any;
+  activeTab: string = "match";
   showScored: boolean = false;
   
 
@@ -79,7 +81,14 @@ export class ClubComponent implements OnInit {
     this.clubsService.getMatchesWithClub({club: id}).subscribe(
       data => {
         this.matches = data;
+        console.log(22222,this.matches)
         this.calculateTotalGoals(id);
+        this.matches = this.data.sort((a: any, b: any) => {
+          let aT = new Date(a.date);
+          let bT = new Date(b.date);
+          return aT.getTime() -bT.getTime();
+        });
+        console.log(123, this.matches)
       }
     );
   }
@@ -122,11 +131,13 @@ export class ClubComponent implements OnInit {
       };
     }).length / this.players.length * 100;
     this.statistic.persentLegioner =  Math.round(persentLegioner).toFixed(0);
-    console.log(this.statistic.persentLegioner )
-    
   }
 
   createScoredDataForChart(item){
     this.data.push(item);
+  }
+
+  setActive(tab) {
+    this.activeTab = tab;
   }
 }

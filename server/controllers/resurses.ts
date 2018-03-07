@@ -632,12 +632,20 @@ export default class ResursesCtrl extends BaseCtrl {
     //               return elem;
     //             }
     //           })[0]._id;
+    //           var  date = new Date(trs.eq(i).find('td').eq(0).text());
+    //           if (date.getMonth() >=6) {
+    //             date.setFullYear(2017);
+    //           }
+    //           else{
+    //             date.setFullYear(2018);
+    //           }
+    //           console.log(date)
     //           console.log(123, homeTeamId)
     //           var result = trs.eq(i).find('td').eq(4).text();
     //           var cop = {
     //             'team1': homeTeamId,
     //             'team2': awayTeamId,
-    //             'date': trs.eq(i).find('td').eq(0).text(),
+    //             'date': date,
     //             'round': trs.eq(i).find('td').eq(1).text(),
     //             'result': result
     //           }
@@ -646,7 +654,7 @@ export default class ResursesCtrl extends BaseCtrl {
     //           match.save((err,savedMatch)=>{
     //             console.log('match saved')
     //           })
-    //           Resurses.find({ $and : [{'resurse':'statarea'}, {'team1': cop.name1}]}).exec(function(err, resut){
+    //           Resurses.find({ $and : [{'resurse':'statarea'}, {'team1': cop.team1}]}).exec(function(err, resut){
     //           if (resut.length) {
     //             resut[0].resmatch = cop.team1 + '-' + cop.team2;
     //             resut[0].save(function(err,item) {
@@ -658,7 +666,8 @@ export default class ResursesCtrl extends BaseCtrl {
     //       });
     //     })
     //   }
-    // })
+    // });
+
   }
 
  

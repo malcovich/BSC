@@ -36,6 +36,7 @@
 	float: left;
     margin: 30px 0 0 0;
     width: 100%;
+    min-height:200px;
 	display: block;
 	text-align: center;
 	border-radius: 2px 2px 2px 2px;
@@ -52,6 +53,19 @@
     width:100%;
     height: auto;
 }
+.sub-menu {
+    height: 30px;
+}
+.sub-menu ul {
+    max-width: 1440px;
+    margin: 0 auto;
+    list-style: none;
+    padding-left: 15px;
+}
+.sub-menu ul li {
+    float: left;
+    margin-right: 30px;
+}
 
 .item > div{
     position: absolute;
@@ -67,6 +81,11 @@
 .item-title.font60 {
     font-size: 48px;
     top:75px;
+}
+.item-title span {
+    width: 100%;
+    display: block;
+    font-size: 24px;
 }
 .long {
     max-height: 287px;
