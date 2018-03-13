@@ -58,6 +58,7 @@ export default function setRoutes(app) {
 
   //Players 
   router.route('/getPlayersForClub/').post(playerCtrl.getPlayersForClub);
+  router.route('/getAllPlayers/').get(playerCtrl.getAllPlayers);
 
   router.route('/clubs/:id').get(clubCtrl.get);
   app.use('/api', router);

@@ -18,6 +18,8 @@ import { ClubComponent } from './clubs/club/club-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { ClubsListComponent } from './clubs/list/list.component';
+import { TeamComponent } from './team/team.component';
+
 
 const routes: Routes = [
   { path: '', component: AboutComponent },
@@ -35,6 +37,7 @@ const routes: Routes = [
   { path: 'favorites', component: FavoritesComponent },
   { path: 'clubs/:id', component: ClubComponent },
   { path: 'clubs', component: ClubsListComponent },
+  { path: 'team', component: TeamComponent },
   { path: '**', redirectTo: '/notfound' },
 ];
 

@@ -11,5 +11,11 @@ export default class PlayerCtrl extends BaseCtrl {
       res.json(players);
     })
   }
+
+  getAllPlayers = (req, res) =>{
+    Player.find().exec((err, players)=>{
+      res.json(players);
+    })
+  }
   
 }

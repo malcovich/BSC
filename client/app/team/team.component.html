@@ -1,0 +1,49 @@
+<div class="bd-content p-5">
+	<div class="row">
+		<div class="col-8">
+			<div class="row">
+				<div class="col-12">
+					<h2>Создайте свою команду</h2>
+				</div>
+				<ul>
+					<li *ngFor="let player of team.players" >{{player.name}}, {{player.clubNumber}}</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="row">
+				<div class="col-12">
+					<h4>List of players</h4>
+					<div class="btn-group" dropdown>
+							<button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+							  {{selectedPosition}} <span class="caret"></span>
+							</button>
+							<ul *dropdownMenu class="dropdown-menu" role="menu">
+							  <li role="menuitem" *ngFor="let position of listPositions"  (click)="filterByPosition(position)"><a class="dropdown-item" href="javascript:void(0)">{{position.name}}</a></li>
+							</ul>
+						  </div>
+					<div class="dropdown">
+							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Все клубы
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<a class="dropdown-item" href="#">Вратари</a>
+								<a class="dropdown-item" href="#">Защитники</a>
+								<a class="dropdown-item" href="#">Полузащитники</a>
+								<a class="dropdown-item" href="#">Нападающие</a>
+							</div>
+						</div>
+					<ul>
+						<li *ngFor="let player of players" (click)="addPlayerToTeam(player)">
+							<div class="row">
+								<div class="col-2">{{player.position}}, {{player.country}}</div>
+								<div class="col-9">{{player.name}}, {{player.clubNumber}}</div>
+								<div class="col-1"><button type="button" class="btn btn-success" *ngIf="!player.inTeam">+</button></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

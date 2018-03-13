@@ -22,4 +22,7 @@ export class ClubService {
     return this.http.post<any>('/api/getPlayersForClub', obj);
   }
 
+  getAllPlayers(): Observable<any> {
+    return this.http.get<any>('/api/getAllPlayers');
+  }
 }

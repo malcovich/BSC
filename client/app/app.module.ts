@@ -27,6 +27,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { StatisticComponent } from './dashboard/statistic/statistic.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { D3graphComponent } from './d3graph/d3graph.component';
+import { TeamComponent } from './team/team.component';
+import { AlertModule, BsDropdownModule  } from 'ngx-bootstrap';
+
 
 import { D3Service } from 'd3-ng2-service'; //
 
@@ -49,11 +52,14 @@ import { D3Service } from 'd3-ng2-service'; //
     StatisticComponent,
     FavoritesComponent,
     ClubsListComponent,
-    D3graphComponent
+    D3graphComponent,
+    TeamComponent
   ],
   imports: [
     RoutingModule,
-    SharedModule
+    SharedModule,
+    AlertModule.forRoot(),
+    BsDropdownModule.forRoot()
   ],
   providers: [
     AuthService,
