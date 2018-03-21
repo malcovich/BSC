@@ -4,7 +4,9 @@ import CatCtrl from './controllers/cat';
 import UserCtrl from './controllers/user';
 import ResursesCtrl from './controllers/resurses';
 import ClubCtrl from './controllers/club';
+import ChallengeCtrl from './controllers/challenge';
 import PlayerCtrl from './controllers/player';
+import TeamCtrl from './controllers/team';
 import Cat from './models/cat';
 import User from './models/user';
 
@@ -17,6 +19,9 @@ export default function setRoutes(app) {
   const resursesCtrl = new ResursesCtrl();
   const clubCtrl = new ClubCtrl();
   const playerCtrl = new PlayerCtrl();
+  const teamCtrl = new TeamCtrl();
+  const challengeCtrl = new ChallengeCtrl();
+  
 
   // Cats
   router.route('/cats').get(catCtrl.getAll);
@@ -55,12 +60,19 @@ export default function setRoutes(app) {
   router.route('/addSimpleNames/').post(clubCtrl.addSimpleNames);
   router.route('/getAllClubsFromLeague/').post(clubCtrl.getAllClubsFromLeague);
   router.route('/getMatchesWithClub/').post(clubCtrl.getMatchesWithClub);
+  router.route('/clubs/:id').get(clubCtrl.get);
 
   //Players 
   router.route('/getPlayersForClub/').post(playerCtrl.getPlayersForClub);
   router.route('/getAllPlayers/').get(playerCtrl.getAllPlayers);
 
-  router.route('/clubs/:id').get(clubCtrl.get);
+  //Team
+  router.route('/addTeam/').post(teamCtrl.addTeam);
+  router.route('/getTeam/').post(teamCtrl.getTeam);
+
+  //Challenge
+  router.route('/getChallenges/').post(challengeCtrl.getChallenges);
+
   app.use('/api', router);
 
 }

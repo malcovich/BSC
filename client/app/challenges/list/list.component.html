@@ -1,0 +1,5 @@
+<h1>Clubs</h1>
+
+<div *ngFor="let club of list">
+    <a [routerLink]="club['_id']">{{club.name}}</a>
+</div>

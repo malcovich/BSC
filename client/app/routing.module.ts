@@ -19,6 +19,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { ClubsListComponent } from './clubs/list/list.component';
 import { TeamComponent } from './team/team.component';
+import { ChallengesListComponent } from './challenges/list/list.component';
 
 
 const routes: Routes = [
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path: 'clubs/:id', component: ClubComponent },
   { path: 'clubs', component: ClubsListComponent },
   { path: 'team', component: TeamComponent },
+  { path: 'challenges', component: ChallengesListComponent},
   { path: '**', redirectTo: '/notfound' },
 ];
 

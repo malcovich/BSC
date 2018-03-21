@@ -25,4 +25,12 @@ export class ClubService {
   getAllPlayers(): Observable<any> {
     return this.http.get<any>('/api/getAllPlayers');
   }
+
+  addTeam(obj): Observable<any> {
+    return this.http.post<any>('/api/addTeam', obj);
+  }
+
+  getTeam(obj): Observable<any> {
+    return this.http.post<any>('/api/getTeam', obj);
+  }
 }

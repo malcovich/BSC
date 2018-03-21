@@ -22,12 +22,16 @@ import { GetResursesComponent } from './getResurses/getResurses.component';
 import { ListResursesComponent } from './listResurses/listResurses.component';
 import { ResurseComponent } from './resurse/resurse.component';
 import { ClubComponent } from './clubs/club/club-detail.component';
+import { PagerService } from './services/pager.service';
 import { ClubsListComponent } from './clubs/list/list.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StatisticComponent } from './dashboard/statistic/statistic.component';
+import { ChallengesService } from './services/challenges.service';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { D3graphComponent } from './d3graph/d3graph.component';
+
 import { TeamComponent } from './team/team.component';
+import { ChallengesListComponent } from './challenges/list/list.component';
 import { AlertModule, BsDropdownModule  } from 'ngx-bootstrap';
 
 
@@ -53,7 +57,8 @@ import { D3Service } from 'd3-ng2-service'; //
     FavoritesComponent,
     ClubsListComponent,
     D3graphComponent,
-    TeamComponent
+    TeamComponent,
+    ChallengesListComponent
   ],
   imports: [
     RoutingModule,
@@ -69,6 +74,8 @@ import { D3Service } from 'd3-ng2-service'; //
     UserService,
     ResurseService,
     ClubService,
+    PagerService,
+    ChallengesService,
     D3Service
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

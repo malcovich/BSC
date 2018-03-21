@@ -209,3 +209,22 @@
     max-width: 1400px;
     margin: 0 auto;
 }
+.flag {
+    background-image: url("/assets/flag.png");
+    display: inline-block;
+    width: 26px;
+    height: 18px;
+}
+.UKR {
+    background-position: 210px 165px;
+}
+.BRA {
+    background-position: 334px 824px;
+}
+.ARG {
+    background-position: 210px 904px;
+}
+.selectForList{ 
+    width: 48%;
+    margin: 0 1%;
+}

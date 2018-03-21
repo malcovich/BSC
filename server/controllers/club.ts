@@ -73,9 +73,7 @@ export default class ClubCtrl extends BaseCtrl {
   }
 
   getMatchesWithClub = (req, res) =>{
-    console.log(req.body.club)
     Match.find({$or: [{'team1': req.body.club},{'team2':req.body.club}]}).populate('team1').populate('team2').exec((err, matches)=>{
-      console.log(matches)
       res.json(matches);
     })
   }
