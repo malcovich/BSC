@@ -27,12 +27,19 @@ import { ClubsListComponent } from './clubs/list/list.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StatisticComponent } from './dashboard/statistic/statistic.component';
 import { ChallengesService } from './services/challenges.service';
+import { SkinsService } from './services/skin.service';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { D3graphComponent } from './d3graph/d3graph.component';
 
+//admin
+import { AdminListPlayersComponent } from './admin/players/list/list.component';
+import { AdminAddPlayerComponent } from './admin/players/add/add.component';
+
+
 import { TeamComponent } from './team/team.component';
+import { ChallengeComponent } from './challenges/challenge/challenge.component';
 import { ChallengesListComponent } from './challenges/list/list.component';
-import { AlertModule, BsDropdownModule  } from 'ngx-bootstrap';
+import { AlertModule, BsDropdownModule,TabsModule  } from 'ngx-bootstrap';
 
 
 import { D3Service } from 'd3-ng2-service'; //
@@ -58,13 +65,17 @@ import { D3Service } from 'd3-ng2-service'; //
     ClubsListComponent,
     D3graphComponent,
     TeamComponent,
-    ChallengesListComponent
+    ChallengesListComponent,
+    ChallengeComponent,
+    AdminListPlayersComponent,
+    AdminAddPlayerComponent
   ],
   imports: [
     RoutingModule,
     SharedModule,
     AlertModule.forRoot(),
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    TabsModule.forRoot()
   ],
   providers: [
     AuthService,
@@ -76,7 +87,8 @@ import { D3Service } from 'd3-ng2-service'; //
     ClubService,
     PagerService,
     ChallengesService,
-    D3Service
+    D3Service,
+    SkinsService
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]

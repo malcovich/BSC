@@ -1,0 +1,100 @@
+<div class="bd-content p-5">
+    <div class="row">
+        <div class="col-lg-9" *ngIf="challenge">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="float-right"><span class="u-icon-v1">
+                                <i class="icon-check"></i>
+                              </span><span class="">Завершений</span></p>
+                        <h1  class="h1 g-color-gray-dark-v1 g-font-weight-300 mb-2 float-left">{{challenge.name}}</h1>
+                    </div>
+                    <div class="col-12">
+                        <h2 class="h6 text-uppercase g-color-gray-dark-v1 g-mb-15 ">Матчі тура</h2>
+                        <ul class="list-unstyled g-mb-35 g-mb-0--md float-left col-4" >
+                            <li class="g-mb-5"  *ngIf="challenge.matches[0]">
+                                <a class="g-color-black-opacity-0_5" href="#!">{{challenge.matches[0].team1.ukrName}}-{{challenge.matches[0].team2.ukrName}}</a>
+                            </li>
+                            <li class="g-mb-5" *ngIf="challenge.matches[1]">
+                                <a class="g-color-black-opacity-0_5" href="#!">{{challenge.matches[1].team1.ukrName}}-{{challenge.matches[1].team2.ukrName}}</a>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled g-mb-35 g-mb-0--md float-left  col-4">
+                            <li class="g-mb-5" *ngIf="challenge.matches[2]">
+                                <a class="g-color-black-opacity-0_5" href="#!">{{challenge.matches[2].team1.ukrName}}-{{challenge.matches[2].team2.ukrName}}</a>
+                            </li>
+                            <li class="g-mb-5" *ngIf="challenge.matches[3]">
+                                <a class="g-color-black-opacity-0_5" href="#!">{{challenge.matches[3].team1.ukrName}}-{{challenge.matches[3].team2.ukrName}}</a>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled g-mb-35 g-mb-0--md float-left  col-4">
+                            <li class="g-mb-5" *ngIf="challenge.matches[4]">
+                                <a class="g-color-black-opacity-0_5" href="#!">{{challenge.matches[4].team1.ukrName}}-{{challenge.matches[4].team2.ukrName}}</a>
+                            </li>
+                            <li class="g-mb-5" *ngIf="challenge.matches[5]">
+                                <a class="g-color-black-opacity-0_5" href="#!">{{challenge.matches[5].team1.ukrName}}-{{challenge.matches[5].team2.ukrName}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <tabset>
+                        <tab heading="Склад на тур" id="tab1">
+                            <div class="col-12 mt-1">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Страна</th>
+                                                <th>Позиция</th>
+                                                <th>Имя</th>
+                                                <th>Клуб</th>
+                                                <th>Стоимость</th>
+                                                <th>Очки</th>
+                                                <th></th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr *ngFor="let player of skin.players;let idx = index">
+                                                <td>{{idx+1}}</td>
+                                                <td><span [className]="player.country + ' flag'"></span></td>
+                                                <td>{{player.position}}</td>
+                                                <td><strong>{{player.name}}</strong></td>
+                                                <td>{{player.club.ukrName}}</td>
+                                                <td>3,4М</td>
+                                                <td>34</td>
+                                                <td></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <span class="btn btn-xl u-btn-primary text-uppercase g-font-weight-600 g-font-size-12 rounded g-mr-15 g-mb-10 g-mb-0--sm float-right" (click)="saveSkin()">Сохранить</span>
+                                    </div>
+                                </div>
+                        </tab>
+                        <tab heading="Звіт про тур" disabled="true"></tab>
+                    </tabset>
+                </div>
+            
+        </div>
+        <div class="col-lg-3">
+            <h2 class="h3 g-color-gray-dark-v1 g-font-weight-300 mb-2">Команда</h2>
+            <ul class="list-unstyled" *ngIf="team">
+                    <li class="media g-brd-around g-brd-gray-light-v4 g-pa-15 g-mb-minus-1" *ngFor="let player of team.players"  (click)="addPlayerToSkin(player)">
+                        <div class="d-flex g-mt-2 g-mr-15">
+                        <!-- <span class="g-width-40 g-height-40 rounded-circle" >{{player.position}} <span [className]="player.country + ' flag'"></span></span> -->
+                            <img class="g-width-40 g-height-40 rounded-circle" src="assets/Ferreyra.png" alt="Image Description">
+                        </div>
+
+                        <div class="media-body">
+                        <div class="d-flex justify-content-between">
+                            <strong> <span [className]="player.country + ' flag'"></span> {{player.name}}</strong>
+                            <!-- <span class="align-self-center small text-nowrap" *ngIf="!player.inTeam" (click)="addPlayerToTeam(player)">Додати в команду</span>
+                            <span class="align-self-center small text-nowrap" *ngIf="player.inTeam">В команді</span> -->
+                        </div>
+                        <span class="d-block">{{player.position}}, {{player.club.ukrName}}</span>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+    </div>
+</div>

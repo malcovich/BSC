@@ -1,52 +1,25 @@
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f72"),
-	"date" : ISODate("2001-02-25T00:00:00.000+02:00"),
-	"result" : "3:1",
-	"round" : NumberInt("21"),
-	"team1" : ObjectId("5a956d45e144536463b6d094"),
-	"team2" : ObjectId("5a956d51e144536463b6d0c2")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f73"),
-	"date" : ISODate("2001-02-25T00:00:00.000+02:00"),
-	"result" : "5:0",
-	"round" : NumberInt("21"),
-	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
-	"team2" : ObjectId("5a956d95e144536463b6d1d5")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f74"),
-	"date" : ISODate("2001-02-25T00:00:00.000+02:00"),
-	"result" : "3:0",
-	"round" : NumberInt("21"),
-	"team1" : ObjectId("5a956f2ae144536463b6d85a"),
-	"team2" : ObjectId("5a956dcfe144536463b6d2cc")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f75"),
-	"date" : ISODate("2001-02-25T00:00:00.000+02:00"),
-	"result" : "2:0",
-	"round" : NumberInt("21"),
-	"team1" : ObjectId("5a956de4e144536463b6d320"),
-	"team2" : ObjectId("5a953bcee144536463b6106f")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f76"),
-	"date" : ISODate("2001-02-24T00:00:00.000+02:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874efb"),
+	"date" : ISODate("2018-03-06T00:00:00.000+02:00"),
 	"result" : "0:0",
-	"round" : NumberInt("21"),
-	"team1" : ObjectId("5a956e25e144536463b6d431"),
-	"team2" : ObjectId("5a956e81e144536463b6d5a9")
+	"round" : NumberInt("22"),
+	"team1" : ObjectId("5a956d95e144536463b6d1d5"),
+	"team2" : ObjectId("5a956df5e144536463b6d369")
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f77"),
-	"date" : ISODate("2001-02-24T00:00:00.000+02:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f00"),
+	"date" : ISODate("2018-03-03T00:00:00.000+02:00"),
+	"result" : "2:1",
+	"round" : NumberInt("22"),
+	"team1" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"team2" : ObjectId("5a956e25e144536463b6d431")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f05"),
+	"date" : ISODate("2018-02-24T00:00:00.000+02:00"),
 	"result" : "1:0",
 	"round" : NumberInt("21"),
 	"team1" : ObjectId("5a956df5e144536463b6d369"),
@@ -54,26 +27,8 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f79"),
-	"date" : ISODate("2001-02-18T00:00:00.000+02:00"),
-	"result" : "1:0",
-	"round" : NumberInt("20"),
-	"team1" : ObjectId("5a956d51e144536463b6d0c2"),
-	"team2" : ObjectId("5a956de4e144536463b6d320")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f78"),
-	"date" : ISODate("2001-02-21T00:00:00.000+02:00"),
-	"result" : "2:1",
-	"round" : NumberInt("18"),
-	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
-	"team2" : ObjectId("5a956de4e144536463b6d320")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f7a"),
-	"date" : ISODate("2001-02-18T00:00:00.000+02:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f0a"),
+	"date" : ISODate("2018-02-18T00:00:00.000+02:00"),
 	"result" : "0:3",
 	"round" : NumberInt("20"),
 	"team1" : ObjectId("5a956d95e144536463b6d1d5"),
@@ -81,44 +36,8 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f7c"),
-	"date" : ISODate("2001-02-17T00:00:00.000+02:00"),
-	"result" : "1:0",
-	"round" : NumberInt("20"),
-	"team1" : ObjectId("5a956dcfe144536463b6d2cc"),
-	"team2" : ObjectId("5a956d45e144536463b6d094")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f7d"),
-	"date" : ISODate("2001-02-17T00:00:00.000+02:00"),
-	"result" : "2:0",
-	"round" : NumberInt("20"),
-	"team1" : ObjectId("5a953bcee144536463b6106f"),
-	"team2" : ObjectId("5a956df5e144536463b6d369")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f7e"),
-	"date" : ISODate("2001-02-16T00:00:00.000+02:00"),
-	"result" : "5:0",
-	"round" : NumberInt("20"),
-	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
-	"team2" : ObjectId("5a956e25e144536463b6d431")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f7f"),
-	"date" : ISODate("2001-12-10T00:00:00.000+02:00"),
-	"result" : "2:1",
-	"round" : NumberInt("19"),
-	"team1" : ObjectId("5a956f2ae144536463b6d85a"),
-	"team2" : ObjectId("5a9562e4e144536463b6a7a1")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f80"),
-	"date" : ISODate("2001-12-10T00:00:00.000+02:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f0f"),
+	"date" : ISODate("2017-12-10T00:00:00.000+02:00"),
 	"result" : "0:0",
 	"round" : NumberInt("19"),
 	"team1" : ObjectId("5a956df5e144536463b6d369"),
@@ -126,35 +45,8 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f81"),
-	"date" : ISODate("2001-12-09T00:00:00.000+02:00"),
-	"result" : "1:4",
-	"round" : NumberInt("19"),
-	"team1" : ObjectId("5a956de4e144536463b6d320"),
-	"team2" : ObjectId("5a956dcfe144536463b6d2cc")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f83"),
-	"date" : ISODate("2001-12-09T00:00:00.000+02:00"),
-	"result" : "4:2",
-	"round" : NumberInt("19"),
-	"team1" : ObjectId("5a956e06e144536463b6d3b2"),
-	"team2" : ObjectId("5a953bcee144536463b6106f")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f84"),
-	"date" : ISODate("2001-12-09T00:00:00.000+02:00"),
-	"result" : "3:3",
-	"round" : NumberInt("19"),
-	"team1" : ObjectId("5a956e25e144536463b6d431"),
-	"team2" : ObjectId("5a956d95e144536463b6d1d5")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f85"),
-	"date" : ISODate("2001-12-03T00:00:00.000+02:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f14"),
+	"date" : ISODate("2017-12-03T00:00:00.000+02:00"),
 	"result" : "5:1",
 	"round" : NumberInt("18"),
 	"team1" : ObjectId("5a956d51e144536463b6d0c2"),
@@ -162,35 +54,8 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f86"),
-	"date" : ISODate("2001-12-03T00:00:00.000+02:00"),
-	"result" : "3:1",
-	"round" : NumberInt("18"),
-	"team1" : ObjectId("5a956dcfe144536463b6d2cc"),
-	"team2" : ObjectId("5a956df5e144536463b6d369")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f88"),
-	"date" : ISODate("2001-12-02T00:00:00.000+02:00"),
-	"result" : "2:0",
-	"round" : NumberInt("18"),
-	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
-	"team2" : ObjectId("5a956d45e144536463b6d094")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f89"),
-	"date" : ISODate("2001-12-02T00:00:00.000+02:00"),
-	"result" : "1:1",
-	"round" : NumberInt("18"),
-	"team1" : ObjectId("5a956e25e144536463b6d431"),
-	"team2" : ObjectId("5a956f2ae144536463b6d85a")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f8a"),
-	"date" : ISODate("2001-11-26T00:00:00.000+02:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f19"),
+	"date" : ISODate("2017-11-26T00:00:00.000+02:00"),
 	"result" : "1:0",
 	"round" : NumberInt("17"),
 	"team1" : ObjectId("5a956f2ae144536463b6d85a"),
@@ -198,53 +63,8 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f8b"),
-	"date" : ISODate("2001-11-26T00:00:00.000+02:00"),
-	"result" : "0:2",
-	"round" : NumberInt("17"),
-	"team1" : ObjectId("5a953bcee144536463b6106f"),
-	"team2" : ObjectId("5a956d51e144536463b6d0c2")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f7b"),
-	"date" : ISODate("2001-02-18T00:00:00.000+02:00"),
-	"result" : "0:2",
-	"round" : NumberInt("20"),
-	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
-	"team2" : ObjectId("5a956f2ae144536463b6d85a")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f8d"),
-	"date" : ISODate("2001-11-26T00:00:00.000+02:00"),
-	"result" : "3:1",
-	"round" : NumberInt("17"),
-	"team1" : ObjectId("5a956d45e144536463b6d094"),
-	"team2" : ObjectId("5a956e25e144536463b6d431")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f8e"),
-	"date" : ISODate("2001-11-25T00:00:00.000+02:00"),
-	"result" : "2:4",
-	"round" : NumberInt("17"),
-	"team1" : ObjectId("5a956de4e144536463b6d320"),
-	"team2" : ObjectId("5a9562e4e144536463b6a7a1")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f82"),
-	"date" : ISODate("2001-12-09T00:00:00.000+02:00"),
-	"result" : "2:2",
-	"round" : NumberInt("19"),
-	"team1" : ObjectId("5a956d45e144536463b6d094"),
-	"team2" : ObjectId("5a956e81e144536463b6d5a9")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f8f"),
-	"date" : ISODate("2001-11-25T00:00:00.000+02:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f1e"),
+	"date" : ISODate("2017-11-25T00:00:00.000+02:00"),
 	"result" : "0:1",
 	"round" : NumberInt("17"),
 	"team1" : ObjectId("5a956e06e144536463b6d3b2"),
@@ -252,53 +72,8 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f90"),
-	"date" : ISODate("2001-11-19T00:00:00.000+02:00"),
-	"result" : "2:1",
-	"round" : NumberInt("16"),
-	"team1" : ObjectId("5a956e25e144536463b6d431"),
-	"team2" : ObjectId("5a956de4e144536463b6d320")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f87"),
-	"date" : ISODate("2001-12-03T00:00:00.000+02:00"),
-	"result" : "1:0",
-	"round" : NumberInt("18"),
-	"team1" : ObjectId("5a956d95e144536463b6d1d5"),
-	"team2" : ObjectId("5a953bcee144536463b6106f")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f8c"),
-	"date" : ISODate("2001-11-26T00:00:00.000+02:00"),
-	"result" : "3:0",
-	"round" : NumberInt("17"),
-	"team1" : ObjectId("5a956df5e144536463b6d369"),
-	"team2" : ObjectId("5a956e81e144536463b6d5a9")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f92"),
-	"date" : ISODate("2001-11-18T00:00:00.000+02:00"),
-	"result" : "0:1",
-	"round" : NumberInt("16"),
-	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
-	"team2" : ObjectId("5a956e06e144536463b6d3b2")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f93"),
-	"date" : ISODate("2001-11-18T00:00:00.000+02:00"),
-	"result" : "1:1",
-	"round" : NumberInt("16"),
-	"team1" : ObjectId("5a956f2ae144536463b6d85a"),
-	"team2" : ObjectId("5a956d45e144536463b6d094")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f94"),
-	"date" : ISODate("2001-11-18T00:00:00.000+02:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f23"),
+	"date" : ISODate("2017-11-18T00:00:00.000+02:00"),
 	"result" : "0:2",
 	"round" : NumberInt("16"),
 	"team1" : ObjectId("5a956d95e144536463b6d1d5"),
@@ -306,53 +81,8 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f91"),
-	"date" : ISODate("2001-11-19T00:00:00.000+02:00"),
-	"result" : "1:1",
-	"round" : NumberInt("16"),
-	"team1" : ObjectId("5a956dcfe144536463b6d2cc"),
-	"team2" : ObjectId("5a953bcee144536463b6106f")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f95"),
-	"date" : ISODate("2001-11-17T00:00:00.000+02:00"),
-	"result" : "1:2",
-	"round" : NumberInt("16"),
-	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
-	"team2" : ObjectId("5a956df5e144536463b6d369")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f96"),
-	"date" : ISODate("2001-11-05T00:00:00.000+02:00"),
-	"result" : "2:1",
-	"round" : NumberInt("15"),
-	"team1" : ObjectId("5a956d51e144536463b6d0c2"),
-	"team2" : ObjectId("5a956dcfe144536463b6d2cc")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f97"),
-	"date" : ISODate("2001-11-05T00:00:00.000+02:00"),
-	"result" : "3:3",
-	"round" : NumberInt("15"),
-	"team1" : ObjectId("5a956de4e144536463b6d320"),
-	"team2" : ObjectId("5a956f2ae144536463b6d85a")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f98"),
-	"date" : ISODate("2001-11-05T00:00:00.000+02:00"),
-	"result" : "0:0",
-	"round" : NumberInt("15"),
-	"team1" : ObjectId("5a953bcee144536463b6106f"),
-	"team2" : ObjectId("5a956e81e144536463b6d5a9")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f99"),
-	"date" : ISODate("2001-11-05T00:00:00.000+02:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f28"),
+	"date" : ISODate("2017-11-05T00:00:00.000+02:00"),
 	"result" : "1:3",
 	"round" : NumberInt("15"),
 	"team1" : ObjectId("5a956e06e144536463b6d3b2"),
@@ -360,44 +90,8 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f9a"),
-	"date" : ISODate("2001-11-04T00:00:00.000+02:00"),
-	"result" : "0:0",
-	"round" : NumberInt("15"),
-	"team1" : ObjectId("5a956df5e144536463b6d369"),
-	"team2" : ObjectId("5a956e25e144536463b6d431")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f9b"),
-	"date" : ISODate("2001-11-04T00:00:00.000+02:00"),
-	"result" : "0:0",
-	"round" : NumberInt("15"),
-	"team1" : ObjectId("5a956d45e144536463b6d094"),
-	"team2" : ObjectId("5a956d95e144536463b6d1d5")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f9c"),
-	"date" : ISODate("2001-10-30T00:00:00.000+02:00"),
-	"result" : "0:0",
-	"round" : NumberInt("14"),
-	"team1" : ObjectId("5a956e25e144536463b6d431"),
-	"team2" : ObjectId("5a956e06e144536463b6d3b2")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f9d"),
-	"date" : ISODate("2001-10-29T00:00:00.000+02:00"),
-	"result" : "1:1",
-	"round" : NumberInt("14"),
-	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
-	"team2" : ObjectId("5a956d51e144536463b6d0c2")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f9e"),
-	"date" : ISODate("2001-10-29T00:00:00.000+02:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f2d"),
+	"date" : ISODate("2017-10-29T00:00:00.000+03:00"),
 	"result" : "2:2",
 	"round" : NumberInt("14"),
 	"team1" : ObjectId("5a956f2ae144536463b6d85a"),
@@ -405,44 +99,8 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722f9f"),
-	"date" : ISODate("2001-10-29T00:00:00.000+02:00"),
-	"result" : "1:1",
-	"round" : NumberInt("14"),
-	"team1" : ObjectId("5a956d45e144536463b6d094"),
-	"team2" : ObjectId("5a956de4e144536463b6d320")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fa0"),
-	"date" : ISODate("2001-10-29T00:00:00.000+02:00"),
-	"result" : "1:0",
-	"round" : NumberInt("14"),
-	"team1" : ObjectId("5a956d95e144536463b6d1d5"),
-	"team2" : ObjectId("5a956dcfe144536463b6d2cc")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fa1"),
-	"date" : ISODate("2001-10-28T00:00:00.000+03:00"),
-	"result" : "1:1",
-	"round" : NumberInt("14"),
-	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
-	"team2" : ObjectId("5a953bcee144536463b6106f")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fa2"),
-	"date" : ISODate("2001-10-22T00:00:00.000+03:00"),
-	"result" : "0:0",
-	"round" : NumberInt("13"),
-	"team1" : ObjectId("5a956d51e144536463b6d0c2"),
-	"team2" : ObjectId("5a9562e4e144536463b6a7a1")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fa3"),
-	"date" : ISODate("2001-10-22T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f32"),
+	"date" : ISODate("2017-10-22T00:00:00.000+03:00"),
 	"result" : "2:5",
 	"round" : NumberInt("13"),
 	"team1" : ObjectId("5a956e06e144536463b6d3b2"),
@@ -450,44 +108,8 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fa4"),
-	"date" : ISODate("2001-10-22T00:00:00.000+03:00"),
-	"result" : "1:1",
-	"round" : NumberInt("13"),
-	"team1" : ObjectId("5a953bcee144536463b6106f"),
-	"team2" : ObjectId("5a956e25e144536463b6d431")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fa5"),
-	"date" : ISODate("2001-10-21T00:00:00.000+03:00"),
-	"result" : "0:1",
-	"round" : NumberInt("13"),
-	"team1" : ObjectId("5a956dcfe144536463b6d2cc"),
-	"team2" : ObjectId("5a956e81e144536463b6d5a9")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fa6"),
-	"date" : ISODate("2001-10-21T00:00:00.000+03:00"),
-	"result" : "1:1",
-	"round" : NumberInt("13"),
-	"team1" : ObjectId("5a956df5e144536463b6d369"),
-	"team2" : ObjectId("5a956d45e144536463b6d094")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fa7"),
-	"date" : ISODate("2001-10-21T00:00:00.000+03:00"),
-	"result" : "1:0",
-	"round" : NumberInt("13"),
-	"team1" : ObjectId("5a956de4e144536463b6d320"),
-	"team2" : ObjectId("5a956d95e144536463b6d1d5")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fa8"),
-	"date" : ISODate("2001-10-15T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f37"),
+	"date" : ISODate("2017-10-15T00:00:00.000+03:00"),
 	"result" : "2:1",
 	"round" : NumberInt("12"),
 	"team1" : ObjectId("5a956e25e144536463b6d431"),
@@ -495,44 +117,8 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fa9"),
-	"date" : ISODate("2001-10-15T00:00:00.000+03:00"),
-	"result" : "1:0",
-	"round" : NumberInt("12"),
-	"team1" : ObjectId("5a956de4e144536463b6d320"),
-	"team2" : ObjectId("5a956df5e144536463b6d369")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722faa"),
-	"date" : ISODate("2001-10-15T00:00:00.000+03:00"),
-	"result" : "0:0",
-	"round" : NumberInt("12"),
-	"team1" : ObjectId("5a956d95e144536463b6d1d5"),
-	"team2" : ObjectId("5a956e81e144536463b6d5a9")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fab"),
-	"date" : ISODate("2001-10-14T00:00:00.000+03:00"),
-	"result" : "0:1",
-	"round" : NumberInt("12"),
-	"team1" : ObjectId("5a953bcee144536463b6106f"),
-	"team2" : ObjectId("5a956f2ae144536463b6d85a")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fac"),
-	"date" : ISODate("2001-10-14T00:00:00.000+03:00"),
-	"result" : "1:1",
-	"round" : NumberInt("12"),
-	"team1" : ObjectId("5a956d45e144536463b6d094"),
-	"team2" : ObjectId("5a956e06e144536463b6d3b2")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fad"),
-	"date" : ISODate("2001-10-13T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f3c"),
+	"date" : ISODate("2017-10-13T00:00:00.000+03:00"),
 	"result" : "3:2",
 	"round" : NumberInt("12"),
 	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
@@ -540,44 +126,8 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fae"),
-	"date" : ISODate("2001-10-01T00:00:00.000+03:00"),
-	"result" : "4:4",
-	"round" : NumberInt("11"),
-	"team1" : ObjectId("5a956f2ae144536463b6d85a"),
-	"team2" : ObjectId("5a956d51e144536463b6d0c2")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722faf"),
-	"date" : ISODate("2001-10-01T00:00:00.000+03:00"),
-	"result" : "2:0",
-	"round" : NumberInt("11"),
-	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
-	"team2" : ObjectId("5a956e81e144536463b6d5a9")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fb0"),
-	"date" : ISODate("2001-10-01T00:00:00.000+03:00"),
-	"result" : "1:1",
-	"round" : NumberInt("11"),
-	"team1" : ObjectId("5a956d45e144536463b6d094"),
-	"team2" : ObjectId("5a953bcee144536463b6106f")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fb1"),
-	"date" : ISODate("2001-10-01T00:00:00.000+03:00"),
-	"result" : "0:3",
-	"round" : NumberInt("11"),
-	"team1" : ObjectId("5a956e25e144536463b6d431"),
-	"team2" : ObjectId("5a956dcfe144536463b6d2cc")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fb2"),
-	"date" : ISODate("2001-09-30T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f41"),
+	"date" : ISODate("2017-09-30T00:00:00.000+03:00"),
 	"result" : "0:0",
 	"round" : NumberInt("11"),
 	"team1" : ObjectId("5a956df5e144536463b6d369"),
@@ -585,44 +135,8 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fb3"),
-	"date" : ISODate("2001-09-30T00:00:00.000+03:00"),
-	"result" : "3:2",
-	"round" : NumberInt("11"),
-	"team1" : ObjectId("5a956de4e144536463b6d320"),
-	"team2" : ObjectId("5a956e06e144536463b6d3b2")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fb4"),
-	"date" : ISODate("2001-09-24T00:00:00.000+03:00"),
-	"result" : "1:1",
-	"round" : NumberInt("10"),
-	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
-	"team2" : ObjectId("5a956e25e144536463b6d431")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fb5"),
-	"date" : ISODate("2001-09-24T00:00:00.000+03:00"),
-	"result" : "1:1",
-	"round" : NumberInt("10"),
-	"team1" : ObjectId("5a956dcfe144536463b6d2cc"),
-	"team2" : ObjectId("5a956f2ae144536463b6d85a")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fb6"),
-	"date" : ISODate("2001-09-24T00:00:00.000+03:00"),
-	"result" : "1:1",
-	"round" : NumberInt("10"),
-	"team1" : ObjectId("5a956e06e144536463b6d3b2"),
-	"team2" : ObjectId("5a956df5e144536463b6d369")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fb7"),
-	"date" : ISODate("2001-09-24T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f46"),
+	"date" : ISODate("2017-09-24T00:00:00.000+03:00"),
 	"result" : "1:1",
 	"round" : NumberInt("10"),
 	"team1" : ObjectId("5a953bcee144536463b6106f"),
@@ -630,44 +144,8 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fb8"),
-	"date" : ISODate("2001-09-23T00:00:00.000+03:00"),
-	"result" : "0:0",
-	"round" : NumberInt("10"),
-	"team1" : ObjectId("5a956d51e144536463b6d0c2"),
-	"team2" : ObjectId("5a956d45e144536463b6d094")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fb9"),
-	"date" : ISODate("2001-09-23T00:00:00.000+03:00"),
-	"result" : "2:4",
-	"round" : NumberInt("10"),
-	"team1" : ObjectId("5a956d95e144536463b6d1d5"),
-	"team2" : ObjectId("5a9562e4e144536463b6a7a1")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fba"),
-	"date" : ISODate("2001-09-17T00:00:00.000+03:00"),
-	"result" : "1:2",
-	"round" : NumberInt("9"),
-	"team1" : ObjectId("5a956de4e144536463b6d320"),
-	"team2" : ObjectId("5a956d51e144536463b6d0c2")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fbb"),
-	"date" : ISODate("2001-09-17T00:00:00.000+03:00"),
-	"result" : "0:0",
-	"round" : NumberInt("9"),
-	"team1" : ObjectId("5a956e25e144536463b6d431"),
-	"team2" : ObjectId("5a9562e4e144536463b6a7a1")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fbc"),
-	"date" : ISODate("2001-09-17T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f4b"),
+	"date" : ISODate("2017-09-17T00:00:00.000+03:00"),
 	"result" : "0:0",
 	"round" : NumberInt("9"),
 	"team1" : ObjectId("5a956f2ae144536463b6d85a"),
@@ -675,53 +153,8 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fbd"),
-	"date" : ISODate("2001-09-16T00:00:00.000+03:00"),
-	"result" : "1:0",
-	"round" : NumberInt("9"),
-	"team1" : ObjectId("5a956d45e144536463b6d094"),
-	"team2" : ObjectId("5a956dcfe144536463b6d2cc")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fbe"),
-	"date" : ISODate("2001-09-16T00:00:00.000+03:00"),
-	"result" : "1:0",
-	"round" : NumberInt("9"),
-	"team1" : ObjectId("5a956e06e144536463b6d3b2"),
-	"team2" : ObjectId("5a956d95e144536463b6d1d5")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fbf"),
-	"date" : ISODate("2001-09-16T00:00:00.000+03:00"),
-	"result" : "4:1",
-	"round" : NumberInt("9"),
-	"team1" : ObjectId("5a956df5e144536463b6d369"),
-	"team2" : ObjectId("5a953bcee144536463b6106f")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fc0"),
-	"date" : ISODate("2001-09-10T00:00:00.000+03:00"),
-	"result" : "3:0",
-	"round" : NumberInt("8"),
-	"team1" : ObjectId("5a956d51e144536463b6d0c2"),
-	"team2" : ObjectId("5a956df5e144536463b6d369")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fc1"),
-	"date" : ISODate("2001-09-10T00:00:00.000+03:00"),
-	"result" : "0:1",
-	"round" : NumberInt("8"),
-	"team1" : ObjectId("5a953bcee144536463b6106f"),
-	"team2" : ObjectId("5a956e06e144536463b6d3b2")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fc2"),
-	"date" : ISODate("2001-09-10T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f50"),
+	"date" : ISODate("2017-09-10T00:00:00.000+03:00"),
 	"result" : "1:6",
 	"round" : NumberInt("8"),
 	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
@@ -729,44 +162,8 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fc3"),
-	"date" : ISODate("2001-09-10T00:00:00.000+03:00"),
-	"result" : "0:1",
-	"round" : NumberInt("8"),
-	"team1" : ObjectId("5a956d95e144536463b6d1d5"),
-	"team2" : ObjectId("5a956e25e144536463b6d431")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fc4"),
-	"date" : ISODate("2001-09-09T00:00:00.000+03:00"),
-	"result" : "1:1",
-	"round" : NumberInt("8"),
-	"team1" : ObjectId("5a956dcfe144536463b6d2cc"),
-	"team2" : ObjectId("5a956de4e144536463b6d320")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fc5"),
-	"date" : ISODate("2001-09-09T00:00:00.000+03:00"),
-	"result" : "3:1",
-	"round" : NumberInt("8"),
-	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
-	"team2" : ObjectId("5a956f2ae144536463b6d85a")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fc6"),
-	"date" : ISODate("2001-08-27T00:00:00.000+03:00"),
-	"result" : "0:1",
-	"round" : NumberInt("7"),
-	"team1" : ObjectId("5a956df5e144536463b6d369"),
-	"team2" : ObjectId("5a956dcfe144536463b6d2cc")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fc7"),
-	"date" : ISODate("2001-08-27T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f55"),
+	"date" : ISODate("2017-08-27T00:00:00.000+03:00"),
 	"result" : "5:0",
 	"round" : NumberInt("7"),
 	"team1" : ObjectId("5a956f2ae144536463b6d85a"),
@@ -774,35 +171,8 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fc8"),
-	"date" : ISODate("2001-08-27T00:00:00.000+03:00"),
-	"result" : "3:0",
-	"round" : NumberInt("7"),
-	"team1" : ObjectId("5a956e06e144536463b6d3b2"),
-	"team2" : ObjectId("5a956d51e144536463b6d0c2")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fc9"),
-	"date" : ISODate("2001-08-27T00:00:00.000+03:00"),
-	"result" : "1:2",
-	"round" : NumberInt("7"),
-	"team1" : ObjectId("5a956d45e144536463b6d094"),
-	"team2" : ObjectId("5a9562e4e144536463b6a7a1")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fca"),
-	"date" : ISODate("2001-08-26T00:00:00.000+03:00"),
-	"result" : "0:0",
-	"round" : NumberInt("7"),
-	"team1" : ObjectId("5a956de4e144536463b6d320"),
-	"team2" : ObjectId("5a956e81e144536463b6d5a9")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fcb"),
-	"date" : ISODate("2001-08-26T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f5a"),
+	"date" : ISODate("2017-08-26T00:00:00.000+03:00"),
 	"result" : "0:1",
 	"round" : NumberInt("7"),
 	"team1" : ObjectId("5a953bcee144536463b6106f"),
@@ -810,17 +180,647 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fcc"),
-	"date" : ISODate("2001-08-20T00:00:00.000+03:00"),
-	"result" : "1:0",
+	"_id" : ObjectId("5a9fce5269e0f92c40874f5f"),
+	"date" : ISODate("2017-08-19T00:00:00.000+03:00"),
+	"result" : "0:1",
 	"round" : NumberInt("6"),
+	"team1" : ObjectId("5a956e25e144536463b6d431"),
+	"team2" : ObjectId("5a956d45e144536463b6d094")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f64"),
+	"date" : ISODate("2017-08-12T00:00:00.000+03:00"),
+	"result" : "0:1",
+	"round" : NumberInt("5"),
+	"team1" : ObjectId("5a956d45e144536463b6d094"),
+	"team2" : ObjectId("5a956f2ae144536463b6d85a")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874efd"),
+	"date" : ISODate("2018-03-04T00:00:00.000+02:00"),
+	"result" : "3:2",
+	"round" : NumberInt("22"),
+	"team1" : ObjectId("5a956d51e144536463b6d0c2"),
+	"team2" : ObjectId("5a956f2ae144536463b6d85a")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f69"),
+	"date" : ISODate("2017-08-06T00:00:00.000+03:00"),
+	"result" : "1:3",
+	"round" : NumberInt("4"),
+	"team1" : ObjectId("5a956d95e144536463b6d1d5"),
+	"team2" : ObjectId("5a956d45e144536463b6d094")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874eff"),
+	"date" : ISODate("2018-03-04T00:00:00.000+02:00"),
+	"result" : "0:1",
+	"round" : NumberInt("22"),
+	"team1" : ObjectId("5a953bcee144536463b6106f"),
+	"team2" : ObjectId("5a956d45e144536463b6d094")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f6e"),
+	"date" : ISODate("2017-07-30T00:00:00.000+03:00"),
+	"result" : "0:0",
+	"round" : NumberInt("3"),
+	"team1" : ObjectId("5a956de4e144536463b6d320"),
+	"team2" : ObjectId("5a956d45e144536463b6d094")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f02"),
+	"date" : ISODate("2018-02-25T00:00:00.000+02:00"),
+	"result" : "3:1",
+	"round" : NumberInt("21"),
+	"team1" : ObjectId("5a956d45e144536463b6d094"),
+	"team2" : ObjectId("5a956d51e144536463b6d0c2")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874efe"),
+	"date" : ISODate("2018-03-04T00:00:00.000+02:00"),
+	"result" : "1:0",
+	"round" : NumberInt("22"),
+	"team1" : ObjectId("5a956e06e144536463b6d3b2"),
+	"team2" : ObjectId("5a956de4e144536463b6d320")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f73"),
+	"date" : ISODate("2017-07-23T00:00:00.000+03:00"),
+	"result" : "0:0",
+	"round" : NumberInt("2"),
+	"team1" : ObjectId("5a956d95e144536463b6d1d5"),
+	"team2" : ObjectId("5a956de4e144536463b6d320")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f04"),
+	"date" : ISODate("2018-02-25T00:00:00.000+02:00"),
+	"result" : "2:0",
+	"round" : NumberInt("21"),
+	"team1" : ObjectId("5a956de4e144536463b6d320"),
+	"team2" : ObjectId("5a953bcee144536463b6106f")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f07"),
+	"date" : ISODate("2018-02-21T00:00:00.000+02:00"),
+	"result" : "2:1",
+	"round" : NumberInt("18"),
+	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
+	"team2" : ObjectId("5a956de4e144536463b6d320")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f78"),
+	"date" : ISODate("2017-07-22T00:00:00.000+03:00"),
+	"result" : "0:1",
+	"round" : NumberInt("2"),
+	"team1" : ObjectId("5a956e25e144536463b6d431"),
+	"team2" : ObjectId("5a953bcee144536463b6106f")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f09"),
+	"date" : ISODate("2018-02-18T00:00:00.000+02:00"),
+	"result" : "0:2",
+	"round" : NumberInt("20"),
+	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
+	"team2" : ObjectId("5a956f2ae144536463b6d85a")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f03"),
+	"date" : ISODate("2018-02-25T00:00:00.000+02:00"),
+	"result" : "3:0",
+	"round" : NumberInt("21"),
+	"team1" : ObjectId("5a956f2ae144536463b6d85a"),
+	"team2" : ObjectId("5a956dcfe144536463b6d2cc")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f0c"),
+	"date" : ISODate("2018-02-17T00:00:00.000+02:00"),
+	"result" : "2:0",
+	"round" : NumberInt("20"),
+	"team1" : ObjectId("5a953bcee144536463b6106f"),
+	"team2" : ObjectId("5a956df5e144536463b6d369")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f0e"),
+	"date" : ISODate("2017-12-10T00:00:00.000+02:00"),
+	"result" : "2:1",
+	"round" : NumberInt("19"),
+	"team1" : ObjectId("5a956f2ae144536463b6d85a"),
+	"team2" : ObjectId("5a9562e4e144536463b6a7a1")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f7d"),
+	"date" : ISODate("2017-07-16T00:00:00.000+03:00"),
+	"result" : "1:1",
+	"round" : NumberInt("1"),
+	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
+	"team2" : ObjectId("5a956d95e144536463b6d1d5")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f08"),
+	"date" : ISODate("2018-02-18T00:00:00.000+02:00"),
+	"result" : "1:0",
+	"round" : NumberInt("20"),
+	"team1" : ObjectId("5a956d51e144536463b6d0c2"),
+	"team2" : ObjectId("5a956de4e144536463b6d320")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f11"),
+	"date" : ISODate("2017-12-09T00:00:00.000+02:00"),
+	"result" : "3:3",
+	"round" : NumberInt("19"),
+	"team1" : ObjectId("5a956e25e144536463b6d431"),
+	"team2" : ObjectId("5a956d95e144536463b6d1d5")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f13"),
+	"date" : ISODate("2017-12-09T00:00:00.000+02:00"),
+	"result" : "4:2",
+	"round" : NumberInt("19"),
+	"team1" : ObjectId("5a956e06e144536463b6d3b2"),
+	"team2" : ObjectId("5a953bcee144536463b6106f")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f0d"),
+	"date" : ISODate("2018-02-16T00:00:00.000+02:00"),
+	"result" : "5:0",
+	"round" : NumberInt("20"),
+	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"team2" : ObjectId("5a956e25e144536463b6d431")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f18"),
+	"date" : ISODate("2017-12-02T00:00:00.000+02:00"),
+	"result" : "1:1",
+	"round" : NumberInt("18"),
+	"team1" : ObjectId("5a956e25e144536463b6d431"),
+	"team2" : ObjectId("5a956f2ae144536463b6d85a")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f16"),
+	"date" : ISODate("2017-12-03T00:00:00.000+02:00"),
+	"result" : "1:0",
+	"round" : NumberInt("18"),
+	"team1" : ObjectId("5a956d95e144536463b6d1d5"),
+	"team2" : ObjectId("5a953bcee144536463b6106f")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f12"),
+	"date" : ISODate("2017-12-09T00:00:00.000+02:00"),
+	"result" : "2:2",
+	"round" : NumberInt("19"),
+	"team1" : ObjectId("5a956d45e144536463b6d094"),
+	"team2" : ObjectId("5a956e81e144536463b6d5a9")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f1d"),
+	"date" : ISODate("2017-11-25T00:00:00.000+02:00"),
+	"result" : "2:4",
+	"round" : NumberInt("17"),
+	"team1" : ObjectId("5a956de4e144536463b6d320"),
+	"team2" : ObjectId("5a9562e4e144536463b6a7a1")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f1b"),
+	"date" : ISODate("2017-11-26T00:00:00.000+02:00"),
+	"result" : "3:0",
+	"round" : NumberInt("17"),
+	"team1" : ObjectId("5a956df5e144536463b6d369"),
+	"team2" : ObjectId("5a956e81e144536463b6d5a9")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f22"),
+	"date" : ISODate("2017-11-18T00:00:00.000+02:00"),
+	"result" : "1:1",
+	"round" : NumberInt("16"),
+	"team1" : ObjectId("5a956f2ae144536463b6d85a"),
+	"team2" : ObjectId("5a956d45e144536463b6d094")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f17"),
+	"date" : ISODate("2017-12-02T00:00:00.000+02:00"),
+	"result" : "2:0",
+	"round" : NumberInt("18"),
+	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"team2" : ObjectId("5a956d45e144536463b6d094")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f27"),
+	"date" : ISODate("2017-11-05T00:00:00.000+02:00"),
+	"result" : "0:0",
+	"round" : NumberInt("15"),
+	"team1" : ObjectId("5a953bcee144536463b6106f"),
+	"team2" : ObjectId("5a956e81e144536463b6d5a9")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f20"),
+	"date" : ISODate("2017-11-19T00:00:00.000+02:00"),
+	"result" : "1:1",
+	"round" : NumberInt("16"),
 	"team1" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"team2" : ObjectId("5a953bcee144536463b6106f")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f2c"),
+	"date" : ISODate("2017-10-29T00:00:00.000+03:00"),
+	"result" : "1:1",
+	"round" : NumberInt("14"),
+	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
+	"team2" : ObjectId("5a956d51e144536463b6d0c2")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f1c"),
+	"date" : ISODate("2017-11-26T00:00:00.000+02:00"),
+	"result" : "3:1",
+	"round" : NumberInt("17"),
+	"team1" : ObjectId("5a956d45e144536463b6d094"),
+	"team2" : ObjectId("5a956e25e144536463b6d431")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f31"),
+	"date" : ISODate("2017-10-22T00:00:00.000+03:00"),
+	"result" : "0:0",
+	"round" : NumberInt("13"),
+	"team1" : ObjectId("5a956d51e144536463b6d0c2"),
+	"team2" : ObjectId("5a9562e4e144536463b6a7a1")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f25"),
+	"date" : ISODate("2017-11-05T00:00:00.000+02:00"),
+	"result" : "2:1",
+	"round" : NumberInt("15"),
+	"team1" : ObjectId("5a956d51e144536463b6d0c2"),
+	"team2" : ObjectId("5a956dcfe144536463b6d2cc")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f36"),
+	"date" : ISODate("2017-10-21T00:00:00.000+03:00"),
+	"result" : "1:0",
+	"round" : NumberInt("13"),
+	"team1" : ObjectId("5a956de4e144536463b6d320"),
+	"team2" : ObjectId("5a956d95e144536463b6d1d5")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f21"),
+	"date" : ISODate("2017-11-18T00:00:00.000+02:00"),
+	"result" : "0:1",
+	"round" : NumberInt("16"),
+	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
 	"team2" : ObjectId("5a956e06e144536463b6d3b2")
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fcd"),
-	"date" : ISODate("2001-08-20T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f2a"),
+	"date" : ISODate("2017-11-04T00:00:00.000+02:00"),
+	"result" : "0:0",
+	"round" : NumberInt("15"),
+	"team1" : ObjectId("5a956d45e144536463b6d094"),
+	"team2" : ObjectId("5a956d95e144536463b6d1d5")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f3b"),
+	"date" : ISODate("2017-10-14T00:00:00.000+03:00"),
+	"result" : "1:1",
+	"round" : NumberInt("12"),
+	"team1" : ObjectId("5a956d45e144536463b6d094"),
+	"team2" : ObjectId("5a956e06e144536463b6d3b2")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f26"),
+	"date" : ISODate("2017-11-05T00:00:00.000+02:00"),
+	"result" : "3:3",
+	"round" : NumberInt("15"),
+	"team1" : ObjectId("5a956de4e144536463b6d320"),
+	"team2" : ObjectId("5a956f2ae144536463b6d85a")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f40"),
+	"date" : ISODate("2017-10-01T00:00:00.000+03:00"),
+	"result" : "0:3",
+	"round" : NumberInt("11"),
+	"team1" : ObjectId("5a956e25e144536463b6d431"),
+	"team2" : ObjectId("5a956dcfe144536463b6d2cc")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f2f"),
+	"date" : ISODate("2017-10-29T00:00:00.000+03:00"),
+	"result" : "1:0",
+	"round" : NumberInt("14"),
+	"team1" : ObjectId("5a956d95e144536463b6d1d5"),
+	"team2" : ObjectId("5a956dcfe144536463b6d2cc")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f45"),
+	"date" : ISODate("2017-09-24T00:00:00.000+03:00"),
+	"result" : "1:1",
+	"round" : NumberInt("10"),
+	"team1" : ObjectId("5a956e06e144536463b6d3b2"),
+	"team2" : ObjectId("5a956df5e144536463b6d369")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f2b"),
+	"date" : ISODate("2017-10-30T00:00:00.000+02:00"),
+	"result" : "0:0",
+	"round" : NumberInt("14"),
+	"team1" : ObjectId("5a956e25e144536463b6d431"),
+	"team2" : ObjectId("5a956e06e144536463b6d3b2")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f34"),
+	"date" : ISODate("2017-10-21T00:00:00.000+03:00"),
+	"result" : "0:1",
+	"round" : NumberInt("13"),
+	"team1" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"team2" : ObjectId("5a956e81e144536463b6d5a9")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f4a"),
+	"date" : ISODate("2017-09-17T00:00:00.000+03:00"),
+	"result" : "0:0",
+	"round" : NumberInt("9"),
+	"team1" : ObjectId("5a956e25e144536463b6d431"),
+	"team2" : ObjectId("5a9562e4e144536463b6a7a1")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f4f"),
+	"date" : ISODate("2017-09-10T00:00:00.000+03:00"),
+	"result" : "3:0",
+	"round" : NumberInt("8"),
+	"team1" : ObjectId("5a956d51e144536463b6d0c2"),
+	"team2" : ObjectId("5a956df5e144536463b6d369")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f30"),
+	"date" : ISODate("2017-10-28T00:00:00.000+03:00"),
+	"result" : "1:1",
+	"round" : NumberInt("14"),
+	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"team2" : ObjectId("5a953bcee144536463b6106f")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f39"),
+	"date" : ISODate("2017-10-15T00:00:00.000+03:00"),
+	"result" : "0:0",
+	"round" : NumberInt("12"),
+	"team1" : ObjectId("5a956d95e144536463b6d1d5"),
+	"team2" : ObjectId("5a956e81e144536463b6d5a9")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f54"),
+	"date" : ISODate("2017-09-09T00:00:00.000+03:00"),
+	"result" : "3:1",
+	"round" : NumberInt("8"),
+	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"team2" : ObjectId("5a956f2ae144536463b6d85a")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f35"),
+	"date" : ISODate("2017-10-21T00:00:00.000+03:00"),
+	"result" : "1:1",
+	"round" : NumberInt("13"),
+	"team1" : ObjectId("5a956df5e144536463b6d369"),
+	"team2" : ObjectId("5a956d45e144536463b6d094")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f59"),
+	"date" : ISODate("2017-08-26T00:00:00.000+03:00"),
+	"result" : "0:0",
+	"round" : NumberInt("7"),
+	"team1" : ObjectId("5a956de4e144536463b6d320"),
+	"team2" : ObjectId("5a956e81e144536463b6d5a9")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f3e"),
+	"date" : ISODate("2017-10-01T00:00:00.000+03:00"),
+	"result" : "1:1",
+	"round" : NumberInt("11"),
+	"team1" : ObjectId("5a956d45e144536463b6d094"),
+	"team2" : ObjectId("5a953bcee144536463b6106f")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f5e"),
+	"date" : ISODate("2017-08-20T00:00:00.000+03:00"),
+	"result" : "2:1",
+	"round" : NumberInt("6"),
+	"team1" : ObjectId("5a956d95e144536463b6d1d5"),
+	"team2" : ObjectId("5a956f2ae144536463b6d85a")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f3a"),
+	"date" : ISODate("2017-10-14T00:00:00.000+03:00"),
+	"result" : "0:1",
+	"round" : NumberInt("12"),
+	"team1" : ObjectId("5a953bcee144536463b6106f"),
+	"team2" : ObjectId("5a956f2ae144536463b6d85a")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f63"),
+	"date" : ISODate("2017-08-12T00:00:00.000+03:00"),
+	"result" : "1:2",
+	"round" : NumberInt("5"),
+	"team1" : ObjectId("5a956df5e144536463b6d369"),
+	"team2" : ObjectId("5a9562e4e144536463b6a7a1")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f43"),
+	"date" : ISODate("2017-09-24T00:00:00.000+03:00"),
+	"result" : "1:1",
+	"round" : NumberInt("10"),
+	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
+	"team2" : ObjectId("5a956e25e144536463b6d431")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f68"),
+	"date" : ISODate("2017-08-06T00:00:00.000+03:00"),
+	"result" : "0:2",
+	"round" : NumberInt("4"),
+	"team1" : ObjectId("5a956f2ae144536463b6d85a"),
+	"team2" : ObjectId("5a956de4e144536463b6d320")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f3f"),
+	"date" : ISODate("2017-10-01T00:00:00.000+03:00"),
+	"result" : "2:0",
+	"round" : NumberInt("11"),
+	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"team2" : ObjectId("5a956e81e144536463b6d5a9")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f48"),
+	"date" : ISODate("2017-09-23T00:00:00.000+03:00"),
+	"result" : "2:4",
+	"round" : NumberInt("10"),
+	"team1" : ObjectId("5a956d95e144536463b6d1d5"),
+	"team2" : ObjectId("5a9562e4e144536463b6a7a1")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f6d"),
+	"date" : ISODate("2017-07-30T00:00:00.000+03:00"),
+	"result" : "1:1",
+	"round" : NumberInt("3"),
+	"team1" : ObjectId("5a956df5e144536463b6d369"),
+	"team2" : ObjectId("5a956f2ae144536463b6d85a")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f44"),
+	"date" : ISODate("2017-09-24T00:00:00.000+03:00"),
+	"result" : "1:1",
+	"round" : NumberInt("10"),
+	"team1" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"team2" : ObjectId("5a956f2ae144536463b6d85a")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f72"),
+	"date" : ISODate("2017-07-29T00:00:00.000+03:00"),
+	"result" : "1:2",
+	"round" : NumberInt("3"),
+	"team1" : ObjectId("5a953bcee144536463b6106f"),
+	"team2" : ObjectId("5a9562e4e144536463b6a7a1")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f4d"),
+	"date" : ISODate("2017-09-16T00:00:00.000+03:00"),
+	"result" : "1:0",
+	"round" : NumberInt("9"),
+	"team1" : ObjectId("5a956d45e144536463b6d094"),
+	"team2" : ObjectId("5a956dcfe144536463b6d2cc")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f77"),
+	"date" : ISODate("2017-07-22T00:00:00.000+03:00"),
+	"result" : "0:0",
+	"round" : NumberInt("2"),
+	"team1" : ObjectId("5a956d45e144536463b6d094"),
+	"team2" : ObjectId("5a956df5e144536463b6d369")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f49"),
+	"date" : ISODate("2017-09-17T00:00:00.000+03:00"),
+	"result" : "1:2",
+	"round" : NumberInt("9"),
+	"team1" : ObjectId("5a956de4e144536463b6d320"),
+	"team2" : ObjectId("5a956d51e144536463b6d0c2")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f7c"),
+	"date" : ISODate("2017-07-16T00:00:00.000+03:00"),
+	"result" : "0:1",
+	"round" : NumberInt("1"),
+	"team1" : ObjectId("5a956f2ae144536463b6d85a"),
+	"team2" : ObjectId("5a953bcee144536463b6106f")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f52"),
+	"date" : ISODate("2017-09-10T00:00:00.000+03:00"),
+	"result" : "0:1",
+	"round" : NumberInt("8"),
+	"team1" : ObjectId("5a956d95e144536463b6d1d5"),
+	"team2" : ObjectId("5a956e25e144536463b6d431")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f4e"),
+	"date" : ISODate("2017-09-16T00:00:00.000+03:00"),
+	"result" : "4:1",
+	"round" : NumberInt("9"),
+	"team1" : ObjectId("5a956df5e144536463b6d369"),
+	"team2" : ObjectId("5a953bcee144536463b6106f")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f57"),
+	"date" : ISODate("2017-08-27T00:00:00.000+03:00"),
+	"result" : "3:0",
+	"round" : NumberInt("7"),
+	"team1" : ObjectId("5a956e06e144536463b6d3b2"),
+	"team2" : ObjectId("5a956d51e144536463b6d0c2")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874efc"),
+	"date" : ISODate("2018-03-04T00:00:00.000+02:00"),
+	"result" : "0:3",
+	"round" : NumberInt("22"),
+	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
+	"team2" : ObjectId("5a9562e4e144536463b6a7a1")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f53"),
+	"date" : ISODate("2017-09-09T00:00:00.000+03:00"),
+	"result" : "1:1",
+	"round" : NumberInt("8"),
+	"team1" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"team2" : ObjectId("5a956de4e144536463b6d320")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f5c"),
+	"date" : ISODate("2017-08-20T00:00:00.000+03:00"),
 	"result" : "4:1",
 	"round" : NumberInt("6"),
 	"team1" : ObjectId("5a956d51e144536463b6d0c2"),
@@ -828,44 +828,17 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fce"),
-	"date" : ISODate("2001-08-20T00:00:00.000+03:00"),
-	"result" : "0:0",
-	"round" : NumberInt("6"),
-	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
-	"team2" : ObjectId("5a956df5e144536463b6d369")
+	"_id" : ObjectId("5a9fce5269e0f92c40874f58"),
+	"date" : ISODate("2017-08-27T00:00:00.000+03:00"),
+	"result" : "1:2",
+	"round" : NumberInt("7"),
+	"team1" : ObjectId("5a956d45e144536463b6d094"),
+	"team2" : ObjectId("5a9562e4e144536463b6a7a1")
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fcf"),
-	"date" : ISODate("2001-08-20T00:00:00.000+03:00"),
-	"result" : "2:1",
-	"round" : NumberInt("6"),
-	"team1" : ObjectId("5a956d95e144536463b6d1d5"),
-	"team2" : ObjectId("5a956f2ae144536463b6d85a")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fd0"),
-	"date" : ISODate("2001-08-19T00:00:00.000+03:00"),
-	"result" : "0:1",
-	"round" : NumberInt("6"),
-	"team1" : ObjectId("5a956e25e144536463b6d431"),
-	"team2" : ObjectId("5a956d45e144536463b6d094")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fd1"),
-	"date" : ISODate("2001-08-19T00:00:00.000+03:00"),
-	"result" : "2:0",
-	"round" : NumberInt("6"),
-	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
-	"team2" : ObjectId("5a956de4e144536463b6d320")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fd2"),
-	"date" : ISODate("2001-08-13T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f61"),
+	"date" : ISODate("2017-08-13T00:00:00.000+03:00"),
 	"result" : "1:0",
 	"round" : NumberInt("5"),
 	"team1" : ObjectId("5a956de4e144536463b6d320"),
@@ -873,44 +846,17 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fd3"),
-	"date" : ISODate("2001-08-13T00:00:00.000+03:00"),
-	"result" : "3:0",
-	"round" : NumberInt("5"),
-	"team1" : ObjectId("5a956e06e144536463b6d3b2"),
-	"team2" : ObjectId("5a956e81e144536463b6d5a9")
+	"_id" : ObjectId("5a9fce5269e0f92c40874f01"),
+	"date" : ISODate("2018-02-25T00:00:00.000+02:00"),
+	"result" : "5:0",
+	"round" : NumberInt("21"),
+	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"team2" : ObjectId("5a956d95e144536463b6d1d5")
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fd4"),
-	"date" : ISODate("2001-08-12T00:00:00.000+03:00"),
-	"result" : "1:2",
-	"round" : NumberInt("5"),
-	"team1" : ObjectId("5a956df5e144536463b6d369"),
-	"team2" : ObjectId("5a9562e4e144536463b6a7a1")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fd5"),
-	"date" : ISODate("2001-08-12T00:00:00.000+03:00"),
-	"result" : "0:1",
-	"round" : NumberInt("5"),
-	"team1" : ObjectId("5a953bcee144536463b6106f"),
-	"team2" : ObjectId("5a956dcfe144536463b6d2cc")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fd6"),
-	"date" : ISODate("2001-08-12T00:00:00.000+03:00"),
-	"result" : "0:1",
-	"round" : NumberInt("5"),
-	"team1" : ObjectId("5a956d45e144536463b6d094"),
-	"team2" : ObjectId("5a956f2ae144536463b6d85a")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fd7"),
-	"date" : ISODate("2001-08-11T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f66"),
+	"date" : ISODate("2017-08-11T00:00:00.000+03:00"),
 	"result" : "3:0",
 	"round" : NumberInt("5"),
 	"team1" : ObjectId("5a956d51e144536463b6d0c2"),
@@ -918,44 +864,26 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fd8"),
-	"date" : ISODate("2001-08-06T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f5d"),
+	"date" : ISODate("2017-08-20T00:00:00.000+03:00"),
 	"result" : "0:0",
-	"round" : NumberInt("4"),
-	"team1" : ObjectId("5a956dcfe144536463b6d2cc"),
-	"team2" : ObjectId("5a956d51e144536463b6d0c2")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fd9"),
-	"date" : ISODate("2001-08-06T00:00:00.000+03:00"),
-	"result" : "0:2",
-	"round" : NumberInt("4"),
-	"team1" : ObjectId("5a956f2ae144536463b6d85a"),
-	"team2" : ObjectId("5a956de4e144536463b6d320")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fda"),
-	"date" : ISODate("2001-08-06T00:00:00.000+03:00"),
-	"result" : "2:2",
-	"round" : NumberInt("4"),
-	"team1" : ObjectId("5a956e25e144536463b6d431"),
+	"round" : NumberInt("6"),
+	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
 	"team2" : ObjectId("5a956df5e144536463b6d369")
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fdb"),
-	"date" : ISODate("2001-08-06T00:00:00.000+03:00"),
-	"result" : "1:3",
-	"round" : NumberInt("4"),
-	"team1" : ObjectId("5a956d95e144536463b6d1d5"),
-	"team2" : ObjectId("5a956d45e144536463b6d094")
+	"_id" : ObjectId("5a9fce5269e0f92c40874f06"),
+	"date" : ISODate("2018-02-24T00:00:00.000+02:00"),
+	"result" : "0:0",
+	"round" : NumberInt("21"),
+	"team1" : ObjectId("5a956e25e144536463b6d431"),
+	"team2" : ObjectId("5a956e81e144536463b6d5a9")
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fdc"),
-	"date" : ISODate("2001-08-05T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f6b"),
+	"date" : ISODate("2017-08-05T00:00:00.000+03:00"),
 	"result" : "3:1",
 	"round" : NumberInt("4"),
 	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
@@ -963,44 +891,35 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fdd"),
-	"date" : ISODate("2001-08-05T00:00:00.000+03:00"),
-	"result" : "3:1",
-	"round" : NumberInt("4"),
-	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
-	"team2" : ObjectId("5a953bcee144536463b6106f")
+	"_id" : ObjectId("5a9fce5269e0f92c40874f62"),
+	"date" : ISODate("2017-08-13T00:00:00.000+03:00"),
+	"result" : "3:0",
+	"round" : NumberInt("5"),
+	"team1" : ObjectId("5a956e06e144536463b6d3b2"),
+	"team2" : ObjectId("5a956e81e144536463b6d5a9")
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fde"),
-	"date" : ISODate("2001-07-30T00:00:00.000+03:00"),
-	"result" : "1:1",
-	"round" : NumberInt("3"),
-	"team1" : ObjectId("5a956df5e144536463b6d369"),
-	"team2" : ObjectId("5a956f2ae144536463b6d85a")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fdf"),
-	"date" : ISODate("2001-07-30T00:00:00.000+03:00"),
-	"result" : "0:0",
-	"round" : NumberInt("3"),
-	"team1" : ObjectId("5a956de4e144536463b6d320"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f0b"),
+	"date" : ISODate("2018-02-17T00:00:00.000+02:00"),
+	"result" : "1:0",
+	"round" : NumberInt("20"),
+	"team1" : ObjectId("5a956dcfe144536463b6d2cc"),
 	"team2" : ObjectId("5a956d45e144536463b6d094")
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fe0"),
-	"date" : ISODate("2001-07-30T00:00:00.000+03:00"),
-	"result" : "3:0",
-	"round" : NumberInt("3"),
-	"team1" : ObjectId("5a956e06e144536463b6d3b2"),
-	"team2" : ObjectId("5a956e25e144536463b6d431")
+	"_id" : ObjectId("5a9fce5269e0f92c40874f67"),
+	"date" : ISODate("2017-08-06T00:00:00.000+03:00"),
+	"result" : "0:0",
+	"round" : NumberInt("4"),
+	"team1" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"team2" : ObjectId("5a956d51e144536463b6d0c2")
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fe1"),
-	"date" : ISODate("2001-07-29T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f70"),
+	"date" : ISODate("2017-07-29T00:00:00.000+03:00"),
 	"result" : "2:1",
 	"round" : NumberInt("3"),
 	"team1" : ObjectId("5a956dcfe144536463b6d2cc"),
@@ -1008,8 +927,44 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fe2"),
-	"date" : ISODate("2001-07-29T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f10"),
+	"date" : ISODate("2017-12-09T00:00:00.000+02:00"),
+	"result" : "1:4",
+	"round" : NumberInt("19"),
+	"team1" : ObjectId("5a956de4e144536463b6d320"),
+	"team2" : ObjectId("5a956dcfe144536463b6d2cc")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f75"),
+	"date" : ISODate("2017-07-23T00:00:00.000+03:00"),
+	"result" : "1:3",
+	"round" : NumberInt("2"),
+	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
+	"team2" : ObjectId("5a956dcfe144536463b6d2cc")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f6c"),
+	"date" : ISODate("2017-08-05T00:00:00.000+03:00"),
+	"result" : "3:1",
+	"round" : NumberInt("4"),
+	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
+	"team2" : ObjectId("5a953bcee144536463b6106f")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f15"),
+	"date" : ISODate("2017-12-03T00:00:00.000+02:00"),
+	"result" : "3:1",
+	"round" : NumberInt("18"),
+	"team1" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"team2" : ObjectId("5a956df5e144536463b6d369")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f71"),
+	"date" : ISODate("2017-07-29T00:00:00.000+03:00"),
 	"result" : "5:0",
 	"round" : NumberInt("3"),
 	"team1" : ObjectId("5a956d51e144536463b6d0c2"),
@@ -1017,71 +972,8 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fe3"),
-	"date" : ISODate("2001-07-29T00:00:00.000+03:00"),
-	"result" : "1:2",
-	"round" : NumberInt("3"),
-	"team1" : ObjectId("5a953bcee144536463b6106f"),
-	"team2" : ObjectId("5a9562e4e144536463b6a7a1")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fe4"),
-	"date" : ISODate("2001-07-23T00:00:00.000+03:00"),
-	"result" : "1:1",
-	"round" : NumberInt("2"),
-	"team1" : ObjectId("5a956f2ae144536463b6d85a"),
-	"team2" : ObjectId("5a956e06e144536463b6d3b2")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fe5"),
-	"date" : ISODate("2001-07-23T00:00:00.000+03:00"),
-	"result" : "0:0",
-	"round" : NumberInt("2"),
-	"team1" : ObjectId("5a956d95e144536463b6d1d5"),
-	"team2" : ObjectId("5a956de4e144536463b6d320")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fe6"),
-	"date" : ISODate("2001-07-23T00:00:00.000+03:00"),
-	"result" : "1:3",
-	"round" : NumberInt("2"),
-	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
-	"team2" : ObjectId("5a956dcfe144536463b6d2cc")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fe7"),
-	"date" : ISODate("2001-07-22T00:00:00.000+03:00"),
-	"result" : "0:1",
-	"round" : NumberInt("2"),
-	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
-	"team2" : ObjectId("5a956d51e144536463b6d0c2")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fe8"),
-	"date" : ISODate("2001-07-22T00:00:00.000+03:00"),
-	"result" : "0:0",
-	"round" : NumberInt("2"),
-	"team1" : ObjectId("5a956d45e144536463b6d094"),
-	"team2" : ObjectId("5a956df5e144536463b6d369")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fe9"),
-	"date" : ISODate("2001-07-22T00:00:00.000+03:00"),
-	"result" : "0:1",
-	"round" : NumberInt("2"),
-	"team1" : ObjectId("5a956e25e144536463b6d431"),
-	"team2" : ObjectId("5a953bcee144536463b6106f")
-},
-{
-	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fea"),
-	"date" : ISODate("2001-07-18T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f7a"),
+	"date" : ISODate("2017-07-18T00:00:00.000+03:00"),
 	"result" : "0:3",
 	"round" : NumberInt("1"),
 	"team1" : ObjectId("5a956dcfe144536463b6d2cc"),
@@ -1089,17 +981,26 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722feb"),
-	"date" : ISODate("2001-07-18T00:00:00.000+03:00"),
-	"result" : "2:1",
-	"round" : NumberInt("1"),
-	"team1" : ObjectId("5a956d51e144536463b6d0c2"),
-	"team2" : ObjectId("5a956e25e144536463b6d431")
+	"_id" : ObjectId("5a9fce5269e0f92c40874f1a"),
+	"date" : ISODate("2017-11-26T00:00:00.000+02:00"),
+	"result" : "0:2",
+	"round" : NumberInt("17"),
+	"team1" : ObjectId("5a953bcee144536463b6106f"),
+	"team2" : ObjectId("5a956d51e144536463b6d0c2")
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fec"),
-	"date" : ISODate("2001-07-16T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f76"),
+	"date" : ISODate("2017-07-22T00:00:00.000+03:00"),
+	"result" : "0:1",
+	"round" : NumberInt("2"),
+	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"team2" : ObjectId("5a956d51e144536463b6d0c2")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f7b"),
+	"date" : ISODate("2017-07-16T00:00:00.000+03:00"),
 	"result" : "0:2",
 	"round" : NumberInt("1"),
 	"team1" : ObjectId("5a956df5e144536463b6d369"),
@@ -1107,28 +1008,235 @@
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fed"),
-	"date" : ISODate("2001-07-16T00:00:00.000+03:00"),
-	"result" : "0:1",
-	"round" : NumberInt("1"),
-	"team1" : ObjectId("5a956f2ae144536463b6d85a"),
-	"team2" : ObjectId("5a953bcee144536463b6106f")
+	"_id" : ObjectId("5a9fce5269e0f92c40874f1f"),
+	"date" : ISODate("2017-11-19T00:00:00.000+02:00"),
+	"result" : "2:1",
+	"round" : NumberInt("16"),
+	"team1" : ObjectId("5a956e25e144536463b6d431"),
+	"team2" : ObjectId("5a956de4e144536463b6d320")
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fee"),
-	"date" : ISODate("2001-07-16T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f24"),
+	"date" : ISODate("2017-11-17T00:00:00.000+02:00"),
+	"result" : "1:2",
+	"round" : NumberInt("16"),
+	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"team2" : ObjectId("5a956df5e144536463b6d369")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f29"),
+	"date" : ISODate("2017-11-04T00:00:00.000+02:00"),
+	"result" : "0:0",
+	"round" : NumberInt("15"),
+	"team1" : ObjectId("5a956df5e144536463b6d369"),
+	"team2" : ObjectId("5a956e25e144536463b6d431")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f2e"),
+	"date" : ISODate("2017-10-29T00:00:00.000+03:00"),
 	"result" : "1:1",
-	"round" : NumberInt("1"),
-	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
+	"round" : NumberInt("14"),
+	"team1" : ObjectId("5a956d45e144536463b6d094"),
+	"team2" : ObjectId("5a956de4e144536463b6d320")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f33"),
+	"date" : ISODate("2017-10-22T00:00:00.000+03:00"),
+	"result" : "1:1",
+	"round" : NumberInt("13"),
+	"team1" : ObjectId("5a953bcee144536463b6106f"),
+	"team2" : ObjectId("5a956e25e144536463b6d431")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f38"),
+	"date" : ISODate("2017-10-15T00:00:00.000+03:00"),
+	"result" : "1:0",
+	"round" : NumberInt("12"),
+	"team1" : ObjectId("5a956de4e144536463b6d320"),
+	"team2" : ObjectId("5a956df5e144536463b6d369")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f3d"),
+	"date" : ISODate("2017-10-01T00:00:00.000+03:00"),
+	"result" : "4:4",
+	"round" : NumberInt("11"),
+	"team1" : ObjectId("5a956f2ae144536463b6d85a"),
+	"team2" : ObjectId("5a956d51e144536463b6d0c2")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f42"),
+	"date" : ISODate("2017-09-30T00:00:00.000+03:00"),
+	"result" : "3:2",
+	"round" : NumberInt("11"),
+	"team1" : ObjectId("5a956de4e144536463b6d320"),
+	"team2" : ObjectId("5a956e06e144536463b6d3b2")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f47"),
+	"date" : ISODate("2017-09-23T00:00:00.000+03:00"),
+	"result" : "0:0",
+	"round" : NumberInt("10"),
+	"team1" : ObjectId("5a956d51e144536463b6d0c2"),
+	"team2" : ObjectId("5a956d45e144536463b6d094")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f4c"),
+	"date" : ISODate("2017-09-16T00:00:00.000+03:00"),
+	"result" : "1:0",
+	"round" : NumberInt("9"),
+	"team1" : ObjectId("5a956e06e144536463b6d3b2"),
 	"team2" : ObjectId("5a956d95e144536463b6d1d5")
 },
 {
 	"__v" : NumberInt("0"),
-	"_id" : ObjectId("5a958818b6d5d911ac722fef"),
-	"date" : ISODate("2001-07-16T00:00:00.000+03:00"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f51"),
+	"date" : ISODate("2017-09-10T00:00:00.000+03:00"),
+	"result" : "0:1",
+	"round" : NumberInt("8"),
+	"team1" : ObjectId("5a953bcee144536463b6106f"),
+	"team2" : ObjectId("5a956e06e144536463b6d3b2")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f56"),
+	"date" : ISODate("2017-08-27T00:00:00.000+03:00"),
+	"result" : "0:1",
+	"round" : NumberInt("7"),
+	"team1" : ObjectId("5a956df5e144536463b6d369"),
+	"team2" : ObjectId("5a956dcfe144536463b6d2cc")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f5b"),
+	"date" : ISODate("2017-08-20T00:00:00.000+03:00"),
+	"result" : "1:0",
+	"round" : NumberInt("6"),
+	"team1" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"team2" : ObjectId("5a956e06e144536463b6d3b2")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f60"),
+	"date" : ISODate("2017-08-19T00:00:00.000+03:00"),
+	"result" : "2:0",
+	"round" : NumberInt("6"),
+	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"team2" : ObjectId("5a956de4e144536463b6d320")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f65"),
+	"date" : ISODate("2017-08-12T00:00:00.000+03:00"),
+	"result" : "0:1",
+	"round" : NumberInt("5"),
+	"team1" : ObjectId("5a953bcee144536463b6106f"),
+	"team2" : ObjectId("5a956dcfe144536463b6d2cc")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f6a"),
+	"date" : ISODate("2017-08-06T00:00:00.000+03:00"),
+	"result" : "2:2",
+	"round" : NumberInt("4"),
+	"team1" : ObjectId("5a956e25e144536463b6d431"),
+	"team2" : ObjectId("5a956df5e144536463b6d369")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f6f"),
+	"date" : ISODate("2017-07-30T00:00:00.000+03:00"),
+	"result" : "3:0",
+	"round" : NumberInt("3"),
+	"team1" : ObjectId("5a956e06e144536463b6d3b2"),
+	"team2" : ObjectId("5a956e25e144536463b6d431")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f74"),
+	"date" : ISODate("2017-07-23T00:00:00.000+03:00"),
+	"result" : "1:1",
+	"round" : NumberInt("2"),
+	"team1" : ObjectId("5a956f2ae144536463b6d85a"),
+	"team2" : ObjectId("5a956e06e144536463b6d3b2")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f79"),
+	"date" : ISODate("2017-07-18T00:00:00.000+03:00"),
+	"result" : "2:1",
+	"round" : NumberInt("1"),
+	"team1" : ObjectId("5a956d51e144536463b6d0c2"),
+	"team2" : ObjectId("5a956e25e144536463b6d431")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a9fce5269e0f92c40874f7e"),
+	"date" : ISODate("2017-07-16T00:00:00.000+03:00"),
 	"result" : "0:0",
 	"round" : NumberInt("1"),
 	"team1" : ObjectId("5a956e06e144536463b6d3b2"),
 	"team2" : ObjectId("5a956d45e144536463b6d094")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5ab3a3dc2c553a6b70d467de"),
+	"date" : ISODate("2018-03-18T00:00:00.000+02:00"),
+	"result" : "3:0",
+	"round" : NumberInt("24"),
+	"team1" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"team2" : ObjectId("5a956e06e144536463b6d3b2")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5ab3ad63cf26ab0ab72a4fe8"),
+	"date" : ISODate("2018-03-19T00:00:00.000+02:00"),
+	"result" : "0:1",
+	"round" : NumberInt("24"),
+	"team1" : ObjectId("5a956d45e144536463b6d094"),
+	"team2" : ObjectId("5a956f2ae144536463b6d85a")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5ab3b1bccf26ab0ab72a5204"),
+	"date" : ISODate("2018-03-19T00:00:00.000+02:00"),
+	"result" : "4:0",
+	"round" : NumberInt("24"),
+	"team1" : ObjectId("5a956d51e144536463b6d0c2"),
+	"team2" : ObjectId("5a956dcfe144536463b6d2cc")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5ab3b1fecf26ab0ab72a522d"),
+	"date" : ISODate("2018-03-19T00:00:00.000+02:00"),
+	"result" : "0:1",
+	"round" : NumberInt("24"),
+	"team1" : ObjectId("5a956e25e144536463b6d431"),
+	"team2" : ObjectId("5a953bcee144536463b6106f")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5ab3b22dcf26ab0ab72a5254"),
+	"date" : ISODate("2018-03-19T00:00:00.000+02:00"),
+	"result" : "0:1",
+	"round" : NumberInt("24"),
+	"team1" : ObjectId("5a956de4e144536463b6d320"),
+	"team2" : ObjectId("5a956d95e144536463b6d1d5")
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5ab3b24acf26ab0ab72a526b"),
+	"date" : ISODate("2018-03-19T00:00:00.000+02:00"),
+	"result" : "1:1",
+	"round" : NumberInt("24"),
+	"team1" : ObjectId("5a956df5e144536463b6d369"),
+	"team2" : ObjectId("5a956e81e144536463b6d5a9")
 },

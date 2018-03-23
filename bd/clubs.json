@@ -10079,7 +10079,8 @@
 			"round" : NumberInt("21"),
 			"place" : NumberInt("5")
 		}
-	]
+	],
+	"ukrName" : "Верес"
 },
 {
 	"_id" : ObjectId("5a956d51e144536463b6d0c2"),
@@ -10090,7 +10091,8 @@
 			"round" : NumberInt("21"),
 			"place" : NumberInt("2")
 		}
-	]
+	],
+	"ukrName" : "Динамо"
 },
 {
 	"_id" : ObjectId("5a956d95e144536463b6d1d5"),
@@ -10101,7 +10103,8 @@
 			"round" : NumberInt("21"),
 			"place" : NumberInt("10")
 		}
-	]
+	],
+	"ukrName" : "Зірка"
 },
 {
 	"_id" : ObjectId("5a956dcfe144536463b6d2cc"),
@@ -10112,7 +10115,8 @@
 			"round" : NumberInt("21"),
 			"place" : NumberInt("3")
 		}
-	]
+	],
+	"ukrName" : "Ворскла"
 },
 {
 	"_id" : ObjectId("5a956de4e144536463b6d320"),
@@ -10123,7 +10127,8 @@
 			"round" : NumberInt("21"),
 			"place" : NumberInt("7")
 		}
-	]
+	],
+	"ukrName" : "Олімпік"
 },
 {
 	"_id" : ObjectId("5a956df5e144536463b6d369"),
@@ -10134,7 +10139,8 @@
 			"round" : NumberInt("21"),
 			"place" : NumberInt("8")
 		}
-	]
+	],
+	"ukrName" : "Олександрія"
 },
 {
 	"_id" : ObjectId("5a956e06e144536463b6d3b2"),
@@ -10145,7 +10151,8 @@
 			"round" : NumberInt("21"),
 			"place" : NumberInt("6")
 		}
-	]
+	],
+	"ukrName" : "Маріуполь"
 },
 {
 	"_id" : ObjectId("5a956e25e144536463b6d431"),
@@ -10156,7 +10163,8 @@
 			"round" : NumberInt("21"),
 			"place" : NumberInt("11")
 		}
-	]
+	],
+	"ukrName" : "Чорноморець"
 },
 {
 	"_id" : ObjectId("5a956e81e144536463b6d5a9"),
@@ -10167,7 +10175,8 @@
 			"round" : NumberInt("21"),
 			"place" : NumberInt("9")
 		}
-	]
+	],
+	"ukrName" : "Карпати"
 },
 {
 	"_id" : ObjectId("5a956f2ae144536463b6d85a"),
@@ -10178,7 +10187,8 @@
 			"round" : NumberInt("21"),
 			"place" : NumberInt("4")
 		}
-	]
+	],
+	"ukrName" : "Зоря"
 },
 {
 	"__v" : NumberInt("4"),

@@ -2,7 +2,7 @@
 
 <app-toast [message]="toast.message"></app-toast>
 
-<div class="card" *ngIf="!isLoading">
+<!-- <div class="card" *ngIf="!isLoading">
   <h4 class="card-header">Registered users ({{users.length}})</h4>
   <div class="card-block">
     <table class="table table-bordered table-striped">
@@ -33,4 +33,18 @@
       </tbody>
     </table>
   </div>
-</div>
+</div> -->
+<div class="d-flex flex-column flex-md-row align-items-center p-1 px-md-4  bg-white border-bottom box-shadow">
+    <h5 class="my-0 mr-md-auto font-weight-normal">Admin</h5>
+    <nav class=" my-md-0 mr-md-3">
+      <!-- <a class="p-2 text-dark" routerLinkActive="active" routerLink="/listresurses" >List</a> -->
+      <!-- <a class="p-2 text-dark" routerLinkActive="active" routerLink="/favorites" >Favorites</a> -->
+      <a class="p-2 text-dark" routerLinkActive="active" routerLink="/dashboard" >Dashboard</a>
+      <a class="p-2 text-dark" routerLinkActive="active" routerLink="/challenges" >Challenges</a>
+      <a routerLink="/login" class="nav-item nav-link" routerLinkActive="active" *ngIf="!auth.loggedIn">
+        <i class="fa fa-sign-in"></i> Login
+      </a>
+     
+    </nav>
+  </div>
+<router-outlet></router-outlet>

@@ -5,8 +5,8 @@
 		<div class="col-9"  *ngIf="team">
 			<div class="row">
 				<div class="col-12">
-					<span class="btn btn-primary float-right" (click)="addTeam()">Сохранить</span>
-					<h2 class="float-left">Создайте свою команду</h2>
+					<span class="btn btn-xl u-btn-primary text-uppercase g-font-weight-600 g-font-size-12 rounded g-mr-15 g-mb-10 g-mb-0--sm float-right" (click)="addTeam()">Сохранить</span>
+					<h2 class="float-left h1 g-color-gray-dark-v1 g-font-weight-300 mb-2">Создайте свою команду</h2>
 					<span>{{team.players.length}}/15</span>
 				</div>
 				<div class="col-12">
@@ -46,9 +46,9 @@
 		<div class="col-3">
 			<div class="row">
 				<div class="col-12">
-					<h4>List of players</h4>
+					<h4 class="h3 g-color-gray-dark-v1 g-font-weight-300 mb-2">List of players</h4>
 					<div class="btn-group selectForList" dropdown>
-						<button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+						<button dropdownToggle type="button" class="btn  u-btn-primary dropdown-toggle">
 							{{selectedPosition}} <span class="caret"></span>
 						</button>
 						<ul *dropdownMenu class="dropdown-menu" role="menu">
@@ -57,7 +57,7 @@
 					</div>
 
 					<div class="btn-group" dropdown>
-						<button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+						<button dropdownToggle type="button" class="btn  u-btn-primary dropdown-toggle">
 							{{selectedClub}} <span class="caret"></span>
 						</button>
 						<ul *dropdownMenu class="dropdown-menu" role="menu">

@@ -1,5 +1,32 @@
-<h1>Clubs</h1>
-
-<div *ngFor="let club of list">
-    <a [routerLink]="club['_id']">{{club.name}}</a>
+<div class="bd-content p-5">
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="float-left league-logo mb-2">
+                <img src="assets/UPL.png" alt="">
+            </div>
+            <h1 class="h1 g-color-gray-dark-v1 g-font-weight-300 mb-2 float-left" >Українська Премьер-ліга</h1>
+            <div class="progress g-height-20 g-rounded-20 u-progress g-mb-20">
+                <div class="progress-bar" role="progressbar" style="width: 13%; height: 20px;" aria-valuenow="13" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            
+            <div *ngFor="let challenge of list" class="challenge-item g-brd-around g-brd-gray-light-v4 g-pa-20 mb-1">
+                <a [routerLink]="challenge['_id']" class=" g-font-weight-400 h5 u-link-v5 g-color-gray-dark-v1 g-color-primary--hover challenge-name">{{challenge.name}}</a>
+                <div class="float-right">
+                    <!-- <div class="float-right">
+                        <span class="u-icon-v1">
+                            <i class="icon-user"></i> 
+                        </span>
+                        <span class="u-icon-v1 count">
+                            190
+                        </span>
+                    </div> -->
+                   
+                    <span class="float-right g-font-size-13 g-color-gray-dark-v4">Завершений</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <h2>Топ играков</h2>
+        </div>
+    </div>
 </div>

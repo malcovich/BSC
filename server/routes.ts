@@ -4,6 +4,7 @@ import CatCtrl from './controllers/cat';
 import UserCtrl from './controllers/user';
 import ResursesCtrl from './controllers/resurses';
 import ClubCtrl from './controllers/club';
+import SkinCtrl from './controllers/skin';
 import ChallengeCtrl from './controllers/challenge';
 import PlayerCtrl from './controllers/player';
 import TeamCtrl from './controllers/team';
@@ -21,6 +22,7 @@ export default function setRoutes(app) {
   const playerCtrl = new PlayerCtrl();
   const teamCtrl = new TeamCtrl();
   const challengeCtrl = new ChallengeCtrl();
+  const skinCtrl = new SkinCtrl();
   
 
   // Cats
@@ -72,6 +74,14 @@ export default function setRoutes(app) {
 
   //Challenge
   router.route('/getChallenges/').post(challengeCtrl.getChallenges);
+  router.route('/challenge/:id').get(challengeCtrl.getChallenge);
+
+  //Skin
+  router.route('/saveSkin/').post(skinCtrl.saveSkin);
+  router.route('/getSkin/').post(skinCtrl.getSkin);
+
+  //admin 
+  router.route('/addPlayer').post(playerCtrl.addPlayer);
 
   app.use('/api', router);
 

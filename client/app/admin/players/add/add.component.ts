@@ -2,20 +2,21 @@ import { Component, OnInit, Pipe, PipeTransform, AfterViewInit, ViewChild, Eleme
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { CatService } from '../services/cat.service';
-import { ResurseService } from '../services/resurse.service';
-import { ClubService } from '../services/club.service';
-import { PagerService } from '../services/pager.service';
-import { ToastComponent } from '../shared/toast/toast.component';
-import { Cat } from '../shared/models/cat.model';
-import { AuthService } from '../services/auth.service';
+import { CatService } from '../../../services/cat.service';
+import { ResurseService } from '../../../services/resurse.service';
+import { ClubService } from '../../../services/club.service';
+import { PagerService } from '../../../services/pager.service';
+import { ToastComponent } from '../../../shared/toast/toast.component';
+import { Cat } from '../../../shared/models/cat.model';
+import { AuthService } from '../../../services/auth.service';
+
 
 @Component({
   selector: 'team',
-  templateUrl: './team.component.html',
-  styleUrls: ['./team.component.css']
+  templateUrl: './add.component.html',
+  styleUrls: ['./add.component.css']
 })
-export class TeamComponent implements OnInit {
+export class AdminAddPlayerComponent implements OnInit {
   @ViewChild('chart') elementView: ElementRef;
   cat = new Cat();
   cats: Cat[] = [];
@@ -30,42 +31,67 @@ export class TeamComponent implements OnInit {
   showScored: boolean = false;
   playersIds: any =[];
   copyPlayers : any;
-  selectedClub: any = "Всі клуби"
+  selectedClub: any = {'name':"Всі клуби", val: 'all'};
   selectedPosition: any = "Все позиции";
   listPositions: any = [{name :'Все позиции', letter :'All'}, {name :'Вратари' , letter :'G'},{name : 'Защитники', letter :"D"}, {name :"Полузащитники", letter : "M"}, {name :"Нападающие", letter : "F"}];
   pager: any = {};
   pagedItems: any[];
+
+  addCatForm: FormGroup;
+  name = new FormControl('', Validators.required);
+  age = new FormControl('', Validators.required);
+  height = new FormControl('', Validators.required);
+  club = new FormControl('');
+  position = new FormControl('');
+  clubNumber = new FormControl("");
+  country = new FormControl("");
+  leg = new FormControl("");
   constructor(
               private resurseService: ResurseService,
               private clubsService: ClubService,
               private pagerService: PagerService,
               private route: ActivatedRoute,
               private auth: AuthService,
+              private formBuilder: FormBuilder,
               public toast: ToastComponent) { }
 
   ngOnInit() {
    
     this.getListOfClubs();
-    
+    this.addCatForm = this.formBuilder.group({
+      name: this.name,
+      age: this.age,
+      height: this.height,
+      club: this.club,
+      position: this.position,
+      clubNumber: this.clubNumber,
+      leg: this.leg,
+      country: this.country
+    });
   }
 
   getAllPlayers() {
     this.clubsService.getAllPlayers().subscribe(
       data =>{
-        data.forEach(player => {
-          if(this.team.players.filter(item=>{
-            if(item._id == player._id) {
-              return item
-            }
-          }).length> 0){
-            player.inTeam = true;
-          }
-        });
         this.players = data;
         this.copyPlayers = data;
         this.setPage(1);
       }
     )
+  }
+
+  addCat() {
+    console.log(this.selectedClub.val)
+    this.addCatForm.controls['club'].setValue(this.selectedClub.val);
+    console.log(this.addCatForm.value)
+    this.clubsService.addPlayer(this.addCatForm.value).subscribe(
+      res => {
+        this.cats.push(res);
+        this.addCatForm.reset();
+        this.toast.setMessage('item added successfully.', 'success');
+      },
+      error => console.log(error)
+    );
   }
 
   setPage(page: number) {
@@ -80,35 +106,7 @@ export class TeamComponent implements OnInit {
     this.pagedItems = this.players.slice(this.pager.startIndex, this.pager.endIndex + 1);
 }
 
-  addPlayerToTeam(player) {
-    if (this.team.players.length >=15 ){
-      this.toast.setMessage('item edited successfully.', 'danger');
-    }else if (this.validationPlayer(player)){
-      this.team.players.push(player);
-      this.playersIds.push(player._id);
-      player.inTeam = true;
-    }
-  }
-
-  validationPlayer(player) {
-    if (this.team.players.indexOf(player) != -1){
-      return false;
-    }
-    let selectedPosition = player.position;
-    let positionInSkin = this.team.players.filter(player =>{ if(player.position == selectedPosition) return player}).length;
-    if ((selectedPosition == 'M' ||  selectedPosition == 'D') && (positionInSkin < 5)) {
-      return true;
-    }
-    if ((selectedPosition == 'F') && (positionInSkin < 3)) {
-      return true;
-    }
-    if ((selectedPosition == 'G') && (positionInSkin < 2)) {
-      return true;
-    }
-    else {
-      return false;
-    }
-  }
+  
 
 
   filterByPosition(position) {
@@ -124,8 +122,9 @@ export class TeamComponent implements OnInit {
   }
 
   filterByClub(club) {
-    this.selectedClub = club.ukrName;
-    if(this.selectedPosition == "Всі клуби"){
+    this.selectedClub.name = club.ukrName;
+    this.selectedClub.val = club._id;
+    if(this.selectedPosition.name == "Всі клуби"){
       this.players = this.copyPlayers;
     }else{
       this.players = this.copyPlayers.filter((item)=>{
@@ -134,41 +133,11 @@ export class TeamComponent implements OnInit {
     }
   }
 
-  addTeam() {
-    this.team.user = this.auth.currentUser._id;
-    this.clubsService.addTeam(this.team).subscribe(res=>{
-      console.log(res);
-    });
-  }
-
-  getTeam() {
-    this.clubsService.getTeam({user: this.auth.currentUser._id}).subscribe(team=>{
-      if (team){
-        this.team = team;
-        this.team.players = this.team.players.map(player =>{
-          let club = this.clubs.filter(club =>{
-            if (club._id == player.club){
-              return club;
-            }
-          });
-          player.club = club[0];
-          return player;
-        });
-      }
-      else {
-        this.team = {
-          players : []
-        }
-      }
-      this.getAllPlayers();
-    });
-  }
-
   getListOfClubs() {
     this.clubsService.getAllClubsFromLeague({'league': '5a953a92e144536463b60b2e'}).subscribe(
       data => {
         this.clubs = data;
-        this.getTeam();
+        this.getAllPlayers();
       }
      );
   }

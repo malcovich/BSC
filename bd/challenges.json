@@ -1,0 +1,71 @@
+{
+	"_id" : ObjectId("5ab105b68f864f659b0aef6e"),
+	"date" : ISODate("2018-03-17T00:00:00.000+02:00"),
+	"league" : ObjectId("5a953a92e144536463b60b2e"),
+	"matches" : [
+		ObjectId("5ab3a3dc2c553a6b70d467de"),
+		ObjectId("5ab3ad63cf26ab0ab72a4fe8"),
+		ObjectId("5ab3b1bccf26ab0ab72a5204"),
+		ObjectId("5ab3b1fecf26ab0ab72a522d"),
+		ObjectId("5ab3b22dcf26ab0ab72a5254"),
+		ObjectId("5ab3b24acf26ab0ab72a526b")
+	],
+	"name" : "24 тур",
+	"status" : "active"
+},
+{
+	"_id" : ObjectId("5ab381dc2c553a6b70d45508"),
+	"date" : ISODate("2018-03-08T00:00:00.000+02:00"),
+	"league" : ObjectId("5a953a92e144536463b60b2e"),
+	"name" : "23 тур",
+	"status" : "finished"
+},
+{
+	"_id" : ObjectId("5ab38e4b2c553a6b70d45bf3"),
+	"date" : ISODate("2018-03-08T00:00:00.000+02:00"),
+	"league" : ObjectId("5a953a92e144536463b60b2e"),
+	"name" : "22 тур",
+	"status" : "finished"
+},
+{
+	"_id" : ObjectId("5ab38e562c553a6b70d45bf9"),
+	"date" : ISODate("2018-03-08T00:00:00.000+02:00"),
+	"league" : ObjectId("5a953a92e144536463b60b2e"),
+	"name" : "21 тур",
+	"status" : "finished"
+},
+{
+	"_id" : ObjectId("5ab38e5b2c553a6b70d45bfe"),
+	"date" : ISODate("2018-03-08T00:00:00.000+02:00"),
+	"league" : ObjectId("5a953a92e144536463b60b2e"),
+	"name" : "20 тур",
+	"status" : "finished"
+},
+{
+	"_id" : ObjectId("5ab38e642c553a6b70d45c06"),
+	"date" : ISODate("2018-03-08T00:00:00.000+02:00"),
+	"league" : ObjectId("5a953a92e144536463b60b2e"),
+	"name" : "19 тур",
+	"status" : "finished"
+},
+{
+	"_id" : ObjectId("5ab38e6a2c553a6b70d45c09"),
+	"date" : ISODate("2018-03-08T00:00:00.000+02:00"),
+	"league" : ObjectId("5a953a92e144536463b60b2e"),
+	"name" : "18 тур",
+	"status" : "finished"
+},
+{
+	"_id" : ObjectId("5ab38e8e2c553a6b70d45c21"),
+	"date" : ISODate("2018-03-08T00:00:00.000+02:00"),
+	"league" : ObjectId("5a953a92e144536463b60b2e"),
+	"name" : "17 тур",
+	"status" : "finished"
+},
+{
+	"_id" : ObjectId("5ab38e952c553a6b70d45c24"),
+	"date" : ISODate("2018-03-08T00:00:00.000+02:00"),
+	"league" : ObjectId("5a953a92e144536463b60b2e"),
+	"name" : "16 тур",
+	"status" : "finished"
+},

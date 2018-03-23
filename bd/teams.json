@@ -1,0 +1,22 @@
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5ab37c09b43a0b37c835848f"),
+	"players" : [
+		ObjectId("5a9e67f89ca52f275d192b11"),
+		ObjectId("5a9e68f09ca52f275d192b9c"),
+		ObjectId("5a9e6a3f9ca52f275d192c2f"),
+		ObjectId("5a9e6a799ca52f275d192c4b"),
+		ObjectId("5a9e6a9d9ca52f275d192c5e"),
+		ObjectId("5a9e6b0f9ca52f275d192c94"),
+		ObjectId("5a9e6b4c9ca52f275d192cb0"),
+		ObjectId("5a9e71d09ca52f275d192f94"),
+		ObjectId("5a9e720a9ca52f275d192faf"),
+		ObjectId("5a9e72c59ca52f275d193005"),
+		ObjectId("5a9e73089ca52f275d193022"),
+		ObjectId("5a9e746f9ca52f275d1930c2"),
+		ObjectId("5a9e756f9ca52f275d193138"),
+		ObjectId("5a9e81d69ca52f275d1936a2"),
+		ObjectId("5a9e88cc9ca52f275d1939d0")
+	],
+	"user" : ObjectId("5aa91cede9590f2a103daf9f")
+},

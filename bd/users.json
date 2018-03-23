@@ -1,0 +1,16 @@
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5a699308bbd4bd211455b53a"),
+	"email" : "admin@gmail.com",
+	"password" : "$2a$10$SWysAQDIooXrPjoGGBTN..sIqx21bZN6uEw21WjSDjEX21hEx2w16",
+	"role" : "admin",
+	"username" : "admin"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5aa91cede9590f2a103daf9f"),
+	"email" : "d@d.com",
+	"password" : "$2a$10$2f/z.WuIu0MA93ZyeHFBFuO2NxpoH2f6Y3TN4RhBnshDWGgbLJd4W",
+	"role" : "admin",
+	"username" : "Malcovich"
+},

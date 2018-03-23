@@ -20,7 +20,11 @@ import { FavoritesComponent } from './favorites/favorites.component';
 import { ClubsListComponent } from './clubs/list/list.component';
 import { TeamComponent } from './team/team.component';
 import { ChallengesListComponent } from './challenges/list/list.component';
+import { ChallengeComponent } from './challenges/challenge/challenge.component';
 
+//admin
+import { AdminListPlayersComponent } from './admin/players/list/list.component';
+import { AdminAddPlayerComponent } from './admin/players/add/add.component';
 
 const routes: Routes = [
   { path: '', component: AboutComponent },
@@ -32,7 +36,12 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'logout', component: LogoutComponent },
   { path: 'account', component: AccountComponent, canActivate: [AuthGuardLogin] },
-  { path: 'admin', component: AdminComponent, canActivate: [AuthGuardAdmin] },
+  { path: 'admin', component: AdminComponent, canActivate: [AuthGuardAdmin], 
+    children: [
+      { path: 'players/list', component: AdminListPlayersComponent },
+      { path: 'players/add', component: AdminAddPlayerComponent }
+    ]
+  },
   { path: 'notfound', component: NotFoundComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'favorites', component: FavoritesComponent },
@@ -40,8 +49,11 @@ const routes: Routes = [
   { path: 'clubs', component: ClubsListComponent },
   { path: 'team', component: TeamComponent },
   { path: 'challenges', component: ChallengesListComponent},
+  { path: 'challenges/:id', component: ChallengeComponent},
   { path: '**', redirectTo: '/notfound' },
 ];
+
+
 
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],

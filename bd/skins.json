@@ -1,0 +1,19 @@
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5ab37c3cb43a0b37c8358490"),
+	"challenge" : ObjectId("5ab105b68f864f659b0aef6e"),
+	"players" : [
+		ObjectId("5a9e67f89ca52f275d192b11"),
+		ObjectId("5a9e68f09ca52f275d192b9c"),
+		ObjectId("5a9e6a3f9ca52f275d192c2f"),
+		ObjectId("5a9e6a799ca52f275d192c4b"),
+		ObjectId("5a9e6a9d9ca52f275d192c5e"),
+		ObjectId("5a9e6b0f9ca52f275d192c94"),
+		ObjectId("5a9e756f9ca52f275d193138"),
+		ObjectId("5a9e746f9ca52f275d1930c2"),
+		ObjectId("5a9e73089ca52f275d193022"),
+		ObjectId("5a9e72c59ca52f275d193005"),
+		ObjectId("5a9e720a9ca52f275d192faf")
+	],
+	"user" : ObjectId("5aa91cede9590f2a103daf9f")
+},

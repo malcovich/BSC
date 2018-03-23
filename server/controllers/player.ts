@@ -17,5 +17,20 @@ export default class PlayerCtrl extends BaseCtrl {
       res.json(players);
     })
   }
-  
+
+  addPlayer = (req, res) =>{
+    var player = {
+      name: req.body.name,
+      age : req.body.age,
+      height : req.body.height,
+      club : req.body.club,
+      clubNumber : req.body.clubNumber,
+      country : req.body.country,
+      leg : req.body.leg
+    }
+    var newPlayer = new Player(player);
+    newPlayer.save((err, player)=>{
+      res.json(player);
+    })
+  }
 }

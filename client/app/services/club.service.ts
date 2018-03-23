@@ -33,4 +33,8 @@ export class ClubService {
   getTeam(obj): Observable<any> {
     return this.http.post<any>('/api/getTeam', obj);
   }
+
+  addPlayer(obj): Observable<any> {
+    return this.http.post<any>('/api/addPlayer', obj);
+  }
 }

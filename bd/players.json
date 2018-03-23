@@ -581,3 +581,11 @@
 	"name" : "Вадислав Андрусенко",
 	"position" : "F"
 },
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5ab4febddc886836a0e57244"),
+	"age" : ISODate("1994-05-31T00:00:00.000+03:00"),
+	"club" : ObjectId("5a956d51e144536463b6d0c2"),
+	"height" : NumberInt("196"),
+	"name" : "Георгий Бущан"
+},
