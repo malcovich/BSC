@@ -91,6 +91,14 @@ export class TeamComponent implements OnInit {
   }
 
   validationPlayer(player) {
+    let playersFromClub = this.team.players.filter(teamsPlayer=>{
+      if(teamsPlayer.club._id == player.club._id){
+        return teamsPlayer;
+      }
+    });
+    if (playersFromClub.length >= 4){
+      return false;
+    }
     if (this.team.players.indexOf(player) != -1){
       return false;
     }
@@ -125,13 +133,24 @@ export class TeamComponent implements OnInit {
 
   filterByClub(club) {
     this.selectedClub = club.ukrName;
-    if(this.selectedPosition == "Всі клуби"){
+    if(this.selectedPosition.letter == "Всі клуби"){
       this.players = this.copyPlayers;
+      if (this.selectedPosition !== "Все позиции"){
+        this.players = this.players.filter((item)=>{
+          if(item.position == this.selectedPosition.letter) return item;
+        });
+      }
     }else{
       this.players = this.copyPlayers.filter((item)=>{
         if(item.club._id == club._id) return item;
       });
+      if (this.selectedPosition !== "Все позиции"){
+        this.players = this.players.filter((item)=>{
+          if(item.position == this.selectedPosition.letter) return item;
+        });
+      }
     }
+    this.setPage(1);
   }
 
   addTeam() {

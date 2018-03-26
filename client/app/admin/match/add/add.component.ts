@@ -12,11 +12,11 @@ import { AuthService } from '../../../services/auth.service';
 
 
 @Component({
-  selector: 'team',
+  selector: 'add-match',
   templateUrl: './add.component.html',
   styleUrls: ['./add.component.css']
 })
-export class AdminAddPlayerComponent implements OnInit {
+export class AdminAddMatchComponent implements OnInit {
   @ViewChild('chart') elementView: ElementRef;
   cat = new Cat();
   cats: Cat[] = [];
@@ -31,21 +31,20 @@ export class AdminAddPlayerComponent implements OnInit {
   showScored: boolean = false;
   playersIds: any =[];
   copyPlayers : any;
-  selectedClub: any = {'name':"Всі клуби", val: 'all'};
+  selectedClub1: any = {'name':"Всі клуби", val: 'all'};
+  selectedClub2: any = {'name':"Всі клуби", val: 'all'};
   selectedPosition: any = "Все позиции";
   listPositions: any = [{name :'Все позиции', letter :'All'}, {name :'Вратари' , letter :'G'},{name : 'Защитники', letter :"D"}, {name :"Полузащитники", letter : "M"}, {name :"Нападающие", letter : "F"}];
   pager: any = {};
   pagedItems: any[];
 
   addCatForm: FormGroup;
-  name = new FormControl('', Validators.required);
-  age = new FormControl('', Validators.required);
-  height = new FormControl('');
-  club = new FormControl('');
-  position = new FormControl('');
-  clubNumber = new FormControl("");
-  country = new FormControl("");
-  leg = new FormControl("");
+  team1 = new FormControl('');
+  team2 = new FormControl('');
+  round = new FormControl('');
+  date = new FormControl('');
+  result = new FormControl('');
+ 
   constructor(
               private resurseService: ResurseService,
               private clubsService: ClubService,
@@ -59,14 +58,11 @@ export class AdminAddPlayerComponent implements OnInit {
    
     this.getListOfClubs();
     this.addCatForm = this.formBuilder.group({
-      name: this.name,
-      age: this.age,
-      height: this.height,
-      club: this.club,
-      position: this.position,
-      clubNumber: this.clubNumber,
-      leg: this.leg,
-      country: this.country
+      team1: this.team1,
+      team2: this.team2,
+      round: this.round,
+      date: this.date,
+      result: this.result,
     });
   }
 
@@ -81,10 +77,11 @@ export class AdminAddPlayerComponent implements OnInit {
   }
 
   addCat() {
-    console.log(this.selectedClub.val)
-    this.addCatForm.controls['club'].setValue(this.selectedClub.val);
+    console.log(this.selectedClub1.val)
+    this.addCatForm.controls['team1'].setValue(this.selectedClub1.val);
+    this.addCatForm.controls['team2'].setValue(this.selectedClub2.val);
     console.log(this.addCatForm.value)
-    this.clubsService.addPlayer(this.addCatForm.value).subscribe(
+    this.clubsService.addMatch(this.addCatForm.value).subscribe(
       res => {
         this.cats.push(res);
         this.addCatForm.reset();
@@ -92,6 +89,14 @@ export class AdminAddPlayerComponent implements OnInit {
       },
       error => console.log(error)
     );
+  }
+  selectClub1(club){
+    this.selectedClub1.name = club.ukrName;
+    this.selectedClub1.val = club._id;
+  }
+  selectClub2(club){
+    this.selectedClub2.name = club.ukrName;
+    this.selectedClub2.val = club._id;
   }
 
   setPage(page: number) {
@@ -122,8 +127,8 @@ export class AdminAddPlayerComponent implements OnInit {
   }
 
   filterByClub(club) {
-    this.selectedClub.name = club.ukrName;
-    this.selectedClub.val = club._id;
+    this.selectedClub1.name = club.ukrName;
+    this.selectedClub1.val = club._id;
     if(this.selectedPosition.name == "Всі клуби"){
       this.players = this.copyPlayers;
     }else{

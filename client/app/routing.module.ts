@@ -25,6 +25,7 @@ import { ChallengeComponent } from './challenges/challenge/challenge.component';
 //admin
 import { AdminListPlayersComponent } from './admin/players/list/list.component';
 import { AdminAddPlayerComponent } from './admin/players/add/add.component';
+import { AdminAddMatchComponent } from './admin/match/add/add.component';
 
 const routes: Routes = [
   { path: '', component: AboutComponent },
@@ -39,7 +40,9 @@ const routes: Routes = [
   { path: 'admin', component: AdminComponent, canActivate: [AuthGuardAdmin], 
     children: [
       { path: 'players/list', component: AdminListPlayersComponent },
-      { path: 'players/add', component: AdminAddPlayerComponent }
+      { path: 'players/add', component: AdminAddPlayerComponent },
+      { path: 'matches/list', component: AdminAddMatchComponent },
+      { path: 'matches/add', component: AdminAddMatchComponent }
     ]
   },
   { path: 'notfound', component: NotFoundComponent },

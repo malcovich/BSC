@@ -37,4 +37,8 @@ export class ClubService {
   addPlayer(obj): Observable<any> {
     return this.http.post<any>('/api/addPlayer', obj);
   }
+
+  addMatch(obj): Observable<any> {
+    return this.http.post<any>('/api/addMatch', obj);
+  }
 }

@@ -6,40 +6,43 @@
 			<div class="row">
 				<div class="col-12">
 					<span class="btn btn-xl u-btn-primary text-uppercase g-font-weight-600 g-font-size-12 rounded g-mr-15 g-mb-10 g-mb-0--sm float-right" (click)="addTeam()">Сохранить</span>
-					<h2 class="float-left h1 g-color-gray-dark-v1 g-font-weight-300 mb-2">Создайте свою команду</h2>
+					<h2 class="float-left h1 g-color-gray-dark-v1 g-font-weight-300 mb-2">Ваша команда</h2>
 					<span>{{team.players.length}}/15</span>
 				</div>
 				<div class="col-12">
 
-					<div class="table-responsive">
+					<div class="table-responsive" *ngIf="team.players.length">
 						<table class="table table-hover">
 						  <thead>
 							<tr>
-							  <th>#</th>
-							  <th>Страна</th>
-							  <th>Позиция</th>
+							  <th class="country-cell">#</th>
+							  <th class="country-cell">Страна</th>
+							  <th class="country-cell">Позиция</th>
 							  <th>Имя</th>
-							  <th>Клуб</th>
-							  <th>Стоимость</th>
-							  <th>Очки</th>
+							  <th class="country-cell">Клуб</th>
+							  <th class="country-cell">Стоимость</th>
+							  <th class="country-cell">Очки</th>
 							  <th></th>
 							</tr>
 						  </thead>
 
 						  <tbody>
 							<tr *ngFor="let player of team.players;let idx = index">
-								<td>{{idx+1}}</td>
-								<td><span [className]="player.country + ' flag'"></span></td>
-								<td>{{player.position}}</td>
+								<td class="country-cell">{{idx+1}}</td>
+								<td class="country-cell"><span [className]="player.country + ' flag'"></span></td>
+								<td class="country-cell">{{player.position}}</td>
 								<td><strong>{{player.name}}</strong></td>
-								<td>{{player.club.ukrName}}</td>
-								<td>3,4М</td>
-								<td>34</td>
+								<td class="country-cell">{{player.club.ukrName}}</td>
+								<td class="country-cell">3,4М</td>
+								<td class="country-cell">34</td>
 								<td><span class="align-self-center small text-nowrap">убрать из команди</span></td>
 							</tr>
 						  </tbody>
 						</table>
-					  </div>
+					</div>
+					<div class="no-results"  *ngIf="!team.players.length">
+						Ви ще не створили команду!
+					</div>
 				</div>
 			</div>
 		</div>

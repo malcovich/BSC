@@ -1,0 +1,67 @@
+
+<app-toast [message]="toast.message"></app-toast>
+<div class="bd-content p-5">
+	<div class="row">
+		<div class="col-9"  >
+			<div class="row">
+				<div class="col-12">
+					<h2 class="float-left h1 g-color-gray-dark-v1 g-font-weight-300 mb-2">Додати гравця</h2>
+				</div>
+				<div class="col-12">
+					<form class="form-inline" [formGroup]="addCatForm" (ngSubmit)="addCat()" style="text-align:center">
+						<div class="btn-group" dropdown >
+							<button dropdownToggle type="button" class="btn  u-btn-primary dropdown-toggle" >
+								{{selectedClub1.name}} <span class="caret"></span>
+							</button>
+							<ul *dropdownMenu class="dropdown-menu" role="menu">
+								<li role="menuitem" *ngFor="let club of clubs" (click)="selectClub1(club)"><a class="dropdown-item" href="javascript:void(0)">{{club.ukrName}}</a></li>
+							</ul>
+						</div>
+						<div class="btn-group" dropdown >
+							<button dropdownToggle type="button" class="btn  u-btn-primary dropdown-toggle" >
+								{{selectedClub2.name}} <span class="caret"></span>
+							</button>
+							<ul *dropdownMenu class="dropdown-menu" role="menu">
+								<li role="menuitem" *ngFor="let club of clubs" (click)="selectClub2(club)"  ><a class="dropdown-item" href="javascript:void(0)">{{club.ukrName}}</a></li>
+							</ul>
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="text" name="round" formControlName="round" placeholder="Round">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="text" name="result" formControlName="result" placeholder="Result">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="text" name="date" formControlName="date" placeholder="Date">
+						</div>
+						<button class="btn btn-primary" type="submit" [disabled]="!addCatForm.valid"><i class="fa fa-floppy-o"></i> Add</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="row">
+				<div class="col-12">
+					<h4 class="h3 g-color-gray-dark-v1 g-font-weight-300 mb-2">List of players</h4>
+					<div class="btn-group selectForList" dropdown>
+						<button dropdownToggle type="button" class="btn  u-btn-primary dropdown-toggle">
+							{{selectedPosition}} <span class="caret"></span>
+						</button>
+						<ul *dropdownMenu class="dropdown-menu" role="menu">
+							<li role="menuitem" *ngFor="let position of listPositions"  (click)="filterByPosition(position)"><a class="dropdown-item" href="javascript:void(0)">{{position.name}}</a></li>
+						</ul>
+					</div>
+
+					<div class="btn-group" dropdown>
+						<button dropdownToggle type="button" class="btn  u-btn-primary dropdown-toggle">
+							{{selectedClub}} <span class="caret"></span>
+						</button>
+						<ul *dropdownMenu class="dropdown-menu" role="menu">
+							<li role="menuitem" *ngFor="let club of clubs"  (click)="filterByClub(club)"><a class="dropdown-item" href="javascript:void(0)">{{club.ukrName}}</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

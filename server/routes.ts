@@ -82,6 +82,7 @@ export default function setRoutes(app) {
 
   //admin 
   router.route('/addPlayer').post(playerCtrl.addPlayer);
+  router.route('/addMatch').post(playerCtrl.addMatch);
 
   app.use('/api', router);
 
