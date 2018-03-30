@@ -35,6 +35,7 @@ import { D3graphComponent } from './d3graph/d3graph.component';
 import { AdminListPlayersComponent } from './admin/players/list/list.component';
 import { AdminAddPlayerComponent } from './admin/players/add/add.component';
 import { AdminAddMatchComponent } from './admin/match/add/add.component';
+import { AdminListMatchesComponent } from './admin/match/list/list.component';
 
 
 import { TeamComponent } from './team/team.component';
@@ -70,7 +71,8 @@ import { D3Service } from 'd3-ng2-service'; //
     ChallengeComponent,
     AdminListPlayersComponent,
     AdminAddPlayerComponent,
-    AdminAddMatchComponent
+    AdminAddMatchComponent,
+    AdminListMatchesComponent
   ],
   imports: [
     RoutingModule,

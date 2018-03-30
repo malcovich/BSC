@@ -26,6 +26,8 @@ import { ChallengeComponent } from './challenges/challenge/challenge.component';
 import { AdminListPlayersComponent } from './admin/players/list/list.component';
 import { AdminAddPlayerComponent } from './admin/players/add/add.component';
 import { AdminAddMatchComponent } from './admin/match/add/add.component';
+import { AdminListMatchesComponent } from './admin/match/list/list.component';
+
 
 const routes: Routes = [
   { path: '', component: AboutComponent },
@@ -41,7 +43,7 @@ const routes: Routes = [
     children: [
       { path: 'players/list', component: AdminListPlayersComponent },
       { path: 'players/add', component: AdminAddPlayerComponent },
-      { path: 'matches/list', component: AdminAddMatchComponent },
+      { path: 'matches/list', component: AdminListMatchesComponent },
       { path: 'matches/add', component: AdminAddMatchComponent }
     ]
   },

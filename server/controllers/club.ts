@@ -78,6 +78,9 @@ export default class ClubCtrl extends BaseCtrl {
     })
   }
 
-  
-  
+  getMatches = (req, res) => {
+    Match.find().populate('team1').populate('team2').exec((err, matches)=>{
+      res.json(matches);
+    })
+  }
 }

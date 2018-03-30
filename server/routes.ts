@@ -83,6 +83,7 @@ export default function setRoutes(app) {
   //admin 
   router.route('/addPlayer').post(playerCtrl.addPlayer);
   router.route('/addMatch').post(playerCtrl.addMatch);
+  router.route('/getMatches').get(clubCtrl.getMatches)
 
   app.use('/api', router);
 

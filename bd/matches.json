@@ -1240,3 +1240,12 @@
 	"team1" : ObjectId("5a956df5e144536463b6d369"),
 	"team2" : ObjectId("5a956e81e144536463b6d5a9")
 },
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5ab9f379808f994044434c0e"),
+	"date" : ISODate("2018-03-31T00:00:00.000+03:00"),
+	"result" : "",
+	"round" : NumberInt("25"),
+	"team1" : ObjectId("5a956e81e144536463b6d5a9"),
+	"team2" : ObjectId("5a956e25e144536463b6d431")
+},

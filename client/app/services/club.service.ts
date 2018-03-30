@@ -41,4 +41,7 @@ export class ClubService {
   addMatch(obj): Observable<any> {
     return this.http.post<any>('/api/addMatch', obj);
   }
+  getMatches() : Observable<any> {
+    return this.http.get<any>('/api/getMatches');
+  }
 }

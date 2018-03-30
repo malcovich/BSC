@@ -1,0 +1,94 @@
+
+<app-toast [message]="toast.message"></app-toast>
+<div class="bd-content p-5">
+	<div class="row">
+		<div class="col-9"  >
+			<div class="row">
+				<div class="col-12">
+					<a class="btn btn-xl u-btn-primary text-uppercase g-font-weight-600 g-font-size-12 rounded g-mr-15 g-mb-10 g-mb-0--sm float-right" routerLink="../add">Додати гравця</a>
+					<h2 class="float-left h1 g-color-gray-dark-v1 g-font-weight-300 mb-2">Список гравців</h2>
+				</div>
+				<div class="col-12">
+
+					<div class="table-responsive">
+						<table class="table table-hover">
+						  <thead>
+							<tr>
+							  <th>#</th>
+							  <th>Страна</th>
+							  <th>Позиция</th>
+							  <th>Имя</th>
+							  <th>Клуб</th>
+							  <th>Стоимость</th>
+							  <th>Очки</th>
+							  <th></th>
+							</tr>
+						  </thead>
+
+						  <tbody>
+							<tr *ngFor="let player of pagedItems;let idx = index">
+								<td>{{idx+1}}</td>
+								<td><span [className]="player.country + ' flag'"></span></td>
+								<td>{{player.position}}</td>
+								<td><strong>{{player.name}}</strong></td>
+								<td>{{player.club.ukrName}}</td>
+								<td>3,4М</td>
+								<td>34</td>
+								<td><span class="align-self-center small text-nowrap">убрать из команди</span></td>
+							</tr>
+						  </tbody>
+						</table>
+						<nav aria-label="Page Navigation">
+								<ul class="list-inline" *ngIf="pager.pages && pager.pages.length">
+									<li class="list-inline-item" >
+									<a [ngClass]="{'u-pagination-v1__item--disabled':pager.currentPage === 1}" class="u-pagination-v1__item u-pagination-v1-1 u-pagination-v1__item g-pa-7-16" aria-label="Previous" (click)="setPage(pager.currentPage - 1)">
+										<span aria-hidden="true">
+										<i class="fa fa-angle-left"></i>
+										</span>
+										<span class="sr-only">Previous</span>
+									</a>
+									</li>
+									<li class="list-inline-item g-hidden-sm-down"  [ngClass]="{active:pager.currentPage === page}">
+									<a class="u-pagination-v1__item u-pagination-v1-1 u-pagination-v1-1--active g-pa-7-16">{{pager.currentPage}}/{{ pager.totalPages}}</a>
+									</li>
+								
+									<li class="list-inline-item">
+									<a class="u-pagination-v1__item u-pagination-v1-1 g-pa-7-16" aria-label="Next" [ngClass]="{'u-pagination-v1__item--disabled':pager.currentPage === pager.totalPages}" (click)="setPage(pager.currentPage + 1)">
+										<span aria-hidden="true">
+										<i class="fa fa-angle-right"></i>
+										</span>
+										<span class="sr-only" >Next</span>
+									</a>
+									</li>
+								</ul>
+								</nav>
+					  </div>
+				</div>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="row">
+				<div class="col-12">
+					<h4 class="h3 g-color-gray-dark-v1 g-font-weight-300 mb-2">List of players</h4>
+					<div class="btn-group selectForList" dropdown>
+						<button dropdownToggle type="button" class="btn  u-btn-primary dropdown-toggle">
+							{{selectedPosition}} <span class="caret"></span>
+						</button>
+						<ul *dropdownMenu class="dropdown-menu" role="menu">
+							<li role="menuitem" *ngFor="let position of listPositions"  (click)="filterByPosition(position)"><a class="dropdown-item" href="javascript:void(0)">{{position.name}}</a></li>
+						</ul>
+					</div>
+
+					<div class="btn-group" dropdown>
+						<button dropdownToggle type="button" class="btn  u-btn-primary dropdown-toggle">
+							{{selectedClub}} <span class="caret"></span>
+						</button>
+						<ul *dropdownMenu class="dropdown-menu" role="menu">
+							<li role="menuitem" *ngFor="let club of clubs"  (click)="filterByClub(club)"><a class="dropdown-item" href="javascript:void(0)">{{club.ukrName}}</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

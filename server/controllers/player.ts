@@ -38,8 +38,8 @@ export default class PlayerCtrl extends BaseCtrl {
 
   addMatch = (req, res) =>{
     var match = {
-      name: req.body.team1,
-      age : req.body.team2,
+      team1: req.body.team1,
+      team2 : req.body.team2,
       date : req.body.date,
       round: req.body.round,
       result: req.body.result
