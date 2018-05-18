@@ -15,9 +15,10 @@ import { AuthService } from '../../../services/auth.service';
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css']
 })
-export class AdminListPlayersComponent implements OnInit {
+export class AdminListActionsComponent implements OnInit {
   @ViewChild('chart') elementView: ElementRef;
   cat = new Cat();
+  cats: Cat[] = [];
   isLoading = true;
   isEditing = false;
   team : any;
@@ -43,8 +44,8 @@ export class AdminListPlayersComponent implements OnInit {
               public toast: ToastComponent) { }
 
   ngOnInit() {
-    this.getAllPlayers();
-    // this.getListOfClubs();
+   
+    this.getListOfClubs();
     
   }
 
@@ -58,7 +59,6 @@ export class AdminListPlayersComponent implements OnInit {
       }
     )
   }
-
 
   setPage(page: number) {
     if (page < 1 || page > this.pager.totalPages) {

@@ -4,12 +4,16 @@ import Club from './clubs';
 const playerSchema = new mongoose.Schema({
   name: String,
   weight: Number,
-  age: Date,
-  country: String,
+  dateOfBirth: Date,
+  nationality: {
+    iso: String,
+    name: String  
+  },
   position: String,
-  leg: String,
-  clubNumber: Number,
-  height: Number,
+  logo: String,
+  age: Number,
+  shirtNumber: Number,
+  slug: String,
   club: {type: mongoose.Schema.Types.ObjectId, ref: 'Club'},
 });
 

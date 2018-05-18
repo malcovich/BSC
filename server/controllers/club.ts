@@ -1,4 +1,3 @@
-import Resurses from '../models/resurses';
 import Club from '../models/clubs';
 import Match from '../models/match';
 import BaseCtrl from './base';

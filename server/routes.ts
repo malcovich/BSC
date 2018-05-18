@@ -1,38 +1,26 @@
 import * as express from 'express';
 
-import CatCtrl from './controllers/cat';
 import UserCtrl from './controllers/user';
-import ResursesCtrl from './controllers/resurses';
 import ClubCtrl from './controllers/club';
 import SkinCtrl from './controllers/skin';
 import ChallengeCtrl from './controllers/challenge';
 import PlayerCtrl from './controllers/player';
 import TeamCtrl from './controllers/team';
-import Cat from './models/cat';
+import ActionCtrl from './controllers/action';
 import User from './models/user';
 
 export default function setRoutes(app) {
 
   const router = express.Router();
 
-  const catCtrl = new CatCtrl();
   const userCtrl = new UserCtrl();
-  const resursesCtrl = new ResursesCtrl();
   const clubCtrl = new ClubCtrl();
   const playerCtrl = new PlayerCtrl();
   const teamCtrl = new TeamCtrl();
+  const actionCtrl = new ActionCtrl();
   const challengeCtrl = new ChallengeCtrl();
   const skinCtrl = new SkinCtrl();
   
-
-  // Cats
-  router.route('/cats').get(catCtrl.getAll);
-  router.route('/cats/count').get(catCtrl.count);
-  router.route('/cat').post(catCtrl.insert);
-  router.route('/cat/:id').get(catCtrl.get);
-  router.route('/cat/:id').put(catCtrl.update);
-  router.route('/cat/:id').delete(catCtrl.delete);
-
   // Users
   router.route('/login').post(userCtrl.login);
   router.route('/users').get(userCtrl.getAll);
@@ -41,20 +29,6 @@ export default function setRoutes(app) {
   router.route('/user/:id').get(userCtrl.get);
   router.route('/user/:id').put(userCtrl.update);
   router.route('/user/:id').delete(userCtrl.delete);
-
-  // Resurses
-  router.route('/getresurse').get(resursesCtrl.getResurse);
-  router.route('/listresurses/:id').get(resursesCtrl.get);
-  router.route('/listresurses/').get(resursesCtrl.getAllWithSame);
-  router.route('/sameItems/').post(resursesCtrl.getSameItems);
-
-  router.route('/mapResurses').get(resursesCtrl.mapResurses)
-  router.route('/getindividual').get(resursesCtrl.getindIvidual)
-  router.route('/saveResult/').post(resursesCtrl.saveResult);
-  router.route('/addToFavorite/').post(resursesCtrl.addToFavorite);
-  router.route('/getFavoriteItems/').get(resursesCtrl.getFavoriteItems);
-  // Apply the routes to our application with the prefix /api
-
 
   //Clubs 
   router.route('/addClubs').post(clubCtrl.addClubs);
@@ -66,7 +40,7 @@ export default function setRoutes(app) {
 
   //Players 
   router.route('/getPlayersForClub/').post(playerCtrl.getPlayersForClub);
-  router.route('/getAllPlayers/').get(playerCtrl.getAllPlayers);
+  // router.route('/getAllPlayers/').get(playerCtrl.getAllPlayers);
 
   //Team
   router.route('/addTeam/').post(teamCtrl.addTeam);
@@ -83,7 +57,8 @@ export default function setRoutes(app) {
   //admin 
   router.route('/addPlayer').post(playerCtrl.addPlayer);
   router.route('/addMatch').post(playerCtrl.addMatch);
-  router.route('/getMatches').get(clubCtrl.getMatches)
+  router.route('/getMatches').get(clubCtrl.getMatches);
+  router.route('/getAllPlayers').get(playerCtrl.addPlayersForTeam);
 
   app.use('/api', router);
 

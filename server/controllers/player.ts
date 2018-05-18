@@ -2,6 +2,8 @@ import Club from '../models/clubs';
 import Player from '../models/player';
 import Match from '../models/match';
 import BaseCtrl from './base';
+var fs = require('fs');
+
 
 export default class PlayerCtrl extends BaseCtrl {
   model = Player;
@@ -49,5 +51,39 @@ export default class PlayerCtrl extends BaseCtrl {
       console.log('Match', match, err)
       res.json(match);
     })
+  }
+
+  addPlayersForTeam  = (req, res) =>{
+    var clubId = "5a956d51e144536463b6d0c2";
+    var obj;
+    let a = [];
+    fs.readFile('./team.json', 'utf8', function (err, data) {
+      if (err) throw err;
+      obj = JSON.parse(data);
+      obj.playersList.forEach(element => {
+        var player = {
+          name: element.name,
+          weight: element.weight,
+          dateOfBirth: element.dateOfBirth,
+          nationality: {
+            iso: element.nationality ? element.nationality.iso : null ,
+            name: element.nationality ? element.nationality.name : null
+          },
+          position: element.position,
+          logo: element.logo,
+          age: element.age,
+          shirtNumber: element.shirtNumber,
+          slug: element.slug,
+          club: clubId,
+        }
+        var newPlayer = new Player(player);
+        a.push(newPlayer);
+        console.log(newPlayer)
+        newPlayer.save((err, player)=>{
+          console.log('Player', err)
+        })
+      })
+    });
+    res.status(201);
   }
 }

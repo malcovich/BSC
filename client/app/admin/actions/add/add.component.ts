@@ -1,64 +1,58 @@
 import { Component, OnInit, Pipe, PipeTransform, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators, NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { CatService } from '../../../services/cat.service';
-import { ResurseService } from '../../../services/resurse.service';
 import { ClubService } from '../../../services/club.service';
+import { ActionService } from '../../../services/action.service';
 import { PagerService } from '../../../services/pager.service';
 import { ToastComponent } from '../../../shared/toast/toast.component';
-import { Cat } from '../../../shared/models/cat.model';
 import { AuthService } from '../../../services/auth.service';
+
 
 @Component({
   selector: 'team',
-  templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css']
+  templateUrl: './add.component.html',
+  styleUrls: ['./add.component.css']
 })
-export class AdminListPlayersComponent implements OnInit {
-  @ViewChild('chart') elementView: ElementRef;
-  cat = new Cat();
-  isLoading = true;
-  isEditing = false;
+export class AdminAddActionsComponent implements OnInit {
+
   team : any;
   matches: any;
   data: any;
   players: any;
   clubs: any;
-  activeTab: string = "match";
-  showScored: boolean = false;
   playersIds: any =[];
   copyPlayers : any;
-  selectedClub: any = "Всі клуби"
-  selectedPosition: any = "Все позиции";
-  listPositions: any = [{name :'Все позиции', letter :'All'}, {name :'Вратари' , letter :'G'},{name : 'Защитники', letter :"D"}, {name :"Полузащитники", letter : "M"}, {name :"Нападающие", letter : "F"}];
   pager: any = {};
   pagedItems: any[];
+  selectedClub : any = {};
+
   constructor(
-              private resurseService: ResurseService,
               private clubsService: ClubService,
               private pagerService: PagerService,
               private route: ActivatedRoute,
+              private actionService: ActionService,
               private auth: AuthService,
               public toast: ToastComponent) { }
 
   ngOnInit() {
-    this.getAllPlayers();
-    // this.getListOfClubs();
-    
+    this.getListOfClubs();
+  }
+  onSubmit(form){
+    form.controls['match'] = this.selectedClub.name;
+    console.log(form);
   }
 
   getAllPlayers() {
     this.clubsService.getAllPlayers().subscribe(
       data =>{
-       
         this.players = data;
         this.copyPlayers = data;
         this.setPage(1);
       }
     )
   }
-
 
   setPage(page: number) {
     if (page < 1 || page > this.pager.totalPages) {
@@ -71,33 +65,7 @@ export class AdminListPlayersComponent implements OnInit {
     // get current page of items
     this.pagedItems = this.players.slice(this.pager.startIndex, this.pager.endIndex + 1);
 }
-
   
-
-
-  filterByPosition(position) {
-    this.selectedPosition = position.name;
-    if(this.selectedPosition == "Все позиции"){
-      this.players = this.copyPlayers;
-    }else{
-      this.players = this.copyPlayers.filter((item)=>{
-        if(item.position == position.letter) return item;
-      });
-    }
-    this.setPage(1);
-  }
-
-  filterByClub(club) {
-    this.selectedClub = club.ukrName;
-    if(this.selectedPosition == "Всі клуби"){
-      this.players = this.copyPlayers;
-    }else{
-      this.players = this.copyPlayers.filter((item)=>{
-        if(item.club._id == club._id) return item;
-      });
-    }
-  }
-
   getListOfClubs() {
     this.clubsService.getAllClubsFromLeague({'league': '5a953a92e144536463b60b2e'}).subscribe(
       data => {
