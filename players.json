@@ -1,0 +1,6768 @@
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba026"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1993-07-02T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Кирил Ковалец",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("6"),
+	"slug" : "kyrylo-kovalets-30826"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba025"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1996-03-06T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Максим Третьяков",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("19"),
+	"slug" : "maxym-tretyakov-27600"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba027"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1996-01-27T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Серденюк, Виктор",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("15"),
+	"slug" : "viktor-serdenyuk-113774"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba028"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1990-03-19T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Александр Машнин",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("20"),
+	"slug" : "oleksander-mashnin-33770"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba029"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1989-09-30T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Евгений Зубейко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("42"),
+	"slug" : "evgen-zubeyko-51907"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba02b"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1990-12-09T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Иван Бобко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("14"),
+	"slug" : "ivan-bobko-65774"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba02c"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1995-01-04T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Никита Татарков",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("17"),
+	"slug" : "mykyta-tatarkov-8487"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba02d"),
+	"age" : NumberInt("29"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1988-09-10T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Ивица Жунич",
+	"nationality" : {
+		"iso" : "HRV",
+		"name" : "Хорватия"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("5"),
+	"slug" : "ivica-zunic-39544"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba02e"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1990-04-18T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Фуссени Бамба",
+	"nationality" : {
+		"iso" : "GIN",
+		"name" : "Гвинея"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("21"),
+	"slug" : "fousseni-bamba-9788"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba030"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1993-06-25T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Евгений Мартыненко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("25"),
+	"slug" : "yevgen-martynenko-30818"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba031"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1990-02-21T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Сергей Лулка",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("27"),
+	"slug" : "sergiy-lyulka-30819"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba032"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1996-03-05T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Павел Ориховский",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("7"),
+	"slug" : "pavlo-orikhovskyi-64956"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba033"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1999-01-21T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Mykola Musolitin",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("7"),
+	"slug" : "mykola-musolitin-135666"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba035"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1993-04-16T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Евгений Смирнов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("11"),
+	"slug" : "yevhen-smirnov-30811"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba036"),
+	"age" : NumberInt("35"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1983-03-08T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Николай Ищенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("32"),
+	"slug" : "mikola-ishchenko-19635"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba037"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1989-10-23T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Артем Чорный",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("13"),
+	"slug" : "artem-chorniy-41723"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba038"),
+	"age" : NumberInt("29"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1988-12-05T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Андрей Новак",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("54"),
+	"slug" : "andriy-novak-41740"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba03a"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1994-05-04T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Сильвио",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("10"),
+	"slug" : "silvio-30831"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba03b"),
+	"age" : NumberInt("30"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1988-02-14T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Иван Матяж",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("22"),
+	"slug" : "ivan-matyazh-44782"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba03c"),
+	"age" : NumberInt("18"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1999-07-20T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Andrej Kouhar",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("12"),
+	"slug" : "andrej-kouhar-144831"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba03d"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1998-05-04T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Vladislav Khamelyuk",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("23"),
+	"slug" : "vladislav-khamelyuk-143090"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba02a"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1996-03-30T00:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Дмитрий Безрук",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("23"),
+	"slug" : "dmytro-bezruk-30835"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba02f"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1990-08-19T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Мамаду Вагуэ",
+	"nationality" : {
+		"iso" : "FRA",
+		"name" : "Франция"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("2"),
+	"slug" : "mamadou-wague-62190"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba040"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1997-05-06T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Юрий Романюк",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("97"),
+	"slug" : "yurii-romaniuk-41800"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba03f"),
+	"age" : NumberInt("30"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1987-08-23T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Александр Гладкий",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("24"),
+	"slug" : "oleksandr-gladky-31831"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba034"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1998-06-24T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Dmitry Semyonov",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("9"),
+	"slug" : "dmitry-semyonov-143089"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba041"),
+	"age" : NumberInt("18"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1999-07-12T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Sokolov Oleg Ruslanovich",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("18"),
+	"slug" : "sokolov-oleg-ruslanovich-147121"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba039"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1994-10-06T01:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Гуттинер",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("8"),
+	"slug" : "guttiner-heider-fernando-costa-tenorio-115416"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba042"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1998-12-14T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Andriy Shtohrin",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("26"),
+	"slug" : "andriy-shtohrin-111566"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba03e"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1999-02-25T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Ibragm Suab",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("35"),
+	"slug" : "ibragm-suab-145537"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba044"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1995-05-08T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Владислав Шаповал",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("11"),
+	"slug" : "vladislav-shapoval-41807"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba043"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1996-05-17T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Джорди Вльюгелс",
+	"nationality" : {
+		"iso" : "BEL",
+		"name" : "Бельгия"
+	},
+	"position" : "M",
+	"shirtNumber" : null,
+	"slug" : "jordy-vleugels-23712"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba045"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1998-02-14T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Тракало, Олег",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("27"),
+	"slug" : "oleg-trakalo-42502"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba046"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1997-08-29T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Щетинин, Владислав",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("51"),
+	"slug" : "vladislabv-schetinin-52636"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba047"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1998-01-18T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Artem Yarmolenko",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("28"),
+	"slug" : "artem-yarmolenko-68986"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba048"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1996-07-02T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Попов, Михаил",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("70"),
+	"slug" : "mihaylo-popov-73281"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba049"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1998-02-15T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Ренат Мочуляк",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("19"),
+	"slug" : "rienat-mochuliak-112130"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba04a"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1997-04-27T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Samir Jose Ramirez Headley",
+	"nationality" : {
+		"iso" : "PAN",
+		"name" : "Панама"
+	},
+	"position" : "D",
+	"shirtNumber" : null,
+	"slug" : "samir-jose-ramirez-headley-138352"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b0669fc7a052f17647ba04b"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : null,
+	"name" : "Konstantin Frolov",
+	"nationality" : {
+		"iso" : null,
+		"name" : null
+	},
+	"position" : "C"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba04c"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1990-04-18T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Денис Гармаш",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("19"),
+	"slug" : "denys-harmash-21894"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba04d"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1997-06-01T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Владимир Шепелев",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("11"),
+	"slug" : "volodymyr-shepeliev-68972"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba04e"),
+	"age" : NumberInt("30"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1987-07-27T23:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Евгений Хачериди",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("34"),
+	"slug" : "yevhen-khacheridi-21882"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba04f"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1995-03-06T00:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Никита Корзун",
+	"nationality" : {
+		"iso" : "BLR",
+		"name" : "Беларусь"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("18"),
+	"slug" : "nikita-korzun-31836"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba050"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1990-03-13T23:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Тамаш Кадар",
+	"nationality" : {
+		"iso" : "HUN",
+		"name" : "Венгрия"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("4"),
+	"slug" : "tamas-kadar-18571"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba051"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1994-03-20T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Дерлис Гонсалес",
+	"nationality" : {
+		"iso" : "PRY",
+		"name" : "Парагвай"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("10"),
+	"slug" : "derlis-gonzalez-31838"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba052"),
+	"age" : NumberInt("32"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1985-11-21T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Мбокани",
+	"nationality" : {
+		"iso" : "COD",
+		"name" : "Демократическая республика Конго"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("70"),
+	"slug" : "dieumerci-mbokani-42823"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba053"),
+	"age" : NumberInt("30"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1988-01-16T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Николай Морозюк",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("9"),
+	"slug" : "mykola-morozyuk-31832"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba054"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1991-05-02T00:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Сергей Сидорчук",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("16"),
+	"slug" : "serhiy-sydorchuk-21891"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba055"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1997-11-15T00:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Виктор Цыганков",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("15"),
+	"slug" : "viktor-tsygankov-31835"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba056"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1996-03-31T00:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Артем Беседин",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("3"),
+	"slug" : "artem-besedin-8477"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba057"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1993-01-06T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Виталий Буйальский",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("29"),
+	"slug" : "vitaliy-buyalskiy-31840"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba058"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1994-06-11T00:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Томазш Кеджиора",
+	"nationality" : {
+		"iso" : "POL",
+		"name" : "Польша"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("4"),
+	"slug" : "tomasz-kedziora-49988"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba059"),
+	"age" : NumberInt("35"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1983-04-24T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Олег Гусев",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("20"),
+	"slug" : "oleg-gusev-31837"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba05a"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1992-05-07T00:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Артур Рудько",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("72"),
+	"slug" : "artur-rudko-31843"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba05b"),
+	"age" : NumberInt("18"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1999-05-29T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Виталий Миколенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("42"),
+	"slug" : "vitalii-mykolenko-100696"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba05c"),
+	"age" : NumberInt("29"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1989-01-29T23:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Йосип Пиварик",
+	"nationality" : {
+		"iso" : "HRV",
+		"name" : "Хорватия"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("22"),
+	"slug" : "josip-pivaric-13113"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba05d"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1994-05-31T00:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Георгий Бущан",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("1"),
+	"slug" : "georgiy-bushchan-95632"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba05e"),
+	"age" : NumberInt("31"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1987-04-03T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Мораес",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("11"),
+	"slug" : "aluisio-moraes-31833"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba05f"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1992-04-11T00:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Александар Пантич",
+	"nationality" : {
+		"iso" : "SRB",
+		"name" : "Сербия"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("4"),
+	"slug" : "aleksandar-pantic-60915"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba060"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1998-08-18T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Евгений Смирный",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("45"),
+	"slug" : "evgeniy-smirniy-128934"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba061"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1998-10-04T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Николай Шапаренко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("6"),
+	"slug" : "mykola-shaparenko-68974"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba062"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1998-10-25T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Nazary Rusin",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("43"),
+	"slug" : "nazary-rusin-100695"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba063"),
+	"age" : NumberInt("30"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1988-01-28T23:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Денис Бойко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("71"),
+	"slug" : "denys-boyko-21881"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba064"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1993-11-27T00:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Бенжамин Вербич",
+	"nationality" : {
+		"iso" : "SVN",
+		"name" : "Словения"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("7"),
+	"slug" : "benjamin-verbic-10304"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba065"),
+	"age" : NumberInt("36"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1981-10-28T23:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Руслан Ротань",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("17"),
+	"slug" : "ruslan-rotan-21889"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba066"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1995-03-24T00:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Никита Бурда",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("26"),
+	"slug" : "mykyta-burda-8469"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba067"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1992-03-07T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Артем Шабанов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("30"),
+	"slug" : "artjom-shabanov-41789"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba068"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1998-05-29T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Ахмед Алибеков",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("46"),
+	"slug" : "akhmed-alibekov-68977"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba069"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1994-05-09T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Дмитрий Хлобас",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("9"),
+	"slug" : "dmytro-khlyobas-34215"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba06a"),
+	"age" : NumberInt("17"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("2000-11-18T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Цитаишвили, Георгий",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("31"),
+	"slug" : "heorhii-tsitaishvili-98663"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba06b"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1989-07-09T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Карлос Самбрано",
+	"nationality" : {
+		"iso" : "PER",
+		"name" : "Перу"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("2"),
+	"slug" : "carlos-augusto-zambrano-6619"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba06c"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1993-01-04T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Владислав Калитвинцев",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("45"),
+	"slug" : "vladislav-kalitvintsev-30808"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba06d"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1998-04-07T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Богдан Леднев",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("48"),
+	"slug" : "bogdan-lednev-68971"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba06e"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1998-07-01T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Владислав Дубинчак",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("18"),
+	"slug" : "vladyslav-dubinchak-68987"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba06f"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1998-01-21T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Иван Калюжный",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("34"),
+	"slug" : "ivan-kaliuzhnyi-71455"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba070"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1996-06-02T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Казаков, Максим",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : null,
+	"slug" : "maksym-kazakov-90215"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba071"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1999-01-01T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Денис Янаков",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : null,
+	"slug" : "denys-yanakov-100693"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba072"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1997-06-14T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Никита Кравченко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("21"),
+	"slug" : "mykyta-kravchenko-103746"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba073"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1998-07-04T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Роман Вантух",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("47"),
+	"slug" : "roman-vantukh-111259"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba074"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1997-10-29T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Владимир Маханьков",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("33"),
+	"slug" : "volodimir-makhankov-111266"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba075"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1998-04-29T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Владислав Алексеев",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : null,
+	"slug" : "vladyslav-alieksieiev-111414"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba076"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : ISODate("1998-03-26T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Александр Петрусенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : null,
+	"slug" : "oleksandr-petrusenko-128933"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066a537a052f17647ba077"),
+	"club" : ObjectId("5a956e25e144536463b6d431"),
+	"dateOfBirth" : null,
+	"name" : "Александр Хацкевич",
+	"nationality" : {
+		"iso" : null,
+		"name" : null
+	},
+	"position" : "C"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865607"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1990-07-02T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Андрей Нестеров",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("5"),
+	"slug" : "andriy-nesterov-11290"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865609"),
+	"age" : NumberInt("30"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1988-01-01T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Олег Голодюк",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("17"),
+	"slug" : "oleg-golodyuk-54179"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865608"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1994-04-02T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Амбросий Чачуа",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("11"),
+	"slug" : "ambrosiy-chachua-11296"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc86560b"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1991-09-09T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Роман Мисак",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("23"),
+	"slug" : "roman-misyak-59777"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc86560a"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1996-04-15T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Дмитрий Кльоц",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("48"),
+	"slug" : "dmytro-klots-11321"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc86560c"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1994-10-11T01:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Денис Мирошниченко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("16"),
+	"slug" : "denis-miroshnichenko-11307"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc86560d"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1996-05-14T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Грисьо, Максим",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("47"),
+	"slug" : "maxim-hryso-111379"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc86560e"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1998-09-23T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Лебеденко, Орест",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("54"),
+	"slug" : "orest-lebedenko-59785"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc86560f"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1997-12-25T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Алексей Гуцуляк",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("17"),
+	"slug" : "oleksii-gutsuliak-50356"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865610"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1996-05-21T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Иван Лобай",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("70"),
+	"slug" : "ivan-lobay-11304"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865611"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1998-05-25T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Карраскаль, Хорхе",
+	"nationality" : {
+		"iso" : "COL",
+		"name" : "Колумбия"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("10"),
+	"slug" : "jorge-carrascal-4712"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865612"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1995-01-28T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Ди Франко, Франциско",
+	"nationality" : {
+		"iso" : "ARG",
+		"name" : "Аргентина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("20"),
+	"slug" : "francisco-di-franco-37206"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865613"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1997-05-20T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Андрей Бусько",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("22"),
+	"slug" : "andriy-busko-59800"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865615"),
+	"age" : NumberInt("33"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1985-04-25T23:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Артём Федецкий",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("44"),
+	"slug" : "artem-fedetskiy-15341"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865616"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1993-04-15T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Сергий Мякушко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("33"),
+	"slug" : "sergiy-myakushko-31845"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865618"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1997-07-16T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Марьян Швед",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("19"),
+	"slug" : "maryan-shved-4713"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865619"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1997-08-05T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Nazar Stasyshyn",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("82"),
+	"slug" : "nazar-stasyshyn-111387"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc86561a"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1997-04-26T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Владимир Сениця",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("24"),
+	"slug" : "volodimir-senytsia-59773"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc86561b"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1997-07-26T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Назар Вербный",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("8"),
+	"slug" : "nazar-verbniy-59801"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc86561d"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1996-10-17T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Yhonathan Bedoya",
+	"nationality" : {
+		"iso" : "COL",
+		"name" : "Колумбия"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("7"),
+	"slug" : "yhonathan-bedoya-141116"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865614"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1995-05-09T00:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Роман Пидкивка",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("1"),
+	"slug" : "roman-pidkivka-8463"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc86561e"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1994-02-20T00:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Ника Сандохадзе",
+	"nationality" : {
+		"iso" : "GEO",
+		"name" : "Грузия"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("4"),
+	"slug" : "nika-sandokhadze-113270"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc86561f"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1999-03-02T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Andrew Remenyuk",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("81"),
+	"slug" : "andrew-remenyuk-111399"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865617"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1993-03-07T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Леонид Акулинин",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("79"),
+	"slug" : "leonid-akulinin-65369"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865620"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1992-02-24T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Алексей Шевченко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("99"),
+	"slug" : "oleksey-shevchenko-11252"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc86561c"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1997-02-09T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Mauricio Cortes",
+	"nationality" : {
+		"iso" : "COL",
+		"name" : "Колумбия"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("19"),
+	"slug" : "mauricio-cortes-30326"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865622"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1990-01-05T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Кристиан Эрбес",
+	"nationality" : {
+		"iso" : "ARG",
+		"name" : "Аргентина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("21"),
+	"slug" : "cristian-erbes-68697"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865623"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1994-10-19T01:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Родриго Варгас",
+	"nationality" : {
+		"iso" : "BOL",
+		"name" : "Боливия"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("17"),
+	"slug" : "rodrigo-vargas-57594"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865621"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1998-07-17T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Catriel Sanchez",
+	"nationality" : {
+		"iso" : "ARG",
+		"name" : "Аргентина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("32"),
+	"slug" : "catriel-sanchez-108410"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865624"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1996-04-07T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Олег Мозил",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("39"),
+	"slug" : "oleh-mozil-11315"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865625"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1996-04-27T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Назар Виздрик",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("74"),
+	"slug" : "nazar-vyzdryk-59796"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865626"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1997-09-29T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Карпенко, Игорь",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("96"),
+	"slug" : "igor-karpenko-59804"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865627"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1996-08-02T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Алвес дос Сантос Рожерио",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("99"),
+	"slug" : "alves-dos-santos-roserio-100217"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865628"),
+	"age" : NumberInt("18"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("2000-03-11T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Bogdan Kurtyak",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("72"),
+	"slug" : "bogdan-kurtyak-111580"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066abf8a13a505fc865629"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : null,
+	"name" : "Oleg Boicyshyn",
+	"nationality" : {
+		"iso" : null,
+		"name" : null
+	},
+	"position" : "C"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc86562a"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1993-09-07T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Вакуленко, Сергей",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("79"),
+	"slug" : "vakulenko-111063"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc86562b"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1989-07-04T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Сергей Яворский",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("13"),
+	"slug" : "sergey-yavorskiy-100655"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc86562c"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1994-01-26T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Дмитрий Мышньов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("22"),
+	"slug" : "dmitriy-mishnev-25415"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc86562d"),
+	"age" : NumberInt("35"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1982-10-05T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Рустам Худжамов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("12"),
+	"slug" : "rustam-khudzhamov-25436"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc86562e"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1996-01-29T00:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Игор Кырюханцев",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("6"),
+	"slug" : "igor-kyryukhantsev-74774"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc86562f"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1990-08-03T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Виталий Виценец",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("6"),
+	"slug" : "vitaliy-vitsenets-112202"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865630"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1993-06-13T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Сергей Болбат",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("50"),
+	"slug" : "sergiy-bolbat-36424"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865631"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1993-05-10T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Вячеслав Чурко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("11"),
+	"slug" : "vyacheslav-churko-4913"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865632"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1992-05-11T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Евген Неплях",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("4"),
+	"slug" : "evgen-neplyah-100654"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865633"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1990-06-20T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Максим Белый",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("30"),
+	"slug" : "maksym-bily-21595"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865634"),
+	"age" : NumberInt("29"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1989-05-10T23:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Игорь Тищенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("19"),
+	"slug" : "igor-tyshchenko-70878"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865635"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1995-03-20T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Гомис, Роджер",
+	"nationality" : {
+		"iso" : "SEN",
+		"name" : "Сенегал"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("17"),
+	"slug" : "roger-gomis-47631"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865636"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1992-04-28T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Александр Насонов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("23"),
+	"slug" : "oleksandr-nasonov-63078"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865637"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1996-04-23T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Андрей Борячук",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("11"),
+	"slug" : "andrii-boryachuk-23520"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865638"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1993-01-20T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Андрей Тотовицкий",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("22"),
+	"slug" : "andriy-totovytsky-23515"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865639"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1996-02-23T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Эрикс Де Соуза",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("31"),
+	"slug" : "erics-de-souza-123610"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc86563a"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1997-01-16T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Артур Авагимян",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("97"),
+	"slug" : "artur-avagimian-110335"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc86563b"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1992-03-05T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Евгений Галчук",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("1"),
+	"slug" : "yevgen-galchuk-25407"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc86563c"),
+	"age" : NumberInt("30"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1987-07-01T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Денис Дедечко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("69"),
+	"slug" : "denis-dedechko-25171"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc86563d"),
+	"age" : NumberInt("35"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1982-06-08T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Анатолий Диденко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("93"),
+	"slug" : "anatoliy-didenko-42526"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc86563e"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1994-08-01T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Бесир Демири",
+	"nationality" : {
+		"iso" : "MKD",
+		"name" : "Македония"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("19"),
+	"slug" : "besir-demiri-14712"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc86563f"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1997-05-07T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Александр Пихаленок",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("20"),
+	"slug" : "oleksandr-pikhalonok-68976"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865640"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1996-04-09T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Joyskim Dawa Tchakonte",
+	"nationality" : {
+		"iso" : "CMR",
+		"name" : "Камерун"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("5"),
+	"slug" : "joyskim-dawa-tchakonte-144326"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865641"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1998-06-16T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Yevgeniy Bilokin",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("29"),
+	"slug" : "yevgeniy-bilokin-145650"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865642"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1998-03-29T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Oleksii Bykov",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("2"),
+	"slug" : "oleksii-bykov-111299"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865643"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1997-03-13T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Данило Игнатенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("7"),
+	"slug" : "danylo-ignatenko-143641"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865644"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1991-02-22T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Игорь Левченко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("14"),
+	"slug" : "igor-levchenko-58604"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865645"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1996-04-16T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Деныс Арендарук",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("70"),
+	"slug" : "denys-arendaruk-143642"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865646"),
+	"age" : NumberInt("18"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("2000-05-24T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Ivan Golovkn",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("24"),
+	"slug" : "ivan-golovkn-148044"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865647"),
+	"age" : null,
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : null,
+	"logo" : null,
+	"name" : "Artur Murza",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("8"),
+	"slug" : "artur-murza-148043"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865648"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1997-05-28T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Андрей Коробенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("28"),
+	"slug" : "andriy-korobenko-68980"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc865649"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1989-10-10T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Олег Мищенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("99"),
+	"slug" : "oleg-mishchenko-25393"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc86564a"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1993-03-19T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Михайло Писко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("3"),
+	"slug" : "mykhailo-pysko-25422"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc86564c"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1994-03-14T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Сергей Горбунов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("94"),
+	"slug" : "sergey-gorbunov-109956"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc86564d"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1995-02-05T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Evgen Gritsenko",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : null,
+	"slug" : "evgen-gritsenko-110035"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc86564b"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1996-06-17T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Меркушов, Артем",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("96"),
+	"slug" : "artem-merkushov-99065"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc86564e"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : ISODate("1996-02-23T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Eriks Santos",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "M",
+	"shirtNumber" : null,
+	"slug" : "eriks-santos-133208"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066af78a13a505fc86564f"),
+	"club" : ObjectId("5a956e81e144536463b6d5a9"),
+	"dateOfBirth" : null,
+	"name" : "Бабич, Александр",
+	"nationality" : {
+		"iso" : null,
+		"name" : null
+	},
+	"position" : "C"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4dc"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1998-08-22T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Беленький, Станислав",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("22"),
+	"slug" : "stanislav-bilenkiy-104092"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4dd"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1996-06-19T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Евгений Цымбалюк",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("44"),
+	"slug" : "yevgeniy-tsymbalyuk-44786"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4de"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1998-06-04T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Хомутов, Владислав",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("45"),
+	"slug" : "vladislav-khomutov-41700"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4e0"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1993-06-30T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Брикнер, Иван",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("27"),
+	"slug" : "ivan-brikner-52978"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4e1"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1990-01-26T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Дмитрий Немчанинов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("23"),
+	"slug" : "dmitriy-nemchaninov-41694"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4df"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1993-03-24T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Заури Махарадзе",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("1"),
+	"slug" : "zauri-makharadze-41685"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4e2"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1995-10-07T01:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Владис-Эммерсон Иллой-Айет",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("32"),
+	"slug" : "vladis-emmerson-illoy-ayyet-41711"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4e3"),
+	"age" : NumberInt("29"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1989-05-15T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Артем Кичак",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("13"),
+	"slug" : "artem-kychak-41782"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4e4"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1994-01-15T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Сондей, Иван",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("7"),
+	"slug" : "ivan-sondey-11230"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4e5"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1995-05-18T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Зураб Очигава",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("18"),
+	"slug" : "zurab-ochihava-31834"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4e6"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1993-01-15T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Владимир Доронин",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("8"),
+	"slug" : "volodimir-doronin-41707"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4e8"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1991-10-23T01:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Руслан Кисиль",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("9"),
+	"slug" : "ruslan-kisil-25432"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4e9"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1993-07-13T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Пасич, Геннадий",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("41"),
+	"slug" : "gennady-pasich-11240"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4ea"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1995-10-17T01:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Леонидас",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("20"),
+	"slug" : "leonidas-110344"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4eb"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1993-07-13T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Евгений Пасич",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("42"),
+	"slug" : "evgeny-pasich-11241"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4ec"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1991-07-06T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Темур Парцвания",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("3"),
+	"slug" : "temur-partsvania-41687"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4ed"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1995-01-09T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Сергей Кулинич",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("95"),
+	"slug" : "sergiy-kulinich-2662"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4ef"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1991-04-07T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Андрей Мищенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("5"),
+	"slug" : "andriy-mishenko-8269"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4f0"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1992-05-02T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Йосип Вукович",
+	"nationality" : {
+		"iso" : "HRV",
+		"name" : "Хорватия"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("92"),
+	"slug" : "josip-vukovic-76440"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4f1"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1996-03-21T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Юрий Захаркив",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("99"),
+	"slug" : "yurii-zakharkiv-59781"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4f2"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1997-02-10T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Козлов, Артем",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("89"),
+	"slug" : "artem-kozlov-95618"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4e7"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1993-09-07T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Сергий Вакуленко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("79"),
+	"slug" : "sergiy-vakulenko-107158"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4f4"),
+	"age" : NumberInt("18"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("2000-03-07T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Snornitsyn Igor Sergeevich",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("74"),
+	"slug" : "snornitsyn-igor-sergeevich-147109"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4f5"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1998-04-18T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Счастливцев, Вадим",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("24"),
+	"slug" : "vadym-schastlyvtsev-110572"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4ee"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1992-11-09T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Артем Щедрый",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("11"),
+	"slug" : "artem-shchedry-139385"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4f6"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1998-03-13T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Vladyslav Apostoliuk",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("98"),
+	"slug" : "vladyslav-apostoliuk-149247"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4f3"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1991-01-14T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Виталий Балашов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("17"),
+	"slug" : "vitaliy-balashov-63079"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4f7"),
+	"age" : NumberInt("18"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("2000-03-16T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Artem Tishchenko",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : null,
+	"shirtNumber" : NumberInt("70"),
+	"slug" : "artem-tishchenko-149245"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4f8"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1998-04-03T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Едынак, Назар",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("21"),
+	"slug" : "jedynak-nazar-104608"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4f9"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1996-10-24T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Luka Nadiradze",
+	"nationality" : {
+		"iso" : "GEO",
+		"name" : "Грузия"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("88"),
+	"slug" : "luka-nadiradze-149246"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4fa"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1990-11-09T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Шериф Иса",
+	"nationality" : {
+		"iso" : "NGA",
+		"name" : "Нигерия"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("23"),
+	"slug" : "sheriff-isa-73280"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4fb"),
+	"age" : NumberInt("44"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1973-08-27T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Владислав Гельзин",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("10"),
+	"slug" : "vladyslav-gelzin-80604"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4fc"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : ISODate("1998-11-21T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Богдан Бескровный",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("77"),
+	"slug" : "bogdan-bezkrovny-gorovich-112823"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066b9962ca5630b4d4a4fd"),
+	"club" : ObjectId("5a956df5e144536463b6d369"),
+	"dateOfBirth" : null,
+	"name" : "Санжар, Роман",
+	"nationality" : {
+		"iso" : null,
+		"name" : null
+	},
+	"position" : "C"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d989"),
+	"age" : NumberInt("29"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1988-06-06T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Марлос",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("11"),
+	"slug" : "marlos-6363"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d98a"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1991-03-14T23:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Сергей Кривцов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("4"),
+	"slug" : "sergey-krivtsov-23518"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d98b"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1996-02-14T00:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Виктор Коваленко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("10"),
+	"slug" : "viktor-kovalenko-6376"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d98c"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1991-05-13T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Алан Патрик",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("21"),
+	"slug" : "alan-patrick-26011"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d98d"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1991-03-13T23:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Факундо Феррейра",
+	"nationality" : {
+		"iso" : "ARG",
+		"name" : "Аргентина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("19"),
+	"slug" : "facundo-ferreyra-6365"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d98e"),
+	"age" : NumberInt("33"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1984-06-27T23:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Андрей Пятов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("30"),
+	"slug" : "andriy-pyatov-6368"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d990"),
+	"age" : NumberInt("29"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1989-01-18T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Дентиньо",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("9"),
+	"slug" : "dentinho-6382"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d991"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1991-11-05T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Густаво Бланко",
+	"nationality" : {
+		"iso" : "ARG",
+		"name" : "Аргентина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("99"),
+	"slug" : "blanco-leschuk-11294"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d98f"),
+	"age" : NumberInt("36"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1982-04-30T23:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Дарио Срна",
+	"nationality" : {
+		"iso" : "HRV",
+		"name" : "Хорватия"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("33"),
+	"slug" : "darijo-srna-6372"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d992"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1992-07-08T00:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Иван Ордец",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("18"),
+	"slug" : "ivan-ordets-6389"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d994"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1992-09-08T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Бернард",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("10"),
+	"slug" : "bernard-23513"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d995"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1994-03-13T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Иван Петряк",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("34"),
+	"slug" : "ivan-petryak-11261"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d996"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1995-08-16T00:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Вячеслав Танковский",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("20"),
+	"slug" : "vyacheslav-tankovskiy-8473"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d997"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1989-08-07T23:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Тарас Степаненко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("6"),
+	"slug" : "taras-stepanenko-6359"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d999"),
+	"age" : NumberInt("30"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1988-01-12T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Тайсон",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("24"),
+	"slug" : "taison-6367"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d99a"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1993-03-05T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Фред",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("10"),
+	"slug" : "fred-6361"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d99b"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1993-02-08T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Давид Хотчолава",
+	"nationality" : {
+		"iso" : "GEO",
+		"name" : "Грузия"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("5"),
+	"slug" : "david-khotcholava-30802"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d99c"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1991-01-12T23:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Богдан Бутко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("2"),
+	"slug" : "bohdan-butko-6379"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d993"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1990-01-10T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Исмаили",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("31"),
+	"slug" : "ismaily-6369"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d99e"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1993-01-26T00:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Никита Шевченко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("26"),
+	"slug" : "mykyta-shevchenko-6393"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d99f"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1996-05-02T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Николай Матвиенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("3"),
+	"slug" : "mykola-matviyenko-23514"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d998"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1989-08-02T23:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Ярослав Ракицкий",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("44"),
+	"slug" : "yaroslav-rakitskiy-6374"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d9a0"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1993-05-08T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Оларенваю кайоде",
+	"nationality" : {
+		"iso" : "NGA",
+		"name" : "Нигерия"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("88"),
+	"slug" : "olarenwaju-kayode-97871"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d99d"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1996-08-03T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Александр Зубков",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("11"),
+	"slug" : "oleksandr-zubkov-23522"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d9a1"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1998-11-17T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Dodo",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("98"),
+	"slug" : "dodo-3512"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d9a2"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1991-09-22T00:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Дмитрий Гречишкин",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("24"),
+	"slug" : "dmytro-grechyshkin-11271"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d9a3"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1992-12-24T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Максим Малышев",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("17"),
+	"slug" : "maksym-malyshev-6387"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d9a4"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1992-02-06T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Веллингтон Нем",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("12"),
+	"slug" : "wellington-nem-6384"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d9a5"),
+	"age" : NumberInt("32"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1986-03-01T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Руслан Фомин",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("86"),
+	"slug" : "ruslan-fomin-19984"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d9a6"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1996-10-17T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Олег Кудрик",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("55"),
+	"slug" : "oleg-kudryk-23521"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d9a7"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : ISODate("1993-08-02T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Illya Glushytskyy",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("29"),
+	"slug" : "illya-glushytskyy-147089"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066bce735b353698a4d9a8"),
+	"club" : ObjectId("5a9562e4e144536463b6a7a1"),
+	"dateOfBirth" : null,
+	"name" : "Фонсека, Паулу",
+	"nationality" : {
+		"iso" : null,
+		"name" : null
+	},
+	"position" : "C"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bc8"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1994-05-26T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Герман Пеньков",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("71"),
+	"slug" : "herman-penkov-19648"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bc9"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1998-12-04T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Костенко, Кирилл",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("10"),
+	"slug" : "kirilo-kostenko-19632"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bcb"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1998-02-09T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Артур Даниелян",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("22"),
+	"slug" : "artur-danielyan-19622"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bcc"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1996-10-02T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Марьян Мысык",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("8"),
+	"slug" : "maryan-mysyk-92463"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bca"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1997-05-15T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Глеб Грачев",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("15"),
+	"slug" : "glib-grachov-19647"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bcd"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1997-02-26T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Михаил Месхи",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("23"),
+	"slug" : "mikhaylo-meskhi-19624"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bce"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1995-05-17T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Кузык, Орест",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("17"),
+	"slug" : "orest-kuzyk-64623"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bcf"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1998-03-08T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Богдан Мыцик",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("4"),
+	"slug" : "bogdan-mitsik-19637"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bd0"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1996-03-03T00:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Данило Кныш",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("7"),
+	"slug" : "danylo-knysh-111241"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bd1"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1997-06-22T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Oleksei Shebetun",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("27"),
+	"slug" : "oleksei-shebetun-111683"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bd2"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1997-06-15T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Андрей Якимов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("97"),
+	"slug" : "andriy-yakymiv-113145"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bd3"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1994-06-12T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Гор Малакян",
+	"nationality" : {
+		"iso" : "ARM",
+		"name" : "Армения"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("3"),
+	"slug" : "gor-malakyan-19605"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bd4"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1998-05-29T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Дмитрий Копытов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("13"),
+	"slug" : "dmytro-kopytov-19630"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bd6"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1997-05-05T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Климчук, Юрий",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("11"),
+	"slug" : "yurii-klymchuk-19621"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bd8"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1995-10-22T01:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Николай Павлюк",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("95"),
+	"slug" : "mykola-pavliuk-19639"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bd9"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1994-09-07T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Максим Задерака",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("94"),
+	"slug" : "maksym-zaderaka-19655"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bda"),
+	"age" : NumberInt("18"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1999-12-20T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Нехаев, Игорь",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("74"),
+	"slug" : "igor-nehayev-111244"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bdb"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1998-07-26T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Анатолий Ульянов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("20"),
+	"slug" : "anatoliy-ulyanov-19656"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bdd"),
+	"age" : NumberInt("32"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1985-10-25T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Игорь Ощипко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("88"),
+	"slug" : "igor-oshchipko-77323"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bde"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1995-04-04T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Johnathan",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("2"),
+	"slug" : "johnathan-142876"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bdf"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1992-06-11T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Thiago Romulo",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("92"),
+	"slug" : "thiago-romulo-104925"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0be0"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1993-05-21T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Ebert",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("66"),
+	"slug" : "ebert-143139"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bd5"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1998-10-20T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Артём Хотяновский",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("16"),
+	"slug" : "artem-khotsianovskyi-19646"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0be2"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1998-05-21T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Антошин, Антон",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("55"),
+	"slug" : "anton-antoshin-19628"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bd7"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1999-04-29T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Вакула, Владислав",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("99"),
+	"slug" : "vladislav-vakula-111239"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0be3"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1998-08-18T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Nikita Bondarenko",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("38"),
+	"slug" : "nikita-bondarenko-147514"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bdc"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1996-05-20T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Anatolii Nuriev",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("96"),
+	"slug" : "anatolii-nuriev-143122"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0be4"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1998-07-22T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Андрусенко, Владислав",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("98"),
+	"slug" : "vladislav-andrusenko-19626"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0be5"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1997-04-19T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Богдан Кушнаренко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("9"),
+	"slug" : "bogdan-kushnarenko-19634"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0be1"),
+	"age" : NumberInt("17"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("2000-12-03T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Danil Ermolov",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("48"),
+	"slug" : "danil-ermolov-144798"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0be6"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1998-10-09T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Плутенко, Валентин",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("6"),
+	"slug" : "valentin-plutenko-19640"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0be7"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1998-10-09T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Данило Рябенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("1"),
+	"slug" : "danilo-ryabenko-19650"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0be8"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1996-01-22T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Иван Силецкий",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("25"),
+	"slug" : "ivan-siletsky-59780"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0be9"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1997-09-11T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Адамян, Арам Ара",
+	"nationality" : {
+		"iso" : "BGR",
+		"name" : "Болгария"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("14"),
+	"slug" : "aram-ara-adamyan-111237"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bea"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1998-05-26T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Никита Зеленский",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("77"),
+	"slug" : "mykyta-zelenskyi-111238"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0beb"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1999-04-11T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Шевчук, Святослав",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("5"),
+	"slug" : "sviatoslav-shevchuk-111240"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bec"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1998-04-24T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Малышев, Денис",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("12"),
+	"slug" : "denis-malishev-111242"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bed"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : ISODate("1994-04-19T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Bogdan Rudiuk",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("87"),
+	"slug" : "bogdan-rudiuk-148294"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c4ae765d62db82f0bee"),
+	"club" : ObjectId("5a953bcee144536463b6106f"),
+	"dateOfBirth" : null,
+	"name" : "Nikolay Nikolov Kostov",
+	"nationality" : {
+		"iso" : null,
+		"name" : null
+	},
+	"position" : "C"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd23a"),
+	"age" : NumberInt("31"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1986-05-29T23:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Александр Бандура",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("31"),
+	"slug" : "oleksandr-bandura-19612"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd23b"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1991-07-17T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Владимир Адамюк",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("3"),
+	"slug" : "volodymyr-adamyuk-27560"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd23c"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1992-01-16T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Руслан Степанюк",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("7"),
+	"slug" : "ruslan-stepanyuk-15386"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd23d"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1991-05-23T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Волошинович, Ростислав",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("22"),
+	"slug" : "rostislav-voloshinovich-15397"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd23e"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1991-03-26T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Роман Карасюк",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("91"),
+	"slug" : "roman-karasyuk-19653"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd23f"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1991-12-16T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Евгений Морозенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("10"),
+	"slug" : "evgen-morozenko-98802"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd241"),
+	"age" : NumberInt("31"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1986-06-21T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Сергей Борзенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("33"),
+	"slug" : "sergey-borzenko-15401"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd242"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1990-06-03T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Артур Западня",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("43"),
+	"slug" : "artur-zapadnya-15402"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd240"),
+	"age" : NumberInt("30"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1987-10-09T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Сергей Симинин",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("8"),
+	"slug" : "sergey-siminin-54174"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd243"),
+	"age" : NumberInt("18"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("2000-02-02T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Максим Химчак",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("27"),
+	"slug" : "maxim-khimchak-120833"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd245"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1996-04-14T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Luiz Paulo Gabriel De Souza",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("20"),
+	"slug" : "luiz-paulo-gabriel-de-souza-143159"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd246"),
+	"age" : NumberInt("29"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1989-02-07T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Станислав Кулиш",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("11"),
+	"slug" : "stanislav-kulish-41747"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd247"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1989-12-04T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Максим Каленчук",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("6"),
+	"slug" : "maksim-kalenchuk-19601"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd248"),
+	"age" : NumberInt("30"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1987-06-12T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Денис Кожанов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("29"),
+	"slug" : "denis-kozhanov-76878"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd24a"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1995-04-18T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Julio Sezar",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("95"),
+	"slug" : "julio-sezar-143766"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd24b"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1992-12-30T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Павло Мягков",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("53"),
+	"slug" : "pavel-myagkov-51335"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd24c"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1996-05-19T00:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Павел Лукьянчук",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("2"),
+	"slug" : "pavlo-lukyanchuk-74773"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd24d"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1995-01-29T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Богдан Сарнавский",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("23"),
+	"slug" : "bohdan-sarnavskyi-8482"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd24f"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1997-04-04T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Victor Barabash",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("25"),
+	"slug" : "victor-barabash-147841"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd250"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1997-01-17T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Ivan Pavlyukh",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("46"),
+	"slug" : "ivan-pavlyukh-149298"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd251"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1997-03-17T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Скотаренко, Владимир",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("5"),
+	"slug" : "volodimir-skotarenko-59799"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd252"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1997-07-25T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Дмитрий Фастов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("1"),
+	"slug" : "dmytro-fastov-105022"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd244"),
+	"age" : NumberInt("32"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1985-06-02T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Никита Каменюка",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("2"),
+	"slug" : "mykyta-kamenyuka-11259"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd254"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1999-04-16T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Kostic Orest",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("12"),
+	"slug" : "kostic-orest-149302"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd255"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : null,
+	"name" : "Andrei Demchenko",
+	"nationality" : {
+		"iso" : null,
+		"name" : null
+	},
+	"position" : "C"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd249"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1996-08-30T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Vladyslav Pryimak",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("4"),
+	"slug" : "vladyslav-pryimak-137375"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd24e"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1998-11-04T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Vitalii Mykytyn",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("18"),
+	"slug" : "vitalii-mykytyn-147839"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066c7f28957c22643cd253"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956d45e144536463b6d094"),
+	"dateOfBirth" : ISODate("1996-07-03T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Vladyslav Lyubko",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("21"),
+	"slug" : "vladyslav-lyubko-147840"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1a9"),
+	"age" : NumberInt("32"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1986-02-06T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Вадим Сапай",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("23"),
+	"slug" : "vadim-sapai-34238"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1ab"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1991-02-25T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Александр Склярп",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("6"),
+	"slug" : "aleksandr-sklyar-34207"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1aa"),
+	"age" : NumberInt("31"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1986-08-09T23:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Александр Чижов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("33"),
+	"slug" : "oleksandr-chizhov-96725"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1ad"),
+	"age" : NumberInt("30"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1987-06-01T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Вячеслав Шарпар",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("11"),
+	"slug" : "vyacheslav-sharpar-92562"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1ac"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1990-03-21T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Юрий Коломоец",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("26"),
+	"slug" : "yuri-kolomoets-34219"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1ae"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1994-02-13T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Владимир Одарюк",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("19"),
+	"slug" : "volodymyr-odariuk-34236"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1af"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1996-06-17T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Дмитрий Шаповал",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("25"),
+	"slug" : "dmytro-shapoval-82354"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1b0"),
+	"age" : NumberInt("32"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1986-03-03T23:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Богдан Шуст",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("1"),
+	"slug" : "bogdan-shust-34227"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1b1"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1990-11-14T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Игорь Пердута",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("4"),
+	"slug" : "igor-perduta-34204"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1b2"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1992-10-19T01:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Гегам Кадымян",
+	"nationality" : {
+		"iso" : "ARM",
+		"name" : "Армения"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("10"),
+	"slug" : "gegam-kadimyan-11324"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1b3"),
+	"age" : NumberInt("30"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1988-02-11T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Владимир Чеснаков",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("17"),
+	"slug" : "volodymyr-chesnakov-34217"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1b4"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1994-11-01T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Ардин Даллку",
+	"nationality" : {
+		"iso" : "KOS",
+		"name" : "Косово"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("44"),
+	"slug" : "ardin-dallku-81264"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1b5"),
+	"age" : NumberInt("32"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1985-07-22T23:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Павел Ребенок",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("82"),
+	"slug" : "pavel-rebenok-34223"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1b7"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1993-05-07T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Владислав Кулач",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("10"),
+	"slug" : "vladyslav-kulach-11282"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1b8"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1993-02-13T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Артур Загорулько",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("9"),
+	"slug" : "artur-zahorulko-34230"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1ba"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1997-03-03T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Алексей Луценко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("37"),
+	"slug" : "alexey-lutsenko-111678"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1bb"),
+	"age" : NumberInt("31"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1987-02-10T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Александр Кобахидзе",
+	"nationality" : {
+		"iso" : "GEO",
+		"name" : "Грузия"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("30"),
+	"slug" : "aleksander-kobakhidze-8366"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1bc"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1997-11-19T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Сакс, Тарас",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("40"),
+	"slug" : "taras-saks-111679"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1bd"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1996-05-03T00:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Андро Гиоргадзе",
+	"nationality" : {
+		"iso" : "GEO",
+		"name" : "Грузия"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("2"),
+	"slug" : "andro-giorgadze-111677"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1b6"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1995-02-25T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Дмитрий Кравченко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("29"),
+	"slug" : "dmytro-kravchenko-34241"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1bf"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1995-01-16T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Глущук, Юрий",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("95"),
+	"slug" : "yuri-glushchuk-25413"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1b9"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1993-02-19T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Александр Ткаченко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("21"),
+	"slug" : "aleksandr-tkachenko-111428"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1c0"),
+	"age" : NumberInt("18"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1999-08-10T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Inhal Vladimirovich Chertkoyev",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("8"),
+	"slug" : "inhal-vladimirovich-chertkoyev-144291"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1c1"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1997-11-19T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Сакив, Тарас",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("40"),
+	"slug" : "taras-sakiv-54186"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1be"),
+	"age" : NumberInt("29"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1989-03-03T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Денис Васин",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("77"),
+	"slug" : "denis-vasin-19643"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1c2"),
+	"age" : null,
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : null,
+	"logo" : null,
+	"name" : "Vadim Cervak",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("73"),
+	"slug" : "vadim-cervak-144283"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1c3"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1991-07-29T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Михаил Сергийчук",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("9"),
+	"slug" : "mikhailo-sergiychuk-76877"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1c4"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1993-01-10T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Игорь Гончар",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("55"),
+	"slug" : "igor-gonchar-16791"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1c5"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1996-07-26T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Данило Канавцев",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("1"),
+	"slug" : "danylo-kanavtsev-51900"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1c6"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1997-02-17T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Александр Максименко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("35"),
+	"slug" : "oleksandr-maksymenko-54182"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1c7"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1997-06-11T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Остапенко, Олег",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("5"),
+	"slug" : "oleg-ostapenko-82309"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1c8"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1998-05-19T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Косовский, Сергей",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("38"),
+	"slug" : "sergii-kosovskyi-104835"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1c9"),
+	"age" : NumberInt("18"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("2000-03-06T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Тик, Максим",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : null,
+	"slug" : "maxim-thick-111423"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1ca"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1997-10-24T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Сидоренко, Владислав",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("27"),
+	"slug" : "vladyslav-sydorenko-111429"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1cb"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1997-02-27T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Ян Вечный",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("71"),
+	"slug" : "yan-vichnyi-111672"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1cc"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : ISODate("1999-01-31T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Максим Кулиш",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : null,
+	"slug" : "maksym-kulish-124701"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066cb62d0b821a78abc1cd"),
+	"club" : ObjectId("5a956dcfe144536463b6d2cc"),
+	"dateOfBirth" : null,
+	"name" : "Сачко, Василий",
+	"nationality" : {
+		"iso" : null,
+		"name" : null
+	},
+	"position" : "C"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc97e"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1997-02-17T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Максим Прядун",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("29"),
+	"slug" : "maksym-priadun-54177"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc980"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1993-07-07T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Арман Ховханнисян",
+	"nationality" : {
+		"iso" : "ARM",
+		"name" : "Армения"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("19"),
+	"slug" : "arman-hovhannisyan-108833"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc97f"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1991-05-19T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Загальский, Игорь",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("21"),
+	"slug" : "igor-zagalsky-6832"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc982"),
+	"age" : NumberInt("29"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1989-03-19T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Ковалев, Максим",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("55"),
+	"slug" : "maksim-kovalev-6858"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc981"),
+	"age" : NumberInt("30"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1987-09-30T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Алексей Чичиков",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("77"),
+	"slug" : "oleksiy-chichikov-6860"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc983"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1990-01-27T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Максим Драченко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("7"),
+	"slug" : "maksim-drachenko-41705"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc984"),
+	"age" : NumberInt("18"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1999-09-16T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Кирилл Дрышлюк",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("27"),
+	"slug" : "cyril-dryshlyuk-95787"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc985"),
+	"age" : NumberInt("30"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1988-03-15T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Евгений Паст",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("44"),
+	"slug" : "evgeny-past-6853"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc986"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1994-06-21T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Дмитрий Фатеев",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("20"),
+	"slug" : "dmytro-fateev-6830"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc987"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1993-06-24T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Вячеслав Панфилов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("28"),
+	"slug" : "vyacheslav-panfilov-99308"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc988"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1997-07-19T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Арно Гедж",
+	"nationality" : {
+		"iso" : "FRA",
+		"name" : "Франция"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("22"),
+	"slug" : "arnaud-guedj-110766"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc989"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1995-01-06T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Павел Полехенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("8"),
+	"slug" : "pavlo-polegenko-69697"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc98a"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1998-03-01T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Александр Маткобожик",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("23"),
+	"slug" : "alexander-matkobozhyk-111681"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc98c"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1996-07-09T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Сесе Франк Пепе",
+	"nationality" : {
+		"iso" : "FRA",
+		"name" : "Франция"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("45"),
+	"slug" : "cece-franck-pepe-116414"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc98d"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1995-11-18T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Ишим Мохамед Эль Амдаоуи",
+	"nationality" : {
+		"iso" : "FRA",
+		"name" : "Франция"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("11"),
+	"slug" : "ishim-mohamed-el-amdaoui-119616"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc98f"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1998-01-19T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Даниил Кондраков",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("31"),
+	"slug" : "daniil-kondrakov-96568"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc990"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1997-05-21T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Сергей Петров",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("38"),
+	"slug" : "sergiy-petrov-41797"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc991"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1997-07-22T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Максим Аверьянов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("24"),
+	"slug" : "maxim-averyanov-51910"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc992"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1998-04-18T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Назар Малиновский",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("9"),
+	"slug" : "nazar-malinovskyy-51903"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc994"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1998-09-05T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Александр Тарасюк",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("81"),
+	"slug" : "alexander-tarasyuk-111367"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc995"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1995-05-26T00:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Дмитрий Билоног",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("10"),
+	"slug" : "dmytro-bilonog-6841"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc98b"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1993-06-25T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Иван Цюпа",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("93"),
+	"slug" : "ivan-tsupa-25427"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc996"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1998-09-25T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Vladislav Veremeyev",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("18"),
+	"slug" : "vladislav-veremeyev-143235"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc997"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1993-05-14T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Антон Братков",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("5"),
+	"slug" : "anton-bratkov-15385"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc98e"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1995-04-05T00:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Глеб Рассадкин",
+	"nationality" : {
+		"iso" : "BLR",
+		"name" : "Беларусь"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("33"),
+	"slug" : "gleb-rassadkin-56090"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc999"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1996-10-18T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Ходаковский, Никита",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("14"),
+	"slug" : "mikita-khodakovskii-111243"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc99a"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1990-04-03T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Джулиан Рулье",
+	"nationality" : {
+		"iso" : "FRA",
+		"name" : "Франция"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("3"),
+	"slug" : "julian-rullier-144282"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc993"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1997-06-09T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Збунь, Алексей",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("15"),
+	"slug" : "oleksiy-zbun-6827"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc99b"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1998-02-18T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Artem Siomka",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("17"),
+	"slug" : "artem-siomka-146646"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc998"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1990-04-20T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Ярослав Ямполь",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("90"),
+	"slug" : "yaroslav-yampol-50996"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc99c"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1994-09-13T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Адель Гафаити",
+	"nationality" : {
+		"iso" : "DZA",
+		"name" : "Алжир"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("16"),
+	"slug" : "adel-gafaiti-146468"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc99d"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1997-01-26T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Лепка, Роман",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("41"),
+	"slug" : "roman-lyopka-6851"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc99e"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1998-09-25T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Веремеев, Владислав",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("18"),
+	"slug" : "veremeyev-110963"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc99f"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1998-04-19T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Медведев, Марк",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("74"),
+	"slug" : "mark-medvedev-111342"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc9a0"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1996-04-11T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Александр Зозуля",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("13"),
+	"slug" : "alexander-zozulya-111369"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc9a1"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1998-03-15T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Евгений Куцев",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("95"),
+	"slug" : "evgeniy-kutsev-111682"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc9a2"),
+	"age" : NumberInt("24"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : ISODate("1994-02-24T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Момар Бангоура",
+	"nationality" : {
+		"iso" : "FRA",
+		"name" : "Франция"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("94"),
+	"slug" : "momar-bangoura-146469"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066ce74838d43584ddc9a3"),
+	"club" : ObjectId("5a956d95e144536463b6d1d5"),
+	"dateOfBirth" : null,
+	"name" : "Монарев, Роман",
+	"nationality" : {
+		"iso" : null,
+		"name" : null
+	},
+	"position" : "C"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dae"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1998-05-22T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Максим Лунов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("18"),
+	"slug" : "maksym-lunov-27602"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2daf"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1994-09-27T01:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Александр Сваток",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("39"),
+	"slug" : "oleksandr-svatok-27589"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2db0"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1990-08-25T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Евгений Опанасенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("39"),
+	"slug" : "yevhen-opanasenko-58584"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2db1"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1995-02-02T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Игорь Харатин",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("21"),
+	"slug" : "igor-kharatin-8500"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2db2"),
+	"age" : NumberInt("37"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1980-12-14T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Вячеслав Чечер",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("44"),
+	"slug" : "vyacheslav-checher-11286"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2db3"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1996-04-30T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Кочергин, Владислав",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("7"),
+	"slug" : "vladyslav-kochergin-27568"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2db5"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1991-06-10T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Василий Прийма",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("4"),
+	"slug" : "vasyl-pryima-4910"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2db4"),
+	"age" : NumberInt("36"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1981-07-08T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Желько Любенович",
+	"nationality" : {
+		"iso" : "SRB",
+		"name" : "Сербия"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("22"),
+	"slug" : "zeljko-ljubenovic-11269"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2db6"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1995-09-06T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Юрий",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("95"),
+	"slug" : "iury-56872"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2db7"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1992-07-08T00:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Руслан Бабенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("36"),
+	"slug" : "ruslan-babenko-17132"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2db8"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1996-05-30T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Силаш",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("96"),
+	"slug" : "silas-110343"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2db9"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1995-09-01T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Владислав Кабаев",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("27"),
+	"slug" : "vladislav-kabaiev-8475"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dba"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1999-02-11T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Андрей Лунин",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("23"),
+	"slug" : "andriy-lunin-65484"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dbb"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1991-03-03T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Артем Гордиенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("5"),
+	"slug" : "artem-gordienko-11257"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dbc"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1990-01-13T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Артем Громов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("28"),
+	"slug" : "artem-gromov-31844"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dbd"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1994-06-25T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Александр Андриевский",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("27"),
+	"slug" : "oleksandr-andrievsky-30804"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dbe"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1992-06-02T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Александр Караваев",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("20"),
+	"slug" : "olexandr-karavaev-11267"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dbf"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1997-11-21T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Сергей Майборода",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("64"),
+	"slug" : "mayboroda-123611"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dc0"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1997-02-11T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Фопаля, Давид",
+	"nationality" : {
+		"iso" : "FRA",
+		"name" : "Франция"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("11"),
+	"slug" : "david-faupala-70433"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dc1"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1998-01-23T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Евгений Чеберко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("5"),
+	"slug" : "yevgen-cheberko-27579"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dc2"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1997-01-20T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Александр Тымчук",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("17"),
+	"slug" : "oleksandr-tymchyk-67639"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dc3"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1997-01-09T00:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Mohamed El Bouazzati",
+	"nationality" : {
+		"iso" : "MAR",
+		"name" : "Марокко"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("16"),
+	"slug" : "mohamed-el-bouazzati-18687"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dc4"),
+	"age" : null,
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : null,
+	"logo" : null,
+	"name" : "Луис Филиппе",
+	"nationality" : {
+		"iso" : null,
+		"name" : null
+	},
+	"position" : null,
+	"shirtNumber" : null,
+	"slug" : "luis-philippe-145632"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dc5"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1998-10-03T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Шалфиев, Егор",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("76"),
+	"slug" : "yegor-shalfieiev-58598"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dc6"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1996-11-21T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Dmytro Lytvyn",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("3"),
+	"slug" : "dmytro-lytvyn-43608"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dc7"),
+	"age" : NumberInt("30"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1987-10-25T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Олег Чуваев",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("77"),
+	"slug" : "oleg-chuvaev-11287"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dc8"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1997-01-04T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Yaroslav Fursov",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("57"),
+	"slug" : "yaroslav-fursov-58588"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dc9"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1997-03-21T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Богдан Михайличенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("15"),
+	"slug" : "bogdan-mykhaylichenko-68990"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dca"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1999-01-22T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Анджело Качавенда",
+	"nationality" : {
+		"iso" : "SRB",
+		"name" : "Сербия"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("32"),
+	"slug" : "andelo-kacavenda-90499"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dcb"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1995-11-04T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Гаэль Ондуа",
+	"nationality" : {
+		"iso" : "CMR",
+		"name" : "Камерун"
+	},
+	"position" : "M",
+	"shirtNumber" : null,
+	"slug" : "gael-ondua-136794"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066f5df1881f2464de2dcc"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : null,
+	"name" : "Вернидуб, Юрий",
+	"nationality" : {
+		"iso" : null,
+		"name" : null
+	},
+	"position" : "C"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2dce"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1994-09-27T01:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Александр Сваток",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("39"),
+	"slug" : "oleksandr-svatok-27589"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2dcd"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1998-05-22T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Максим Лунов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("18"),
+	"slug" : "maksym-lunov-27602"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2dcf"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1990-08-25T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Евгений Опанасенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("39"),
+	"slug" : "yevhen-opanasenko-58584"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2dd0"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1995-02-02T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Игорь Харатин",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("21"),
+	"slug" : "igor-kharatin-8500"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2dd1"),
+	"age" : NumberInt("37"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1980-12-14T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Вячеслав Чечер",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("44"),
+	"slug" : "vyacheslav-checher-11286"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2dd2"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1996-04-30T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Кочергин, Владислав",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("7"),
+	"slug" : "vladyslav-kochergin-27568"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2dd3"),
+	"age" : NumberInt("36"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1981-07-08T23:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Желько Любенович",
+	"nationality" : {
+		"iso" : "SRB",
+		"name" : "Сербия"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("22"),
+	"slug" : "zeljko-ljubenovic-11269"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2dd4"),
+	"age" : NumberInt("26"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1991-06-10T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Василий Прийма",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("4"),
+	"slug" : "vasyl-pryima-4910"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2dd5"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1995-09-06T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Юрий",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("95"),
+	"slug" : "iury-56872"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2dd6"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1992-07-08T00:00:00.000+03:00"),
+	"logo" : "true",
+	"name" : "Руслан Бабенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("36"),
+	"slug" : "ruslan-babenko-17132"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2dd7"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1996-05-30T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Силаш",
+	"nationality" : {
+		"iso" : "BRA",
+		"name" : "Бразилия"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("96"),
+	"slug" : "silas-110343"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2dd8"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1995-09-01T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Владислав Кабаев",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("27"),
+	"slug" : "vladislav-kabaiev-8475"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2dd9"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1999-02-11T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Андрей Лунин",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("23"),
+	"slug" : "andriy-lunin-65484"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2dda"),
+	"age" : NumberInt("27"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1991-03-03T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Артем Гордиенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("5"),
+	"slug" : "artem-gordienko-11257"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2ddb"),
+	"age" : NumberInt("28"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1990-01-13T23:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Артем Громов",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("28"),
+	"slug" : "artem-gromov-31844"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2ddc"),
+	"age" : NumberInt("23"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1994-06-25T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Александр Андриевский",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("27"),
+	"slug" : "oleksandr-andrievsky-30804"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2ddd"),
+	"age" : NumberInt("25"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1992-06-02T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Александр Караваев",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("20"),
+	"slug" : "olexandr-karavaev-11267"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2dde"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1997-11-21T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Сергей Майборода",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("64"),
+	"slug" : "mayboroda-123611"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2ddf"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1997-02-11T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Фопаля, Давид",
+	"nationality" : {
+		"iso" : "FRA",
+		"name" : "Франция"
+	},
+	"position" : "F",
+	"shirtNumber" : NumberInt("11"),
+	"slug" : "david-faupala-70433"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2de0"),
+	"age" : NumberInt("20"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1998-01-23T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Евгений Чеберко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("5"),
+	"slug" : "yevgen-cheberko-27579"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2de1"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1997-01-20T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Александр Тымчук",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("17"),
+	"slug" : "oleksandr-tymchyk-67639"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2de2"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1997-01-09T00:00:00.000+02:00"),
+	"logo" : "true",
+	"name" : "Mohamed El Bouazzati",
+	"nationality" : {
+		"iso" : "MAR",
+		"name" : "Марокко"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("16"),
+	"slug" : "mohamed-el-bouazzati-18687"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2de3"),
+	"age" : null,
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : null,
+	"logo" : null,
+	"name" : "Луис Филиппе",
+	"nationality" : {
+		"iso" : null,
+		"name" : null
+	},
+	"position" : null,
+	"shirtNumber" : null,
+	"slug" : "luis-philippe-145632"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2de4"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1998-10-03T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Шалфиев, Егор",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("76"),
+	"slug" : "yegor-shalfieiev-58598"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2de5"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1996-11-21T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Dmytro Lytvyn",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("3"),
+	"slug" : "dmytro-lytvyn-43608"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2de6"),
+	"age" : NumberInt("30"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1987-10-25T00:00:00.000+03:00"),
+	"logo" : null,
+	"name" : "Олег Чуваев",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "G",
+	"shirtNumber" : NumberInt("77"),
+	"slug" : "oleg-chuvaev-11287"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2de7"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1997-01-04T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Yaroslav Fursov",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "D",
+	"shirtNumber" : NumberInt("57"),
+	"slug" : "yaroslav-fursov-58588"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2de8"),
+	"age" : NumberInt("21"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1997-03-21T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Богдан Михайличенко",
+	"nationality" : {
+		"iso" : "UKR",
+		"name" : "Украина"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("15"),
+	"slug" : "bogdan-mykhaylichenko-68990"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2de9"),
+	"age" : NumberInt("19"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1999-01-22T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Анджело Качавенда",
+	"nationality" : {
+		"iso" : "SRB",
+		"name" : "Сербия"
+	},
+	"position" : "M",
+	"shirtNumber" : NumberInt("32"),
+	"slug" : "andelo-kacavenda-90499"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2dea"),
+	"age" : NumberInt("22"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : ISODate("1995-11-04T00:00:00.000+02:00"),
+	"logo" : null,
+	"name" : "Гаэль Ондуа",
+	"nationality" : {
+		"iso" : "CMR",
+		"name" : "Камерун"
+	},
+	"position" : "M",
+	"shirtNumber" : null,
+	"slug" : "gael-ondua-136794"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5b066fd5f1881f2464de2deb"),
+	"club" : ObjectId("5a956f2ae144536463b6d85a"),
+	"dateOfBirth" : null,
+	"name" : "Вернидуб, Юрий",
+	"nationality" : {
+		"iso" : null,
+		"name" : null
+	},
+	"position" : "C"
+},

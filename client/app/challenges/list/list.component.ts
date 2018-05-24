@@ -11,7 +11,7 @@ import { Cat } from '../../shared/models/cat.model';
 @Component({
   selector: 'challenges-list',
   templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css']
+  styleUrls: ['./list.component.scss']
 })
 export class ChallengesListComponent implements OnInit {
 
