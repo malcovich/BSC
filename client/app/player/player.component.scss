@@ -209,3 +209,127 @@
     max-width: 1400px;
     margin: 0 auto;
 }
+.col-width-20{
+    width: 20%;
+    float: left;
+   
+}
+.col-width-60{
+    width: 60%;
+    float: left;
+}
+.big-wraper-image{
+    min-height: 500px;
+    overflow: hidden;
+    background-color: #0c1122;
+}
+.info-block {
+    height: 400px;
+    padding-top:150px;
+}
+.league-logo {
+    margin: 150px auto;
+    width: 130px;
+    img{
+        width:  100%;
+    }
+    h2 {
+        color: #fff;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+.content-block {
+    min-height: 600px;
+    background: #fff;
+    border-radius: 3px 3px 0 0;
+    .header-block {
+        padding: 0 25px;
+        border-bottom: 3px solid rgb(248,248,248);
+        overflow: hidden;
+        h3{
+            font-size: 20px;
+            line-height: 70px;
+            float: left;
+        }
+        .tabs-content {
+            float: left;
+            margin-left: 50px;
+            margin-bottom: 0;
+            li {
+                float: left;
+                margin-right: 40px;
+                line-height: 70px;
+                font-weight: 500;
+                list-style: none;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .sub-header-block{
+        background: rgb(252,252,252);
+        border-bottom: 3px solid rgb(248,248,248);
+        padding: 15px 25px;
+        h3{
+            font-size: 20px;
+        }
+    }
+}
+.seasons{
+    padding-top:5px;
+    color:#62687d;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.subscribe{
+    display: block;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    background: #628FFF;
+    cursor: pointer;
+}
+.item-info {
+    width: 33%;
+    float: left;
+    margin-bottom: 50px;
+    span {
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #62687d;
+    }
+    p {
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #f6f6f6;
+    }
+}
+.side-menu {
+    list-style: none;
+    li{
+        height: 50px;
+        line-height: 50px;
+        color: #fff;
+        border-left: 2px solid #0c1122;
+        cursor: pointer;
+        a{
+            display: block;
+            color:#fff;
+            padding-left: 50px;
+            &.active{
+                border-left: 2px solid #628FFF;
+                background: rgba(256,256,256,0.2);
+            }
+        }
+        &:hover {
+            a{
+                color:#fff;
+                text-decoration: none;
+            }
+        }
+    }
+}

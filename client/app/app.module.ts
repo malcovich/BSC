@@ -5,7 +5,6 @@ import { RoutingModule } from './routing.module';
 import { SharedModule } from './shared/shared.module';
 import { CatService } from './services/cat.service';
 import { UserService } from './services/user.service';
-import { ResurseService } from './services/resurse.service';
 import { ActionService } from './services/action.service';
 import { AuthService } from './services/auth.service';
 import { ClubService } from './services/club.service';
@@ -18,10 +17,13 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { AccountComponent } from './account/account.component';
 import { AdminComponent } from './admin/admin.component';
+import { PlayerComponent } from './player/player.component';
+
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ClubComponent } from './clubs/club/club-detail.component';
 import { PagerService } from './services/pager.service';
 import { ClubsListComponent } from './clubs/list/list.component';
+import { PlayerListComponent } from './clubs/club/playersList/players-list.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StatisticComponent } from './dashboard/statistic/statistic.component';
 import { ChallengesService } from './services/challenges.service';
@@ -66,7 +68,9 @@ import { D3Service } from 'd3-ng2-service'; //
     AdminAddMatchComponent,
     AdminListMatchesComponent,
     AdminListActionsComponent,
-    AdminAddActionsComponent
+    AdminAddActionsComponent,
+    PlayerListComponent,
+    PlayerComponent
   ],
   imports: [
     RoutingModule,
@@ -82,7 +86,6 @@ import { D3Service } from 'd3-ng2-service'; //
     AuthGuardAdmin,
     CatService,
     UserService,
-    ResurseService,
     ClubService,
     PagerService,
     ChallengesService,

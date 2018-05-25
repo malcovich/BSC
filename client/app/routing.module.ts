@@ -11,11 +11,14 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AuthGuardLogin } from './services/auth-guard-login.service';
 import { AuthGuardAdmin } from './services/auth-guard-admin.service';
 import { ClubComponent } from './clubs/club/club-detail.component';
+import { PlayerListComponent } from './clubs/club/playersList/players-list.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ClubsListComponent } from './clubs/list/list.component';
 import { TeamComponent } from './team/team.component';
 import { ChallengesListComponent } from './challenges/list/list.component';
 import { ChallengeComponent } from './challenges/challenge/challenge.component';
+import { PlayerComponent } from './player/player.component';
+
 
 //admin
 import { AdminListPlayersComponent } from './admin/players/list/list.component';
@@ -42,10 +45,15 @@ const routes: Routes = [
       { path: 'actions/add', component: AdminAddActionsComponent }
     ]
   },
+  { path: 'players/:id', component: PlayerComponent},
   { path: 'notfound', component: NotFoundComponent },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'clubs/:id', component: ClubComponent },
-  { path: 'clubs', component: ClubsListComponent },
+  { path: 'clubs', component: ClubsListComponent },  
+  { path: 'clubs/:id', component: ClubComponent, 
+    children: [
+      { path: 'players', component: PlayerListComponent }
+    ] 
+  },
   { path: 'team', component: TeamComponent },
   { path: 'challenges', component: ChallengesListComponent},
   { path: 'challenges/:id', component: ChallengeComponent},

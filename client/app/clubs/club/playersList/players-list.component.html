@@ -1,0 +1,40 @@
+<div class="content-block">
+	<div class="header-block">
+		<h3>Склад команди</h3>
+	</div>
+	<div *ngFor="let player of pagedItems;let idx = index" class="item-player">
+		<td>
+			<span [className]="player.country + ' flag'"></span>
+		</td>
+		<td>{{player.position}}</td>
+		<td>
+			<strong><a routerLinkActive="active" [routerLink]="['/players', player['_id']]">{{player.name}}</a></strong>
+		</td>
+	</div>
+	<nav aria-label="Page Navigation">
+		<ul class="list-inline" *ngIf="pager.pages && pager.pages.length">
+			<li class="list-inline-item">
+				<a [ngClass]="{'u-pagination-v1__item--disabled':pager.currentPage === 1}" class="u-pagination-v1__item u-pagination-v1-1 u-pagination-v1__item g-pa-7-16"
+				 aria-label="Previous" (click)="setPage(pager.currentPage - 1)">
+					<span aria-hidden="true">
+						<i class="fa fa-angle-left"></i>
+					</span>
+					<span class="sr-only">Previous</span>
+				</a>
+			</li>
+			<li class="list-inline-item g-hidden-sm-down" [ngClass]="{active:pager.currentPage === page}">
+				<a class="u-pagination-v1__item u-pagination-v1-1 u-pagination-v1-1--active g-pa-7-16">{{pager.currentPage}}/{{ pager.totalPages}}</a>
+			</li>
+
+			<li class="list-inline-item">
+				<a class="u-pagination-v1__item u-pagination-v1-1 g-pa-7-16" aria-label="Next" [ngClass]="{'u-pagination-v1__item--disabled':pager.currentPage === pager.totalPages}"
+				 (click)="setPage(pager.currentPage + 1)">
+					<span aria-hidden="true">
+						<i class="fa fa-angle-right"></i>
+					</span>
+					<span class="sr-only">Next</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</div>

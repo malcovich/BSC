@@ -2,17 +2,15 @@ import { Component, OnInit, Pipe, PipeTransform, AfterViewInit, ViewChild, Eleme
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { CatService } from '../../services/cat.service';
-import { ClubService } from '../../services/club.service';
-import { ToastComponent } from '../../shared/toast/toast.component';
-import { Cat } from '../../shared/models/cat.model';
+import { ClubService } from '../services/club.service';
+import { ToastComponent } from '../shared/toast/toast.component';
 
 @Component({
-  selector: 'club-detail',
-  templateUrl: './club-detail.component.html',
-  styleUrls: ['./club-detail.component.scss']
+  selector: 'player',
+  templateUrl: './player.component.html',
+  styleUrls: ['./player.component.scss']
 })
-export class ClubComponent implements OnInit {
+export class PlayerComponent implements OnInit {
   @ViewChild('chart') elementView: ElementRef;
   isLoading = true;
   isEditing = false;
@@ -52,8 +50,16 @@ export class ClubComponent implements OnInit {
       }
      );
   }
+
+  getPlayerInfo(id) {
+    this.clubsService.getPlayerById({'club': id}).subscribe(
+      data =>{
+        this.players = data;
+        this.getPersentOfLegioners();
+      }
+    )
+  }
   getPlayersForClub(id) {
-    console.log(id)
     this.clubsService.getPlayersForClub({'club': id}).subscribe(
       data =>{
         this.players = data;

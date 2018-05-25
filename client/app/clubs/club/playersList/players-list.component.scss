@@ -1,37 +1,19 @@
-.league-logo {
-    margin: 180px auto;
-    width: 200px;
-    img{
-        max-width:  100%;
-    }
-}
-.challenge-item {
 
-}
-.challenge-name {
-    line-height: 41px
-}
-.count {
-    line-height: 41px;
-    font-size: 18px;
-}
-.col-width-20{
-    width: 20%;
-    float: left;
-   
-}
-.col-width-60{
-    width: 60%;
-    float: left;
-}
-.big-wraper-image{
-    min-height: 500px;
-    overflow: hidden;
-    background-color: #0c1122;
-}
 .info-block {
     height: 400px;
     padding-top:150px;
+}
+.league-logo {
+    margin: 150px auto;
+    width: 130px;
+    img{
+        width:  100%;
+    }
+    h2 {
+        color: #fff;
+        margin-top: 20px;
+        text-align: center;
+    }
 }
 .content-block {
     min-height: 600px;
@@ -44,6 +26,7 @@
         h3{
             font-size: 20px;
             line-height: 70px;
+            margin-bottom: 0;
             float: left;
         }
         .tabs-content {
@@ -63,26 +46,14 @@
     .sub-header-block{
         background: rgb(252,252,252);
         border-bottom: 3px solid rgb(248,248,248);
-        padding: 15px 25px;
+        padding: 15px 30px;
         h3{
             font-size: 20px;
         }
     }
 }
-.item-info {
-    width: 33%;
-    float: left;
-    margin-bottom: 50px;
-    span {
-        font-size: 16px;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: #62687d;
-    }
-    p {
-        font-size: 20px;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: #f6f6f6;
-    }
+.item-player{ 
+    padding: 0 30px;
+    line-height:40px;
+    margin-top:5px;
 }

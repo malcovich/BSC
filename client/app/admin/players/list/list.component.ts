@@ -3,7 +3,6 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { CatService } from '../../../services/cat.service';
-import { ResurseService } from '../../../services/resurse.service';
 import { ClubService } from '../../../services/club.service';
 import { PagerService } from '../../../services/pager.service';
 import { ToastComponent } from '../../../shared/toast/toast.component';
@@ -35,7 +34,6 @@ export class AdminListPlayersComponent implements OnInit {
   pager: any = {};
   pagedItems: any[];
   constructor(
-              private resurseService: ResurseService,
               private clubsService: ClubService,
               private pagerService: PagerService,
               private route: ActivatedRoute,

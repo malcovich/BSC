@@ -1,0 +1,231 @@
+<!-- <div>
+	<div class="row">
+		<div class="col-lg-9 fullScreen" [ngStyle]="{'background-image': 'url(' +  team.imageBig + ')'}" >
+			<h1 class="main-title">{{team.name}}</h1>
+		</div>
+		<div class="col-lg-3"></div>
+	</div>
+</div> -->
+<div class="sub-header">
+	<div class="teams-block">
+		<ul class="list-leagues">
+			<li class="active">УПЛ</li>
+			<li>Кубок України</li>
+			<li>Ліга Чемпіонів</li>
+		</ul>
+		<span class="logo" [ngStyle]="{'background-image': 'url(' +  team.image + ')'}"></span>
+		<h3 class="team_name">{{team.ukrName}}</h3>
+		<p>Тренер: Пауло Фонсека</p>
+	</div>
+</div>
+<div class="sub-menu">
+	<ul>
+		<li (click)="setActive('match')">Матчі</li>
+		<li (click)="setActive('players')">Склад</li>
+		<li (click)="setActive('goals')">Результативність</li>
+	</ul>
+</div>
+<div  *ngIf="team" class="teams-block">
+	<div class="row" *ngIf ="activeTab=='match'">
+		<div class="col-lg-8">
+			<div class="row">
+				<div class="col-lg-3 col-md-4">
+					<div class="item">
+						<img class="help-img" src="assets/white.png">
+						<div [ngStyle]="{'background-image': 'url(assets/abstr1.jpg)'}" ></div>
+						<p class="subTitle">Місце в таблиці:</p>
+						<h3 class="item-title">{{team.places[0].place}}</h3>
+						<p class="footer-item">
+							<span class="place">{{team.places[0].round}} тур</span>
+						</p>
+					</div>
+				</div>
+				
+				<div class=" col-lg-3 col-md-4">
+					<div class="item">
+						<img class="help-img" src="assets/white.png">
+						<div [ngStyle]="{'background-image': 'url(' +  team.imageAbstr1 + ')'}" ></div>
+						<p class="subTitle">Терерішня серія:</p>
+						<h3 class="item-title">5  <span>виграних</span></h3>
+						
+					</div>
+				</div>
+
+				<div class=" col-lg-3 col-md-4">
+						<div class="item">
+							<img class="help-img" src="assets/white.png">
+							<div [ngStyle]="{'background-image': 'url(' +  team.imageAbstr1 + ')'}" ></div>
+							<p class="subTitle">Суха серія:</p>
+							<h3 class="item-title">7 <span>матчів</span></h3>
+						</div>
+					</div>
+					
+					<div class="col-lg-6">
+						<div class="item long ">
+							<img class="help-img" src="assets/white2.png">
+							<div [ngStyle]="{'background-image': 'url(' +  team.imageAbstr1 + ')'}" ></div>
+							<p class="subTitle">Топ 3 бомбардирів:</p>
+							<ul class="list-striker">
+								<li>
+									<span class="player-img">
+										<img src="assets/Ferreyra.png" alt="">
+									</span>
+									<p class="player_name"> Facundo Ferreyra</p>
+									<span class="scores">17</span>
+								</li>
+								<li>
+									<span class="player-img">
+										<img src="assets/Marlos.png" alt="">
+									</span>
+									<p class="player_name">Marlos</p>
+									<span class="scores">12</span>
+								</li>
+								<li>
+									<span class="player-img">
+										<img src="assets/Bernard.png" alt="">
+									</span>
+									<p class="player_name">Bernard</p>
+									<span class="scores">5</span>
+								</li>
+							</ul>
+							<!--<h3 class="item-title">{{statistic.omittedGoals}}</h3>
+							<p class="footer-item">
+								<span class="place">#12 місце</span>
+							</p> -->
+							<p class="footer-item">
+								<span class="place">+4 бомбардирів</span>
+							</p>
+						</div>
+					
+					</div>
+					<div class="col-lg-3 col-md-4">
+							<div class="item">
+								<img class="help-img" src="assets/white.png">
+								<div [ngStyle]="{'background-image': 'url(' +  team.imageAbstr + ')'}" ></div>
+								<p class="subTitle">Легіонерів у складі</p>
+								<h3 class="item-title font60" >{{statistic.legioners.length}}/{{this.statistic.persentLegioner}}%</h3>
+								<p class="footer-item">
+									<span class="place">#12 місце</span>
+								</p>
+							</div>
+						</div>
+			</div>
+			
+		</div>
+		<div class="col-lg-4">
+			
+		</div>
+	</div>
+	<div class="row" *ngIf ="activeTab=='players'">
+			<div class="col-lg-8">
+				<div class="row">
+					<div class="col-lg-3 col-md-4">
+						<div class="item">
+							<img class="help-img" src="assets/white.png">
+							<div [ngStyle]="{'background-image': 'url(assets/abstr1.jpg)'}" ></div>
+							<p class="subTitle">Місце в таблиці:</p>
+							<h3 class="item-title">{{team.places[0].place}}</h3>
+							<p class="footer-item">
+								<span class="place">{{team.places[0].round}} тур</span>
+							</p>
+						</div>
+					</div>
+						<div class="col-lg-3 col-md-4">
+							<div class="item">
+								<img class="help-img" src="assets/white.png">
+								<div [ngStyle]="{'background-image': 'url(' +  team.imageAbstr + ')'}" ></div>
+								<p class="subTitle">Забито голів:</p>
+								<h3 class="item-title" (click)="showHideScored()">{{statistic.totalGoals}}</h3>
+								<p class="footer-item">
+									<span class="place">#12 місце</span>
+								</p>
+							</div>
+						</div>
+			
+						<div class=" col-lg-3 col-md-4">
+							<div class="item">
+								<img class="help-img" src="assets/white.png">
+								<div [ngStyle]="{'background-image': 'url(' +  team.imageAbstr1 + ')'}" ></div>
+								<p class="subTitle">Пропущено голів:</p>
+								<h3 class="item-title">{{statistic.omittedGoals}}</h3>
+								<p class="footer-item">
+									<span class="place">#12 місце</span>
+								</p>
+							</div>
+						</div>
+						<div class=" col-lg-3 col-md-4">
+							<div class="item">
+								<img class="help-img" src="assets/white.png">
+								<div [ngStyle]="{'background-image': 'url(' +  team.imageAbstr1 + ')'}" ></div>
+								<p class="subTitle">Терерішня серія:</p>
+								<h3 class="item-title">5 виграних</h3>
+								<p class="footer-item">
+									<span class="place">#12 місце</span>
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-12" *ngIf="showScored">
+							<div class="chart" #chart >
+								<app-d3graph [data]="data" [width]="width" *ngIf ="data"></app-d3graph>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="item long ">
+								<img class="help-img" src="assets/white2.png">
+								<div [ngStyle]="{'background-image': 'url(' +  team.imageAbstr1 + ')'}" ></div>
+								<p class="subTitle">Топ 3 бомбардирів:</p>
+								<ul class="list-striker">
+									<li>
+										<span class="player-img">
+											<img src="assets/Ferreyra.png" alt="">
+										</span>
+										<p class="player_name"> Facundo Ferreyra</p>
+										<span class="scores">17</span>
+									</li>
+									<li>
+										<span class="player-img">
+											<img src="assets/Marlos.png" alt="">
+										</span>
+										<p class="player_name">Marlos</p>
+										<span class="scores">12</span>
+									</li>
+									<li>
+										<span class="player-img">
+											<img src="assets/Bernard.png" alt="">
+										</span>
+										<p class="player_name">Bernard</p>
+										<span class="scores">5</span>
+									</li>
+								</ul>
+								<!--<h3 class="item-title">{{statistic.omittedGoals}}</h3>
+								<p class="footer-item">
+									<span class="place">#12 місце</span>
+								</p> -->
+								<p class="footer-item">
+									<span class="place">+4 бомбардирів</span>
+								</p>
+							</div>
+						
+						</div>
+						<div class="col-lg-3 col-md-4">
+								<div class="item">
+									<img class="help-img" src="assets/white.png">
+									<div [ngStyle]="{'background-image': 'url(' +  team.imageAbstr + ')'}" ></div>
+									<p class="subTitle">Легіонерів у складі</p>
+									<h3 class="item-title font60" >{{statistic.legioners.length}}/{{this.statistic.persentLegioner}}%</h3>
+									<p class="footer-item">
+										<span class="place">#12 місце</span>
+									</p>
+								</div>
+							</div>
+				</div>
+				
+			</div>
+			<div class="col-lg-4">
+				<h3>Состав:</h3>
+				<ul>
+					<li *ngFor="let player of players">{{player.position}}, {{player.country}} - {{player.name}}, {{player.clubNumber}}</li>
+				</ul>
+			</div>
+		</div>
+</div>
