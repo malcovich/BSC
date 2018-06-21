@@ -53,7 +53,6 @@ export class ClubComponent implements OnInit {
      );
   }
   getPlayersForClub(id) {
-    console.log(id)
     this.clubsService.getPlayersForClub({'club': id}).subscribe(
       data =>{
         this.players = data;

@@ -8,6 +8,12 @@ var fs = require('fs');
 export default class PlayerCtrl extends BaseCtrl {
   model = Player;
 
+  getPlayerInfo = (req,res) =>{
+    Player.find({_id : req.body.id}).exec((err, player)=>{
+      res.json(player[0]);
+    })
+  }
+
   getPlayersForClub = (req, res) =>{
     Player.find({club : req.body.club}).exec((err, players)=>{
       res.json(players);

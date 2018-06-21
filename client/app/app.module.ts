@@ -28,6 +28,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { StatisticComponent } from './dashboard/statistic/statistic.component';
 import { ChallengesService } from './services/challenges.service';
 import { SkinsService } from './services/skin.service';
+import { ClubsTableListComponent } from './clubs/club/clubsList/clubs-list.component';
+import {PlayerFromClubComponent} from './player/playersFromClub/playerFromClub.component';
+
+
 
 //admin
 import { AdminListPlayersComponent } from './admin/players/list/list.component';
@@ -70,7 +74,9 @@ import { D3Service } from 'd3-ng2-service'; //
     AdminListActionsComponent,
     AdminAddActionsComponent,
     PlayerListComponent,
-    PlayerComponent
+    PlayerComponent,
+    ClubsTableListComponent,
+    PlayerFromClubComponent
   ],
   imports: [
     RoutingModule,

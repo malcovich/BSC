@@ -56,6 +56,7 @@ export default function setRoutes(app) {
 
   //admin 
   router.route('/addPlayer').post(playerCtrl.addPlayer);
+  router.route('/getPlayerInfo').post(playerCtrl.getPlayerInfo)
   router.route('/addMatch').post(playerCtrl.addMatch);
   router.route('/getMatches').get(clubCtrl.getMatches);
   router.route('/getAllPlayers').get(playerCtrl.addPlayersForTeam);

@@ -3,7 +3,6 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { CatService } from '../../services/cat.service';
-import { ResurseService } from '../../services/resurse.service';
 import { ClubService } from '../../services/club.service';
 import { ToastComponent } from '../../shared/toast/toast.component';
 import { Cat } from '../../shared/models/cat.model';
@@ -30,7 +29,6 @@ export class ClubsListComponent implements OnInit {
   weight = new FormControl('', Validators.required);
 
   constructor(
-              private resurseService: ResurseService,
               private clubsService: ClubService,
               private route: ActivatedRoute,
               public toast: ToastComponent) { }

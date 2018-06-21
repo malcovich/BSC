@@ -1,0 +1,8 @@
+<h3>Турнірна таблиця</h3>
+<ul class="clubPlayersTable">
+	<li *ngFor="let player of players" >
+		<a routerLinkActive="active" [routerLink]="['/players', player['_id']]">
+			{{player.name}}
+		</a>
+	</li>
+</ul>

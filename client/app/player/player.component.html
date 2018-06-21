@@ -1,8 +1,8 @@
-<div class="big-wraper-image">
+<div class="big-wraper-image" *ngIf="player">
 		<div class="col-width-20">
-			<div class="league-logo mb-2" *ngIf="team">
-				<img src="assets/Shakhtar.svg" alt="">
-				<h2>{{team.ukrName}}</h2>
+			<div class="league-logo mb-2" >
+				<img src="assets/{{player.slug}}.jpg" alt="">
+				<h2>{{player.name}}</h2>
 				<p class="seasons">Сезон 2017/2018</p>
 				<span class="subscribe">Стежити</span>
 			</div>
@@ -22,24 +22,26 @@
 					<p>Фінал Ліги Чемпіонів в Києві</p>
 				</div>
 				<div class="item-info">
-					<span>Тип турніру</span>
+					<span>Позиція</span>
 					<p>Регулярний чемпіонат</p>
 				</div>
 				<div class="item-info">
-					<span>Лідер</span>
+					<span>Клуб</span>
 					<p>Шахтар</p>
 				</div>
 				<div class="item-info">
-					<span>Кількість команд</span>
-					<p>12 команд</p>
+					<span>Вік</span>
+					<p>{{player.age}}</p>
 				</div>
 				<div class="item-info">
-					<span>Тип турніру</span>
-					<p>Регулярний чемпіонат</p>
+					<span>Громадянство</span>
+					<p>{{player.nationality.name}}</p>
 				</div>
 			</div>
 			<router-outlet></router-outlet>
 			
 		</div>
-		<div class="col-width-20">col-width-25</div>
+		<div class="col-width-20">
+			<playerFromClub></playerFromClub>
+		</div>
 	</div>
